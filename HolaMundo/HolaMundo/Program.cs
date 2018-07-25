@@ -1,8 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+HolaMundo
+Programa inicial para verificar funcionalidades de compilación
+y ejecución en el entorno de desarollo seleccionado.
+*/
+
+using System;
 
 namespace HolaMundo
 {
