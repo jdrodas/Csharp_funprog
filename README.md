@@ -1,10 +1,17 @@
 # Csharp_funprog
 Proyectos del curso de Fundamentos de Programación en C#
 
+
 Inventario de proyectos en el repositorio:
+
+
+## MultiplosTres
+- Demostrar el funcionamiento de los principales ciclos de control implementando una aplicación que visualice los múltiplos de tres hasta un número límite.. Se hace con los ciclos While, Do-while y For.
+
 
 ## EjemploCiclosControl
 - Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
+
 
 ## EjemploCondicionales
 - Demostrar el funcionamiento de los condicionales utilizando operadores relacionales, operadores de igualdad y operadores lógicos.
