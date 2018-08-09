@@ -4,9 +4,12 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## TablaMultiplicar
+- Demostrar el funcionamiento de los principales ciclos de control implementando la visualización de la tabla de multiplicar de un número. Se hace con los ciclos While, Do-while y For.
+
 
 ## MultiplosTres
-- Demostrar el funcionamiento de los principales ciclos de control implementando una aplicación que visualice los múltiplos de tres hasta un número límite.. Se hace con los ciclos While, Do-while y For.
+- Demostrar el funcionamiento de los principales ciclos de control implementando una aplicación que visualice los múltiplos de tres hasta un número límite. Se hace con los ciclos While, Do-while y For.
 
 
 ## EjemploCiclosControl
