@@ -67,8 +67,6 @@ namespace EjemploCondicionales
             //Se puede preguntar si una variable es diferente a un valor
             if (nacion != "COLOMBIA")
                 Console.WriteLine("En Colombia eres considerado extranjero.");
-
-
         }
     }
 }
