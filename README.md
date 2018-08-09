@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ClasificaNumeros
+- Demostrar la característica específica del ciclo do-while al momento de evaluar la condición. Utilización del concepto de variable "bandera".
+
+
 ## TablaMultiplicar
 - Demostrar el funcionamiento de los principales ciclos de control implementando la visualización de la tabla de multiplicar de un número. Se hace con los ciclos While, Do-while y For.
 
