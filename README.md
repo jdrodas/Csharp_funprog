@@ -4,8 +4,12 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex01_ColonizacionSolar
+- Tema de examen 01: Condicionales y Ciclos de control. Colonización Sistema Solar. Ejercicio resuelto.
+
+
 ## ex01_secuenciaADN
-- Tema de examen 01: Condicionales y Ciclos de control. Ejercicio resuelto.
+- Tema de examen 01: Condicionales y Ciclos de control. Procesamiento de secuencias de ADN. Ejercicio resuelto.
 
 
 ## ClasificaNumeros
