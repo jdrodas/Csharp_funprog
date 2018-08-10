@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex01_Divergente
+- Tema de examen 01: Condicionales y Ciclos de control. Divergente - Asignación de facciones. Ejercicio resuelto.
+
+
 ## ex01_ColonizacionSolar
 - Tema de examen 01: Condicionales y Ciclos de control. Colonización Sistema Solar. Ejercicio resuelto.
 
