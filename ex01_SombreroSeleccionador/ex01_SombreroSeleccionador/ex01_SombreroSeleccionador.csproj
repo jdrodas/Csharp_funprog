@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA2EB8FB-094A-44C8-8AFE-1D16E9F4A8A2}</ProjectGuid>
+    <ProjectGuid>{D5C2F497-EF15-46F1-B5A1-073D5CA42DEE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ex01_SobreroSeleccionador</RootNamespace>
-    <AssemblyName>ex01_SobreroSeleccionador</AssemblyName>
+    <RootNamespace>ex01_SombreroSeleccionador</RootNamespace>
+    <AssemblyName>ex01_SombreroSeleccionador</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

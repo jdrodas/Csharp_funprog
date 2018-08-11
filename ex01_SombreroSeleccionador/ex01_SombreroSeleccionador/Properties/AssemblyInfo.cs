@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("ex01_SobreroSeleccionador")]
+[assembly: AssemblyTitle("ex01_SombreroSeleccionador")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ex01_SobreroSeleccionador")]
+[assembly: AssemblyProduct("ex01_SombreroSeleccionador")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("ea2eb8fb-094a-44c8-8afe-1d16e9f4a8a2")]
+[assembly: Guid("d5c2f497-ef15-46f1-b5a1-073d5ca42dee")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

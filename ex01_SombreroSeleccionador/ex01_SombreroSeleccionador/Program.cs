@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_SobreroSeleccionador
+Programa:       ex01_SombreroSeleccionador
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -35,7 +35,7 @@ debe indicar que fue una clasificación normal.
 
 using System;
 
-namespace ex01_SobreroSeleccionador
+namespace ex01_SombreroSeleccionador
 {
     class Program
     {
