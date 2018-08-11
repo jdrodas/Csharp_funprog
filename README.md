@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex01_SobreroSeleccionador
+- Tema de examen 01: Condicionales y Ciclos de control. Análisis de resultados del sombrero seleccionador. Ejercicio resuelto.
+
+
 ## ex01_Divergente
 - Tema de examen 01: Condicionales y Ciclos de control. Divergente - Asignación de facciones. Ejercicio resuelto.
 
