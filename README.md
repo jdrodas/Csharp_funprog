@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex01_FinalSpaceRescate
+- Tema de examen 01: Condicionales y Ciclos de control. Final Space – Rescate de Mooncake. Ejercicio resuelto.
+
+
 ## ex01_SombreroSeleccionador
 - Tema de examen 01: Condicionales y Ciclos de control. Análisis de resultados del sombrero seleccionador. Ejercicio resuelto.
 
