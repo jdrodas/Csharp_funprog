@@ -24,6 +24,21 @@ Inventario de proyectos en el repositorio:
 - Tema de examen 01: Condicionales y Ciclos de control. Procesamiento de secuencias de ADN. Ejercicio resuelto.
 
 
+## NumerosPerfectos
+- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
+
+
+## NumerosDeficientes
+- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
+
+
+## NumerosAmigos
+- Identificar si dos números enteros positivos son amigos
+
+
+## NumeroNarcisista
+- Identificar si un número entero de tres cifras es narcisista
+
 ## ClasificaNumeros
 - Demostrar la característica específica del ciclo do-while al momento de evaluar la condición. Utilización del concepto de variable "bandera".
 
