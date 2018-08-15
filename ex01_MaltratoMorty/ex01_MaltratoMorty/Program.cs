@@ -1,11 +1,9 @@
 ﻿/*
 Programa:       ex01_MaltratoMorty
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
-
 Propósito:
 ----------
 Examen 01: Condicionales y Ciclos de control
-
 
 Evaluación de Traumas de Morty causados por Rick
 *************************************************
@@ -45,7 +43,7 @@ Cuantas situaciones por cada tipo de maltrato, el promedio de calificación de c
 tipo y la recomendación de castigo en caso de que supere el valor de 7.0 para las 
 situaciones tipo (T) Trauma mental o (F) Daño físico. 
 
-*/
+ */
 
 using System;
 
