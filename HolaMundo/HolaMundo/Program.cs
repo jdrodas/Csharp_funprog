@@ -25,7 +25,7 @@ namespace HolaMundo
         {
             //Comenzamos con la forma más básica de colocar información en consola.
             //Utilizamos el método WriteLine de la clase Console.
-            //Escribre una cadena de caracteres, delimitada por las comillas dobles (")
+            //Escribe una cadena de caracteres, delimitada por las comillas dobles (")
             Console.WriteLine("Hola Mundo!");
 
             //Esto mismo se puede lograr con el método Write más el caracter especial \n

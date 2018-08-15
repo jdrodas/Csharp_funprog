@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex01_MaltratoMorty
+- Tema de examen 01: Condicionales y Ciclos de control. Rick & Morty – Evaluación de maltratos. Ejercicio resuelto.
+
+
 ## ex01_FinalSpaceRescate
 - Tema de examen 01: Condicionales y Ciclos de control. Final Space – Rescate de Mooncake. Ejercicio resuelto.
 
