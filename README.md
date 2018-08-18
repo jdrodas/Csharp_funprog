@@ -4,6 +4,11 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ValidaNumeroPrimo
+- Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
+- Identificar si un numero entero es primo
+
+
 ## ex01_GravityFalls
 - Tema de examen 01: Condicionales y Ciclos de control. Gravity Falls – Gestión de la cabaña. Ejercicio resuelto.
 

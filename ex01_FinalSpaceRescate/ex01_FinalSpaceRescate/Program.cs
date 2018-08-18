@@ -6,7 +6,6 @@ Propósito:
 ----------
 Examen 01: Condicionales y Ciclos de control
 
-
 Final Space – Rescate de Mooncake
 *********************************
 
