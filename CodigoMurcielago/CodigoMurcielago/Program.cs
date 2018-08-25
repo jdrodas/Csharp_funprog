@@ -41,6 +41,7 @@ namespace CodigoMurcielago
                         break;
 
                     case 'u':
+                    case 'ú':
                         arregloFrase[i] = '2';
                         break;
 
@@ -53,10 +54,12 @@ namespace CodigoMurcielago
                         break;
 
                     case 'i':
+                    case 'í':
                         arregloFrase[i] = '5';
                         break;
 
                     case 'e':
+                    case 'é':
                         arregloFrase[i] = '6';
                         break;
 
@@ -65,6 +68,7 @@ namespace CodigoMurcielago
                         break;
 
                     case 'a':
+                    case 'á':
                         arregloFrase[i] = '8';
                         break;
 
@@ -73,6 +77,7 @@ namespace CodigoMurcielago
                         break;
 
                     case 'o':
+                    case 'ó':
                         arregloFrase[i] = '0';
                         break;
                 }
@@ -83,8 +88,6 @@ namespace CodigoMurcielago
             string fraseCifrada = new string(arregloFrase);
 
             Console.WriteLine("La frase cifrada es " + fraseCifrada);
-
-
         }
     }
 }
