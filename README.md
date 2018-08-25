@@ -4,6 +4,12 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## CodigoMurcielago
+- Demostrar el funcionamiento básico de los arreglos
+- Convertir cadena de caracteres a un arreglo de caracteres
+- utilizar la sentencia switch como opción a los condicionales múltiples
+- Crear una cadena de caracteres a partir de un arreglo de caracteres
+
 ## ValidaNumeroPrimo
 - Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
 - Identificar si un numero entero es primo
