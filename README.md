@@ -4,6 +4,11 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## EjemploFuncionesArreglos
+- Generar un arreglo con valores enteros aleatorios
+- Implementar una función que encuentre el valor mayor del arreglo
+- Implementar una función que encuentre las posiciones donde está un valor
+
 ## CodigoMurcielago
 - Demostrar el funcionamiento básico de los arreglos
 - Convertir cadena de caracteres a un arreglo de caracteres
