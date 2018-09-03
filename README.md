@@ -10,15 +10,25 @@ Inventario de proyectos en el repositorio:
 - Implementar una función que encuentre las posiciones donde está un valor
 - Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
 
+
 ## CodigoMurcielago
 - Demostrar el funcionamiento básico de los arreglos
 - Convertir cadena de caracteres a un arreglo de caracteres
 - utilizar la sentencia switch como opción a los condicionales múltiples
 - Crear una cadena de caracteres a partir de un arreglo de caracteres
 
+
 ## ValidaNumeroPrimo
 - Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
 - Identificar si un numero entero es primo
+
+
+## EjemploFunciones
+- Demostrar la implementación de los diferentes tipos de funciones
+- Implementar función que recibe parámetros y retorna valor
+- Implementar función que no recibe parámetros y retorna valor
+- Implementar función que recibe parámetros y no retorna valor
+- Implementar función que no recibe parámetros y no retorna valor
 
 
 ## ex01_GravityFalls
