@@ -18,6 +18,11 @@ Inventario de proyectos en el repositorio:
 - Crear una cadena de caracteres a partir de un arreglo de caracteres
 
 
+## EjemploArreglosCaracteres
+- Demostrar la equivalencia de las variables tipo string como arreglo de caracteres
+- Demostrar el funcionamiento de la sentencia Switch para verificar múltipes condiciones
+
+
 ## EjemploArreglos
 - Demostrar los conceptos básicos de los arreglos
 - Llenar un arreglo con numeros aleatorios y visualizar su contenido
