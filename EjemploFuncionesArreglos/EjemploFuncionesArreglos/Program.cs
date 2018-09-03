@@ -5,13 +5,12 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 - Generar un arreglo con valores enteros aleatorios
-- Implementar una función que encuentre el valor mayor del arreglo
+- Implementar funciones que encuentre los valore menores y mayores del arreglo
 - Implementar una función que encuentre las posiciones donde está un valor
-
+- Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
 */
 
 using System;
-
 
 namespace EjemploFuncionesArreglos
 {
@@ -41,12 +40,78 @@ namespace EjemploFuncionesArreglos
             //aqui vamos a identificar las posiciones donde aparece el número mayor
             int[] posicionesDelMayor = BuscaPosicionesValor(mayor, conjunto);
 
-            Console.WriteLine("\nNúmero de posiciones donde está el número mayor: {0} ", posicionesDelMayor.Length);
+            Console.WriteLine("\nEl número mayor está {0} veces en el arreglo ",
+                posicionesDelMayor.Length);
 
             Console.WriteLine("\nLas posiciones donde está el número mayor son: ");
             for (int i = 0; i < posicionesDelMayor.Length; i++)
                 Console.WriteLine(posicionesDelMayor[i] + 1); //Posiciones de Humano
 
+            //aqui buscamos el valor menor del arreglo
+            int menor = EncuentraMenor(conjunto);
+            Console.WriteLine("\nEl valor menor encontrado es: " + menor);
+
+            //aqui vamos a identificar las posiciones donde aparece el número menor
+            int[] posicionesDelMenor = BuscaPosicionesValor(menor, conjunto);
+
+            Console.WriteLine("\nEl número menor está {0} veces en el arreglo ",
+                posicionesDelMenor.Length);
+
+            Console.WriteLine("\nLas posiciones donde está el número menor son: ");
+            for (int i = 0; i < posicionesDelMenor.Length; i++)
+                Console.WriteLine(posicionesDelMenor[i] + 1); //Posiciones de Humano
+
+            //aqui ordenamos el arreglo
+            int[] conjuntoOrdenado = OrdenaArregloBurbuja(conjunto);
+
+            //aqui visualizamos el arreglo ordenado
+            Console.WriteLine("\n\nEl contenido del arreglo ordenado es: \n\n");
+            VisualizaArreglo(conjuntoOrdenado);
+
+            //la supermega eficiente solución
+            int[] otroOrdenado = conjunto;
+            Array.Sort(otroOrdenado);
+
+            Console.WriteLine("\n\nEl arreglo ordenado usando Array.Sort(): \n\n");
+            VisualizaArreglo(otroOrdenado);
+        }
+
+        /// <summary>
+        /// Función para ordenar un arreglo utilizando el método burbuja
+        /// </summary>
+        /// <param name="coleccion"></param>
+        /// <returns>Arreglo ordenado</returns>
+        static int[] OrdenaArregloBurbuja(int[] coleccion)
+        {
+            int[] coleccionOrdenada = coleccion;
+            int datoTemporal;
+
+            //aqui implementamos el algoritmo de ordenamiento burbuja en forma ascendente
+            bool seHizoCambio = true;
+
+            //se repite el ciclo hasta que no se haga cambio (seHizoCambio = false)
+            while (seHizoCambio == true)
+            {
+                //iniciamos cada ciclo indicando que no se hizo cambio
+                seHizoCambio = false;
+
+                //recorremos el ciclo para hacer las comparaciones de dos números adjacentes
+                for (int i = 0; i < coleccionOrdenada.Length - 1; i++)
+                {
+                    if (coleccionOrdenada[i] > coleccionOrdenada[i + 1])
+                    {
+                        //el primero es mayor que el segundo, se cambian de posición
+                        datoTemporal = coleccionOrdenada[i + 1];
+                        coleccionOrdenada[i + 1] = coleccionOrdenada[i];
+                        coleccionOrdenada[i] = datoTemporal;
+
+                        //se hizo ordenamiento, se coloca la variable "bandera" en true
+                        seHizoCambio = true;
+                    }
+                }
+            }
+
+            return coleccionOrdenada;
         }
 
         /// <summary>
@@ -85,7 +150,11 @@ namespace EjemploFuncionesArreglos
             return posiciones;
         }
 
-
+        /// <summary>
+        /// Función para encontrar el número mayor en un arreglo de enteros
+        /// </summary>
+        /// <param name="coleccion"></param>
+        /// <returns>el número mayor encontrado</returns>
         static int EncuentraMayor(int[] coleccion)
         {
             int datoMayor = coleccion[0]; //arbitrariamente decimos que el primer elemento
@@ -98,7 +167,25 @@ namespace EjemploFuncionesArreglos
 
             return datoMayor;
         }
-        
+
+        /// <summary>
+        /// Función para encontrar el número menor en un arreglo de enteros
+        /// </summary>
+        /// <param name="coleccion"></param>
+        /// <returns>el número menor encontrado</returns>
+        static int EncuentraMenor(int[] coleccion)
+        {
+            int datoMenor = coleccion[0]; //arbitrariamente decimos que el primer elemento
+                                          //es el mayor de los valores del arreglo
+
+            //aqui comparamos ese mayor a ver si hay otro mayor
+            for (int i = 0; i < coleccion.Length; i++)
+                if (coleccion[i] < datoMenor)
+                    datoMenor = coleccion[i]; //se encontró un nuevo mayor
+
+            return datoMenor;
+        }
+
         /// <summary>
         /// funcion para visualizar el contenido de un arreglo
         /// </summary>

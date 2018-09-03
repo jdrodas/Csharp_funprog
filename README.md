@@ -6,8 +6,9 @@ Inventario de proyectos en el repositorio:
 
 ## EjemploFuncionesArreglos
 - Generar un arreglo con valores enteros aleatorios
-- Implementar una función que encuentre el valor mayor del arreglo
+- Implementar funciones que encuentre los valore menores y mayores del arreglo
 - Implementar una función que encuentre las posiciones donde está un valor
+- Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
 
 ## CodigoMurcielago
 - Demostrar el funcionamiento básico de los arreglos
