@@ -18,6 +18,11 @@ Inventario de proyectos en el repositorio:
 - Crear una cadena de caracteres a partir de un arreglo de caracteres
 
 
+## EjemploArreglos
+- Demostrar los conceptos básicos de los arreglos
+- Llenar un arreglo con numeros aleatorios y visualizar su contenido
+
+
 ## ValidaNumeroPrimo
 - Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
 - Identificar si un numero entero es primo
