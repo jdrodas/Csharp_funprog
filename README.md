@@ -4,6 +4,14 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ArregloAleatorioLetras
+- Generar un arreglo caracteres de 500 posiciones llenado con las letras del abecedario seleccionadas de manera aleatoria. 
+- Implementar una función que reciba el arreglo como parámetro y visualice en consola el contenido del arreglo, 25 elementos por línea.
+- Implementar una función que reciba en los parámetros el arreglo de letras y el abecedario y visualice en consola el total de veces que aparece cada letra del abecedario en el arreglo de letras.
+
+
+
+
 ## EjemploFuncionesArreglos
 - Generar un arreglo con valores enteros aleatorios
 - Implementar funciones que encuentre los valore menores y mayores del arreglo
