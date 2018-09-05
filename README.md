@@ -4,12 +4,16 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ArregloEstaturas
+- Identificar la configuración regional y el separador decimal utilizado
+- Llenar y ordenar descendentemente un arreglo de números decimales (float)
+- Calcular el promedio de los valores contenidos en un arreglo de números decimales.
+
+
 ## ArregloAleatorioLetras
 - Generar un arreglo caracteres de 500 posiciones llenado con las letras del abecedario seleccionadas de manera aleatoria. 
 - Implementar una función que reciba el arreglo como parámetro y visualice en consola el contenido del arreglo, 25 elementos por línea.
 - Implementar una función que reciba en los parámetros el arreglo de letras y el abecedario y visualice en consola el total de veces que aparece cada letra del abecedario en el arreglo de letras.
-
-
 
 
 ## EjemploFuncionesArreglos
