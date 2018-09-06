@@ -4,6 +4,12 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ArreglosEdadCaminar
+- Generar un arreglo de enteros de 100 posiciones llenado de manera aleatoria con valores de un rango. 
+- Calcular la media, mediana y moda.
+- Visualizar el arreglo generado y los valores estadísticos calculados.
+
+
 ## ArregloEstaturas
 - Identificar la configuración regional y el separador decimal utilizado
 - Llenar y ordenar descendentemente un arreglo de números decimales (float)

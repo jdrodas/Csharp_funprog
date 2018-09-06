@@ -31,18 +31,14 @@ namespace EjemploArreglosCaracteres
 
             Console.WriteLine("\nLa frase de manera vertical, tres letras por línea es:");
 
-            //aqui visualizamos de a tres caracteres por linea
-            int contador = 0;
+
             for (int i = 0; i < arregloLetras.Length; i++)
             {
                 Console.Write(arregloLetras[i]);
-                contador++;
 
-                if (contador > 2)  //De a tres posiciones: 0, 1 y 2              
-                {
-                    contador = 0;
+                //aqui visualizamos de a tres caracteres por linea
+                if ((i+1)%3 ==0)  //De a tres posiciones: 0, 1 y 2              
                     Console.WriteLine();
-                }                
             }
 
             //aqui vamos a contar las vocales y los espacios

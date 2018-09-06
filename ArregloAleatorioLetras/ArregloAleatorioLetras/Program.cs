@@ -81,18 +81,12 @@ namespace ArregloAleatorioLetras
             //aqui visualizamos las letras en el arreglo
             Console.WriteLine("Las letras en el arreglo son: \n");
 
-            int contador = 0;
-
             for (int i = 0; i < arreglo.Length; i++)
             {
                 Console.Write(arreglo[i] + " ");
-                contador++;
 
-                if (contador % 25 == 0)
-                {
+                if ((i+1) % 25 == 0) //Colocamos 25 elementos por línea
                     Console.WriteLine();
-                    contador = 0;
-                }
             }
 
             Console.WriteLine();

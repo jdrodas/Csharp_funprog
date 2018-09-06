@@ -192,19 +192,13 @@ namespace EjemploFuncionesArreglos
         /// <param name="coleccion">El arreglo a visualizar</param>
         static void VisualizaArreglo(int[] coleccion)
         {
-            int contador = 0;
-
             for (int i = 0; i < coleccion.Length; i++)
             {
                 Console.Write(coleccion[i] + "\t");
-                contador++;
-
+         
                 //si ya coloqué 10 numeros, salto de linea
-                if (contador == 10)
-                {
+                if ((i+1)%10 == 0)
                     Console.WriteLine();
-                    contador = 0;
-                }
             }
         }
     }
