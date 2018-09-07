@@ -4,6 +4,11 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## PuntuacionEquipos
+- Llenar un arreglo con 5 números enteros desde la consola en el rango de 1 a 100
+- Calcular si la suma de estos números supera el valor de 300
+- Contar si dos o más números son menores que 60
+
 ## ArregloPrimos
 - Generar un arreglo con los números primos inferiores a 100.
 - Visualizar en consola el arreglo generado, 5 valores por línea.
