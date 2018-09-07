@@ -4,6 +4,11 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ArregloPrimos
+- Generar un arreglo con los números primos inferiores a 100.
+- Visualizar en consola el arreglo generado, 5 valores por línea.
+
+
 ## ArreglosEdadCaminar
 - Generar un arreglo de enteros de 100 posiciones llenado de manera aleatoria con valores de un rango. 
 - Calcular la media, mediana y moda.
