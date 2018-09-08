@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex02_AterrizajeOptimo
+- Identificar de un arreglo de 10 numeros reales, cuales son los menores mayores que cero
+
+
 ## PuntuacionEquipos
 - Llenar un arreglo con 5 números enteros desde la consola en el rango de 1 a 100
 - Calcular si la suma de estos números supera el valor de 300
