@@ -4,6 +4,12 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex02_LiberandoWill
+- Leer valores enteros desde consola y almacenarlos en un arreglo si pertenecen a un rango
+- Calcular el porcentaje del total correspondiente a un valor. Utilización de Cast
+- Implementación de funciones que reciben y devuelven arreglos
+
+
 ## ex02_AterrizajeOptimo
 - Identificar de un arreglo de 10 numeros reales, cuales son los menores mayores que cero
 
