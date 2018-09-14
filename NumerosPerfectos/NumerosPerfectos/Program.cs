@@ -45,7 +45,8 @@ namespace NumerosPerfectos
                 }
                 catch (FormatException error)
                 {
-                    Console.WriteLine("El dato ingresado no está en el formato requerido. Intenta nuevamente! \n");
+                    Console.WriteLine("Ingresaste un dato no numérico. Intenta nuevamente!");
+                    Console.WriteLine("Error: " + error.Message + "\n");
                 }
             }
 

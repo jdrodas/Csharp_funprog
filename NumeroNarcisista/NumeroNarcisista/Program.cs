@@ -42,7 +42,8 @@ namespace NumeroNarcisista
                 }
                 catch (FormatException error)
                 {
-                    Console.WriteLine("Ingresaste un dato no numérico. Intenta nuevamente! \n\n");
+                    Console.WriteLine("Ingresaste un dato no numérico. Intenta nuevamente!");
+                    Console.WriteLine("Error: " + error.Message + "\n\n");
                 }
             }
 

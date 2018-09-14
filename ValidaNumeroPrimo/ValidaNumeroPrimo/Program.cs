@@ -38,6 +38,7 @@ namespace ValidaNumeroPrimo
                 catch (FormatException error)
                 {
                     Console.WriteLine("Dato no numérico. Intenta nuevamente!");
+                    Console.WriteLine("Error: " + error.Message + "\n");
                 }
             }
             while (datoCorrecto == false);

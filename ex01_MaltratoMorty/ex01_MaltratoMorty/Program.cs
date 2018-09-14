@@ -112,7 +112,8 @@ namespace ex01_MaltratoMorty
                     }
                     catch (FormatException error)
                     {
-                        Console.WriteLine("No ingresaste un valor numérico para la calificación. Intenta nuevamente! \n");
+                        Console.WriteLine("No ingresaste un valor numérico para la calificación. Intenta nuevamente!");
+                        Console.WriteLine("Error: " + error.Message + "\n");
                     }
                 }
 

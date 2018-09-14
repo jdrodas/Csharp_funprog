@@ -72,6 +72,7 @@ namespace ex01_GravityFalls
                 catch (FormatException error)
                 {
                     Console.WriteLine("Ingresaste un dato no numérico. Intenta nuevamente!");
+                    Console.WriteLine("Error: " + error.Message + "\n");
                 }
             }
 

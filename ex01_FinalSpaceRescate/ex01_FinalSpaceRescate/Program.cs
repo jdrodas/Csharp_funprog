@@ -67,6 +67,7 @@ namespace ex01_FinalSpaceRescate
                 catch (FormatException error)
                 {
                     Console.WriteLine("Ingresaste erróneamente un dato no numérico. Intenta nuevamente!");
+                    Console.WriteLine("Error: " + error.Message + "\n");
                 }
             }
 
