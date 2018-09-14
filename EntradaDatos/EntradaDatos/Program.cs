@@ -50,7 +50,8 @@ namespace EntradaDatos
             }
             catch (FormatException error) 
             {
-                Console.WriteLine("¡Ingresaste un dato que no puede convertirse a entero!\n\n");
+                Console.WriteLine("¡Ingresaste un dato que no puede convertirse a entero!");
+                Console.WriteLine("Error: " + error.Message + "\n\n");
             }
 
             //Para datos tipo float, se debe hacer conversión de string a float
@@ -66,6 +67,7 @@ namespace EntradaDatos
             catch (FormatException error)
             {
                 Console.WriteLine("¡Ingresaste un dato que no puede convertirse a float!\n\n");
+                Console.WriteLine("Error: " + error.Message + "\n\n");
             }
         }
     }

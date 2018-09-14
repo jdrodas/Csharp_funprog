@@ -60,7 +60,8 @@ namespace NumerosAmigos
                 }
                 catch (FormatException error)
                 {
-                    Console.WriteLine("El dato ingresado no está en el formato requerido. Intenta nuevamente! \n");
+                    Console.WriteLine("El dato ingresado no está en el formato requerido. Intenta nuevamente!");
+                    Console.WriteLine("Error: " + error.Message + "\n");
                 }
             }
 
@@ -93,8 +94,6 @@ namespace NumerosAmigos
 
             Console.WriteLine("La suma de los divisores de {0} es {1}", numeroA, sumaDivisoresA);
             Console.WriteLine("La suma de los divisores de {0} es {1}", numeroB, sumaDivisoresB);
-
-
         }
     }
 }
