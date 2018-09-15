@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex02_ColonizacionMarte
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+
+
 ## ex02_LiberandoWill
 - Leer valores enteros desde consola y almacenarlos en un arreglo si pertenecen a un rango
 - Calcular el porcentaje del total correspondiente a un valor. Utilización de Cast
