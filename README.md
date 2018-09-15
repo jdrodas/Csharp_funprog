@@ -4,6 +4,15 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## EjemploMatricesNotasEstudiantes
+- Demostrar la utilización de arreglos bidimensionales como parametros de funciones
+- Leer datos de consola e ingresarlos a una matriz verificando tipo de datos y rango
+
+
+## EjemploMatrices
+- Demostrar el funcionamiento básico del arreglo bidimensional (matriz)
+
+
 ## ex02_ColonizacionMarte
 - Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
 
