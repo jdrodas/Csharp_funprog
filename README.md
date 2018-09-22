@@ -4,6 +4,12 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## MatricesZoo
+-- Demostrar la utilización de matrices como estructura de datos
+-- Implementar funciones que totalicen por filas y por columnas
+-- Utilizar ciclos while y for para llenar y visualizar contenidos de la matriz
+
+
 ## EjemploMatricesNotasEstudiantes
 - Demostrar la utilización de arreglos bidimensionales como parametros de funciones
 - Leer datos de consola e ingresarlos a una matriz verificando tipo de datos y rango
