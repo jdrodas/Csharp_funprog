@@ -4,10 +4,14 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## EjemploObjetos
+- Demostrar los conceptos básicos de clase, objeto, encapsulación, métodos
+- Crear un arreglo de objetos, asignando y leyendo información para cada atributo
+
 ## MatricesZoo
--- Demostrar la utilización de matrices como estructura de datos
--- Implementar funciones que totalicen por filas y por columnas
--- Utilizar ciclos while y for para llenar y visualizar contenidos de la matriz
+- Demostrar la utilización de matrices como estructura de datos
+- Implementar funciones que totalicen por filas y por columnas
+- Utilizar ciclos while y for para llenar y visualizar contenidos de la matriz
 
 
 ## EjemploMatricesNotasEstudiantes
