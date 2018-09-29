@@ -4,9 +4,24 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## BarajaEspanola
+- Demostrar conceptos de clase objeto, encapsulación, atibutos, propiedades
+- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
+  valores establecidos para los atributos.
+- Visualizar la colección de cartas, una carta a la vez
+- Implementar un mecanismo para mezclar las cartas de manera aleatoria
+
+
+## TiendaGomitas
+- Demostrar conceptos de clase objeto, encapsulación, atibutos, propiedades
+- Crear un arreglo de objetos y pasarlo como parámetro a una función.
+- Crear un arreglo multidimensional y generar mecanismos para recorrerlo
+
+
 ## EjemploObjetos
 - Demostrar los conceptos básicos de clase, objeto, encapsulación, métodos
 - Crear un arreglo de objetos, asignando y leyendo información para cada atributo
+
 
 ## MatricesZoo
 - Demostrar la utilización de matrices como estructura de datos
