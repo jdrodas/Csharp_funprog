@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       TiendaGomitas
+Programa:       SimRadio
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Enunciado al problema:
