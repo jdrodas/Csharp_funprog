@@ -4,8 +4,12 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## SimRadio
+- Programa de introducción a las interfaces gráficas de usuario en Windows Forms
+- Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
+
 ## BarajaEspanola
-- Demostrar conceptos de clase objeto, encapsulación, atibutos, propiedades
+- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 - Crear un arreglo de objetos e inicializarlo de manera secuencial según 
   valores establecidos para los atributos.
 - Visualizar la colección de cartas, una carta a la vez
@@ -13,7 +17,7 @@ Inventario de proyectos en el repositorio:
 
 
 ## TiendaGomitas
-- Demostrar conceptos de clase objeto, encapsulación, atibutos, propiedades
+- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 - Crear un arreglo de objetos y pasarlo como parámetro a una función.
 - Crear un arreglo multidimensional y generar mecanismos para recorrerlo
 
