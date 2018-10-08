@@ -39,7 +39,9 @@
             this.BotonVmas = new System.Windows.Forms.Button();
             this.BotonVmenos = new System.Windows.Forms.Button();
             this.TrackVolumen = new System.Windows.Forms.TrackBar();
+            this.TrackFrecuencia = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.TrackVolumen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackFrecuencia)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -156,12 +158,27 @@
             this.TrackVolumen.TabIndex = 11;
             this.TrackVolumen.Scroll += new System.EventHandler(this.TrackVolumen_Scroll);
             // 
+            // TrackFrecuencia
+            // 
+            this.TrackFrecuencia.LargeChange = 10;
+            this.TrackFrecuencia.Location = new System.Drawing.Point(24, 178);
+            this.TrackFrecuencia.Maximum = 1079;
+            this.TrackFrecuencia.Minimum = 889;
+            this.TrackFrecuencia.Name = "TrackFrecuencia";
+            this.TrackFrecuencia.Size = new System.Drawing.Size(341, 45);
+            this.TrackFrecuencia.SmallChange = 10;
+            this.TrackFrecuencia.TabIndex = 12;
+            this.TrackFrecuencia.TickFrequency = 10;
+            this.TrackFrecuencia.Value = 889;
+            this.TrackFrecuencia.Scroll += new System.EventHandler(this.TrackFrecuencia_Scroll);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(595, 235);
+            this.Controls.Add(this.TrackFrecuencia);
             this.Controls.Add(this.TrackVolumen);
             this.Controls.Add(this.BotonVmenos);
             this.Controls.Add(this.BotonVmas);
@@ -178,6 +195,7 @@
             this.Text = "Simulador de Radio";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TrackVolumen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackFrecuencia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +214,7 @@
         private System.Windows.Forms.Button BotonVmas;
         private System.Windows.Forms.Button BotonVmenos;
         private System.Windows.Forms.TrackBar TrackVolumen;
+        private System.Windows.Forms.TrackBar TrackFrecuencia;
     }
 }
 

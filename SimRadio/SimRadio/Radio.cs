@@ -46,12 +46,19 @@ namespace SimRadio
             volumen = 0;
         }
 
-        //propiedades para los atributos
+        #region Propiedades para los atributos
+
+        /// <summary>
+        /// Obtiene el valor del Estado del Radio (true -> encendido, false -> apagado)
+        /// </summary>
         public bool Estado
         {
             get { return estado; }
         }
 
+        /// <summary>
+        /// Obtiene o establece el valor del volumen del radio
+        /// </summary>
         public int Volumen
         {
             get { return volumen; }
@@ -63,6 +70,9 @@ namespace SimRadio
             }
         }
 
+        /// <summary>
+        /// Obtiene o establece el valor de la frecuencia actual del radio
+        /// </summary>
         public float Frecuencia
         {
             get { return frecuencia; }
@@ -74,12 +84,13 @@ namespace SimRadio
             }
         }
 
+        #endregion
+
         //Metodos para el cambio controlado de los atributos
         //Aqui se implementan las reglas de los requerimiento
 
         /// <summary>
-        /// Cambia el estado del radio. Pasa de encendido a apagado según
-        /// sea el caso
+        /// Cambia el estado del radio. Pasa de encendido a apagado según sea el caso
         /// </summary>
         public void CambiaEstado()
         {
@@ -99,6 +110,9 @@ namespace SimRadio
                 volumen++;
         }
 
+        /// <summary>
+        /// Decrementa en una unidad el volumen solo hasta el valor mínimo de 0
+        /// </summary>
         public void DecrementaVolumen()
         {
             //baja el volumen si el volumen es mayor que 0
@@ -106,6 +120,9 @@ namespace SimRadio
                 volumen--;
         }
 
+        /// <summary>
+        /// Incrementa el valor de la frecuencia actual en 1 MHz
+        /// </summary>
         public void IncrementaFrecuencia()
         {
             //si se incrementa por encima del límite superior
@@ -116,6 +133,9 @@ namespace SimRadio
                 frecuencia++;
         }
 
+        /// <summary>
+        /// Decrementa el valor de la frecuencia actual en 1 MHz
+        /// </summary>
         public void DecrementaFrecuencia()
         {
             if (frecuencia <= 88.9f)
@@ -123,6 +143,5 @@ namespace SimRadio
             else
                 frecuencia--;
         }
-
     }
 }
