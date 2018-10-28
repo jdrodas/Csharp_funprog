@@ -4,6 +4,11 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## AhorcaditoGrafico
+- Implementación de una aplicación para adivinar una palabra de 10 letras
+- Cuenta los fallos y los aciertos y dibuja el personaje a medida que se incrementa los fallos
+- Implementación en Windows Forms con lógica del juego en clase independiente.
+
 ## SimRadio
 - Programa de introducción a las interfaces gráficas de usuario en Windows Forms
 - Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
