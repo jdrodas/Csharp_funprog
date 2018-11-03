@@ -4,13 +4,19 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex04_EncuentraParejasNumeros
+- Implementación en Windows Forms con lógica y visualización en clases independientes.
+- Implementación de una aplicación para encontrar 8 parejas de números.
+- Cuenta los intentos realizados así como las parejas encontradas.
+
+
 ## EncuentraParejasNumeros
-- Implementación de una aplicación para encontrar 8 parejas de números
-- Cuenta los intentos realizados así como las parejas encontradas
 - Implementación en Windows Forms con lógica y visualización en una sola clase.
+- Implementación de una aplicación para encontrar 8 parejas de números.
+- Cuenta los intentos realizados así como las parejas encontradas.
 
 ## AhorcaditoGrafico
-- Implementación de una aplicación para adivinar una palabra de 10 letras
+- Implementación de una aplicación para adivinar una palabra de 10 letras.
 - Cuenta los fallos y los aciertos y dibuja el personaje a medida que se incrementa los fallos
 - Implementación en Windows Forms con lógica del juego en clase independiente.
 
