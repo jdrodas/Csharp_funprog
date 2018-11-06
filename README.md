@@ -137,6 +137,9 @@ Inventario de proyectos en el repositorio:
 - Implementar función que no recibe parámetros y no retorna valor
 
 
+## ex01_DungeonCraft
+- Tema de examen 01: Condicionales y Ciclos de control. Analizador de Logros - DungeonCraft. Ejercicio resuelto.
+
 ## ex01_GravityFalls
 - Tema de examen 01: Condicionales y Ciclos de control. Gravity Falls – Gestión de la cabaña. Ejercicio resuelto.
 
