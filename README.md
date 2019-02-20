@@ -4,6 +4,11 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## AdivinaAleatorio
+- Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
+- Se utiliza control de excepciones para evitar ingresar un dato no numérico.
+- Se coloca un condicional para validar que el número se encuentre en el rango.
+
 ## ex04_EncuentraParejasNumeros
 - Implementación en Windows Forms con lógica y visualización en clases independientes.
 - Implementación de una aplicación para encontrar 8 parejas de números.
@@ -15,14 +20,17 @@ Inventario de proyectos en el repositorio:
 - Implementación de una aplicación para encontrar 8 parejas de números.
 - Cuenta los intentos realizados así como las parejas encontradas.
 
+
 ## AhorcaditoGrafico
 - Implementación de una aplicación para adivinar una palabra de 10 letras.
 - Cuenta los fallos y los aciertos y dibuja el personaje a medida que se incrementa los fallos
 - Implementación en Windows Forms con lógica del juego en clase independiente.
 
+
 ## SimRadio
 - Programa de introducción a las interfaces gráficas de usuario en Windows Forms
 - Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
+
 
 ## BarajaEspanola
 - Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
