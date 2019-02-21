@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ex01_BuenLugar
+- Tema de examen 01: Condicionales y Ciclos de control. El Buen Lugar - Evaluación de Acciones. Ejercicio resuelto.
+
+
 ## AdivinaAleatorio
 - Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
 - Se utiliza control de excepciones para evitar ingresar un dato no numérico.
