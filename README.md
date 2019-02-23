@@ -4,6 +4,10 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## CiclosAsteriscos
+- Generar patrones piramidales con asteriscos en una aplicación de consola utilizando ciclos repetitivos. 
+
+
 ## ex01_BuenLugar
 - Tema de examen 01: Condicionales y Ciclos de control. El Buen Lugar - Evaluación de Acciones. Ejercicio resuelto.
 
