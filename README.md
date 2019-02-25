@@ -4,6 +4,16 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## SumaMultiplosDe3y5
+- Resolver el ejercicio No. del Proyecto Euler (https://projecteuler.net/problem=1)
+- Encontrar la suma de los múltiplos de 3 ó 5 que son inferiores a un límite indicado
+- Implementar el control de ingreso de datos con la función TryParse()
+
+
+## CalculadoraBasica
+- Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división, utilizando el ciclo de control While, el selector múltiple "switch/case" y control de excepciones con try/catch
+
+
 ## CiclosAsteriscos
 - Generar patrones piramidales con asteriscos en una aplicación de consola utilizando ciclos repetitivos. 
 

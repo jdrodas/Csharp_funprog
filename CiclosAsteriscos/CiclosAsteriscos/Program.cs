@@ -22,7 +22,6 @@ namespace CiclosAsteriscos
             Console.WriteLine("Programa para generar patrones con asteriscos");
             
             Console.WriteLine("\nPatrón No. 1 - Ascendente a la izquierda:");
-
             //aqui implementamos con un ciclo for para recorrer las lineas
             for (cantidadLineas = 1; cantidadLineas <= 10; cantidadLineas++)
             {
