@@ -4,6 +4,13 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## SumaImparesHastaLimite
+- Hallar la suma de los números impares hasta un límite usando una función
+- Implementar el control de ingreso de datos con la función TryParse()
+
+## ValidaRango
+- Valida si un número ingresado hace parte de un rango definido por otros dos números
+
 ## ValidaBisiesto
 - Implemementa una función que valida si un año es bisiesto
 
