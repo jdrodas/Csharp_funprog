@@ -4,6 +4,9 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 Inventario de proyectos en el repositorio:
 
+## ValidaBisiesto
+- Implemementa una función que valida si un año es bisiesto
+
 ## SumaMultiplosDe3y5
 - Resolver el ejercicio No. del Proyecto Euler (https://projecteuler.net/problem=1)
 - Encontrar la suma de los múltiplos de 3 ó 5 que son inferiores a un límite indicado
