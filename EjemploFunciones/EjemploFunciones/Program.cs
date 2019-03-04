@@ -4,10 +4,11 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
 ----------
-- Generar un arreglo con valores enteros aleatorios
-- Implementar funciones que encuentre los valore menores y mayores del arreglo
-- Implementar una función que encuentre las posiciones donde está un valor
-- Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
+- Demostrar la implementación de los diferentes tipos de funciones
+- Implementar función que recibe parámetros y retorna valor
+- Implementar función que no recibe parámetros y retorna valor
+- Implementar función que recibe parámetros y no retorna valor
+- Implementar función que no recibe parámetros y no retorna valor
 */
 
 using System;
