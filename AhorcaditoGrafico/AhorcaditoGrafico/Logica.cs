@@ -50,17 +50,21 @@ namespace AhorcaditoGrafico
             "EVALUACION",
             "PROLETARIO",
             "ICOSAEDROS",
+            "CATASTROFE",
             "AHORCADITO",
             "MAMONCILLO",
+            "JESUCRISTO",
+            "CHONTADURO",
             "SERENDIPIA",
+            "MURCIELAGO",
             "SACERDOTES",
             "ADIVINARAS",
             "SABANDIJAS",
+            "PRIMAVERAL",
             "GIGANTESCO",
             "ARREPENTIR",
             "HABICHUELA",
             "ECLIPSABLE"};
-
 
         }
 
