@@ -60,6 +60,9 @@
             this.textoFrase = new System.Windows.Forms.TextBox();
             this.BotonTipoLetra = new System.Windows.Forms.Button();
             this.itemMenuTipoLetra = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemMenuAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
+            this.etiquetaPuntoInicial = new System.Windows.Forms.ToolStripStatusLabel();
+            this.etiquetaPuntoFinal = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -129,6 +132,8 @@
             // 
             // ayudaToolStripMenuItem
             // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.itemMenuAcercaDe});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
@@ -136,7 +141,9 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.etiquetaEstado});
+            this.etiquetaEstado,
+            this.etiquetaPuntoInicial,
+            this.etiquetaPuntoFinal});
             this.statusStrip1.Location = new System.Drawing.Point(0, 471);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(934, 22);
@@ -147,7 +154,7 @@
             // 
             this.etiquetaEstado.AutoSize = false;
             this.etiquetaEstado.Name = "etiquetaEstado";
-            this.etiquetaEstado.Size = new System.Drawing.Size(200, 17);
+            this.etiquetaEstado.Size = new System.Drawing.Size(250, 17);
             this.etiquetaEstado.Text = "Estado:";
             this.etiquetaEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -175,6 +182,7 @@
             this.radioLinea.TabStop = true;
             this.radioLinea.Text = "Linea";
             this.radioLinea.UseVisualStyleBackColor = true;
+            this.radioLinea.CheckedChanged += new System.EventHandler(this.radioLinea_CheckedChanged);
             // 
             // radioRectangulo
             // 
@@ -186,6 +194,7 @@
             this.radioRectangulo.TabStop = true;
             this.radioRectangulo.Text = "Rectángulo";
             this.radioRectangulo.UseVisualStyleBackColor = true;
+            this.radioRectangulo.CheckedChanged += new System.EventHandler(this.radioRectangulo_CheckedChanged);
             // 
             // radioElipse
             // 
@@ -197,6 +206,7 @@
             this.radioElipse.TabStop = true;
             this.radioElipse.Text = "Elipse";
             this.radioElipse.UseVisualStyleBackColor = true;
+            this.radioElipse.CheckedChanged += new System.EventHandler(this.radioElipse_CheckedChanged);
             // 
             // radioTexto
             // 
@@ -208,6 +218,7 @@
             this.radioTexto.TabStop = true;
             this.radioTexto.Text = "Texto";
             this.radioTexto.UseVisualStyleBackColor = true;
+            this.radioTexto.CheckedChanged += new System.EventHandler(this.radioTexto_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -307,6 +318,9 @@
             this.cuadroDibujo.Size = new System.Drawing.Size(736, 422);
             this.cuadroDibujo.TabIndex = 4;
             this.cuadroDibujo.TabStop = false;
+            this.cuadroDibujo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseDown);
+            this.cuadroDibujo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseMove);
+            this.cuadroDibujo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseUp);
             // 
             // groupBox3
             // 
@@ -341,6 +355,7 @@
             0,
             0,
             0});
+            this.selectorGrosor.ValueChanged += new System.EventHandler(this.selectorGrosor_ValueChanged);
             // 
             // label3
             // 
@@ -378,6 +393,7 @@
             this.textoFrase.Name = "textoFrase";
             this.textoFrase.Size = new System.Drawing.Size(100, 20);
             this.textoFrase.TabIndex = 1;
+            this.textoFrase.Leave += new System.EventHandler(this.textoFrase_Leave);
             // 
             // BotonTipoLetra
             // 
@@ -395,6 +411,27 @@
             this.itemMenuTipoLetra.Size = new System.Drawing.Size(190, 22);
             this.itemMenuTipoLetra.Text = "Seleccionar Tipo Letra";
             this.itemMenuTipoLetra.Click += new System.EventHandler(this.itemMenuTipoLetra_Click);
+            // 
+            // itemMenuAcercaDe
+            // 
+            this.itemMenuAcercaDe.Name = "itemMenuAcercaDe";
+            this.itemMenuAcercaDe.Size = new System.Drawing.Size(180, 22);
+            this.itemMenuAcercaDe.Text = "Acerca de";
+            this.itemMenuAcercaDe.Click += new System.EventHandler(this.itemMenuAcercaDe_Click);
+            // 
+            // etiquetaPuntoInicial
+            // 
+            this.etiquetaPuntoInicial.AutoSize = false;
+            this.etiquetaPuntoInicial.Name = "etiquetaPuntoInicial";
+            this.etiquetaPuntoInicial.Size = new System.Drawing.Size(150, 17);
+            this.etiquetaPuntoInicial.Text = "Punto Inicial: (0,0)";
+            // 
+            // etiquetaPuntoFinal
+            // 
+            this.etiquetaPuntoFinal.AutoSize = false;
+            this.etiquetaPuntoFinal.Name = "etiquetaPuntoFinal";
+            this.etiquetaPuntoFinal.Size = new System.Drawing.Size(150, 17);
+            this.etiquetaPuntoFinal.Text = "Punto Final: (0,0)";
             // 
             // Form1
             // 
@@ -469,6 +506,9 @@
         private System.Windows.Forms.TextBox textoFrase;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStripMenuItem itemMenuTipoLetra;
+        private System.Windows.Forms.ToolStripMenuItem itemMenuAcercaDe;
+        private System.Windows.Forms.ToolStripStatusLabel etiquetaPuntoInicial;
+        private System.Windows.Forms.ToolStripStatusLabel etiquetaPuntoFinal;
     }
 }
 
