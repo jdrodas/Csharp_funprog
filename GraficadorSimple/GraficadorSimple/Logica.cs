@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Media;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,7 +57,7 @@ namespace GraficadorSimple
             areaDibujo.DrawString(frase, tipoLetra, pincel, puntoInicial);
         }
 
-        public void DibujaRectangulo()
+        public void DibujaRectangulo(string tipoRelleno, string tipoGradiente)
         {
             Pen lapiz = new Pen(colorPrimario, grosorLinea);
 
@@ -66,10 +68,56 @@ namespace GraficadorSimple
                 Math.Min(PuntoFinal.X, PuntoInicial.X),
                 Math.Min(PuntoFinal.Y,PuntoInicial.Y));
 
-            areaDibujo.DrawRectangle(lapiz, puntoOrigen.X, puntoOrigen.Y, ancho, alto);
+            Rectangle miRectangulo = 
+                new Rectangle(puntoOrigen.X, puntoOrigen.Y, ancho, alto);
+
+            //Dibujamos según la opción de relleno
+            //Si el relleno es con borde - sin relleno
+            if(tipoRelleno=="borde")
+                areaDibujo.DrawRectangle(lapiz, miRectangulo);
+
+            if(tipoRelleno=="sólido")
+            {
+                Brush pincelSolido = new SolidBrush(colorSecundario);
+                areaDibujo.FillRectangle(pincelSolido, miRectangulo);
+                areaDibujo.DrawRectangle(lapiz, miRectangulo);
+            }
+
+            if (tipoRelleno == "gradiente")
+            {
+                if(tipoGradiente=="Horizontal")
+                { 
+                   Brush pincelGradiente= new LinearGradientBrush(miRectangulo,
+                                            colorPrimario,
+                                            colorSecundario,
+                                            LinearGradientMode.Horizontal);
+
+                    areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
+                }
+
+                if (tipoGradiente == "Vertical")
+                {
+                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.Vertical);
+
+                    areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
+                }
+
+                if (tipoGradiente == "Diagonal")
+                {
+                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.BackwardDiagonal);
+
+                    areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
+                }
+            }
         }
 
-        public void DibujaElipse()
+        public void DibujaElipse(string tipoRelleno, string tipoGradiente)
         {
             Pen lapiz = new Pen(colorPrimario, grosorLinea);
 
@@ -80,7 +128,53 @@ namespace GraficadorSimple
                 Math.Min(PuntoFinal.X, PuntoInicial.X),
                 Math.Min(PuntoFinal.Y, PuntoInicial.Y));
 
-            areaDibujo.DrawEllipse(lapiz, puntoOrigen.X, puntoOrigen.Y, ancho, alto);
+            Rectangle miRectangulo =
+                new Rectangle(puntoOrigen.X, puntoOrigen.Y, ancho, alto);
+
+            //Dibujamos según la opción de relleno
+            //Si el relleno es con borde - sin relleno
+            if (tipoRelleno == "borde")
+                areaDibujo.DrawEllipse(lapiz, miRectangulo);
+
+            if (tipoRelleno == "sólido")
+            {
+                Brush pincelSolido = new SolidBrush(colorSecundario);
+                areaDibujo.FillEllipse(pincelSolido, miRectangulo);
+                areaDibujo.DrawEllipse(lapiz, miRectangulo);
+            }
+
+            if (tipoRelleno == "gradiente")
+            {
+                if (tipoGradiente == "Horizontal")
+                {
+                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.Horizontal);
+
+                    areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
+                }
+
+                if (tipoGradiente == "Vertical")
+                {
+                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.Vertical);
+
+                    areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
+                }
+
+                if (tipoGradiente == "Diagonal")
+                {
+                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.BackwardDiagonal);
+
+                    areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
+                }
+            }
         }
 
         public Bitmap ImagenDibujo
@@ -114,6 +208,7 @@ namespace GraficadorSimple
         public int GrosorLinea
         {
             set { grosorLinea = value; }
+            get { return grosorLinea; }
         }
 
         public Color ColorSecundario

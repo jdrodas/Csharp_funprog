@@ -43,9 +43,15 @@ namespace GraficadorSimple
             textoFrase.Text = "";
             etiquetaEstado.Text = "Aplicación inicializada.";
             radioLinea.Checked = true;
+            radioRellenoBorde.Checked = true;
+
+            //ocultamos la lista de rellenos gradientes
+            listaGradientes.Visible = false;
+            listaGradientes.SelectedIndex = 0;
 
             cuadroColorPrimario.BackColor = Color.Black;
             cuadroColorSecundario.BackColor = Color.White;
+            selectorGrosor.Value = logicaDibujo.GrosorLinea;
 
             cuadroDibujo.Image = logicaDibujo.ImagenDibujo;
             etiquetaPuntoInicial.Text = "Punto inicial:";
@@ -213,15 +219,47 @@ namespace GraficadorSimple
                 logicaDibujo.PuntoFinal.X + "," +
                 logicaDibujo.PuntoFinal.Y + ")";
 
+            string tipoRelleno = "";
+            string tipoGradiente = "";
+
+            //Indicamos el tipo de relleno que se quiere
+            if (radioRellenoBorde.Checked)
+                tipoRelleno = "borde";
+
+            if (radioRellenoSolido.Checked)
+                tipoRelleno = "sólido";
+
+            if (radioRellenoGradiente.Checked)
+            { 
+                tipoRelleno = "gradiente";
+
+                switch (listaGradientes.SelectedIndex)
+                {
+                    case 0:
+                        tipoGradiente = "Horizontal";
+                        break;
+
+                    case 1:
+                        tipoGradiente = "Vertical";
+                        break;
+
+                    case 2:
+                        tipoGradiente = "Diagonal";
+                        break;
+                }
+
+                
+            }
+
             //aqui se dibuja una linea
             if (radioLinea.Checked)
                 logicaDibujo.DibujaLinea();
 
             if (radioRectangulo.Checked)
-                logicaDibujo.DibujaRectangulo();
+                logicaDibujo.DibujaRectangulo(tipoRelleno,tipoGradiente);
 
             if (radioElipse.Checked)
-                logicaDibujo.DibujaElipse();
+                logicaDibujo.DibujaElipse(tipoRelleno, tipoGradiente);
 
             if (radioTexto.Checked)
                 logicaDibujo.DibujaFrase();
@@ -238,6 +276,14 @@ namespace GraficadorSimple
                     e.X + "," +
                     e.Y + ")";
             }
+        }
+
+        private void radioRellenoGradiente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioRellenoGradiente.Checked == true)
+                listaGradientes.Visible = true;
+            else
+                listaGradientes.Visible = false;
         }
     }
 }
