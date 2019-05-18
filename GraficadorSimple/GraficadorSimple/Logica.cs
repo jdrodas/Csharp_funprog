@@ -140,7 +140,7 @@ namespace GraficadorSimple
             {
                 Brush pincelSolido = new SolidBrush(colorSecundario);
                 areaDibujo.FillEllipse(pincelSolido, miRectangulo);
-                areaDibujo.DrawEllipse(lapiz, miRectangulo);
+                areaDibujo.DrawEllipse(lapiz, miRectangulo);                
             }
 
             if (tipoRelleno == "gradiente")

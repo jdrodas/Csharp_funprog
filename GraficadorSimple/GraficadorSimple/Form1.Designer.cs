@@ -64,10 +64,10 @@
             this.textoFrase = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioRellenoBorde = new System.Windows.Forms.RadioButton();
-            this.radioRellenoSolido = new System.Windows.Forms.RadioButton();
-            this.radioRellenoGradiente = new System.Windows.Forms.RadioButton();
             this.listaGradientes = new System.Windows.Forms.ListBox();
+            this.radioRellenoGradiente = new System.Windows.Forms.RadioButton();
+            this.radioRellenoSolido = new System.Windows.Forms.RadioButton();
+            this.radioRellenoBorde = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -107,7 +107,7 @@
             // 
             this.itemMenuNuevo.Name = "itemMenuNuevo";
             this.itemMenuNuevo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.itemMenuNuevo.Size = new System.Drawing.Size(158, 22);
+            this.itemMenuNuevo.Size = new System.Drawing.Size(180, 22);
             this.itemMenuNuevo.Text = "Nuevo";
             this.itemMenuNuevo.Click += new System.EventHandler(this.itemMenuNuevo_Click);
             // 
@@ -115,15 +115,16 @@
             // 
             this.itemMenuGuardar.Name = "itemMenuGuardar";
             this.itemMenuGuardar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.itemMenuGuardar.Size = new System.Drawing.Size(158, 22);
+            this.itemMenuGuardar.Size = new System.Drawing.Size(180, 22);
             this.itemMenuGuardar.Text = "Guardar";
+            this.itemMenuGuardar.Click += new System.EventHandler(this.itemMenuGuardar_Click);
             // 
             // itemMenuSalir
             // 
             this.itemMenuSalir.Name = "itemMenuSalir";
             this.itemMenuSalir.ShortcutKeyDisplayString = "";
             this.itemMenuSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.itemMenuSalir.Size = new System.Drawing.Size(158, 22);
+            this.itemMenuSalir.Size = new System.Drawing.Size(180, 22);
             this.itemMenuSalir.Text = "Salir";
             this.itemMenuSalir.Click += new System.EventHandler(this.itemMenuSalir_Click);
             // 
@@ -201,7 +202,7 @@
             // 
             this.etiquetaEstado.AutoSize = false;
             this.etiquetaEstado.Name = "etiquetaEstado";
-            this.etiquetaEstado.Size = new System.Drawing.Size(250, 17);
+            this.etiquetaEstado.Size = new System.Drawing.Size(450, 17);
             this.etiquetaEstado.Text = "Estado:";
             this.etiquetaEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -452,27 +453,17 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Estilo de relleno";
             // 
-            // radioRellenoBorde
+            // listaGradientes
             // 
-            this.radioRellenoBorde.AutoSize = true;
-            this.radioRellenoBorde.Location = new System.Drawing.Point(15, 32);
-            this.radioRellenoBorde.Name = "radioRellenoBorde";
-            this.radioRellenoBorde.Size = new System.Drawing.Size(74, 17);
-            this.radioRellenoBorde.TabIndex = 0;
-            this.radioRellenoBorde.TabStop = true;
-            this.radioRellenoBorde.Text = "Sin relleno";
-            this.radioRellenoBorde.UseVisualStyleBackColor = true;
-            // 
-            // radioRellenoSolido
-            // 
-            this.radioRellenoSolido.AutoSize = true;
-            this.radioRellenoSolido.Location = new System.Drawing.Point(15, 56);
-            this.radioRellenoSolido.Name = "radioRellenoSolido";
-            this.radioRellenoSolido.Size = new System.Drawing.Size(93, 17);
-            this.radioRellenoSolido.TabIndex = 1;
-            this.radioRellenoSolido.TabStop = true;
-            this.radioRellenoSolido.Text = "Relleno Sólido";
-            this.radioRellenoSolido.UseVisualStyleBackColor = true;
+            this.listaGradientes.FormattingEnabled = true;
+            this.listaGradientes.Items.AddRange(new object[] {
+            "Horizontal",
+            "Vertical",
+            "Diagonal"});
+            this.listaGradientes.Location = new System.Drawing.Point(48, 103);
+            this.listaGradientes.Name = "listaGradientes";
+            this.listaGradientes.Size = new System.Drawing.Size(105, 30);
+            this.listaGradientes.TabIndex = 3;
             // 
             // radioRellenoGradiente
             // 
@@ -486,17 +477,27 @@
             this.radioRellenoGradiente.UseVisualStyleBackColor = true;
             this.radioRellenoGradiente.CheckedChanged += new System.EventHandler(this.radioRellenoGradiente_CheckedChanged);
             // 
-            // listaGradientes
+            // radioRellenoSolido
             // 
-            this.listaGradientes.FormattingEnabled = true;
-            this.listaGradientes.Items.AddRange(new object[] {
-            "Horizontal",
-            "Vertical",
-            "Diagonal"});
-            this.listaGradientes.Location = new System.Drawing.Point(48, 103);
-            this.listaGradientes.Name = "listaGradientes";
-            this.listaGradientes.Size = new System.Drawing.Size(105, 30);
-            this.listaGradientes.TabIndex = 3;
+            this.radioRellenoSolido.AutoSize = true;
+            this.radioRellenoSolido.Location = new System.Drawing.Point(15, 56);
+            this.radioRellenoSolido.Name = "radioRellenoSolido";
+            this.radioRellenoSolido.Size = new System.Drawing.Size(93, 17);
+            this.radioRellenoSolido.TabIndex = 1;
+            this.radioRellenoSolido.TabStop = true;
+            this.radioRellenoSolido.Text = "Relleno Sólido";
+            this.radioRellenoSolido.UseVisualStyleBackColor = true;
+            // 
+            // radioRellenoBorde
+            // 
+            this.radioRellenoBorde.AutoSize = true;
+            this.radioRellenoBorde.Location = new System.Drawing.Point(15, 32);
+            this.radioRellenoBorde.Name = "radioRellenoBorde";
+            this.radioRellenoBorde.Size = new System.Drawing.Size(74, 17);
+            this.radioRellenoBorde.TabIndex = 0;
+            this.radioRellenoBorde.TabStop = true;
+            this.radioRellenoBorde.Text = "Sin relleno";
+            this.radioRellenoBorde.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

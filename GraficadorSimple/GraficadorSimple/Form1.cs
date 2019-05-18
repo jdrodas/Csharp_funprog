@@ -285,5 +285,20 @@ namespace GraficadorSimple
             else
                 listaGradientes.Visible = false;
         }
+
+        private void itemMenuGuardar_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog miDialogo = new SaveFileDialog();
+            miDialogo.Filter = "Imagen JPG (*.jpg)|*.jpg;*.jpeg | " +
+                                "Imagen PNG (*.png)|*.png |" +
+                                "Imagen BMP (*.bmp)|*.bmp |" +
+                               "Todos los archivos (*.*)| *.*";
+
+            if (miDialogo.ShowDialog() == DialogResult.OK)
+            {
+                etiquetaEstado.Text = "Archivo guardado en " + miDialogo.FileName;
+                logicaDibujo.ImagenDibujo.Save(miDialogo.FileName);
+            }
+        }
     }
 }
