@@ -49,6 +49,10 @@ namespace GraficadorSimple
             listaGradientes.Visible = false;
             listaGradientes.SelectedIndex = 0;
 
+            //ocultamos los parametros para el dibujo de polígono
+            selectorNumeroLados.Visible = false;
+            etiquetaLados.Visible = false;
+
             cuadroColorPrimario.BackColor = Color.Black;
             cuadroColorSecundario.BackColor = Color.White;
             selectorGrosor.Value = logicaDibujo.GrosorLinea;
@@ -255,14 +259,21 @@ namespace GraficadorSimple
             if (radioLinea.Checked)
                 logicaDibujo.DibujaLinea();
 
+            //aqui se dibuja un rectángulo
             if (radioRectangulo.Checked)
                 logicaDibujo.DibujaRectangulo(tipoRelleno,tipoGradiente);
 
+            //aqui se dibuja una elipse
             if (radioElipse.Checked)
                 logicaDibujo.DibujaElipse(tipoRelleno, tipoGradiente);
 
+            //aqui se dibuja un texto
             if (radioTexto.Checked)
                 logicaDibujo.DibujaFrase();
+
+            //aqui se dibuja un poligono
+            if (radioPoligono.Checked)
+                logicaDibujo.DibujaPoligono(tipoRelleno, tipoGradiente);
 
             //finalmente actualizamos la imagen en el cuadro
             cuadroDibujo.Image = logicaDibujo.ImagenDibujo;
@@ -299,6 +310,27 @@ namespace GraficadorSimple
                 etiquetaEstado.Text = "Archivo guardado en " + miDialogo.FileName;
                 logicaDibujo.ImagenDibujo.Save(miDialogo.FileName);
             }
+        }
+
+        private void radioPoligono_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioPoligono.Checked == true)
+            {
+                selectorNumeroLados.Visible = true;
+                etiquetaLados.Visible = true;
+            }
+            else
+            {
+                selectorNumeroLados.Visible = false;
+                etiquetaLados.Visible = false;
+            }
+
+        }
+
+        private void selectorNumeroLados_ValueChanged(object sender, EventArgs e)
+        {
+            logicaDibujo.LadosPoligono = (int)selectorNumeroLados.Value;
+            etiquetaEstado.Text = "Lados de polígono seleccionados: " + logicaDibujo.LadosPoligono;
         }
     }
 }

@@ -13,6 +13,7 @@ namespace GraficadorSimple
     {
         private Color colorPrimario, colorSecundario;
         private int grosorLinea;
+        private int ladosPoligono;
         private Font tipoLetra;
         private string frase;
         private Point puntoInicial, puntoFinal;
@@ -30,6 +31,8 @@ namespace GraficadorSimple
             colorSecundario = Color.White;
 
             grosorLinea = 1;
+            ladosPoligono = 3; // mínimo número de lados
+
             tipoLetra = new Font("Arial", 12, FontStyle.Regular);
             frase = "";
 
@@ -145,35 +148,113 @@ namespace GraficadorSimple
 
             if (tipoRelleno == "gradiente")
             {
+                Brush pincelGradiente = new SolidBrush(colorSecundario);
+
                 if (tipoGradiente == "Horizontal")
                 {
-                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
                                              colorPrimario,
                                              colorSecundario,
                                              LinearGradientMode.Horizontal);
-
-                    areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
                 }
 
                 if (tipoGradiente == "Vertical")
                 {
-                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
                                              colorPrimario,
                                              colorSecundario,
                                              LinearGradientMode.Vertical);
-
-                    areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
                 }
 
                 if (tipoGradiente == "Diagonal")
                 {
-                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
                                              colorPrimario,
                                              colorSecundario,
                                              LinearGradientMode.BackwardDiagonal);
-
-                    areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
                 }
+
+                areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
+            }
+        }
+
+        public void DibujaPoligono(string tipoRelleno, string tipoGradiente)
+        {
+
+            //calculamos el area que contendrá el polígono
+            int ancho = Math.Abs(PuntoFinal.X - PuntoInicial.X);
+            int alto = Math.Abs(PuntoFinal.Y - PuntoInicial.Y);
+
+            // encontramos el punto origen para el rectángulo que contendrá el relleno
+            Point puntoOrigen = new Point(
+                Math.Min(PuntoFinal.X, PuntoInicial.X),
+                Math.Min(PuntoFinal.Y, PuntoInicial.Y));
+
+            //El centro del polígono
+            Point puntoCentral = new Point(puntoOrigen.X + (int)(ancho / 2),
+                                           puntoOrigen.Y + (int)(alto / 2));
+
+            // El radio del polígono, la mitad del menor de los semiejes de la elipse que lo contiene
+            int radio = (int)(Math.Min(ancho, alto) / 2);
+
+            //Aqui calculamos los vertices, tantos como lados del polígono
+            Point[] vertices = new Point[ladosPoligono];
+
+            //esta es la separación en radianes de los vertices sobre la circunferencia que inscribe el polígono
+            double arco = (2 * Math.PI / ladosPoligono);
+
+            for (int i = 0; i < vertices.Length; i++)
+            {
+                vertices[i] = new Point();
+                vertices[i].X = (int)(Math.Cos(arco * i) * radio + puntoCentral.X);
+                vertices[i].Y = (int)(Math.Sin(-arco * i) * radio + puntoCentral.Y);
+            }
+
+            Pen lapiz = new Pen(colorPrimario, grosorLinea);
+
+            //Dibujamos según la opción de relleno
+            //Si el relleno es con borde - sin relleno
+            if (tipoRelleno == "borde")
+                areaDibujo.DrawPolygon(lapiz, vertices);
+
+            if (tipoRelleno == "sólido")
+            {
+                Brush pincelSolido = new SolidBrush(colorSecundario);
+                areaDibujo.FillPolygon(pincelSolido, vertices);
+                areaDibujo.DrawPolygon(lapiz, vertices);
+            }
+
+            if (tipoRelleno == "gradiente")
+            {
+                // Se define un rectángulo que define el contenido del relleno
+                Rectangle miRectangulo = new Rectangle(puntoOrigen.X, puntoOrigen.Y, ancho, alto);
+                Brush pincelGradiente = new SolidBrush(colorSecundario);
+
+                if (tipoGradiente == "Horizontal")
+                {
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.Horizontal);   
+                }
+
+                if (tipoGradiente == "Vertical")
+                {
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.Vertical);
+                }
+
+                if (tipoGradiente == "Diagonal")
+                {
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.BackwardDiagonal);
+                }
+
+                areaDibujo.FillPolygon(pincelGradiente, vertices);
             }
         }
 
@@ -192,6 +273,12 @@ namespace GraficadorSimple
         {
             set { puntoFinal = value; }
             get { return puntoFinal; }
+        }
+
+        public int LadosPoligono
+        {
+            set { ladosPoligono = value; }
+            get { return ladosPoligono; }
         }
 
         public string Frase

@@ -68,6 +68,9 @@
             this.radioRellenoGradiente = new System.Windows.Forms.RadioButton();
             this.radioRellenoSolido = new System.Windows.Forms.RadioButton();
             this.radioRellenoBorde = new System.Windows.Forms.RadioButton();
+            this.radioPoligono = new System.Windows.Forms.RadioButton();
+            this.selectorNumeroLados = new System.Windows.Forms.NumericUpDown();
+            this.etiquetaLados = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -79,6 +82,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.selectorGrosor)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -107,7 +111,7 @@
             // 
             this.itemMenuNuevo.Name = "itemMenuNuevo";
             this.itemMenuNuevo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.itemMenuNuevo.Size = new System.Drawing.Size(180, 22);
+            this.itemMenuNuevo.Size = new System.Drawing.Size(158, 22);
             this.itemMenuNuevo.Text = "Nuevo";
             this.itemMenuNuevo.Click += new System.EventHandler(this.itemMenuNuevo_Click);
             // 
@@ -115,7 +119,7 @@
             // 
             this.itemMenuGuardar.Name = "itemMenuGuardar";
             this.itemMenuGuardar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.itemMenuGuardar.Size = new System.Drawing.Size(180, 22);
+            this.itemMenuGuardar.Size = new System.Drawing.Size(158, 22);
             this.itemMenuGuardar.Text = "Guardar";
             this.itemMenuGuardar.Click += new System.EventHandler(this.itemMenuGuardar_Click);
             // 
@@ -124,7 +128,7 @@
             this.itemMenuSalir.Name = "itemMenuSalir";
             this.itemMenuSalir.ShortcutKeyDisplayString = "";
             this.itemMenuSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.itemMenuSalir.Size = new System.Drawing.Size(180, 22);
+            this.itemMenuSalir.Size = new System.Drawing.Size(158, 22);
             this.itemMenuSalir.Text = "Salir";
             this.itemMenuSalir.Click += new System.EventHandler(this.itemMenuSalir_Click);
             // 
@@ -192,7 +196,7 @@
             this.etiquetaEstado,
             this.etiquetaPuntoInicial,
             this.etiquetaPuntoFinal});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 619);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 639);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(934, 22);
             this.statusStrip1.TabIndex = 1;
@@ -222,13 +226,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.etiquetaLados);
+            this.groupBox1.Controls.Add(this.selectorNumeroLados);
+            this.groupBox1.Controls.Add(this.radioPoligono);
             this.groupBox1.Controls.Add(this.radioTexto);
             this.groupBox1.Controls.Add(this.radioLinea);
             this.groupBox1.Controls.Add(this.radioElipse);
             this.groupBox1.Controls.Add(this.radioRectangulo);
             this.groupBox1.Location = new System.Drawing.Point(12, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(159, 123);
+            this.groupBox1.Size = new System.Drawing.Size(159, 154);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Herramientas";
@@ -236,7 +243,7 @@
             // radioTexto
             // 
             this.radioTexto.AutoSize = true;
-            this.radioTexto.Location = new System.Drawing.Point(6, 88);
+            this.radioTexto.Location = new System.Drawing.Point(6, 40);
             this.radioTexto.Name = "radioTexto";
             this.radioTexto.Size = new System.Drawing.Size(52, 17);
             this.radioTexto.TabIndex = 5;
@@ -249,7 +256,7 @@
             // 
             this.radioLinea.AutoSize = true;
             this.radioLinea.Checked = true;
-            this.radioLinea.Location = new System.Drawing.Point(6, 19);
+            this.radioLinea.Location = new System.Drawing.Point(6, 20);
             this.radioLinea.Name = "radioLinea";
             this.radioLinea.Size = new System.Drawing.Size(51, 17);
             this.radioLinea.TabIndex = 3;
@@ -261,7 +268,7 @@
             // radioElipse
             // 
             this.radioElipse.AutoSize = true;
-            this.radioElipse.Location = new System.Drawing.Point(6, 65);
+            this.radioElipse.Location = new System.Drawing.Point(6, 80);
             this.radioElipse.Name = "radioElipse";
             this.radioElipse.Size = new System.Drawing.Size(53, 17);
             this.radioElipse.TabIndex = 4;
@@ -273,7 +280,7 @@
             // radioRectangulo
             // 
             this.radioRectangulo.AutoSize = true;
-            this.radioRectangulo.Location = new System.Drawing.Point(6, 42);
+            this.radioRectangulo.Location = new System.Drawing.Point(6, 60);
             this.radioRectangulo.Name = "radioRectangulo";
             this.radioRectangulo.Size = new System.Drawing.Size(80, 17);
             this.radioRectangulo.TabIndex = 3;
@@ -289,7 +296,7 @@
             this.groupBox2.Controls.Add(this.cuadroColorSecundario);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.cuadroColorPrimario);
-            this.groupBox2.Location = new System.Drawing.Point(12, 165);
+            this.groupBox2.Location = new System.Drawing.Point(12, 194);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(159, 106);
             this.groupBox2.TabIndex = 3;
@@ -350,7 +357,7 @@
             this.cuadroDibujo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.cuadroDibujo.Location = new System.Drawing.Point(186, 45);
             this.cuadroDibujo.Name = "cuadroDibujo";
-            this.cuadroDibujo.Size = new System.Drawing.Size(736, 571);
+            this.cuadroDibujo.Size = new System.Drawing.Size(736, 582);
             this.cuadroDibujo.TabIndex = 4;
             this.cuadroDibujo.TabStop = false;
             this.cuadroDibujo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseDown);
@@ -361,7 +368,7 @@
             // 
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.selectorGrosor);
-            this.groupBox3.Location = new System.Drawing.Point(12, 277);
+            this.groupBox3.Location = new System.Drawing.Point(12, 306);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(159, 60);
             this.groupBox3.TabIndex = 5;
@@ -406,7 +413,7 @@
             this.groupBox4.Controls.Add(this.BotonTipoLetra);
             this.groupBox4.Controls.Add(this.textoFrase);
             this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(12, 490);
+            this.groupBox4.Location = new System.Drawing.Point(12, 517);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(159, 110);
             this.groupBox4.TabIndex = 6;
@@ -446,7 +453,7 @@
             this.groupBox5.Controls.Add(this.radioRellenoGradiente);
             this.groupBox5.Controls.Add(this.radioRellenoSolido);
             this.groupBox5.Controls.Add(this.radioRellenoBorde);
-            this.groupBox5.Location = new System.Drawing.Point(12, 344);
+            this.groupBox5.Location = new System.Drawing.Point(12, 372);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(159, 140);
             this.groupBox5.TabIndex = 7;
@@ -499,11 +506,56 @@
             this.radioRellenoBorde.Text = "Sin relleno";
             this.radioRellenoBorde.UseVisualStyleBackColor = true;
             // 
+            // radioPoligono
+            // 
+            this.radioPoligono.AutoSize = true;
+            this.radioPoligono.Location = new System.Drawing.Point(6, 100);
+            this.radioPoligono.Name = "radioPoligono";
+            this.radioPoligono.Size = new System.Drawing.Size(66, 17);
+            this.radioPoligono.TabIndex = 6;
+            this.radioPoligono.TabStop = true;
+            this.radioPoligono.Text = "Poligono";
+            this.radioPoligono.UseVisualStyleBackColor = true;
+            this.radioPoligono.CheckedChanged += new System.EventHandler(this.radioPoligono_CheckedChanged);
+            // 
+            // selectorNumeroLados
+            // 
+            this.selectorNumeroLados.Location = new System.Drawing.Point(93, 119);
+            this.selectorNumeroLados.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.selectorNumeroLados.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.selectorNumeroLados.Name = "selectorNumeroLados";
+            this.selectorNumeroLados.Size = new System.Drawing.Size(44, 20);
+            this.selectorNumeroLados.TabIndex = 2;
+            this.selectorNumeroLados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.selectorNumeroLados.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.selectorNumeroLados.ValueChanged += new System.EventHandler(this.selectorNumeroLados_ValueChanged);
+            // 
+            // etiquetaLados
+            // 
+            this.etiquetaLados.AutoSize = true;
+            this.etiquetaLados.Location = new System.Drawing.Point(52, 121);
+            this.etiquetaLados.Name = "etiquetaLados";
+            this.etiquetaLados.Size = new System.Drawing.Size(39, 13);
+            this.etiquetaLados.TabIndex = 2;
+            this.etiquetaLados.Text = "Lados:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 641);
+            this.ClientSize = new System.Drawing.Size(934, 661);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -536,6 +588,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,6 +636,9 @@
         private System.Windows.Forms.RadioButton radioRellenoSolido;
         private System.Windows.Forms.RadioButton radioRellenoBorde;
         private System.Windows.Forms.ListBox listaGradientes;
+        private System.Windows.Forms.Label etiquetaLados;
+        private System.Windows.Forms.NumericUpDown selectorNumeroLados;
+        private System.Windows.Forms.RadioButton radioPoligono;
     }
 }
 
