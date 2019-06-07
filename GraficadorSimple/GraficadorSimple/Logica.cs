@@ -43,9 +43,7 @@ namespace GraficadorSimple
             areaDibujo = Graphics.FromImage(imagenDibujo);
 
             //aqui le colocamos fondo blanco al area de dibujo
-            Brush pincel = new SolidBrush(Color.White);
-
-            areaDibujo.FillRectangle(pincel, 0, 0, anchoImagen, altoImagen);
+            areaDibujo.Clear(Color.White);
         }
 
         public void DibujaLinea()
