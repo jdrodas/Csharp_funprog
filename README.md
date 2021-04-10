@@ -160,6 +160,15 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 >>- Visualizar la colección de cartas, una carta a la vez
 >>- Implementar un mecanismo para mezclar las cartas de manera aleatoria
 
+>>### [MaquinaExpendedoraComida](https://github.com/jdrodas/Csharp_funprog/tree/master/MaquinaExpendedoraComida)
+>>- Demostrar conceptos de clase, objeto, encapsulación, propiedades
+>>- Crear un objeto "MaquinaVenta" que contiene un arreglo de "Ubicacion"
+>>- Implementar funciones para inicializar ubicaciones, validar y acceder a ellas
+>>- Implementar algoritmo para abastecer las ubicaciones con productos
+>>- Visualizar cuales de las posiciones tienen productos abastecidos
+>>- Implementar algoritmo para realizar venta de producto.
+>>- Visualizar cuanto vendió y cuantos productos se vendieron
+
 >>### [VentaEmpanadas](https://github.com/jdrodas/Csharp_funprog/tree/master/VentaEmpanadas)
 >>- Demostrar conceptos de clase, objeto, encapsulación, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
