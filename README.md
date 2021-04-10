@@ -154,12 +154,18 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 >>- Crear un arreglo multidimensional y generar mecanismos para recorrerlo
 
 >>### BarajaEspanola
->>- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
+>>- Demostrar conceptos de clase, objeto, encapsulación, atributos, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
   valores establecidos para los atributos.
 >>- Visualizar la colección de cartas, una carta a la vez
 >>- Implementar un mecanismo para mezclar las cartas de manera aleatoria
 
+>>### [VentaEmpanadas](https://github.com/jdrodas/Csharp_funprog/tree/master/VentaEmpanadas)
+>>- Demostrar conceptos de clase, objeto, encapsulación, propiedades
+>>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
+  valores establecidos para los atributos.
+>>- Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
+    y se visualice los subtotales.
 
 
 ### 6. Interfaces Graficas con Windows Forms
