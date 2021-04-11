@@ -19,42 +19,42 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 
 ### 2. Condicionales y ciclos de control
 
->>### EjemploCondicionales
+>### [EjemploCondicionales](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCondicionales)
 >>- Demostrar el funcionamiento de los condicionales utilizando operadores relacionales, operadores de igualdad y operadores lógicos.
 
->>### EjemploCiclosControl
+>### [EjemploCiclosControl](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCiclosControl)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
 
->>### MultiplosTres
+>### [MultiplosTres](https://github.com/jdrodas/Csharp_funprog/tree/master/MultiplosTres)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando una aplicación que visualice los múltiplos de tres hasta un número límite. Se hace con los ciclos While, Do-while y For.
 
->>### TablaMultiplicar
+>### [TablaMultiplicar](https://github.com/jdrodas/Csharp_funprog/tree/master/TablaMultiplicar)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando la visualización de la tabla de multiplicar de un número. Se hace con los ciclos While, Do-while y For.
 
->>### ClasificaNumeros
+>### [ClasificaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaNumeros)
 >>- Demostrar la característica específica del ciclo do-while al momento de evaluar la condición. Utilización del concepto de variable "bandera".
 
->>### NumeroNarcisista
+>### [NumeroNarcisista](https://github.com/jdrodas/Csharp_funprog/tree/master/NumeroNarcisista)
 >>- Identificar si un número entero de tres cifras es narcisista
 
->>### NumerosAmigos
+>### [NumerosAmigos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosAmigos)
 >>- Identificar si dos números enteros positivos son amigos
 
->>### NumerosDeficientes
+>### [NumerosDeficientes](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosDeficientes)
 >>- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
 
->>### NumerosPerfectos
+>### [NumerosPerfectos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosPerfectos)
 >>- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
 
->>### SumaMultiplosDe3y5
+>### [SumaMultiplosDe3y5](https://github.com/jdrodas/Csharp_funprog/tree/master/SumaMultiplosDe3y5)
 >>- Resolver el ejercicio No. del Proyecto Euler (https://projecteuler.net/problem=1)
 >>- Encontrar la suma de los múltiplos de 3 ó 5 que son inferiores a un límite indicado
 >>- Implementar el control de ingreso de datos con la función TryParse()
 
->>### CiclosAsteriscos
+>### [CiclosAsteriscos](https://github.com/jdrodas/Csharp_funprog/tree/master/CiclosAsteriscos)
 >>- Generar patrones piramidales con asteriscos en una aplicación de consola utilizando ciclos repetitivos. 
 
->>### AdivinaAleatorio
+>### [AdivinaAleatorio](https://github.com/jdrodas/Csharp_funprog/tree/master/AdivinaAleatorio)
 >>- Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
 >>- Se utiliza control de excepciones para evitar ingresar un dato no numérico.
 >>- Se coloca un condicional para validar que el número se encuentre en el rango.

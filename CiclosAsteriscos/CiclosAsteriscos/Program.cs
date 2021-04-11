@@ -8,7 +8,6 @@ Propósito:
   utilizando ciclos repetitivos. 
 
  */
-
 using System;
 
 namespace CiclosAsteriscos
@@ -20,18 +19,17 @@ namespace CiclosAsteriscos
             int cantidadLineas, totalAsteriscos, totalEspacios;
 
             Console.WriteLine("Programa para generar patrones con asteriscos");
-            
+
             Console.WriteLine("\nPatrón No. 1 - Ascendente a la izquierda:");
             //aqui implementamos con un ciclo for para recorrer las lineas
             for (cantidadLineas = 1; cantidadLineas <= 10; cantidadLineas++)
             {
                 //aqui implementamos con un ciclo for para recorrer los asteriscos
-                for (totalAsteriscos = 1;totalAsteriscos<= cantidadLineas; totalAsteriscos++)
+                for (totalAsteriscos = 1; totalAsteriscos <= cantidadLineas; totalAsteriscos++)
                     Console.Write("*");
 
                 Console.WriteLine();
             }
-
 
             Console.WriteLine("\nPatrón No. 2 - Descendente a la izquierda:");
             //aqui implementamos con un ciclo for para recorrer las lineas
@@ -43,8 +41,8 @@ namespace CiclosAsteriscos
 
                 Console.WriteLine();
             }
-            
-            Console.WriteLine("\nPatrón No. 3 - Descendente a la izquierda:");
+
+            Console.WriteLine("\nPatrón No. 3 - Descendente a la derecha:");
             //aqui implementamos con un ciclo for para recorrer las lineas
             for (cantidadLineas = 10; cantidadLineas >= 1; cantidadLineas--)
             {
@@ -60,7 +58,7 @@ namespace CiclosAsteriscos
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nPatrón No. 4 - Descendente a la derecha:");
+            Console.WriteLine("\nPatrón No. 4 - ascendente a la derecha:");
             //aqui implementamos con un ciclo for para recorrer las lineas
             for (cantidadLineas = 1; cantidadLineas <= 10; cantidadLineas++)
             {
@@ -75,6 +73,7 @@ namespace CiclosAsteriscos
 
                 Console.WriteLine();
             }
+
         }
     }
 }
