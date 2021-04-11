@@ -153,7 +153,7 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 >>- Crear un arreglo de objetos y pasarlo como parámetro a una función.
 >>- Crear un arreglo multidimensional y generar mecanismos para recorrerlo
 
->>### BarajaEspanola
+>>### [BarajaEspanola](https://github.com/jdrodas/Csharp_funprog/tree/master/BarajaEspanola)
 >>- Demostrar conceptos de clase, objeto, encapsulación, atributos, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
   valores establecidos para los atributos.

@@ -60,6 +60,8 @@ namespace BarajaEspanola
             Console.WriteLine("Baraja inicializada!\n\n");
             int numeroCarta = 1;
 
+
+            //Aqui podemos consultar que carta hay en una posición
             do
             {
                 try
@@ -68,27 +70,24 @@ namespace BarajaEspanola
                     numeroCarta = int.Parse(Console.ReadLine());
 
                     if (numeroCarta >= 1 && numeroCarta <= 48)
-                    {
-                        Console.WriteLine("La carta No. {0}, tiene palo {1} y valor {2}",
-                            numeroCarta,
-                            Baraja[numeroCarta - 1].Palo,
-                            Baraja[numeroCarta - 1].Valor);
-                    }
+                        Console.WriteLine($"La carta No. {numeroCarta}, es {Baraja[numeroCarta - 1].Valor} de {Baraja[numeroCarta - 1].Palo}");
                     else
-                    {
                         if (numeroCarta != 0)
                             Console.WriteLine("Ingresaste un número fuera del rango. Intenta nuevamente!\n\n");
-                    }
+
                 }
                 catch (FormatException error)
                 {
                     Console.WriteLine("Ingresaste un dato no numérico. Intenta nuevamente!");
-                    Console.WriteLine("Error: {0} \n\n", error.Message);
+                    Console.WriteLine($"Error: {error.Message} \n\n");
                 }
             }
             while (numeroCarta != 0);
 
             Console.WriteLine("Fin de la visualización individual.");
+
+            Console.WriteLine("\n\nBaraja ordenada queda asi:");
+            VisualizaBaraja(Baraja);
 
             // un "algoritmo" para desordenar el arreglo
             Random aleatorio = new Random();
@@ -104,15 +103,61 @@ namespace BarajaEspanola
                 Baraja[i] = cartaTemporal;
             }
 
-            Console.WriteLine("\n\nBaraja desordenada queda asi:");
+            Console.WriteLine("\nLa baraja ha sido mezclada!");
 
-            for (int i = 0; i < Baraja.Length; i++)
+            //Aqui buscamos donde quedaron las cartas de un valor específico
+            string valorCarta = "oro";
+            bool quieroSalir = false;
+
+            Console.WriteLine("\nVerifica donde quedaron las cartas de un valor específico:");
+
+            do
             {
-                Console.WriteLine("Posicion {0}, Palo: {1}, Valor: {2}",
-                    i + 1,
-                    Baraja[i].Palo,
-                    Baraja[i].Valor);
-            }
+                Console.Write("\n\nEscribe un valor de carta o 'ninguno' para salir: ");
+                valorCarta = Console.ReadLine().ToLower();
+                if (valorCarta == "" || valorCarta == "ninguno")
+                    quieroSalir = true;
+
+                if (ValidarValor(valorCarta, valores))
+                {
+                    for (int i = 0; i < Baraja.Length; i++)
+                        if (Baraja[i].Valor == valorCarta)
+                            Console.WriteLine($"Posicion: {i + 1}, es {Baraja[i].Valor} de {Baraja[i].Palo}");
+                }
+                else
+                    if (!quieroSalir)
+                    Console.WriteLine("Ingresaste un valor de carta inválido. Intenta nuevamente! \n");
+
+            } while (!quieroSalir);
+
+            Console.WriteLine("Ejecución Finalizada!");
+        }
+
+        /// <summary>
+        /// Valida si el valor suministrado corresponde a los valores válidos de una baraja española
+        /// </summary>
+        /// <param name="datoValor">valor a validar</param>
+        /// <param name="arregloValores">valores validos</param>
+        /// <returns></returns>
+        static bool ValidarValor(string datoValor, string[] arregloValores)
+        {
+            bool esValida = false;
+
+            for (int i = 0; i < arregloValores.Length; i++)
+                if (arregloValores[i] == datoValor)
+                    esValida = true;
+
+            return esValida;
+        }
+
+        /// <summary>
+        /// Visualiza la baraja escribiendo en consola
+        /// </summary>
+        /// <param name="arregloCartas"></param>
+        static void VisualizaBaraja(Carta[] arregloCartas)
+        {
+            for (int i = 0; i < arregloCartas.Length; i++)
+                Console.WriteLine($"Posicion: {i + 1}, es {arregloCartas[i].Valor} de {arregloCartas[i].Palo}");
         }
     }
 }
