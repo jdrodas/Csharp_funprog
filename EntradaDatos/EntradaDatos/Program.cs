@@ -36,7 +36,7 @@ namespace EntradaDatos
             string apellido = Console.ReadLine();
 
             //El contenido se puede visualizar con WriteLine
-            Console.WriteLine("Mucho gusto conocerte, {0} {1}.", nombre, apellido);
+            Console.WriteLine($"Mucho gusto conocerte, {nombre} {apellido}.");
 
             //Para datos tipo entero, se debe hacer conversión de string a entero
             //Se debe controlar el error por posibles datos erroneamente ingresados
@@ -48,7 +48,7 @@ namespace EntradaDatos
                 edad = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Me contaste que tu edad era: {0}", edad);
             }
-            catch (FormatException error) 
+            catch (FormatException error)
             {
                 Console.WriteLine("¡Ingresaste un dato que no puede convertirse a entero!");
                 Console.WriteLine("Error: " + error.Message + "\n\n");
@@ -60,14 +60,20 @@ namespace EntradaDatos
             try
             {
                 float estatura;
-                Console.Write("¿Cuál es tu estatura? ");
-                estatura = float.Parse(Console.ReadLine());
-                Console.WriteLine("Dijiste que tu estatura es de {0}", estatura.ToString("0.00"));
+                Console.Write("¿Cuál es tu estatura en metros? ");
+
+                //Colocar el tipo de datos entre parentesis se llama "hacer cast"
+                //estatura = (float)Convert.ToDouble(Console.ReadLine()); 
+
+                // Float es un alias para Single, para convertirlo usamos ToSingle
+                estatura = Convert.ToSingle(Console.ReadLine());
+                //estatura = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Dijiste que tu estatura es de {estatura.ToString("0.00")}");
             }
             catch (FormatException error)
             {
                 Console.WriteLine("¡Ingresaste un dato que no puede convertirse a float!\n\n");
-                Console.WriteLine("Error: " + error.Message + "\n\n");
+                Console.WriteLine($"Error: {error.Message}\n\n");
             }
         }
     }
