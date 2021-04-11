@@ -142,6 +142,11 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 >>- Implementar funciones que totalicen por filas y por columnas
 >>- Utilizar ciclos while y for para llenar y visualizar contenidos de la matriz
 
+>>### [EjemploArgsConsola](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArgsConsola)
+>>- Demostrar el funcionamiento de los argumentos que recibe la función Main()
+>>- El programa generará una cantidad de numeros aleatorios de un rango especificado
+    y los ordenará según el criterio que indique el usuario
+
 ### 5. Principios de Programación Orientada a Objetos
 
 >>### EjemploObjetos
