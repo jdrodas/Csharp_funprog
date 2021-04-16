@@ -181,6 +181,13 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 >>- Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales.
 
+>>### [RegistroSimCards](https://github.com/jdrodas/Csharp_funprog/tree/master/RegistroSimCards)
+>>- Demostrar conceptos de clase, objeto, encapsulación, propiedades
+>>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
+  valores establecidos para los atributos.
+>>- Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
+    y se visualice los subtotales, indicando porcentaje del total.
+
 
 ### 6. Interfaces Graficas con Windows Forms
 
