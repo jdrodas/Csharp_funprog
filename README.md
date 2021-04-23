@@ -253,6 +253,11 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 
 ### Examen No. 3
 
+>>### [ex03_SimulacroVacunacion](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_SimulacroVacunacion)
+>>- Leer valores string desde consola y almacenarlos en un arreglo.
+>>- Calcular el total de vacunados por ciuidad y biológico utilizado.
+>>- Calcular la edad promedio por ciudad y por biológico
+
 ### Examen No. 4
 
 >>### ex04_EncuentraParejasNumeros
