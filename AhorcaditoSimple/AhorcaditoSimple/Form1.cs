@@ -1,21 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AhorcaditoSimple
 {
     public partial class Form1 : Form
     {
-        //atributos necesarios para el programa
-        public int totalFallos, totalAciertos;
-        string palabraBuscada, letrasColocadas;
-        string[] diccionarioPalabras;
+        Logica logicaJuego;
         TextBox[] lasCasillas;
 
         public Form1()
@@ -23,54 +13,17 @@ namespace AhorcaditoSimple
             InitializeComponent();
             InicializaParametrosJuego();
         }
-
         public void InicializaParametrosJuego()
         {
-            totalAciertos = 0;
-            totalFallos = 0;
-            palabraBuscada = "";
-            letrasColocadas = "";
+            //Creamos una instancia de la lógica del juego
+            logicaJuego = new Logica();
 
+            //Inicializamos arreglo que contiene las casillas de letras de la palabra buscada
             InicializaArregloCasillas();
 
-            diccionarioPalabras = new string[]
-            {
-                "PALINDROMO",
-                "COMBUSTION",
-                "EMPANADITA",
-                "ENERGUMENO",
-                "BRASILEÑOS",
-                "REVERENCIA",
-                "ARQUITECTO",
-                "VENGADORES",
-                "FEMINISTAS",
-                "AFGANISTAN",
-                "EVALUACION",
-                "PROLETARIO",
-                "ICOSAEDROS",
-                "CATASTROFE",
-                "AHORCADITO",
-                "MAMONCILLO",
-                "JESUCRISTO",
-                "CHONTADURO",
-                "SERENDIPIA",
-                "MURCIELAGO",
-                "SACERDOTES",
-                "ADIVINARAS",
-                "SABANDIJAS",
-                "PRIMAVERAL",
-                "GIGANTESCO",
-                "ARREPENTIR",
-                "HABICHUELA",
-                "ECLIPSABLE"
-            };
-
-            Random aleatorio = new Random();
-            palabraBuscada = diccionarioPalabras[aleatorio.Next(diccionarioPalabras.Length)];
-
             //Visualizamos en la interfaz de usuario los valores iniciales
-            textoAciertos.Text = totalAciertos.ToString();
-            textoFallos.Text = totalFallos.ToString();
+            textoAciertos.Text = logicaJuego.TotalAciertos;
+            textoFallos.Text = logicaJuego.TotalFallos;
 
             textoLetrasColocadas.Text = "";
             textoPalabraBuscada.Text = "";
@@ -78,7 +31,6 @@ namespace AhorcaditoSimple
             textoLetraIngresada.Enabled = true;
             botonEvaluaLetra.Enabled = true;
         }
-
         public void InicializaArregloCasillas()
         {
             lasCasillas = new TextBox[10];
@@ -98,8 +50,6 @@ namespace AhorcaditoSimple
             for (int i = 0; i < lasCasillas.Length; i++)
                 lasCasillas[i].Text = "";
         }
-
-
         private void botonReiniciaJuego_Click(object sender, EventArgs e)
         {
             InicializaParametrosJuego();
@@ -107,102 +57,61 @@ namespace AhorcaditoSimple
 
         private void botonEvaluaLetra_Click(object sender, EventArgs e)
         {
-            //Primero validamos si ya fue previamente ingresada
-            bool yaFueIngresada = EvaluaIngresoPrevioLetra(textoLetraIngresada.Text.ToUpper());
+            string letraIngresada = textoLetraIngresada.Text.ToUpper();
 
-            if (yaFueIngresada == false)
+            logicaJuego.EvaluaLetra(letraIngresada);
+
+            //Aqui actualizamos los controles de la forma según la información de la lógica
+            VisualizaLetraEnCasilla(letraIngresada);
+
+            //Aqui contamos casillas reveladas
+            int totalCasillasReveladas = 0;
+
+            for (int i = 0; i < lasCasillas.Length; i++)
+                if (lasCasillas[i].Text != "")
+                    totalCasillasReveladas++;
+
+            if (totalCasillasReveladas == 10)
             {
-                letrasColocadas += textoLetraIngresada.Text.ToUpper();
+                MessageBox.Show("Identificaste la palabra buscada: " + logicaJuego.PalabraBuscada,
+                    "Éxito!!!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
 
-                //Validamos si la letra está en la palabra
-                bool estaEnPalabraBuscada = EvaluaLetraEnPalabraBuscada(textoLetraIngresada.Text.ToUpper());
-
-                if (estaEnPalabraBuscada == true)
-                {
-                    totalAciertos++;
-                    VisualizaLetraEnCasilla(textoLetraIngresada.Text.ToUpper());
-
-                    //Aqui contamos casillas reveladas
-                    int totalCasillasReveladas = 0;
-
-                    for (int i = 0; i < lasCasillas.Length; i++)
-                        if (lasCasillas[i].Text != "")
-                            totalCasillasReveladas++;
-
-                    if (totalCasillasReveladas == 10)
-                    {
-                        MessageBox.Show("Identificaste la palabra buscada: " + palabraBuscada,
-                            "exito!!!",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Exclamation);
-
-                        textoLetraIngresada.Enabled = false;
-                        botonEvaluaLetra.Enabled = false;
-                        textoPalabraBuscada.Text = palabraBuscada;
-                    }
-                }
-                else
-                {
-                    totalFallos++;
-
-                    //Validamos si se ha alcanzado el tope de fallos
-                    if (totalFallos == 10)
-                    {
-                        MessageBox.Show("Alcanzaste 10 fallos. No identificaste la palabra buscada",
-                            "fallo!!!",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Error);
-
-                        textoLetraIngresada.Enabled = false;
-                        botonEvaluaLetra.Enabled = false;
-                        textoPalabraBuscada.Text = palabraBuscada;
-                    }
-                }
+                textoLetraIngresada.Enabled = false;
+                botonEvaluaLetra.Enabled = false;
+                textoPalabraBuscada.Text = logicaJuego.PalabraBuscada;
             }
 
+            //Validamos si se ha alcanzado el tope de fallos
+            if (int.Parse(logicaJuego.TotalFallos) == 10)
+            {
+                MessageBox.Show("Alcanzaste 10 fallos. No identificaste la palabra buscada: " + logicaJuego.PalabraBuscada,
+                    "Fallo!!!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+                textoLetraIngresada.Enabled = false;
+                botonEvaluaLetra.Enabled = false;
+                textoPalabraBuscada.Text = logicaJuego.PalabraBuscada;
+            }
+
+
             textoLetraIngresada.Text = "";
-            textoLetrasColocadas.Text = letrasColocadas;
-            textoAciertos.Text = totalAciertos.ToString();
-            textoFallos.Text = totalFallos.ToString();
+            textoLetrasColocadas.Text = logicaJuego.LetrasColocadas;
+
+            textoAciertos.Text = logicaJuego.TotalAciertos;
+            textoFallos.Text = logicaJuego.TotalFallos;
 
         }
 
         public void VisualizaLetraEnCasilla(string letraIngresada)
         {
-            char[] letrasPalabraBuscada = palabraBuscada.ToCharArray();
+            char[] letrasPalabraBuscada = logicaJuego.PalabraBuscada.ToCharArray();
 
             for (int i = 0; i < letrasPalabraBuscada.Length; i++)
                 if (letrasPalabraBuscada[i].ToString() == letraIngresada)
                     lasCasillas[i].Text = letraIngresada;
-        }
-
-        public bool EvaluaLetraEnPalabraBuscada(string letraIngresada)
-        {
-            bool resultado = false;
-
-            char[] letrasPalabraBuscada = palabraBuscada.ToCharArray();
-
-            for (int i = 0; i < letrasPalabraBuscada.Length; i++)
-                if (letrasPalabraBuscada[i].ToString() == letraIngresada)
-                    resultado = true;
-
-            return resultado;
-        }
-
-        public bool EvaluaIngresoPrevioLetra(string letraIngresada)
-        {
-            bool resultado = false;
-
-            if (letrasColocadas.Length > 0)
-            {
-                char[] lasLetrasIngresadas = letrasColocadas.ToCharArray();
-
-                for (int i = 0; i < lasLetrasIngresadas.Length; i++)
-                    if (lasLetrasIngresadas[i].ToString() == letraIngresada)
-                        resultado = true;
-            }
-
-            return resultado;
         }
     }
 }
