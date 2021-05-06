@@ -30,12 +30,8 @@ Nota Importante:
 ----------------
 
 Esta versión del proyecto tiene mezclada la funcionalidad de presentación y lógica en una
-sola clase, Form1.
-
-Por favor busque la versión SimRadio_OO en el repositorio CSharp_pdoo para conocer esta 
-implementación con separación funcional por clases.
-
-https://github.com/jdrodas/Csharp_pdoo
+sola clase, Form1. En una versión mejorada, debería existir una clase "Logica" con el 
+comportamiento del radio y la forma solo quede con los elementos de visualización.
 
 */
 
@@ -53,8 +49,9 @@ namespace SimRadio
         private float frecuencia;
         private int volumen;
 
-
-        //Método que asigna valores iniciales, invocado por el constructor Form1()
+        /// <summary>
+        /// Método que asigna valores iniciales, invocado por el constructor Form1()
+        /// </summary>
         private void InicializaAtributos()
         {
             estado = false;
@@ -70,7 +67,7 @@ namespace SimRadio
         /// </summary>
         public void CambiaEstado()
         {
-            if (estado == true)
+            if (estado)
                 estado = false;
             else
                 estado = true;
@@ -122,7 +119,9 @@ namespace SimRadio
 
         // Funcionalidades de visualización - Windows Forms
 
-        //El constructor de la clase Form1
+        /// <summary>
+        /// El constructor de la clase Form1
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -131,6 +130,9 @@ namespace SimRadio
             InicializaAtributos();
         }
 
+        /// <summary>
+        /// Evento de carga de la forma
+        /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {
             //Cuando el radio está apagado, nada se visualiza
@@ -152,6 +154,9 @@ namespace SimRadio
             }
         }
 
+        /// <summary>
+        /// Evento de click sobre el botón de estado
+        /// </summary>
         private void BotonEstado_Click(object sender, EventArgs e)
         {
             CambiaEstado();
