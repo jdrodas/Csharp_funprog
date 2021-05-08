@@ -417,7 +417,9 @@ namespace OrdenaNumeros
                 }
         }
 
-
+        /// <summary>
+        /// Método que inicializa el fondo de los botones con un color gris claro
+        /// </summary>
         private void InicializaFondoBotones()
         {
             int totalFilas = matrizBotones.GetLength(0);
