@@ -57,6 +57,9 @@ namespace GraficadorSimple
             cuadroColorSecundario.BackColor = Color.White;
             selectorGrosor.Value = logicaDibujo.GrosorLinea;
 
+            //Obtenemos el número de lados del polígono que está predefinido
+            selectorNumeroLados.Value = logicaDibujo.LadosPoligono;
+
             cuadroDibujo.Image = logicaDibujo.ImagenDibujo;
             etiquetaPuntoInicial.Text = "Punto inicial:";
             etiquetaPuntoFinal.Text = "Punto final:";

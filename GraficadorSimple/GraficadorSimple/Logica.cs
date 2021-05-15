@@ -90,40 +90,8 @@ namespace GraficadorSimple
 
             if (tipoRelleno == "gradiente")
             {
-                //Definimos inicialmente un pincel, que será actualizado según el método de gradiente
-                Brush pincelGradiente = new SolidBrush(colorPrimario);
-
-                if (tipoGradiente=="Horizontal")
-                { 
-                   pincelGradiente= new LinearGradientBrush(miRectangulo,
-                                            colorPrimario,
-                                            colorSecundario,
-                                            LinearGradientMode.Horizontal);
-                }
-
-                if (tipoGradiente == "Vertical")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.Vertical);
-                }
-
-                if (tipoGradiente == "Diagonal Adelante")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.ForwardDiagonal);
-                }
-
-                if (tipoGradiente == "Diagonal Atrás")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.BackwardDiagonal);
-                }
+                //Obtenemos el pincel que se utilizará para dibujar el rectangulo
+                Brush pincelGradiente = ObtienePincelGradiente(miRectangulo, tipoGradiente);
 
                 areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
                 areaDibujo.DrawRectangle(lapiz, miRectangulo);
@@ -158,39 +126,8 @@ namespace GraficadorSimple
 
             if (tipoRelleno == "gradiente")
             {
-                Brush pincelGradiente = new SolidBrush(colorSecundario);
-
-                if (tipoGradiente == "Horizontal")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.Horizontal);
-                }
-
-                if (tipoGradiente == "Vertical")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.Vertical);
-                }
-
-                if (tipoGradiente == "Diagonal Adelante")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.ForwardDiagonal);
-                }
-
-                if (tipoGradiente == "Diagonal Atrás")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.BackwardDiagonal);
-                }
+                //Obtenemos el pincel que se utilizará para dibujar la elipse
+                Brush pincelGradiente = ObtienePincelGradiente(miRectangulo, tipoGradiente);
 
                 areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
                 areaDibujo.DrawEllipse(lapiz, miRectangulo);
@@ -247,43 +184,57 @@ namespace GraficadorSimple
             {
                 // Se define un rectángulo que define el contenido del relleno
                 Rectangle miRectangulo = new Rectangle(puntoOrigen.X, puntoOrigen.Y, ancho, alto);
-                Brush pincelGradiente = new SolidBrush(colorSecundario);
 
-                if (tipoGradiente == "Horizontal")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.Horizontal);   
-                }
-
-                if (tipoGradiente == "Vertical")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.Vertical);
-                }
-
-                if (tipoGradiente == "Diagonal Adelante")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.ForwardDiagonal);
-                }
-
-                if (tipoGradiente == "Diagonal Atrás")
-                {
-                    pincelGradiente = new LinearGradientBrush(miRectangulo,
-                                             colorPrimario,
-                                             colorSecundario,
-                                             LinearGradientMode.BackwardDiagonal);
-                }
+                //Obtenemos el pincel que se utilizará para dibujar el polígono
+                Brush pincelGradiente = ObtienePincelGradiente(miRectangulo, tipoGradiente);
 
                 areaDibujo.FillPolygon(pincelGradiente, vertices);
                 areaDibujo.DrawPolygon(lapiz, vertices);
             }
+        }
+
+        private LinearGradientBrush ObtienePincelGradiente(Rectangle miRectangulo, string tipoGradiente)
+        {
+            //El valor predeterminado del pincel gradiente - Horizontal
+            LinearGradientBrush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                         colorPrimario,
+                                         colorSecundario,
+                                         LinearGradientMode.Horizontal);
+
+            //Pero lo podemos cambiar en caso de que el gradiente sea diferente
+
+            switch (tipoGradiente)
+            {
+                case "Horizontal":
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.Vertical);
+                    break;
+
+                case "Vertical":
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                         colorPrimario,
+                                         colorSecundario,
+                                         LinearGradientMode.Horizontal);
+                    break;
+
+                case "Diagonal Adelante":
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.ForwardDiagonal);
+                    break;
+
+                case "Diagonal Atrás":
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.BackwardDiagonal);
+                    break;
+            }
+
+            return pincelGradiente;
         }
 
         public Bitmap ImagenDibujo
