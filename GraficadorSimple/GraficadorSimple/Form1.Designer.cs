@@ -45,6 +45,9 @@
             this.etiquetaPuntoInicial = new System.Windows.Forms.ToolStripStatusLabel();
             this.etiquetaPuntoFinal = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.etiquetaLados = new System.Windows.Forms.Label();
+            this.selectorNumeroLados = new System.Windows.Forms.NumericUpDown();
+            this.radioPoligono = new System.Windows.Forms.RadioButton();
             this.radioTexto = new System.Windows.Forms.RadioButton();
             this.radioLinea = new System.Windows.Forms.RadioButton();
             this.radioElipse = new System.Windows.Forms.RadioButton();
@@ -68,12 +71,10 @@
             this.radioRellenoGradiente = new System.Windows.Forms.RadioButton();
             this.radioRellenoSolido = new System.Windows.Forms.RadioButton();
             this.radioRellenoBorde = new System.Windows.Forms.RadioButton();
-            this.radioPoligono = new System.Windows.Forms.RadioButton();
-            this.selectorNumeroLados = new System.Windows.Forms.NumericUpDown();
-            this.etiquetaLados = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cuadroColorSecundario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuadroColorPrimario)).BeginInit();
@@ -82,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.selectorGrosor)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -93,7 +93,7 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(934, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(996, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,7 +111,7 @@
             // 
             this.itemMenuNuevo.Name = "itemMenuNuevo";
             this.itemMenuNuevo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.itemMenuNuevo.Size = new System.Drawing.Size(158, 22);
+            this.itemMenuNuevo.Size = new System.Drawing.Size(180, 22);
             this.itemMenuNuevo.Text = "Nuevo";
             this.itemMenuNuevo.Click += new System.EventHandler(this.itemMenuNuevo_Click);
             // 
@@ -119,7 +119,7 @@
             // 
             this.itemMenuGuardar.Name = "itemMenuGuardar";
             this.itemMenuGuardar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.itemMenuGuardar.Size = new System.Drawing.Size(158, 22);
+            this.itemMenuGuardar.Size = new System.Drawing.Size(180, 22);
             this.itemMenuGuardar.Text = "Guardar";
             this.itemMenuGuardar.Click += new System.EventHandler(this.itemMenuGuardar_Click);
             // 
@@ -128,7 +128,7 @@
             this.itemMenuSalir.Name = "itemMenuSalir";
             this.itemMenuSalir.ShortcutKeyDisplayString = "";
             this.itemMenuSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.itemMenuSalir.Size = new System.Drawing.Size(158, 22);
+            this.itemMenuSalir.Size = new System.Drawing.Size(180, 22);
             this.itemMenuSalir.Text = "Salir";
             this.itemMenuSalir.Click += new System.EventHandler(this.itemMenuSalir_Click);
             // 
@@ -147,7 +147,7 @@
             this.itemMenuColorPrimario,
             this.itemMenuColorSecundario});
             this.seleccionarColoresToolStripMenuItem.Name = "seleccionarColoresToolStripMenuItem";
-            this.seleccionarColoresToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.seleccionarColoresToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.seleccionarColoresToolStripMenuItem.Text = "Seleccionar Colores";
             // 
             // itemMenuColorPrimario
@@ -171,7 +171,7 @@
             // itemMenuTipoLetra
             // 
             this.itemMenuTipoLetra.Name = "itemMenuTipoLetra";
-            this.itemMenuTipoLetra.Size = new System.Drawing.Size(190, 22);
+            this.itemMenuTipoLetra.Size = new System.Drawing.Size(189, 22);
             this.itemMenuTipoLetra.Text = "Seleccionar Tipo Letra";
             this.itemMenuTipoLetra.Click += new System.EventHandler(this.itemMenuTipoLetra_Click);
             // 
@@ -186,7 +186,7 @@
             // itemMenuAcercaDe
             // 
             this.itemMenuAcercaDe.Name = "itemMenuAcercaDe";
-            this.itemMenuAcercaDe.Size = new System.Drawing.Size(126, 22);
+            this.itemMenuAcercaDe.Size = new System.Drawing.Size(180, 22);
             this.itemMenuAcercaDe.Text = "Acerca de";
             this.itemMenuAcercaDe.Click += new System.EventHandler(this.itemMenuAcercaDe_Click);
             // 
@@ -198,7 +198,7 @@
             this.etiquetaPuntoFinal});
             this.statusStrip1.Location = new System.Drawing.Point(0, 639);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(934, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(996, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -239,6 +239,51 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Herramientas";
+            // 
+            // etiquetaLados
+            // 
+            this.etiquetaLados.AutoSize = true;
+            this.etiquetaLados.Location = new System.Drawing.Point(52, 121);
+            this.etiquetaLados.Name = "etiquetaLados";
+            this.etiquetaLados.Size = new System.Drawing.Size(39, 13);
+            this.etiquetaLados.TabIndex = 2;
+            this.etiquetaLados.Text = "Lados:";
+            // 
+            // selectorNumeroLados
+            // 
+            this.selectorNumeroLados.Location = new System.Drawing.Point(93, 119);
+            this.selectorNumeroLados.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.selectorNumeroLados.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.selectorNumeroLados.Name = "selectorNumeroLados";
+            this.selectorNumeroLados.Size = new System.Drawing.Size(44, 20);
+            this.selectorNumeroLados.TabIndex = 2;
+            this.selectorNumeroLados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.selectorNumeroLados.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.selectorNumeroLados.ValueChanged += new System.EventHandler(this.selectorNumeroLados_ValueChanged);
+            // 
+            // radioPoligono
+            // 
+            this.radioPoligono.AutoSize = true;
+            this.radioPoligono.Location = new System.Drawing.Point(6, 100);
+            this.radioPoligono.Name = "radioPoligono";
+            this.radioPoligono.Size = new System.Drawing.Size(66, 17);
+            this.radioPoligono.TabIndex = 6;
+            this.radioPoligono.TabStop = true;
+            this.radioPoligono.Text = "Poligono";
+            this.radioPoligono.UseVisualStyleBackColor = true;
+            this.radioPoligono.CheckedChanged += new System.EventHandler(this.radioPoligono_CheckedChanged);
             // 
             // radioTexto
             // 
@@ -357,7 +402,7 @@
             this.cuadroDibujo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.cuadroDibujo.Location = new System.Drawing.Point(186, 45);
             this.cuadroDibujo.Name = "cuadroDibujo";
-            this.cuadroDibujo.Size = new System.Drawing.Size(736, 582);
+            this.cuadroDibujo.Size = new System.Drawing.Size(800, 580);
             this.cuadroDibujo.TabIndex = 4;
             this.cuadroDibujo.TabStop = false;
             this.cuadroDibujo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseDown);
@@ -466,7 +511,8 @@
             this.listaGradientes.Items.AddRange(new object[] {
             "Horizontal",
             "Vertical",
-            "Diagonal"});
+            "Diagonal Adelante",
+            "Diagonal Atrás"});
             this.listaGradientes.Location = new System.Drawing.Point(48, 103);
             this.listaGradientes.Name = "listaGradientes";
             this.listaGradientes.Size = new System.Drawing.Size(105, 30);
@@ -506,56 +552,11 @@
             this.radioRellenoBorde.Text = "Sin relleno";
             this.radioRellenoBorde.UseVisualStyleBackColor = true;
             // 
-            // radioPoligono
-            // 
-            this.radioPoligono.AutoSize = true;
-            this.radioPoligono.Location = new System.Drawing.Point(6, 100);
-            this.radioPoligono.Name = "radioPoligono";
-            this.radioPoligono.Size = new System.Drawing.Size(66, 17);
-            this.radioPoligono.TabIndex = 6;
-            this.radioPoligono.TabStop = true;
-            this.radioPoligono.Text = "Poligono";
-            this.radioPoligono.UseVisualStyleBackColor = true;
-            this.radioPoligono.CheckedChanged += new System.EventHandler(this.radioPoligono_CheckedChanged);
-            // 
-            // selectorNumeroLados
-            // 
-            this.selectorNumeroLados.Location = new System.Drawing.Point(93, 119);
-            this.selectorNumeroLados.Maximum = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.selectorNumeroLados.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.selectorNumeroLados.Name = "selectorNumeroLados";
-            this.selectorNumeroLados.Size = new System.Drawing.Size(44, 20);
-            this.selectorNumeroLados.TabIndex = 2;
-            this.selectorNumeroLados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.selectorNumeroLados.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.selectorNumeroLados.ValueChanged += new System.EventHandler(this.selectorNumeroLados_ValueChanged);
-            // 
-            // etiquetaLados
-            // 
-            this.etiquetaLados.AutoSize = true;
-            this.etiquetaLados.Location = new System.Drawing.Point(52, 121);
-            this.etiquetaLados.Name = "etiquetaLados";
-            this.etiquetaLados.Size = new System.Drawing.Size(39, 13);
-            this.etiquetaLados.TabIndex = 2;
-            this.etiquetaLados.Text = "Lados:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 661);
+            this.ClientSize = new System.Drawing.Size(996, 661);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -568,7 +569,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Graficador Simple v. 2019";
+            this.Text = "Graficador Simple v. 2021";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -576,6 +577,7 @@
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cuadroColorSecundario)).EndInit();
@@ -588,7 +590,6 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

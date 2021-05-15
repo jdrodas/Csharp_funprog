@@ -11,6 +11,7 @@ namespace GraficadorSimple
 {
     class Logica
     {
+        //Atributos de la clase
         private Color colorPrimario, colorSecundario;
         private int grosorLinea;
         private int ladosPoligono;
@@ -20,6 +21,9 @@ namespace GraficadorSimple
         private Bitmap imagenDibujo;
         private Graphics areaDibujo;
 
+        /// <summary>
+        /// Constructor de la clase
+        /// </summary>
         public Logica()
         {
             InicializaLogica(10,10); // un valor cualquiera
@@ -86,35 +90,43 @@ namespace GraficadorSimple
 
             if (tipoRelleno == "gradiente")
             {
-                if(tipoGradiente=="Horizontal")
+                //Definimos inicialmente un pincel, que será actualizado según el método de gradiente
+                Brush pincelGradiente = new SolidBrush(colorPrimario);
+
+                if (tipoGradiente=="Horizontal")
                 { 
-                   Brush pincelGradiente= new LinearGradientBrush(miRectangulo,
+                   pincelGradiente= new LinearGradientBrush(miRectangulo,
                                             colorPrimario,
                                             colorSecundario,
                                             LinearGradientMode.Horizontal);
-
-                    areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
                 }
 
                 if (tipoGradiente == "Vertical")
                 {
-                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
                                              colorPrimario,
                                              colorSecundario,
                                              LinearGradientMode.Vertical);
-
-                    areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
                 }
 
-                if (tipoGradiente == "Diagonal")
+                if (tipoGradiente == "Diagonal Adelante")
                 {
-                    Brush pincelGradiente = new LinearGradientBrush(miRectangulo,
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.ForwardDiagonal);
+                }
+
+                if (tipoGradiente == "Diagonal Atrás")
+                {
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
                                              colorPrimario,
                                              colorSecundario,
                                              LinearGradientMode.BackwardDiagonal);
-
-                    areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
                 }
+
+                areaDibujo.FillRectangle(pincelGradiente, miRectangulo);
+                areaDibujo.DrawRectangle(lapiz, miRectangulo);
             }
         }
 
@@ -164,7 +176,15 @@ namespace GraficadorSimple
                                              LinearGradientMode.Vertical);
                 }
 
-                if (tipoGradiente == "Diagonal")
+                if (tipoGradiente == "Diagonal Adelante")
+                {
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.ForwardDiagonal);
+                }
+
+                if (tipoGradiente == "Diagonal Atrás")
                 {
                     pincelGradiente = new LinearGradientBrush(miRectangulo,
                                              colorPrimario,
@@ -173,6 +193,7 @@ namespace GraficadorSimple
                 }
 
                 areaDibujo.FillEllipse(pincelGradiente, miRectangulo);
+                areaDibujo.DrawEllipse(lapiz, miRectangulo);
             }
         }
 
@@ -244,7 +265,15 @@ namespace GraficadorSimple
                                              LinearGradientMode.Vertical);
                 }
 
-                if (tipoGradiente == "Diagonal")
+                if (tipoGradiente == "Diagonal Adelante")
+                {
+                    pincelGradiente = new LinearGradientBrush(miRectangulo,
+                                             colorPrimario,
+                                             colorSecundario,
+                                             LinearGradientMode.ForwardDiagonal);
+                }
+
+                if (tipoGradiente == "Diagonal Atrás")
                 {
                     pincelGradiente = new LinearGradientBrush(miRectangulo,
                                              colorPrimario,
@@ -253,6 +282,7 @@ namespace GraficadorSimple
                 }
 
                 areaDibujo.FillPolygon(pincelGradiente, vertices);
+                areaDibujo.DrawPolygon(lapiz, vertices);
             }
         }
 

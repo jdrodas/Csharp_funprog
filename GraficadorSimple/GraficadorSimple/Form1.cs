@@ -12,9 +12,11 @@ namespace GraficadorSimple
 {
     public partial class Form1 : Form
     {
+        //Atributos de la clase
         private Logica logicaDibujo;
         private bool mousePresionado;
 
+        //Constructor de la clase
         public Form1()
         {
             InitializeComponent();
@@ -22,11 +24,9 @@ namespace GraficadorSimple
             mousePresionado = false;
         }
 
-        private void itemMenuSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        /// <summary>
+        /// Evento asociado al cargue inicial de la forma
+        /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {
             InicializaInterfaz();
@@ -62,58 +62,94 @@ namespace GraficadorSimple
             etiquetaPuntoFinal.Text = "Punto final:";
         }
 
+        /// <summary>
+        /// Evento asociado al item de menú - Nuevo
+        /// </summary>
         private void itemMenuNuevo_Click(object sender, EventArgs e)
         {
             InicializaInterfaz();
         }
 
+        /// <summary>
+        /// Evento asociado al item de menú - Salir
+        /// </summary>
+        private void itemMenuSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        /// <summary>
+        /// Evento asociado al item de menú - "Acerca de" 
+        /// </summary>
+        private void itemMenuAcercaDe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Herramienta diseñada en el curso de Fundamentos de programación. UPB, Mayo 201",
+                "Graficador simple v. 201");
+        }
+
+        /// <summary>
+        /// Evento asociado al cuadro de color primario
+        /// </summary>
         private void cuadroColorPrimario_Click(object sender, EventArgs e)
         {
-            SeleccionaColorPrimario();
+            SeleccionaColorCuadro("Primario");
         }
 
-        private void itemMenuColorPrimario_Click(object sender, EventArgs e)
-        {
-            SeleccionaColorPrimario();
-        }
-
-        private void SeleccionaColorPrimario()
-        {
-            ColorDialog ventanaColor = new ColorDialog();
-
-            if (ventanaColor.ShowDialog() == DialogResult.OK)
-            {
-                cuadroColorPrimario.BackColor = ventanaColor.Color;
-                logicaDibujo.ColorPrimario = ventanaColor.Color;
-
-                etiquetaEstado.Text = "Color primario seleccionado.";
-
-            }
-        }
-
-        private void SeleccionaColorSecundario()
-        {
-            ColorDialog ventanaColor = new ColorDialog();
-
-            if (ventanaColor.ShowDialog() == DialogResult.OK)
-            {
-                cuadroColorSecundario.BackColor = ventanaColor.Color;
-                logicaDibujo.ColorSecundario = ventanaColor.Color;
-
-                etiquetaEstado.Text = "Color secundario seleccionado.";
-            }
-        }
-
-        private void itemMenuColorSecundario_Click(object sender, EventArgs e)
-        {
-            SeleccionaColorSecundario();
-        }
-
+        /// <summary>
+        /// Evento asociado al cuadro de color secundario
+        /// </summary>
         private void cuadroColorSecundario_Click(object sender, EventArgs e)
         {
-            SeleccionaColorSecundario();
+            SeleccionaColorCuadro("Secundario");
         }
 
+        /// <summary>
+        /// Evento asociado al item de menu - Selección de color primario
+        /// </summary>
+        private void itemMenuColorPrimario_Click(object sender, EventArgs e)
+        {
+            SeleccionaColorCuadro("Primario");
+        }
+
+        /// <summary>
+        /// Evento asociado al item de menu - Selección de color primario
+        /// </summary>
+        private void itemMenuColorSecundario_Click(object sender, EventArgs e)
+        {
+            SeleccionaColorCuadro("Secundario");
+        }
+
+        /// <summary>
+        /// Selecciona un color para usar en los cuadros utilizando ColorDialog
+        /// </summary>
+        /// <param name="cuadroSeleccionado"></param>
+        private void SeleccionaColorCuadro(string cuadroSeleccionado)
+        {
+            ColorDialog ventanaColor = new ColorDialog();
+
+            if (ventanaColor.ShowDialog() == DialogResult.OK)
+            {
+                if (cuadroSeleccionado == "Primario")
+                {
+                    cuadroColorPrimario.BackColor = ventanaColor.Color;
+                    logicaDibujo.ColorPrimario = ventanaColor.Color;
+
+                    etiquetaEstado.Text = "Color primario seleccionado.";
+                }
+
+                if (cuadroSeleccionado == "Secundario")
+                {
+                    cuadroColorSecundario.BackColor = ventanaColor.Color;
+                    logicaDibujo.ColorSecundario = ventanaColor.Color;
+
+                    etiquetaEstado.Text = "Color secundario seleccionado.";
+                }
+            }
+        }
+
+        /// <summary>
+        /// Intercambia de posición los colores en los cuadros de selección
+        /// </summary>
         private void botonSwapColores_Click(object sender, EventArgs e)
         {
             Color tmpColor = cuadroColorPrimario.BackColor;
@@ -127,16 +163,25 @@ namespace GraficadorSimple
             etiquetaEstado.Text = "Colores intercambiados.";
         }
 
+        /// <summary>
+        /// Evento asociado al item de menú - Tipo de Letra
+        /// </summary>
         private void itemMenuTipoLetra_Click(object sender, EventArgs e)
         {
             SeleccionaTipoLetra();
         }
 
+        /// <summary>
+        /// Evento asociado al Botón - Tipo de Letra
+        /// </summary>
         private void BotonTipoLetra_Click(object sender, EventArgs e)
         {
             SeleccionaTipoLetra();
         }
 
+        /// <summary>
+        /// Selecciona el tipo de letra para utilizar con la herramienta Texto
+        /// </summary>
         private void SeleccionaTipoLetra()
         {
             FontDialog ventanaLetra = new FontDialog();
@@ -150,12 +195,10 @@ namespace GraficadorSimple
             }
         }
 
-        private void itemMenuAcercaDe_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Herramienta diseñada en el curso de Fundamentos de programación. UPB, Mayo 2019",
-                "Graficador simple v. 2019");
-        }
 
+        /// <summary>
+        /// Selecciona el grosor de la linea a utilizar en las herramientas de dibujo
+        /// </summary>
         private void selectorGrosor_ValueChanged(object sender, EventArgs e)
         {
             logicaDibujo.GrosorLinea = (int)selectorGrosor.Value;
@@ -213,6 +256,16 @@ namespace GraficadorSimple
             etiquetaPuntoFinal.Text = "Punto Final:";
         }
 
+        private void cuadroDibujo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mousePresionado)
+            {
+                etiquetaPuntoFinal.Text = "Punto final: (" +
+                    e.X + "," +
+                    e.Y + ")";
+            }
+        }
+
         private void cuadroDibujo_MouseUp(object sender, MouseEventArgs e)
         {
             mousePresionado = false;
@@ -248,11 +301,13 @@ namespace GraficadorSimple
                         break;
 
                     case 2:
-                        tipoGradiente = "Diagonal";
+                        tipoGradiente = "Diagonal Adelante";
+                        break;
+
+                    case 3:
+                        tipoGradiente = "Diagonal Atrás";
                         break;
                 }
-
-                
             }
 
             //aqui se dibuja una linea
@@ -277,16 +332,6 @@ namespace GraficadorSimple
 
             //finalmente actualizamos la imagen en el cuadro
             cuadroDibujo.Image = logicaDibujo.ImagenDibujo;
-        }
-
-        private void cuadroDibujo_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mousePresionado)
-            {
-                etiquetaPuntoFinal.Text = "Punto final: (" +
-                    e.X + "," +
-                    e.Y + ")";
-            }
         }
 
         private void radioRellenoGradiente_CheckedChanged(object sender, EventArgs e)
