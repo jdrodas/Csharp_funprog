@@ -10,9 +10,7 @@ Propósito:
 
  */
 
-
 using System;
-
 
 namespace AdivinaAleatorio
 {
@@ -61,7 +59,7 @@ namespace AdivinaAleatorio
                                 Console.WriteLine("Te faltó! el número buscado es mayor!");
 
                             if (numeroIngresado == numeroBuscado)
-                                Console.WriteLine("Te ganaste un cupcake imaginario! Encontraste el número!");
+                                Console.WriteLine("\nTe ganaste un cupcake imaginario! Encontraste el número!");
                         }
                         else
                         {
@@ -76,7 +74,7 @@ namespace AdivinaAleatorio
                 }
             }
 
-            Console.WriteLine("Te gastaste {0} intentos en hallar el número", contadorIntentos);
+            Console.WriteLine($"Te gastaste {contadorIntentos} intentos en hallar el número");
         }
     }
 }
