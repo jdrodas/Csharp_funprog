@@ -20,11 +20,9 @@ Operadores relacionales:
 Operadores lógicos:
 &&      operador lógico Y
 ||      operador lógico O
-
  */
 
- using System;
-
+using System;
 
 namespace EjemploCondicionales
 {
@@ -37,13 +35,14 @@ namespace EjemploCondicionales
             Console.WriteLine("Ejemplo de utilización de condicionales\n");
             Console.Write("Ingresa por favor tu edad: ");
 
-            int edad = int.Parse(Console.ReadLine());
+            //int edad = int.Parse(Console.ReadLine());
+            int edad = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("\nCual es tu país de nacimiento? ");
             string nacion = Console.ReadLine().ToUpper(); // ToUpper: Lo colocamos en mayúsculas
 
             //Condicional básico para validar si es mayor a 18 años
-            if (edad >= 18)
+            if (edad > 18 || edad == 18)
             {
                 Console.WriteLine("Tu edad es mayor o igual a 18 años, puedes ser considerado como ciudadano.");
             }
@@ -54,7 +53,7 @@ namespace EjemploCondicionales
 
             //Cuando es una sola línea, se puede obviar las llaves.
             //Se puede utilizar operadores lógicos para combinar varias condiciones
-            if(edad > 18 || edad == 18)
+            if (edad > 18 || edad == 18)
                 Console.WriteLine("Ya eres considerado un adulto.");
             else
                 Console.WriteLine("Todavía no eres considerado un adulto.");
