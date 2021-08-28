@@ -62,25 +62,25 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 
 ### 3. Funciones
 
->>### EjemploFunciones
+>### [EjemploFunciones](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploFunciones)
 >>- Demostrar la implementación de los diferentes tipos de funciones
 >>- Implementar función que recibe parámetros y retorna valor
 >>- Implementar función que no recibe parámetros y retorna valor
 >>- Implementar función que recibe parámetros y no retorna valor
 >>- Implementar función que no recibe parámetros y no retorna valor
 
->>### ValidaNumeroPrimo
+>### [ValidaNumeroPrimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaNumeroPrimo)
 >>- Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
 >>- Identificar si un numero entero es primo
 
->>### SumaImparesHastaLimite
+>### [SumaImparesHastaLimite](https://github.com/jdrodas/Csharp_funprog/tree/master/SumaImparesHastaLimite)
 >>- Hallar la suma de los números impares hasta un límite usando una función
 >>- Implementar el control de ingreso de datos con la función TryParse()
 
->>### ValidaRango
+>### [ValidaRango](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaRango)
 >>- Valida si un número ingresado hace parte de un rango definido por otros dos números
 
->>### ValidaBisiesto
+>### [ValidaBisiesto](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaBisiesto)
 >>- Implemementa una función que valida si un año es bisiesto
 
 
