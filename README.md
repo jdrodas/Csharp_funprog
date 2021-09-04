@@ -86,58 +86,58 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 
 ### 4. Arreglos
 
->>### EjemploArreglos
+>### [EjemploArreglos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArreglos)
 >>- Demostrar los conceptos básicos de los arreglos
 >>- Llenar un arreglo con numeros aleatorios y visualizar su contenido
 
->>### EjemploArreglosCaracteres
+>### [EjemploArreglosCaracteres](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArreglosCaracteres)
 >>- Demostrar la equivalencia de las variables tipo string como arreglo de caracteres
 >>- Demostrar el funcionamiento de la sentencia Switch para verificar múltipes condiciones
 
->>### CodigoMurcielago
+>### [CodigoMurcielago](https://github.com/jdrodas/Csharp_funprog/tree/master/CodigoMurcielago)
 >>- Demostrar el funcionamiento básico de los arreglos
 >>- Convertir cadena de caracteres a un arreglo de caracteres
 >>- utilizar la sentencia switch como opción a los condicionales múltiples
 >>- Crear una cadena de caracteres a partir de un arreglo de caracteres
 
->>### EjemploFuncionesArreglos
+>### [EjemploFuncionesArreglos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploFuncionesArreglos)
 - Generar un arreglo con valores enteros aleatorios
 >>- Implementar funciones que encuentre los valore menores y mayores del arreglo
 >>- Implementar una función que encuentre las posiciones donde está un valor
 >>- Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
 
->>### ArregloAleatorioLetras
+>### [EjemploArreglosCaracteres](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloAleatorioLetras)
 >>- Generar un arreglo caracteres de 500 posiciones llenado con las letras del abecedario seleccionadas de manera aleatoria. 
 >>- Implementar una función que reciba el arreglo como parámetro y visualice en consola el contenido del arreglo, 25 elementos por línea.
 >>- Implementar una función que reciba en los parámetros el arreglo de letras y el abecedario y visualice en consola el total de veces que aparece cada letra del abecedario en el arreglo de letras.
 
->>### ArregloEstaturas
+>### [ArregloEstaturas](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloEstaturas)
 >>- Identificar la configuración regional y el separador decimal utilizado
 >>- Llenar y ordenar descendentemente un arreglo de números decimales (float)
 >>- Calcular el promedio de los valores contenidos en un arreglo de números decimales.
 
->>### ArreglosEdadCaminar
+>### [ArreglosEdadCaminar](https://github.com/jdrodas/Csharp_funprog/tree/master/ArreglosEdadCaminar)
 >>- Generar un arreglo de enteros de 100 posiciones llenado de manera aleatoria con valores de un rango. 
 >>- Calcular la media, mediana y moda.
 >>- Visualizar el arreglo generado y los valores estadísticos calculados.
 
->>### ArregloPrimos
+>### [ArregloPrimos](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloPrimos)
 >>- Generar un arreglo con los números primos inferiores a 100.
 >>- Visualizar en consola el arreglo generado, 5 valores por línea.
 
->>### PuntuacionEquipos
+>### [PuntuacionEquipos](https://github.com/jdrodas/Csharp_funprog/tree/master/PuntuacionEquipos)
 >>- Llenar un arreglo con 5 números enteros desde la consola en el rango de 1 a 100
 >>- Calcular si la suma de estos números supera el valor de 300
 >>- Contar si dos o más números son menores que 60
 
->>### EjemploMatrices
+>### [EjemploMatrices](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploMatrices)
 >>- Demostrar el funcionamiento básico del arreglo bidimensional (matriz)
 
->>### EjemploMatricesNotasEstudiantes
+>### [EjemploMatricesNotasEstudiantes](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploMatricesNotasEstudiantes)
 >>- Demostrar la utilización de arreglos bidimensionales como parametros de funciones
 >>- Leer datos de consola e ingresarlos a una matriz verificando tipo de datos y rango
 
->>### MatricesZoo
+>### [MatricesZoo](https://github.com/jdrodas/Csharp_funprog/tree/master/MatricesZoo)
 >>- Demostrar la utilización de matrices como estructura de datos
 >>- Implementar funciones que totalicen por filas y por columnas
 >>- Utilizar ciclos while y for para llenar y visualizar contenidos de la matriz
