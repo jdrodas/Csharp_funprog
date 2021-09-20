@@ -96,11 +96,17 @@ namespace ex02_CerrosTutelares
                     {
                         Console.Write($"Ingresa la cantidad de material recolectada para el cerro {losCerros[posicion]}: ");
                         lasCantidades[posicion] = float.Parse(Console.ReadLine().Replace(".", miCultura.NumberFormat.NumberDecimalSeparator));
-                        esDatoCorrecto = true;
+
+                        //Se valida que la cantidad sea mayor igual a cero
+                        if (lasCantidades[posicion] >= 0)
+                            esDatoCorrecto = true;
+                        else
+                            Console.WriteLine("La cantidad ingresada no es válida. Debe ser un numero mayor o igual a cero. Intenta nuevamente\n\n");
+
                     }
                     catch (FormatException elError)
                     {
-                        Console.WriteLine("El dato ingresado debe ser numérico. Intenta nuevamente.");
+                        Console.WriteLine("El dato ingresado debe ser numérico positivo. Intenta nuevamente.");
                         Console.WriteLine(elError.Message + "\n\n");
                     }
                 }
