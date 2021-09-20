@@ -149,11 +149,11 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 
 ### 5. Principios de Programación Orientada a Objetos
 
->>### EjemploObjetos
+>>### [EjemploObjetos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploObjetos)
 >>- Demostrar los conceptos básicos de clase, objeto, encapsulación, métodos
 >>- Crear un arreglo de objetos, asignando y leyendo información para cada atributo
 
->>### TiendaGomitas
+>>### [TiendaGomitas](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaGomitas)
 >>- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 >>- Crear un arreglo de objetos y pasarlo como parámetro a una función.
 >>- Crear un arreglo multidimensional y generar mecanismos para recorrerlo
@@ -217,45 +217,48 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 
 ### Examen No. 1
 
->>### ex01_BuenLugar
+>>### [ex01_BuenLugar](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_BuenLugar)
 >>- Tema de examen 01: Condicionales y Ciclos de control. El Buen Lugar - Evaluación de Acciones. Ejercicio resuelto.
 
->>### ex01_DungeonCraft
+>>### [ex01_DungeonCraft](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_DungeonCraft)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Analizador de Logros - DungeonCraft. Ejercicio resuelto.
 
->>### ex01_GravityFalls
+>>### [ex01_GravityFalls](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_GravityFalls)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Gravity Falls – Gestión de la cabaña. Ejercicio resuelto.
 
->>### ex01_MaltratoMorty
+>>### [ex01_MaltratoMorty](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_MaltratoMorty)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Rick & Morty – Evaluación de maltratos. Ejercicio resuelto.
 
->>### ex01_FinalSpaceRescate
+>>### [ex01_FinalSpaceRescate](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_FinalSpaceRescate)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Final Space – Rescate de Mooncake. Ejercicio resuelto.
 
->>### ex01_SombreroSeleccionador
+>>### [ex01_SombreroSeleccionador](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_SombreroSeleccionador)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Análisis de resultados del sombrero seleccionador. Ejercicio resuelto.
 
->>### ex01_Divergente
+>>### [ex01_Divergente](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_Divergente)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Divergente - Asignación de facciones. Ejercicio resuelto.
 
->>### ex01_ColonizacionSolar
+>>### [ex01_ColonizacionSolar](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_ColonizacionSolar)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Colonización Sistema Solar. Ejercicio resuelto.
 
->>### ex01_secuenciaADN
+>>### [ex01_secuenciaADN](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_secuenciaADN)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Procesamiento de secuencias de ADN. Ejercicio resuelto.
 
 ### Examen No. 2
 
->>### ex02_ColonizacionMarte
+>>### [ex02_ColonizacionMarte](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ColonizacionMarte)
 >>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
 
->>### ex02_LiberandoWill
+>>### [ex02_LiberandoWill](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_LiberandoWill)
 >>- Leer valores enteros desde consola y almacenarlos en un arreglo si pertenecen a un rango
 >>- Calcular el porcentaje del total correspondiente a un valor. Utilización de Cast
 >>- Implementación de funciones que reciben y devuelven arreglos
 
->>### ex02_AterrizajeOptimo
+>>### [ex02_AterrizajeOptimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_AterrizajeOptimo)
 >>- Identificar de un arreglo de 10 numeros reales, cuales son los menores mayores que cero
+
+>>### [ex02_CerrosTutelares](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_CerrosTutelares)
+>>- Leer 7 valores numéricos reales mayores que cero, buscar su promedio para identificar si cumplen una meta
 
 ### Examen No. 3
 
