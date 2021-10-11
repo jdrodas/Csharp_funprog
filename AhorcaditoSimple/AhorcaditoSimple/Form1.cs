@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace AhorcaditoSimple
 {
@@ -11,30 +12,58 @@ namespace AhorcaditoSimple
         public Form1()
         {
             InitializeComponent();
-            InicializaParametrosJuego();
+            
+            //Inicializamos el atributo que tiene la lógica
+            logicaJuego = new Logica();
+            lasCasillas = new TextBox[10];
         }
+
+        /// <summary>
+        /// Inicializa los parametros de control del juego
+        /// </summary>
         public void InicializaParametrosJuego()
         {
-            //Creamos una instancia de la lógica del juego
+            //Inicializamos el atributo que tiene la lógica
             logicaJuego = new Logica();
+            lasCasillas = new TextBox[10];
+        }
 
-            //Inicializamos arreglo que contiene las casillas de letras de la palabra buscada
-            InicializaArregloCasillas();
-
-            //Visualizamos en la interfaz de usuario los valores iniciales
-            textoAciertos.Text = logicaJuego.TotalAciertos;
-            textoFallos.Text = logicaJuego.TotalFallos;
-
-            textoLetrasColocadas.Text = "";
-            textoPalabraBuscada.Text = "";
-
+        /// <summary>
+        /// Inicializa los elementos informativos de la interfaz
+        /// </summary>
+        private void InicializaInterfaz()
+        {
             textoLetraIngresada.Enabled = true;
             botonEvaluaLetra.Enabled = true;
-        }
-        public void InicializaArregloCasillas()
-        {
-            lasCasillas = new TextBox[10];
 
+            //Acciones de reinicio del juego
+            logicaJuego.InicializaParametrosJuego();
+
+            //Inicializa el arreglo de Casillas
+            InicializaArregloCasillas();
+
+            ActualizaInterfaz();
+        }
+
+        /// <summary>
+        /// Actualiza los elementos informativos de la interfaz
+        /// </summary>
+        private void ActualizaInterfaz()
+        {
+            textoLetraIngresada.Text = "";
+            textoLetraIngresada.Focus();
+
+            textoFallos.Text = logicaJuego.TotalFallos.ToString();
+            textoAciertos.Text = logicaJuego.TotalAciertos.ToString();
+            textoLetrasColocadas.Text = logicaJuego.LetrasIngresadas;
+        }
+
+        /// <summary>
+        /// Inicializa el arreglo de casillas para facilitar la manipulación
+        /// </summary>
+        private void InicializaArregloCasillas()
+        {
+            //Asignar cada casilla en su poisición dentro del arreglo
             lasCasillas[0] = textoLetra1;
             lasCasillas[1] = textoLetra2;
             lasCasillas[2] = textoLetra3;
@@ -46,72 +75,77 @@ namespace AhorcaditoSimple
             lasCasillas[8] = textoLetra9;
             lasCasillas[9] = textoLetra10;
 
-            //borramos el contenido de las casillas para cada juego
-            for (int i = 0; i < lasCasillas.Length; i++)
-                lasCasillas[i].Text = "";
+            //Borramos los contenidos de las casillas
+            foreach(TextBox unaCasilla in lasCasillas)
+                unaCasilla.Text = "";
         }
+        
         private void botonReiniciaJuego_Click(object sender, EventArgs e)
         {
-            InicializaParametrosJuego();
+            InicializaInterfaz();
         }
-
+        
         private void botonEvaluaLetra_Click(object sender, EventArgs e)
         {
-            string letraIngresada = textoLetraIngresada.Text.ToUpper();
-
-            logicaJuego.EvaluaLetra(letraIngresada);
-
-            //Aqui actualizamos los controles de la forma según la información de la lógica
-            VisualizaLetraEnCasilla(letraIngresada);
-
-            //Aqui contamos casillas reveladas
-            int totalCasillasReveladas = 0;
-
-            for (int i = 0; i < lasCasillas.Length; i++)
-                if (lasCasillas[i].Text != "")
-                    totalCasillasReveladas++;
-
-            if (totalCasillasReveladas == 10)
+            if (textoLetraIngresada.Text != "")
             {
-                MessageBox.Show("Identificaste la palabra buscada: " + logicaJuego.PalabraBuscada,
-                    "Éxito!!!",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Exclamation);
+                //aqui vamos a validar que solo sean letras
+                Regex patron = new Regex("[a-zA-ZñÑ]");
 
-                textoLetraIngresada.Enabled = false;
-                botonEvaluaLetra.Enabled = false;
-                textoPalabraBuscada.Text = logicaJuego.PalabraBuscada;
+                if (patron.IsMatch(textoLetraIngresada.Text) == true)
+                {
+                    logicaJuego.EvaluaLetra(textoLetraIngresada.Text.ToUpper());
+
+                    ActualizaContenidoCasillas(textoLetraIngresada.Text.ToUpper());
+                    EvaluaCondicionVictoria();
+                }
+                ActualizaInterfaz();
             }
-
-            //Validamos si se ha alcanzado el tope de fallos
-            if (int.Parse(logicaJuego.TotalFallos) == 10)
-            {
-                MessageBox.Show("Alcanzaste 10 fallos. No identificaste la palabra buscada: " + logicaJuego.PalabraBuscada,
-                    "Fallo!!!",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-
-                textoLetraIngresada.Enabled = false;
-                botonEvaluaLetra.Enabled = false;
-                textoPalabraBuscada.Text = logicaJuego.PalabraBuscada;
-            }
-
-
-            textoLetraIngresada.Text = "";
-            textoLetrasColocadas.Text = logicaJuego.LetrasColocadas;
-
-            textoAciertos.Text = logicaJuego.TotalAciertos;
-            textoFallos.Text = logicaJuego.TotalFallos;
-
         }
 
-        public void VisualizaLetraEnCasilla(string letraIngresada)
+        /// <summary>
+        /// Actualiza el contenido de las casillas si la letra está en la palabra
+        /// </summary>
+        /// <param name="unaLetra">Letra evaluada</param>
+        private void ActualizaContenidoCasillas(string unaLetra)
         {
-            char[] letrasPalabraBuscada = logicaJuego.PalabraBuscada.ToCharArray();
+            char[] letrasEnPalabraBuscada = logicaJuego.PalabraBuscada.ToCharArray();
 
-            for (int i = 0; i < letrasPalabraBuscada.Length; i++)
-                if (letrasPalabraBuscada[i].ToString() == letraIngresada)
-                    lasCasillas[i].Text = letraIngresada;
+            for (int i = 0; i < letrasEnPalabraBuscada.Length; i++)
+
+                if (letrasEnPalabraBuscada[i].ToString() == unaLetra)
+                    lasCasillas[i].Text = unaLetra;
+        }
+
+        /// <summary>
+        /// Identifica si se ganó o perdió en el juego
+        /// </summary>
+        private void EvaluaCondicionVictoria()
+        {
+            if (logicaJuego.TotalFallos == 10)
+            {
+                MessageBox.Show($"La palabrada buscada era {logicaJuego.PalabraBuscada}",
+                    "Fallaste!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                textoLetraIngresada.Enabled = false;
+                botonEvaluaLetra.Enabled = false;
+            }
+
+            if (logicaJuego.TotalAciertos == 10)
+            {
+                MessageBox.Show("Encontraste la palabra!",
+                                "Ganaste!",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+                textoLetraIngresada.Enabled = false;
+                botonEvaluaLetra.Enabled = false;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            InicializaInterfaz();
         }
     }
 }

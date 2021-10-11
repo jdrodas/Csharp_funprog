@@ -4,44 +4,16 @@ namespace AhorcaditoSimple
 {
     class Logica
     {
-
-        //atributos necesarios para el programa
+        //Los atributos 
         private string[] diccionarioPalabras;
-        private int totalFallos, totalAciertos;
-        private string palabraBuscada, letrasColocadas;
 
         //Propiedades para la clase
-        public string TotalFallos 
-        { 
-            get
-            { 
-                return totalFallos.ToString(); 
-            }
-        }
-        public string TotalAciertos
-        {
-            get
-            {
-                return totalAciertos.ToString();
-            }
-        }
-        public string PalabraBuscada
-        {
-            get
-            {
-                return palabraBuscada;
-            }
-        }
-        public string LetrasColocadas
-        {
-            get
-            {
-                return letrasColocadas;
-            }
-        }
+        public int TotalFallos { set; get; }
+        public int TotalAciertos { set; get; }
+        public string PalabraBuscada { set; get; }
+        public string LetrasIngresadas { set; get; }
 
-
-
+        //Constructor de la clase
         public Logica()
         {
             InicializaParametrosJuego();
@@ -49,10 +21,10 @@ namespace AhorcaditoSimple
 
         public void InicializaParametrosJuego() 
         {
-            totalAciertos = 0;
-            totalFallos = 0;
-            palabraBuscada = "";
-            letrasColocadas = "";
+            TotalFallos = 0;
+            TotalAciertos = 0;
+            PalabraBuscada = "";
+            LetrasIngresadas = "";
 
             //Inicializamos el Diccionario de palabras
             diccionarioPalabras = new string[] {
@@ -83,14 +55,25 @@ namespace AhorcaditoSimple
                 "GIGANTESCO",
                 "ARREPENTIR",
                 "HABICHUELA",
-                "ECLIPSABLE"
+                "ECLIPSABLE",
+                "FABRICADOR",
+                "YUGOSLAVIA",
+                "COMUNISTAS",
+                "GRABADORAS",
+                "ABORIGENES",
+                "FEUDALISMO",
+                "SOVIETICOS"
             };
-
+            
             Random aleatorio = new Random();
-            palabraBuscada = diccionarioPalabras[aleatorio.Next(diccionarioPalabras.Length)];
+            PalabraBuscada = diccionarioPalabras[aleatorio.Next(diccionarioPalabras.Length)];
 
         }
 
+        /// <summary>
+        /// Evalua la situacion de la letra ingresada por el usuario
+        /// </summary>
+        /// <param name="laLetra">Letra ingresada</param>
         public void EvaluaLetra(string laLetra)
         {
             //Primero validamos si ya fue previamente ingresada
@@ -98,44 +81,54 @@ namespace AhorcaditoSimple
 
             if (yaFueIngresada == false)
             {
-                letrasColocadas += laLetra;
+                LetrasIngresadas += laLetra;
 
                 //Validamos si la letra está en la palabra
-                bool estaEnPalabraBuscada = EvaluaLetraEnPalabraBuscada(laLetra);
+                int estaEnPalabraBuscada = EvaluaLetraEnPalabraBuscada(laLetra);
 
-                if (estaEnPalabraBuscada)
-                    totalAciertos++;
+                if (estaEnPalabraBuscada > 0)
+                    TotalAciertos += estaEnPalabraBuscada;
                 else
-                    totalFallos++;
+                    TotalFallos++;
             }
-
         }
 
-        private bool EvaluaIngresoPrevioLetra(string letraIngresada)
+        /// <summary>
+        /// Verifica si la letra fue previamente ingresada en el juego
+        /// </summary>
+        /// <param name="unaLetra">LetraIngresada</param>
+        /// <returns></returns>
+        private bool EvaluaIngresoPrevioLetra(string unaLetra)
         {
             bool resultado = false;
 
-            if (LetrasColocadas.Length > 0)
+            // Validamos si es la primera letra del juego
+            if (LetrasIngresadas.Length > 0)
             {
-                char[] lasLetrasIngresadas = LetrasColocadas.ToCharArray();
+                char[] arregloLetras = LetrasIngresadas.ToCharArray();
 
-                for (int i = 0; i < lasLetrasIngresadas.Length; i++)
-                    if (lasLetrasIngresadas[i].ToString() == letraIngresada)
+                for (int i = 0; i < arregloLetras.Length; i++)
+                    if (arregloLetras[i].ToString() == unaLetra)
                         resultado = true;
             }
 
             return resultado;
         }
 
-        private bool EvaluaLetraEnPalabraBuscada(string letraIngresada)
+        /// <summary>
+        /// Evalua si la letra está en la palabra buscada
+        /// </summary>
+        /// <param name="unaLetra"></param>
+        /// <returns></returns>
+        private int EvaluaLetraEnPalabraBuscada(string unaLetra)
         {
-            bool resultado = false;
+            int resultado = 0;
 
-            char[] letrasPalabraBuscada = PalabraBuscada.ToCharArray();
+            char[] arregloLetras = PalabraBuscada.ToCharArray();
 
-            for (int i = 0; i < letrasPalabraBuscada.Length; i++)
-                if (letrasPalabraBuscada[i].ToString() == letraIngresada)
-                    resultado = true;
+            for (int i = 0; i < arregloLetras.Length; i++)
+                if (arregloLetras[i].ToString() == unaLetra)
+                    resultado++;
 
             return resultado;
         }
