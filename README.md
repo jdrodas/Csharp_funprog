@@ -3,6 +3,9 @@ Proyectos del curso de Fundamentos de Programación en C#
 
 La siguiente especificación de contenidos presenta los proyectos según el avance por temas de un curso general de Fundamentos de programación.
 
+###Aviso
+Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tendrá su notificación de estado.
+
 ## Temas
 
 ### 1. Ingreso y visualización de datos
@@ -191,7 +194,8 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 
 ### 6. Interfaces Graficas con Windows Forms
 
->>### SimRadio
+
+>>### [SimRadio](https://github.com/jdrodas/Csharp_funprog/tree/master/SimRadio)
 >>- Programa de introducción a las interfaces gráficas de usuario en Windows Forms
 >>- Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
 
@@ -200,13 +204,12 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 >>- Cuenta los fallos y los aciertos 
 >>- Implementación en Windows Forms.
 
-
->>### AhorcaditoGrafico
+>>### [AhorcaditoGrafico](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoGrafico)
 >>- Implementación de una aplicación para adivinar una palabra de 10 letras.
 >>- Cuenta los fallos y los aciertos y dibuja el personaje a medida que se incrementa los fallos
 >>- Implementación en Windows Forms con lógica del juego en clase independiente.
 
->>### EncuentraParejasNumeros
+>>### [EncuentraParejasNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/EncuentraParejasNumeros)
 >>- Implementación en Windows Forms con lógica y visualización en una sola clase.
 >>- Implementación de una aplicación para encontrar 8 parejas de números.
 >>- Cuenta los intentos realizados así como las parejas encontradas.
