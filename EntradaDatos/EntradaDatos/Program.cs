@@ -15,8 +15,6 @@ el control de excepciones con las instrucciones try - catch
  
  */
 
-using System;
-
 namespace EntradaDatos
 {
     class Program
@@ -25,15 +23,12 @@ namespace EntradaDatos
         {
             Console.WriteLine("Programa para leer y escribir en la consola\n\n");
 
-            //Aqui se declara una variable para almacenar el dato de nombre
-            string nombre;
-
             Console.Write("¿Cuál es tu nombre? ");
-            nombre = Console.ReadLine();
+            var nombre = Console.ReadLine();
 
             //Para el apellido, se puede también asignar al momento de la declaración
             Console.Write("¿Cuál es tu apellido? ");
-            string apellido = Console.ReadLine();
+            var apellido = Console.ReadLine();
 
             //El contenido se puede visualizar con WriteLine
             Console.WriteLine($"Mucho gusto conocerte, {nombre} {apellido}.");

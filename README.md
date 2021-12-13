@@ -14,11 +14,13 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Visualizar información en la consola, en forma de cadena de caracteres.
 >>- Declarar variables tipo string y visualizar su contenido en la consola.
 >>- Demostrar el funcionamiento de los métodos WriteLine() y Write() de la clase Console.
+>>- Actualizado a .NET 6
 
 >### [EntradaDatos](https://github.com/jdrodas/Csharp_funprog/tree/master/EntradaDatos)
 >>- Demostrar el funcionamiento básico de la captura de datos desde la consola, utilizando el método ReadLine().
 >>- Demostrar el cambio de tipo de datos desde string hasta int y float, utilizando los métodos float.Parse() y Convert.ToInt32()
 >>- Demostrar la prevención básica de errores por ingreso de datos equivocados utilizando el control de excepciones con las instrucciones try - catch
+>>- Actualizado a .NET 6
 
 ### 2. Condicionales y ciclos de control
 
