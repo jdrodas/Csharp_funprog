@@ -46,6 +46,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [NumeroNarcisista](https://github.com/jdrodas/Csharp_funprog/tree/master/NumeroNarcisista)
 >>- Identificar si un número entero de tres cifras es narcisista
+>>- Actualizado a .NET 6
 
 >### [NumerosAmigos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosAmigos)
 >>- Identificar si dos números enteros positivos son amigos

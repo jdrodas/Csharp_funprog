@@ -13,8 +13,6 @@ Ejemplos : 153 370 371 407
 
  */
 
-using System;
-
 namespace NumeroNarcisista
 {
     class Program
@@ -32,7 +30,7 @@ namespace NumeroNarcisista
                 try
                 {
                     Console.Write("Ingresa un numero entero positivo de 3 cifras: ");
-                    numero = int.Parse(Console.ReadLine());
+                    numero = int.Parse(Console.ReadLine()!);
 
                     //Validamos que sea entero positivo hasta 3 cifras
                     if (numero > 99 && numero < 1000)
@@ -54,8 +52,7 @@ namespace NumeroNarcisista
             decenas = Math.Truncate((double)(numero - (centenas * 100)) / 10);
             unidades = numero - (centenas * 100) - (decenas * 10);
 
-            Console.WriteLine("Numero {0}: Unidades {1}, Decenas {2}, Centenas {3}",
-                numero, unidades, decenas, centenas);
+            Console.WriteLine($"Numero {numero}: Unidades {unidades}, Decenas {decenas}, Centenas {centenas}");
 
             double resultado = Math.Pow(unidades, 3) +
                                Math.Pow(decenas, 3) +
@@ -64,8 +61,7 @@ namespace NumeroNarcisista
             if (resultado == numero)
                 Console.WriteLine("El numero es narcisista");
             else
-                Console.WriteLine("El número no es narcisista. El resultado es {0}",
-                    resultado);
+                Console.WriteLine($"El número no es narcisista. El resultado es {resultado}");
 
         }
     }
