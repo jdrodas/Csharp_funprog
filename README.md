@@ -54,6 +54,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [NumerosDeficientes](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosDeficientes)
 >>- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
+>>- Actualizado a .NET 6
 
 >### [NumerosPerfectos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosPerfectos)
 >>- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
