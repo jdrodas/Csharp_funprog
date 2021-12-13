@@ -42,6 +42,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [ClasificaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaNumeros)
 >>- Demostrar la característica específica del ciclo do-while al momento de evaluar la condición. Utilización del concepto de variable "bandera".
+>>- Actualizado a .NET 6
 
 >### [NumeroNarcisista](https://github.com/jdrodas/Csharp_funprog/tree/master/NumeroNarcisista)
 >>- Identificar si un número entero de tres cifras es narcisista
