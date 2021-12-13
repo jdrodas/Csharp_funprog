@@ -58,6 +58,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [NumerosPerfectos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosPerfectos)
 >>- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
+>>- Actualizado a .NET 6
 
 >### [SumaMultiplosDe3y5](https://github.com/jdrodas/Csharp_funprog/tree/master/SumaMultiplosDe3y5)
 >>- Resolver el ejercicio No. del Proyecto Euler (https://projecteuler.net/problem=1)
