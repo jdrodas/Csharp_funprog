@@ -14,9 +14,6 @@ Propósito:
 
  */
 
-
-using System;
-
 namespace HolaMundo
 {
     class Program
