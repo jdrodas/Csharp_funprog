@@ -22,7 +22,6 @@ Operadores lógicos:
 ||      operador lógico O
  */
 
-using System;
 
 namespace EjemploCondicionales
 {
@@ -39,6 +38,8 @@ namespace EjemploCondicionales
             int edad = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("\nCual es tu país de nacimiento? ");
+            //Es posible que Console.ReadLine() devuelva valor nulo, por eso el compilador da advertencia
+            //Tarea: Como prevenir/corregir esta advertencia sin cambiar configuracion del compilador?
             string nacion = Console.ReadLine().ToUpper(); // ToUpper: Lo colocamos en mayúsculas
 
             //Condicional básico para validar si es mayor a 18 años
