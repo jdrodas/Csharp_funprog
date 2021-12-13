@@ -38,6 +38,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [TablaMultiplicar](https://github.com/jdrodas/Csharp_funprog/tree/master/TablaMultiplicar)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando la visualización de la tabla de multiplicar de un número. Se hace con los ciclos While, Do-while y For.
+>>- Actualizado a .NET 6
 
 >### [ClasificaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaNumeros)
 >>- Demostrar la característica específica del ciclo do-while al momento de evaluar la condición. Utilización del concepto de variable "bandera".

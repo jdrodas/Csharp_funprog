@@ -15,8 +15,6 @@ Ciclos de control:
 
  */
 
-using System;
-
 namespace TablaMultiplicar
 {
     class Program
@@ -27,7 +25,7 @@ namespace TablaMultiplicar
             Console.WriteLine("Programa que visualiza la tabla de multiplicar de un número\n");
 
             Console.Write("Ingresa el número: ");
-            int numero = int.Parse(Console.ReadLine());
+            int numero = int.Parse(Console.ReadLine()!);
 
             // Declaramos la variable de control
             int multiplicador = 1;
@@ -66,9 +64,9 @@ namespace TablaMultiplicar
 
             for (multiplicador = 1; multiplicador <= 10; multiplicador++)
             {
-                Console.WriteLine("{0} x {1} = {2}", 
-                    numero, 
-                    multiplicador, 
+                Console.WriteLine("{0} x {1} = {2}",
+                    numero,
+                    multiplicador,
                     (numero * multiplicador));
             }
         }
