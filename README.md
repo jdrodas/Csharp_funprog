@@ -50,6 +50,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [NumerosAmigos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosAmigos)
 >>- Identificar si dos números enteros positivos son amigos
+>>- Actualizado a .NET 6
 
 >### [NumerosDeficientes](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosDeficientes)
 >>- Identificar si los números enteros positivos hasta 50 son deficientes o abundantes

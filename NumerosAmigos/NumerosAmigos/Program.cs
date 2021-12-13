@@ -17,9 +17,6 @@ Ejemplos : 220 y 284
 
  */
 
-using System;
-
-
 namespace NumerosAmigos
 {
     class Program
@@ -37,10 +34,10 @@ namespace NumerosAmigos
                 try
                 {
                     Console.Write("Ingresa para A, un numero entero positivo: ");
-                    numeroA = long.Parse(Console.ReadLine());
+                    numeroA = long.Parse(Console.ReadLine()!);
 
                     Console.Write("Ingresa para B, un numero entero positivo: ");
-                    numeroB = long.Parse(Console.ReadLine());
+                    numeroB = long.Parse(Console.ReadLine()!);
 
                     //Validamos si A está en el rango correcto
                     if (numeroA > 0)
@@ -88,12 +85,12 @@ namespace NumerosAmigos
 
             //Finalmente comparamos los resultados e indicamos si son amigos.
             if (numeroA == sumaDivisoresB && numeroB == sumaDivisoresA)
-                Console.WriteLine("Los numeros {0} y {1} son amigos!", numeroA, numeroB);
+                Console.WriteLine($"Los numeros {numeroA} y {numeroB} son amigos!");
             else
-                Console.WriteLine("Los numeros {0} y {1} NO son amigos!", numeroA, numeroB);
+                Console.WriteLine($"Los numeros {numeroA} y {numeroB} NO son amigos!");
 
-            Console.WriteLine("La suma de los divisores de {0} es {1}", numeroA, sumaDivisoresA);
-            Console.WriteLine("La suma de los divisores de {0} es {1}", numeroB, sumaDivisoresB);
+            Console.WriteLine($"La suma de los divisores de {numeroA} es {sumaDivisoresA}");
+            Console.WriteLine($"La suma de los divisores de {numeroB} es {sumaDivisoresB}");
         }
     }
 }
