@@ -15,9 +15,6 @@ Ciclos de control:
 
  */
 
-using System;
-
-
 namespace MultiplosTres
 {
     class Program
@@ -32,12 +29,12 @@ namespace MultiplosTres
             Console.WriteLine("\nCon el ciclo for, los múltiplos de tres hasta el número {0} son:", limite);
 
             // declaramos una variable i que será el control del ciclo
-            int i = 1;
+            int i;
 
             // Implementando con el ciclo for
             // simplificando el exceso de {} por ser bloques de una sentencia
             for (i = 1; i <= limite; i++)
-                if ((i%3)==0)   //Residuo de la división por tres es cero, entonces es múltiplo de tres
+                if ((i % 3) == 0)   //Residuo de la división por tres es cero, entonces es múltiplo de tres
                     Console.WriteLine("{0} es múltiplo de 3!", i);
 
             Console.WriteLine("\nCon el ciclo while, los múltiplos de tres hasta el número {0} son:", limite);
@@ -48,7 +45,7 @@ namespace MultiplosTres
 
             // simplificando el exceso de {} por ser bloques de una sentencia
             while (i <= limite)
-            { 
+            {
                 if ((i % 3) == 0)   //Residuo de la división por tres es cero, entonces es múltiplo de tres
                     Console.WriteLine("{0} es múltiplo de 3!", i);
 
@@ -63,14 +60,14 @@ namespace MultiplosTres
 
             // simplificando el exceso de {} por ser bloques de una sentencia
             do
-            { 
+            {
                 if ((i % 3) == 0)   //Residuo de la división por tres es cero, entonces es múltiplo de tres
                     Console.WriteLine("{0} es múltiplo de 3!", i);
 
                 i++;    // Incremento en el contador -- ¿Cuál es el efecto?
             }
             while (i <= limite);
-                
+
         }
     }
 }

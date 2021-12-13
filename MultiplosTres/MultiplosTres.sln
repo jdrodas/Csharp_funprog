@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplosTres", "MultiplosTres\MultiplosTres.csproj", "{AE3A1BC4-3C90-4DF0-AA9F-DA01C2066BAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplosTres", "MultiplosTres\MultiplosTres.csproj", "{21558F64-A760-440D-A1F9-97243E8614E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE3A1BC4-3C90-4DF0-AA9F-DA01C2066BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE3A1BC4-3C90-4DF0-AA9F-DA01C2066BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE3A1BC4-3C90-4DF0-AA9F-DA01C2066BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE3A1BC4-3C90-4DF0-AA9F-DA01C2066BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21558F64-A760-440D-A1F9-97243E8614E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21558F64-A760-440D-A1F9-97243E8614E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21558F64-A760-440D-A1F9-97243E8614E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21558F64-A760-440D-A1F9-97243E8614E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B19E70EB-8240-4417-8B81-2994B5C2967A}
+		SolutionGuid = {7ED100CF-C9D5-424A-A34E-25536846572D}
 	EndGlobalSection
 EndGlobal
