@@ -23,14 +23,15 @@ namespace EntradaDatos
         {
             Console.WriteLine("Programa para leer y escribir en la consola\n\n");
 
-            //Es posible que Console.ReadLine() devuelva valor nulo, por eso el compilador da advertencia
-            //Tarea: Como prevenir/corregir esta advertencia sin cambiar configuracion del compilador?
             Console.Write("¿Cuál es tu nombre? ");
-            string nombre = Console.ReadLine();
+
+            //Console.ReadLine() puede generar un valor nulo, por eso utilizamos el simbolo "?"
+            //depués del tipo de dato para indicarle al compilador que esta variable puede ser nula
+            string? nombre = Console.ReadLine();
 
             //Para el apellido, se puede también asignar al momento de la declaración
             Console.Write("¿Cuál es tu apellido? ");
-            string apellido = Console.ReadLine();
+            string? apellido = Console.ReadLine();
 
             //El contenido se puede visualizar con WriteLine
             Console.WriteLine($"Mucho gusto conocerte, {nombre} {apellido}.");
