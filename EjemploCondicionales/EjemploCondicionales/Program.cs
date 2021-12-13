@@ -5,7 +5,7 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 Demostrar el funcionamiento de los condicionales utilizando operadores
-relacionales, operadores de igualdad y operadores lógicos
+relacionales, operadores de igualdad, operadores lógicos y operadores de nulidad
 
 Operadores de igualdad:
 ==     es igual
@@ -20,6 +20,13 @@ Operadores relacionales:
 Operadores lógicos:
 &&      operador lógico Y
 ||      operador lógico O
+
+Operadores de nulidad:
+?       Permite indicar al compilador que el valor puede ser nulo
+        Se coloca después del tipo de datos al momento de la declaración de la variable
+!       Permite indicar al compilador que sabemos que el valor NO SERÁ nulo
+        Se coloca despues de la variable y antes de cualquier otra operación
+
  */
 
 
@@ -38,9 +45,9 @@ namespace EjemploCondicionales
             int edad = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("\nCual es tu país de nacimiento? ");
-            //Es posible que Console.ReadLine() devuelva valor nulo, por eso el compilador da advertencia
-            //Tarea: Como prevenir/corregir esta advertencia sin cambiar configuracion del compilador?
-            string nacion = Console.ReadLine().ToUpper(); // ToUpper: Lo colocamos en mayúsculas
+            // El operador "?" nos permite indicar que este valor puede ser nulo
+            // El operador "!" nos permite que sabemos que este valor NO SERÁ nulo
+            string? nacion = Console.ReadLine()!.ToUpper(); // ToUpper: Lo colocamos en mayúsculas
 
             //Condicional básico para validar si es mayor a 18 años
             if (edad > 18 || edad == 18)

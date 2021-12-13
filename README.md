@@ -26,6 +26,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [EjemploCondicionales](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCondicionales)
 >>- Demostrar el funcionamiento de los condicionales utilizando operadores relacionales, operadores de igualdad y operadores lógicos.
+>>- Actualizado a .NET 6
 
 >### [EjemploCiclosControl](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCiclosControl)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
