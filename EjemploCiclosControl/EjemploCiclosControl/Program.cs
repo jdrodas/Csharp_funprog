@@ -13,8 +13,6 @@ Ciclos de control:
 - for
  */
 
-using System;
-
 namespace EjemploCiclosControl
 {
     class Program
@@ -39,7 +37,8 @@ namespace EjemploCiclosControl
                 try
                 {
                     Console.Write("\nIngresa el número límite: ");
-                    limite = uint.Parse(Console.ReadLine());
+                    //Utilizamos el operador "!" para indicarle al compilador que sabemos que la variable NO SERÁ nula.
+                    limite = uint.Parse(Console.ReadLine()!);
 
                     //Si el número es mayor que 0, el valor es correcto
                     if (limite > 0)

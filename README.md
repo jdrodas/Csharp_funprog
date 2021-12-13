@@ -30,6 +30,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [EjemploCiclosControl](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCiclosControl)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
+>>- Actualizado a .NET 6
 
 >### [MultiplosTres](https://github.com/jdrodas/Csharp_funprog/tree/master/MultiplosTres)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando una aplicación que visualice los múltiplos de tres hasta un número límite. Se hace con los ciclos While, Do-while y For.
