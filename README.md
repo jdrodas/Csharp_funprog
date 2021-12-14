@@ -103,6 +103,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [ValidaBisiesto](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaBisiesto)
 >>- Implemementa una función que valida si un año es bisiesto
+>>- Actualizado a .NET 6
 
 
 ### 4. Arreglos

@@ -7,7 +7,6 @@ Propósito:
 - Implemementa una función que valida si un año es bisiesto
 
  */
-using System;
 
 namespace ValidaBisiesto
 {
@@ -23,12 +22,12 @@ namespace ValidaBisiesto
             bool datoCorrecto = false;
             int dato = 0;
 
-            while (datoCorrecto==false)
+            while (datoCorrecto == false)
             {
                 try
                 {
                     Console.Write("Ingresa un año para evaluar: ");
-                    dato = int.Parse(Console.ReadLine());
+                    dato = int.Parse(Console.ReadLine()!);
 
                     datoCorrecto = true; //Si el dato fue correcto, salimos del ciclo.
                 }
@@ -39,7 +38,7 @@ namespace ValidaBisiesto
                 }
             }
 
-            Console.WriteLine("Evaluando si {0} es bisiesto...",dato);
+            Console.WriteLine("Evaluando si {0} es bisiesto...", dato);
 
             //llamamos la función para evaluar si es bisiesto
             bool esBisiesto = EvaluaBisiesto(dato);
