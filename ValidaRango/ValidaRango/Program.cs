@@ -8,9 +8,6 @@ Propósito:
 
  */
 
-using System;
-
-
 namespace ValidaRango
 {
     class Program
@@ -20,20 +17,20 @@ namespace ValidaRango
             Console.WriteLine("Programa para validar si un numero entero está en un rango");
 
             bool datoCorrecto = false;
-            int inferior=0, superior = 0, numero = 0;
+            int inferior = 0, superior = 0, numero = 0;
 
             while (datoCorrecto == false)
             {
                 try
                 {
                     Console.Write("Ingresa el límite inferior del rango: ");
-                    inferior = int.Parse(Console.ReadLine());
+                    inferior = int.Parse(Console.ReadLine()!);
 
                     Console.Write("Ingresa el límite superior del rango: ");
-                    superior = int.Parse(Console.ReadLine());
+                    superior = int.Parse(Console.ReadLine()!);
 
                     Console.Write("Ingresa el número a evaluar: ");
-                    numero = int.Parse(Console.ReadLine());
+                    numero = int.Parse(Console.ReadLine()!);
 
                     datoCorrecto = true; //Si el dato fue correcto, salimos del ciclo.
                 }

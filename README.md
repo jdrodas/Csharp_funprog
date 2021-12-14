@@ -99,6 +99,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [ValidaRango](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaRango)
 >>- Valida si un número ingresado hace parte de un rango definido por otros dos números
+>>- Actualizado a .NET 6
 
 >### [ValidaBisiesto](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaBisiesto)
 >>- Implemementa una función que valida si un año es bisiesto
