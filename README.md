@@ -68,6 +68,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [CiclosAsteriscos](https://github.com/jdrodas/Csharp_funprog/tree/master/CiclosAsteriscos)
 >>- Generar patrones piramidales con asteriscos en una aplicación de consola utilizando ciclos repetitivos. 
+>>- Actualizado a .NET 6
 
 >### [AdivinaAleatorio](https://github.com/jdrodas/Csharp_funprog/tree/master/AdivinaAleatorio)
 >>- Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
