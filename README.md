@@ -130,6 +130,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementar funciones que encuentre los valore menores y mayores del arreglo
 >>- Implementar una función que encuentre las posiciones donde está un valor
 >>- Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
+>>- Actualizado a .NET 6
 
 >### [EjemploArreglosCaracteres](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloAleatorioLetras)
 >>- Generar un arreglo caracteres de 500 posiciones llenado con las letras del abecedario seleccionadas de manera aleatoria. 

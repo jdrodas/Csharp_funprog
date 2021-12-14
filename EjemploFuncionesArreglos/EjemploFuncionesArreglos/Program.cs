@@ -10,8 +10,6 @@ Propósito:
 - Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
 */
 
-using System;
-
 namespace EjemploFuncionesArreglos
 {
     class Program
@@ -35,13 +33,12 @@ namespace EjemploFuncionesArreglos
 
             //aqui buscamos el valor mayor del arreglo
             int mayor = EncuentraMayor(conjunto);
-            Console.WriteLine("\nEl valor mayor encontrado es: " + mayor);
+            Console.WriteLine($"\nEl valor mayor encontrado es: {mayor}");
 
             //aqui vamos a identificar las posiciones donde aparece el número mayor
             int[] posicionesDelMayor = BuscaPosicionesValor(mayor, conjunto);
 
-            Console.WriteLine("\nEl número mayor está {0} veces en el arreglo ",
-                posicionesDelMayor.Length);
+            Console.WriteLine($"\nEl número mayor está {posicionesDelMayor.Length} veces en el arreglo ");
 
             Console.WriteLine("\nLas posiciones donde está el número mayor son: ");
             for (int i = 0; i < posicionesDelMayor.Length; i++)
@@ -49,13 +46,12 @@ namespace EjemploFuncionesArreglos
 
             //aqui buscamos el valor menor del arreglo
             int menor = EncuentraMenor(conjunto);
-            Console.WriteLine("\nEl valor menor encontrado es: " + menor);
+            Console.WriteLine($"\nEl valor menor encontrado es: {menor}");
 
             //aqui vamos a identificar las posiciones donde aparece el número menor
             int[] posicionesDelMenor = BuscaPosicionesValor(menor, conjunto);
 
-            Console.WriteLine("\nEl número menor está {0} veces en el arreglo ",
-                posicionesDelMenor.Length);
+            Console.WriteLine($"\nEl número menor está {posicionesDelMenor.Length} veces en el arreglo ");
 
             Console.WriteLine("\nLas posiciones donde está el número menor son: ");
             for (int i = 0; i < posicionesDelMenor.Length; i++)
@@ -195,9 +191,9 @@ namespace EjemploFuncionesArreglos
             for (int i = 0; i < coleccion.Length; i++)
             {
                 Console.Write(coleccion[i] + "\t");
-         
+
                 //si ya coloqué 10 numeros, salto de linea
-                if ((i+1)%10 == 0)
+                if ((i + 1) % 10 == 0)
                     Console.WriteLine();
             }
         }
