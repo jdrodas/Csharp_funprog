@@ -23,9 +23,6 @@ sea mínimo de 300 y que máximo 2 jugadores tengan puntajes inferiores a 60.
 
 */
 
-using System;
-
-
 namespace PuntuacionEquipos
 {
     class Program
@@ -44,7 +41,7 @@ namespace PuntuacionEquipos
                 try
                 {
                     Console.Write("\nIngresa el puntaje para el jugador #{0}: ", jugador + 1);
-                    puntajeJugador = int.Parse(Console.ReadLine());
+                    puntajeJugador = int.Parse(Console.ReadLine()!);
 
                     if (puntajeJugador >= 1 && puntajeJugador <= 100)
                     {
@@ -58,7 +55,7 @@ namespace PuntuacionEquipos
                 catch (FormatException error)
                 {
                     Console.WriteLine("Ingresaste un dato no numérico. Intenta nuevamente");
-                    Console.WriteLine("Error: " + error.Message);
+                    Console.WriteLine($"Error: {error.Message}");
                 }
             }
 
@@ -87,22 +84,22 @@ namespace PuntuacionEquipos
             Console.WriteLine("\nLos puntajes ingresados fueron: ");
             for (int i = 0; i < arregloPuntajes.Length; i++)
             {
-                Console.WriteLine("Jugador {0}, puntaje: {1}", i + 1, arregloPuntajes[i]);
+                Console.WriteLine($"Jugador {i + 1}, puntaje: {arregloPuntajes[i]}");
                 totalPuntajeEquipo += arregloPuntajes[i];
 
                 if (arregloPuntajes[i] < 60)
                     jugadoresFallidos++;
             }
 
-            Console.WriteLine("\nEl puntaje total del equipo fue de {0}", totalPuntajeEquipo);
-            Console.WriteLine("El número de jugadores con puntaje fallido fue de {0}\n", jugadoresFallidos);
+            Console.WriteLine($"\nEl puntaje total del equipo fue de {totalPuntajeEquipo}");
+            Console.WriteLine($"El número de jugadores con puntaje fallido fue de {jugadoresFallidos}\n");
 
             if (totalPuntajeEquipo >= 300)
                 Console.WriteLine("El equipo superó la meta de 300 puntos!");
             else
                 Console.WriteLine("El equipo no superó la meta de 300 puntos!");
 
-            if(jugadoresFallidos>2)
+            if (jugadoresFallidos > 2)
                 Console.WriteLine("El equipo superó el límite de jugadores fallidos");
             else
                 Console.WriteLine("El equipo no superó el límite de jugadores fallidos");

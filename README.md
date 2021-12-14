@@ -159,6 +159,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Llenar un arreglo con 5 números enteros desde la consola en el rango de 1 a 100
 >>- Calcular si la suma de estos números supera el valor de 300
 >>- Contar si dos o más números son menores que 60
+>>- Actualizado a .NET 6
 
 >### [EjemploMatrices](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploMatrices)
 >>- Demostrar el funcionamiento básico del arreglo bidimensional (matriz)
