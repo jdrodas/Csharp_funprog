@@ -132,10 +132,11 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
 >>- Actualizado a .NET 6
 
->### [EjemploArreglosCaracteres](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloAleatorioLetras)
+>### [ArregloAleatorioLetras](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloAleatorioLetras)
 >>- Generar un arreglo caracteres de 500 posiciones llenado con las letras del abecedario seleccionadas de manera aleatoria. 
 >>- Implementar una función que reciba el arreglo como parámetro y visualice en consola el contenido del arreglo, 25 elementos por línea.
 >>- Implementar una función que reciba en los parámetros el arreglo de letras y el abecedario y visualice en consola el total de veces que aparece cada letra del abecedario en el arreglo de letras.
+>>- Actualizado a .NET 6
 
 >### [ArregloEstaturas](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloEstaturas)
 >>- Identificar la configuración regional y el separador decimal utilizado

@@ -16,9 +16,6 @@ Realice un programa en C# que:
 
 */
 
-using System;
-
-
 namespace ArregloAleatorioLetras
 {
     class Program
@@ -69,10 +66,7 @@ namespace ArregloAleatorioLetras
             Console.WriteLine("\nLos totales por letra son los siguientes:");
 
             for (int i = 0; i < abecedario.Length; i++)
-            {
-                Console.WriteLine("Letra {0}, total de veces encontrada: {1}",
-                    abecedario[i], totalesLetras[i]);
-            }
+                Console.WriteLine($"Letra {abecedario[i]}, total de veces encontrada: {totalesLetras[i]}");
 
         }
 
@@ -85,7 +79,7 @@ namespace ArregloAleatorioLetras
             {
                 Console.Write(arreglo[i] + " ");
 
-                if ((i+1) % 25 == 0) //Colocamos 25 elementos por línea
+                if ((i + 1) % 25 == 0) //Colocamos 25 elementos por línea
                     Console.WriteLine();
             }
 

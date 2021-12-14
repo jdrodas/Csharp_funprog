@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArregloAleatorioLetras", "ArregloAleatorioLetras\ArregloAleatorioLetras.csproj", "{6293C534-D571-48CB-88F2-C2BE0CA9270C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArregloAleatorioLetras", "ArregloAleatorioLetras\ArregloAleatorioLetras.csproj", "{DC9C2693-5B65-4661-B041-66EB7B2649D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6293C534-D571-48CB-88F2-C2BE0CA9270C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6293C534-D571-48CB-88F2-C2BE0CA9270C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6293C534-D571-48CB-88F2-C2BE0CA9270C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6293C534-D571-48CB-88F2-C2BE0CA9270C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9C2693-5B65-4661-B041-66EB7B2649D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9C2693-5B65-4661-B041-66EB7B2649D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9C2693-5B65-4661-B041-66EB7B2649D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9C2693-5B65-4661-B041-66EB7B2649D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {516A95D3-8EA5-4FA8-AC8C-AF94A6E3AF92}
+		SolutionGuid = {C4AE3EB6-27F5-4D02-B1E2-31E1D91C69C5}
 	EndGlobalSection
 EndGlobal
