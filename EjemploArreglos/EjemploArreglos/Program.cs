@@ -8,8 +8,6 @@ Propósito:
 - Llenar un arreglo con numeros aleatorios y visualizar su contenido
 */
 
-using System;
-
 namespace EjemploArreglos
 {
     class Program
@@ -21,7 +19,7 @@ namespace EjemploArreglos
             //aqui declaramos el arreglo de una dimensión - vector
             int[] elArreglo = new int[5];
 
-            Console.WriteLine("El arreglo tiene un tamaño de {0}", elArreglo.Length);
+            Console.WriteLine($"El arreglo tiene un tamaño de {elArreglo.Length}");
 
             //aqui asignamos individualmente un valor en cada posición
             elArreglo[0] = 1;
@@ -31,17 +29,17 @@ namespace EjemploArreglos
             elArreglo[4] = 18;
 
             //Aqui visualizamos el contenido del arreglo
-            Console.WriteLine("En la posición 1 está almacenado {0}", elArreglo[0]);
-            Console.WriteLine("En la posición 2 está almacenado {0}", elArreglo[1]);
-            Console.WriteLine("En la posición 3 está almacenado {0}", elArreglo[2]);
-            Console.WriteLine("En la posición 4 está almacenado {0}", elArreglo[3]);
-            Console.WriteLine("En la posición 5 está almacenado {0}", elArreglo[4]);
+            Console.WriteLine($"En la posición 1 está almacenado {elArreglo[0]}");
+            Console.WriteLine($"En la posición 2 está almacenado {elArreglo[1]}");
+            Console.WriteLine($"En la posición 3 está almacenado {elArreglo[2]}");
+            Console.WriteLine($"En la posición 4 está almacenado {elArreglo[3]}");
+            Console.WriteLine($"En la posición 5 está almacenado {elArreglo[4]}");
 
             Console.WriteLine("\n\nAqui declaramos otro arreglo y lo llenamos con valores aleatorios entre 1 y 10:");
 
             int[] otroArreglo = new int[60];
 
-            Console.WriteLine("El arreglo tiene un tamaño de {0}", otroArreglo.Length);
+            Console.WriteLine($"El arreglo tiene un tamaño de {otroArreglo.Length}");
 
             //aqui lo inicializamos con valores aleatorios entre 1 y 10
             Random aleatorio = new Random();

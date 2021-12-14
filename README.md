@@ -111,6 +111,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >### [EjemploArreglos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArreglos)
 >>- Demostrar los conceptos básicos de los arreglos
 >>- Llenar un arreglo con numeros aleatorios y visualizar su contenido
+>>- Actualizado a .NET 6
 
 >### [EjemploArreglosCaracteres](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArreglosCaracteres)
 >>- Demostrar la equivalencia de las variables tipo string como arreglo de caracteres
