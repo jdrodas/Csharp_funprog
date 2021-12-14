@@ -17,8 +17,6 @@ El programa al final visualizará el contenido del arreglo 20 valores por línea
 de las variables solicitadas
  */
 
-using System;
-
 
 namespace ArreglosEdadCaminar
 {
@@ -40,12 +38,12 @@ namespace ArreglosEdadCaminar
 
             //Aqui visualizamos los resultados
             Console.WriteLine("\nLas siguientes son las edades generadas aleatoriamente:");
-            
+
             for (int i = 0; i < arregloEdades.Length; i++)
             {
                 Console.Write(arregloEdades[i] + "\t");
-            
-                if ((i+1) % 10 == 0)
+
+                if ((i + 1) % 10 == 0)
                     Console.WriteLine();
             }
 
@@ -54,9 +52,9 @@ namespace ArreglosEdadCaminar
             float mediana = CalculaMediana(arregloEdades);
             int[] moda = CalculaModa(arregloEdades);
 
-            Console.WriteLine("\nLa media de las edades para caminar es {0}", media.ToString("00.00"));
-            Console.WriteLine("La mediana de las edades para caminar es {0}", mediana.ToString("00.00"));
-            Console.WriteLine("Se encontraron {0} valor(es) como la moda del conjunto de datos:", moda.Length);
+            Console.WriteLine($"\nLa media de las edades para caminar es {media.ToString("00.00")}");
+            Console.WriteLine($"La mediana de las edades para caminar es {mediana.ToString("00.00")}");
+            Console.WriteLine($"Se encontraron {moda.Length} valor(es) como la moda del conjunto de datos");
             for (int i = 0; i < moda.Length; i++)
                 Console.WriteLine(moda[i]);
 
@@ -73,7 +71,7 @@ namespace ArreglosEdadCaminar
             Array.Sort(arregloValores);
 
             //Como es par la cantidad de valores, se promedian los valores de la mitad, de 100 son el 50 y 51
-            float mediana = (float)(arregloValores[49]+ arregloValores[50])/2;
+            float mediana = (float)(arregloValores[49] + arregloValores[50]) / 2;
             return mediana;
         }
 
@@ -121,7 +119,7 @@ namespace ArreglosEdadCaminar
             for (int i = 0; i < totalesValores.Length; i++)
             {
                 if (totalesValores[i] == mayor)
-                { 
+                {
                     valoresModa[posicion] = referenciaValores[i];
                     posicion++;
                 }
@@ -129,7 +127,6 @@ namespace ArreglosEdadCaminar
 
             return valoresModa;
         }
-
 
         /// <summary>
         /// Función para calcular la media (promedio) de un arreglo de valores

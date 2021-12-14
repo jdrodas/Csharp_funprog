@@ -148,6 +148,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Generar un arreglo de enteros de 100 posiciones llenado de manera aleatoria con valores de un rango. 
 >>- Calcular la media, mediana y moda.
 >>- Visualizar el arreglo generado y los valores estadísticos calculados.
+>>- Actualizado a .NET 6
 
 >### [ArregloPrimos](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloPrimos)
 >>- Generar un arreglo con los números primos inferiores a 100.

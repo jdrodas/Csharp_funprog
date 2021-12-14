@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArreglosEdadCaminar", "ArreglosEdadCaminar\ArreglosEdadCaminar.csproj", "{EF43865C-CD4D-4B2A-B5BF-FC4390090627}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArreglosEdadCaminar", "ArreglosEdadCaminar\ArreglosEdadCaminar.csproj", "{D5B0ABAB-5C76-4116-B571-1D5C16292B95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF43865C-CD4D-4B2A-B5BF-FC4390090627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF43865C-CD4D-4B2A-B5BF-FC4390090627}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF43865C-CD4D-4B2A-B5BF-FC4390090627}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF43865C-CD4D-4B2A-B5BF-FC4390090627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B0ABAB-5C76-4116-B571-1D5C16292B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B0ABAB-5C76-4116-B571-1D5C16292B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B0ABAB-5C76-4116-B571-1D5C16292B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B0ABAB-5C76-4116-B571-1D5C16292B95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {845060D0-248A-474F-A292-89B3EAA8BE77}
+		SolutionGuid = {65C52225-7263-440C-89DF-2628E4C0D981}
 	EndGlobalSection
 EndGlobal
