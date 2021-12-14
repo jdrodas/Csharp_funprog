@@ -153,6 +153,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >### [ArregloPrimos](https://github.com/jdrodas/Csharp_funprog/tree/master/ArregloPrimos)
 >>- Generar un arreglo con los números primos inferiores a 100.
 >>- Visualizar en consola el arreglo generado, 5 valores por línea.
+>>- Actualizado a .NET 6
 
 >### [PuntuacionEquipos](https://github.com/jdrodas/Csharp_funprog/tree/master/PuntuacionEquipos)
 >>- Llenar un arreglo con 5 números enteros desde la consola en el rango de 1 a 100

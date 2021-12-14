@@ -9,8 +9,6 @@ los almacene en un arreglo. El programa debe implementar una función que
 reciba el arreglo como parámetro y lo visualice en consola 5 elementos por 
 línea, separados entre sí por un tabulador.
  */
- 
-using System;
 
 namespace ArregloPrimos
 {
@@ -23,7 +21,7 @@ namespace ArregloPrimos
             int totalPrimos = CuentaPrimos(100);
             int[] arregloPrimos = ObtienePrimos(100, totalPrimos);
 
-            Console.WriteLine("\nEntre 1 y 100 hay {0} números primos: ", totalPrimos);
+            Console.WriteLine($"\nEntre 1 y 100 hay {totalPrimos} números primos:");
             VisualizaPrimos(arregloPrimos);
         }
 
