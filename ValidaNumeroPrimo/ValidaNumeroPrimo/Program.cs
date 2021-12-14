@@ -8,8 +8,6 @@ Propósito:
 - Identificar si un numero entero es primo
 */
 
-using System;
-
 namespace ValidaNumeroPrimo
 {
     class Program
