@@ -64,6 +64,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Resolver el ejercicio No. del Proyecto Euler (https://projecteuler.net/problem=1)
 >>- Encontrar la suma de los múltiplos de 3 ó 5 que son inferiores a un límite indicado
 >>- Implementar el control de ingreso de datos con la función TryParse()
+>>- Actualizado a .NET 6
 
 >### [CiclosAsteriscos](https://github.com/jdrodas/Csharp_funprog/tree/master/CiclosAsteriscos)
 >>- Generar patrones piramidales con asteriscos en una aplicación de consola utilizando ciclos repetitivos. 

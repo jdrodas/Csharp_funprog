@@ -10,8 +10,6 @@ Propósito:
 
  */
 
-using System;
-
 namespace SumaMultiplosDe3y5
 {
     class Program
@@ -21,7 +19,7 @@ namespace SumaMultiplosDe3y5
             Console.WriteLine("Programa para sumar los números que son múltiplos de 3 o 5 inferiores a un límite");
 
             bool datoCorrecto = false;
-            uint limite=0, suma = 0;
+            uint limite = 0, suma = 0;
 
             while (!datoCorrecto)
             {

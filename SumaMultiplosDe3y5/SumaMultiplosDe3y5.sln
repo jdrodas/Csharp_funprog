@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumaMultiplosDe3y5", "SumaMultiplosDe3y5\SumaMultiplosDe3y5.csproj", "{A99DFDB2-D2BD-43EC-8315-86145C62A684}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumaMultiplosDe3y5", "SumaMultiplosDe3y5\SumaMultiplosDe3y5.csproj", "{46FCC4CE-0FF2-467C-940D-D2CC52E6DCB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A99DFDB2-D2BD-43EC-8315-86145C62A684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A99DFDB2-D2BD-43EC-8315-86145C62A684}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A99DFDB2-D2BD-43EC-8315-86145C62A684}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A99DFDB2-D2BD-43EC-8315-86145C62A684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46FCC4CE-0FF2-467C-940D-D2CC52E6DCB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46FCC4CE-0FF2-467C-940D-D2CC52E6DCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46FCC4CE-0FF2-467C-940D-D2CC52E6DCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46FCC4CE-0FF2-467C-940D-D2CC52E6DCB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {34A53C5F-115D-4DC6-834B-5B3CBE3CB133}
+		SolutionGuid = {AB0479AB-45A0-47DD-A6B2-511B64079DF8}
 	EndGlobalSection
 EndGlobal
