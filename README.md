@@ -90,6 +90,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >### [ValidaNumeroPrimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaNumeroPrimo)
 >>- Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
 >>- Identificar si un numero entero es primo
+>>- Actualizado a .NET 6
 
 >### [SumaImparesHastaLimite](https://github.com/jdrodas/Csharp_funprog/tree/master/SumaImparesHastaLimite)
 >>- Hallar la suma de los números impares hasta un límite usando una función

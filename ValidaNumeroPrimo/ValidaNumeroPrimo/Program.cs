@@ -27,7 +27,7 @@ namespace ValidaNumeroPrimo
                 try
                 {
                     Console.Write("Ingresa un numero entero positivo: ");
-                    numero = int.Parse(Console.ReadLine());
+                    numero = int.Parse(Console.ReadLine()!);
 
                     if (numero > 0)
                         datoCorrecto = true;
