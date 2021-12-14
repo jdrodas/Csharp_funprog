@@ -11,8 +11,6 @@ Propósito:
 - Implementar función que no recibe parámetros y no retorna valor
 */
 
-using System;
-
 namespace EjemploFunciones
 {
     class Program
@@ -22,7 +20,7 @@ namespace EjemploFunciones
             Console.WriteLine("Programa para demostrar funciones");
 
             Console.Write("Ingresa un número entero: ");
-            int numero = int.Parse(Console.ReadLine());
+            int numero = int.Parse(Console.ReadLine()!);
 
             Console.WriteLine("\n\nAqui se utiliza una función que recibe parámetro pero no devuelve valor");
             VisualizaNumero(numero);
@@ -30,14 +28,14 @@ namespace EjemploFunciones
             int otroNumero = MultiplicadoPorDiez(numero);
 
             Console.WriteLine("\n\nAqui se utiliza una función que recibe parámetro y devuelve un valor");
-            Console.WriteLine("El numero multiplicado por 10 es {0}", otroNumero);
+            Console.WriteLine($"El numero multiplicado por 10 es {otroNumero}");
 
             Console.WriteLine("\n\nAqui se utiliza una función que no recibe parámetro y no devuelve un valor");
             MuestrameLaFecha();
 
             Console.WriteLine("\n\nAqui se utiliza una función que no recibe parámetro y devuelve un valor");
             string hora = ObtieneHora();
-            Console.WriteLine("La hora actual es: " + hora);
+            Console.WriteLine($"La hora actual es: {hora} ");
 
         }
 
@@ -58,7 +56,7 @@ namespace EjemploFunciones
         {
             string laFecha = DateTime.Now.ToLongDateString();
 
-            Console.WriteLine("La fecha actual: " + laFecha);
+            Console.WriteLine($"La fecha actual: {laFecha}");
         }
 
         /// <summary>
@@ -79,7 +77,7 @@ namespace EjemploFunciones
         static void VisualizaNumero(int datoNumero)
         {
             datoNumero *= 2;
-            Console.WriteLine("El número duplicado es {0}", datoNumero);
+            Console.WriteLine($"El número duplicado es {datoNumero}");
         }
     }
 }
