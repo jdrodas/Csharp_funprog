@@ -8,8 +8,6 @@ Propósito:
 - Demostrar el funcionamiento de la sentencia Switch para verificar múltipes condiciones
 */
 
-using System;
-
 namespace EjemploArreglosCaracteres
 {
     class Program
@@ -19,15 +17,15 @@ namespace EjemploArreglosCaracteres
             Console.WriteLine("Cadenas de caracteres como arreglos");
 
             Console.Write("Ingresa una frase en minúscula: ");
-            string laFrase = Console.ReadLine().ToLower();
+            string laFrase = Console.ReadLine()!.ToLower();
 
-            Console.WriteLine("\n\nLa frase ingresada es: " + laFrase);
-            Console.WriteLine("La frase tiene {0} caracteres", laFrase.Length);
+            Console.WriteLine($"\n\nLa frase ingresada es: {laFrase}");
+            Console.WriteLine($"La frase tiene {laFrase.Length} caracteres");
 
             //Aqui declaramos un arreglo de caracteres y almancenamos la frase usando ToCharArray()
             char[] arregloLetras = laFrase.ToCharArray();
 
-            Console.WriteLine("\nEl arreglo de letras tiene {0} posiciones", arregloLetras.Length);
+            Console.WriteLine($"\nEl arreglo de letras tiene {arregloLetras.Length} posiciones");
 
             Console.WriteLine("\nLa frase de manera vertical, tres letras por línea es:");
 
@@ -37,7 +35,7 @@ namespace EjemploArreglosCaracteres
                 Console.Write(arregloLetras[i]);
 
                 //aqui visualizamos de a tres caracteres por linea
-                if ((i+1)%3 ==0)  //De a tres posiciones: 0, 1 y 2              
+                if ((i + 1) % 3 == 0)  //De a tres posiciones: 0, 1 y 2              
                     Console.WriteLine();
             }
 
@@ -87,8 +85,7 @@ namespace EjemploArreglosCaracteres
                 }
             }
 
-            Console.WriteLine("\n\nLa frase tiene {0} vocal(es), {1} espacio(s), {2} número(s) y {3} otro(s)",
-                totalVocales, totalEspacios, totalNumeros, totalOtros);
+            Console.WriteLine($"\n\nLa frase tiene {totalVocales} vocal(es), {totalEspacios} espacio(s), {totalNumeros} número(s) y {totalOtros} otro(s)");
 
         }
     }

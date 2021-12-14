@@ -116,6 +116,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >### [EjemploArreglosCaracteres](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArreglosCaracteres)
 >>- Demostrar la equivalencia de las variables tipo string como arreglo de caracteres
 >>- Demostrar el funcionamiento de la sentencia Switch para verificar múltipes condiciones
+>>- Actualizado a .NET 6
 
 >### [CodigoMurcielago](https://github.com/jdrodas/Csharp_funprog/tree/master/CodigoMurcielago)
 >>- Demostrar el funcionamiento básico de los arreglos

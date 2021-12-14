@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploArreglosCaracteres", "EjemploArreglosCaracteres\EjemploArreglosCaracteres.csproj", "{CA50BB29-D70E-4F13-B02F-83CA40644711}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploArreglosCaracteres", "EjemploArreglosCaracteres\EjemploArreglosCaracteres.csproj", "{4DEE2698-E3A9-4D64-9657-46AF3C0E0E6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA50BB29-D70E-4F13-B02F-83CA40644711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA50BB29-D70E-4F13-B02F-83CA40644711}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA50BB29-D70E-4F13-B02F-83CA40644711}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA50BB29-D70E-4F13-B02F-83CA40644711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DEE2698-E3A9-4D64-9657-46AF3C0E0E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEE2698-E3A9-4D64-9657-46AF3C0E0E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DEE2698-E3A9-4D64-9657-46AF3C0E0E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEE2698-E3A9-4D64-9657-46AF3C0E0E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4F367119-DE09-420B-8636-682246E9417E}
+		SolutionGuid = {65CB2146-BD28-4A49-892A-F7A9882CC618}
 	EndGlobalSection
 EndGlobal
