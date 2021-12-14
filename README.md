@@ -74,6 +74,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
 >>- Se utiliza control de excepciones para evitar ingresar un dato no numérico.
 >>- Se coloca un condicional para validar que el número se encuentre en el rango.
+>>- Actualizado a .NET 6
 
 
 ### 3. Funciones
