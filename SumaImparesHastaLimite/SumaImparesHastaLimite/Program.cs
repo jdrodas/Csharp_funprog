@@ -9,8 +9,6 @@ Propósito:
 
  */
 
-using System;
-
 namespace SumaImparesHastaLimite
 {
     class Program
@@ -36,7 +34,7 @@ namespace SumaImparesHastaLimite
 
             suma = CalculaSumaImpares(limite);
 
-            Console.WriteLine("La suma de los impares hasta el número {0} es {1}", limite,suma);
+            Console.WriteLine("La suma de los impares hasta el número {0} es {1}", limite, suma);
         }
 
         static int CalculaSumaImpares(int datoLimite)
@@ -48,7 +46,5 @@ namespace SumaImparesHastaLimite
 
             return resultado;
         }
-
-
     }
 }

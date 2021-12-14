@@ -95,6 +95,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >### [SumaImparesHastaLimite](https://github.com/jdrodas/Csharp_funprog/tree/master/SumaImparesHastaLimite)
 >>- Hallar la suma de los números impares hasta un límite usando una función
 >>- Implementar el control de ingreso de datos con la función TryParse()
+>>- Actualizado a .NET 6
 
 >### [ValidaRango](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaRango)
 >>- Valida si un número ingresado hace parte de un rango definido por otros dos números
