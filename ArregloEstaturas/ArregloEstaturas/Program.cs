@@ -19,9 +19,7 @@ Adicionalmente:
 
  */
 
-using System;
 using System.Globalization;
-
 
 namespace ArregloEstaturas
 {
@@ -34,8 +32,8 @@ namespace ArregloEstaturas
             //Aqui declaramos un objeto de tipo CultureInfo - Información Regional
             CultureInfo miCultura = CultureInfo.CurrentCulture;
 
-            Console.WriteLine("\nLa configuración regional actual es {0}", miCultura.Name);
-            Console.WriteLine("El separador de decimales es \"{0}\"", miCultura.NumberFormat.NumberDecimalSeparator);
+            Console.WriteLine($"\nLa configuración regional actual es {miCultura.Name}");
+            Console.WriteLine($"El separador de decimales es \"{miCultura.NumberFormat.NumberDecimalSeparator}\"");
 
             int posicion = 0;
 
@@ -46,15 +44,15 @@ namespace ArregloEstaturas
             {
                 try
                 {
-                    Console.Write("Ingresa el valor para la estatura No. {0}: ", posicion+1);
-                    arregloEstaturas[posicion] = float.Parse(Console.ReadLine());
+                    Console.Write($"Ingresa el valor para la estatura No. {posicion + 1}: ");
+                    arregloEstaturas[posicion] = float.Parse(Console.ReadLine()!);
 
                     posicion++;
                 }
                 catch (FormatException error)
                 {
                     Console.WriteLine("\nIngresaste un dato no numérico. Intenta nuevamente!");
-                    Console.WriteLine("Error: {0} \n\n", error.Message);
+                    Console.WriteLine($"Error: {error.Message} \n\n");
                 }
             }
 
@@ -68,10 +66,10 @@ namespace ArregloEstaturas
             Console.WriteLine("\nLas estaturas ingresadas, ordenadas de manera descendente son:");
 
             for (int i = 0; i < arregloEstaturas.Length; i++)
-                Console.WriteLine("Dato No. {0}, valor de la estatura: {1}", i + 1, arregloEstaturas[i]);
+                Console.WriteLine($"Dato No. {i + 1}, valor de la estatura: {arregloEstaturas[i]}");
 
-            Console.WriteLine("\nLa mayor estatura es {0} mientras que la menor es {1}", arregloEstaturas[0], arregloEstaturas[9]);
-            Console.WriteLine("La estatura promedio es {0}", promedio);
+            Console.WriteLine($"\nLa mayor estatura es {arregloEstaturas[0]} mientras que la menor es {arregloEstaturas[9]}");
+            Console.WriteLine($"La estatura promedio es {promedio}");
         }
 
         /// <summary>
@@ -81,7 +79,7 @@ namespace ArregloEstaturas
         /// <returns>el promedio calculado</returns>
         static float ObtienePromedio(float[] arreglo)
         {
-            float promedio=0;
+            float promedio = 0;
 
             for (int i = 0; i < arreglo.Length; i++)
                 promedio += arreglo[i];

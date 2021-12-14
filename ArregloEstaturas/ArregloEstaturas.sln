@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArregloEstaturas", "ArregloEstaturas\ArregloEstaturas.csproj", "{DE944703-1691-4958-AB8B-F72D420F185C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArregloEstaturas", "ArregloEstaturas\ArregloEstaturas.csproj", "{C8B4C56C-A0F4-4027-B0D7-082ECC41B603}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DE944703-1691-4958-AB8B-F72D420F185C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE944703-1691-4958-AB8B-F72D420F185C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE944703-1691-4958-AB8B-F72D420F185C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE944703-1691-4958-AB8B-F72D420F185C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B4C56C-A0F4-4027-B0D7-082ECC41B603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B4C56C-A0F4-4027-B0D7-082ECC41B603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B4C56C-A0F4-4027-B0D7-082ECC41B603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B4C56C-A0F4-4027-B0D7-082ECC41B603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A7B83F21-DBC4-41A2-8308-8A097408F186}
+		SolutionGuid = {CBE63F48-0B37-4B10-9504-7972AA85CCF7}
 	EndGlobalSection
 EndGlobal

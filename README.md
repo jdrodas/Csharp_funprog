@@ -142,6 +142,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Identificar la configuración regional y el separador decimal utilizado
 >>- Llenar y ordenar descendentemente un arreglo de números decimales (float)
 >>- Calcular el promedio de los valores contenidos en un arreglo de números decimales.
+>>- Actualizado a .NET 6
 
 >### [ArreglosEdadCaminar](https://github.com/jdrodas/Csharp_funprog/tree/master/ArreglosEdadCaminar)
 >>- Generar un arreglo de enteros de 100 posiciones llenado de manera aleatoria con valores de un rango. 
