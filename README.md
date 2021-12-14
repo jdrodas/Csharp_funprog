@@ -163,6 +163,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >### [EjemploMatrices](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploMatrices)
 >>- Demostrar el funcionamiento básico del arreglo bidimensional (matriz)
+>>- Actualizado a .NET 6
 
 >### [EjemploMatricesNotasEstudiantes](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploMatricesNotasEstudiantes)
 >>- Demostrar la utilización de arreglos bidimensionales como parametros de funciones

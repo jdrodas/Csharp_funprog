@@ -8,8 +8,6 @@ Propósito:
 
 */
 
-using System;
-
 namespace EjemploMatrices
 {
     class Program
