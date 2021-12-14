@@ -11,8 +11,6 @@ Propósito:
 
 */
 
-using System;
-
 namespace CodigoMurcielago
 {
     class Program
@@ -24,9 +22,9 @@ namespace CodigoMurcielago
             Console.WriteLine("murcielago por el número de la posición de la letra en la palabra\n\n");
 
             Console.Write("Ingresa una frase para cifrar: ");
-            string frase = Console.ReadLine().ToLower();
+            string frase = Console.ReadLine()!.ToLower();
 
-            Console.WriteLine("La frase en minúsculas es " + frase);
+            Console.WriteLine($"La frase en minúsculas es {frase}");
 
             //aqui declaramos el arreglo
             char[] arregloFrase = frase.ToCharArray();
@@ -87,7 +85,7 @@ namespace CodigoMurcielago
             //Creamos un string a partir del arreglo de caracteres 
             string fraseCifrada = new string(arregloFrase);
 
-            Console.WriteLine("La frase cifrada es " + fraseCifrada);
+            Console.WriteLine($"La frase cifrada es {fraseCifrada}");
         }
     }
 }

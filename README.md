@@ -123,6 +123,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Convertir cadena de caracteres a un arreglo de caracteres
 >>- utilizar la sentencia switch como opción a los condicionales múltiples
 >>- Crear una cadena de caracteres a partir de un arreglo de caracteres
+>>- Actualizado a .NET 6
 
 >### [EjemploFuncionesArreglos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploFuncionesArreglos)
 - Generar un arreglo con valores enteros aleatorios
