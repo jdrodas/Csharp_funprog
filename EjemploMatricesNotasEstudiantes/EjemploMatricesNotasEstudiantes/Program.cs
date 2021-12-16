@@ -22,7 +22,6 @@ que reciban como parametro la matriz de notas y devuelva un arreglo de float
 con los valores correspondientes a los respectivos promedios
 
 */
-using System;
 
 namespace EjemploMatricesNotasEstudiantes
 {
@@ -53,7 +52,7 @@ namespace EjemploMatricesNotasEstudiantes
                             materia + 1,
                             alumno + 1);
 
-                        valorNota = float.Parse(Console.ReadLine());
+                        valorNota = float.Parse(Console.ReadLine()!);
 
                         //aqui validamos que el número esté en el rango
                         if (valorNota >= 0 && valorNota <= 5)
@@ -125,7 +124,7 @@ namespace EjemploMatricesNotasEstudiantes
 
                 for (j = 0; j < 5; j++)
                 {
-                    promedios[i] += matrizNotas[i, j]; 
+                    promedios[i] += matrizNotas[i, j];
                 }
 
                 promedios[i] /= 5; //aqui dividimos por la cantidad de elementos

@@ -168,6 +168,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >### [EjemploMatricesNotasEstudiantes](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploMatricesNotasEstudiantes)
 >>- Demostrar la utilización de arreglos bidimensionales como parametros de funciones
 >>- Leer datos de consola e ingresarlos a una matriz verificando tipo de datos y rango
+>>- Actualizado a .NET 6
 
 >### [MatricesZoo](https://github.com/jdrodas/Csharp_funprog/tree/master/MatricesZoo)
 >>- Demostrar la utilización de matrices como estructura de datos
