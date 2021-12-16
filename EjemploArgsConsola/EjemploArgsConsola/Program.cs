@@ -24,8 +24,6 @@ Este programa debe ejecutarse desde una ventana de comandos para poder especific
              
 */
 
-
-using System;
 namespace EjemploArgsConsola
 {
     class Program

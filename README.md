@@ -178,6 +178,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Demostrar el funcionamiento de los argumentos que recibe la función Main()
 >>- El programa generará una cantidad de numeros aleatorios de un rango especificado
     y los ordenará según el criterio que indique el usuario
+>>- Actualizado a .NET 6
 
 ### 5. Principios de Programación Orientada a Objetos
 
