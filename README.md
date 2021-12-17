@@ -77,6 +77,13 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Actualizado a .NET 6
 
 
+>### [CalculadoraBasica](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculadoraBasica)
+>>- Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división
+    utilizando el ciclo de control While, el selector múltiple "switch/case" y control de excepciones
+    con try/catch
+>>- Actualizado a .NET 6
+
+
 ### 3. Funciones
 
 >### [EjemploFunciones](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploFunciones)
