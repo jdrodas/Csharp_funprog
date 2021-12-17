@@ -202,9 +202,10 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [BarajaEspanola](https://github.com/jdrodas/Csharp_funprog/tree/master/BarajaEspanola)
 >>- Demostrar conceptos de clase, objeto, encapsulación, atributos, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
-  valores establecidos para los atributos.
+    valores establecidos para los atributos.
 >>- Visualizar la colección de cartas, una carta a la vez
 >>- Implementar un mecanismo para mezclar las cartas de manera aleatoria
+>>- Actualizado a .NET 6
 
 >>### [MaquinaExpendedoraComida](https://github.com/jdrodas/Csharp_funprog/tree/master/MaquinaExpendedoraComida)
 >>- Demostrar conceptos de clase, objeto, encapsulación, propiedades

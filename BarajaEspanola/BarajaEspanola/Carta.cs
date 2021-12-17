@@ -1,6 +1,7 @@
-﻿namespace BarajaEspanola
+﻿
+namespace BarajaEspanola
 {
-    class Carta
+    public class Carta
     {
         //Propiedades de la clase
 

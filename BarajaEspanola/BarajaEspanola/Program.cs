@@ -11,8 +11,6 @@ Propósito:
 - Implementar un mecanismo para mezclar las cartas de manera aleatoria
  */
 
-using System;
-
 namespace BarajaEspanola
 {
     class Program
@@ -67,13 +65,13 @@ namespace BarajaEspanola
                 try
                 {
                     Console.Write("Ingresa un número entre 1 y 48 o 0 para salir: ");
-                    numeroCarta = int.Parse(Console.ReadLine());
+                    numeroCarta = int.Parse(Console.ReadLine()!);
 
                     if (numeroCarta >= 1 && numeroCarta <= 48)
                         Console.WriteLine($"La carta No. {numeroCarta}, es {Baraja[numeroCarta - 1].Valor} de {Baraja[numeroCarta - 1].Palo}");
                     else
                         if (numeroCarta != 0)
-                            Console.WriteLine("Ingresaste un número fuera del rango. Intenta nuevamente!\n\n");
+                        Console.WriteLine("Ingresaste un número fuera del rango. Intenta nuevamente!\n\n");
 
                 }
                 catch (FormatException error)
@@ -114,7 +112,7 @@ namespace BarajaEspanola
             do
             {
                 Console.Write("\n\nEscribe un valor de carta o 'ninguno' para salir: ");
-                valorCarta = Console.ReadLine().ToLower();
+                valorCarta = Console.ReadLine()!.ToLower();
                 if (valorCarta == "" || valorCarta == "ninguno")
                     quieroSalir = true;
 
