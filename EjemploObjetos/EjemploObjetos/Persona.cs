@@ -1,9 +1,8 @@
-﻿using System;
-
+﻿
 namespace EjemploObjetos
 {
-    class Persona
-    {
+    public class Persona
+    { 
         //zona de atributos
         private int edad, telefono;
         private string nombre;

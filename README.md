@@ -193,6 +193,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [EjemploObjetos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploObjetos)
 >>- Demostrar los conceptos básicos de clase, objeto, encapsulación, métodos
 >>- Crear un arreglo de objetos, asignando y leyendo información para cada atributo
+>>- Actualizado a .NET 6
 
 >>### [TiendaGomitas](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaGomitas)
 >>- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades

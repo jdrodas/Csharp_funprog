@@ -10,8 +10,6 @@ Propósito:
  
  */
 
-using System;
-
 namespace EjemploObjetos
 {
     class Program
@@ -35,16 +33,16 @@ namespace EjemploObjetos
             {
                 try
                 {
-                    Console.WriteLine("\nInformación de la persona No. {0}", totalPersonas + 1);
+                    Console.WriteLine($"\nInformación de la persona No. { totalPersonas + 1}");
 
                     Console.Write("Cual es el nombre? ");
-                    gentio[totalPersonas].Nombre = Console.ReadLine();
+                    gentio[totalPersonas].Nombre = Console.ReadLine()!;
 
                     Console.Write("Cual es la edad? ");
-                    gentio[totalPersonas].Edad = int.Parse(Console.ReadLine());
+                    gentio[totalPersonas].Edad = int.Parse(Console.ReadLine()!);
 
                     Console.Write("Cual es el telefono? ");
-                    gentio[totalPersonas].Telefono = int.Parse(Console.ReadLine());
+                    gentio[totalPersonas].Telefono = int.Parse(Console.ReadLine()!);
 
                     //Si todo está ok, se pasa a la siguiente persona
                     totalPersonas++;
@@ -52,7 +50,7 @@ namespace EjemploObjetos
                 catch (FormatException error)
                 {
                     Console.WriteLine("Ingresaste un dato no numérico para el teléfono o la edad. Intenta nuevamente!");
-                    Console.WriteLine("Error: {0} \n\n", error.Message);
+                    Console.WriteLine($"Error: {error.Message} \n\n");
                 }
             }
 
@@ -61,11 +59,7 @@ namespace EjemploObjetos
 
             for (int i = 0; i < gentio.Length; i++)
             {
-                Console.WriteLine("Persona No {0}, nombre: {1}, edad: {2} telefono: {3}",
-                    (i+1), // contando como humanos
-                    gentio[i].Nombre,
-                    gentio[i].Edad,
-                    gentio[i].Telefono);
+                Console.WriteLine($"Persona No {(i + 1)}, nombre: {gentio[i].Nombre}, edad: {gentio[i].Edad} telefono: {gentio[i].Telefono}");
             }
         }
     }
