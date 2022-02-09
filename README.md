@@ -89,6 +89,11 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
     5 calificaciones numéricas entre 0 y 5, calcule su promedio y finalmente que indique si aprobó o no.
     Se considera aprobación cuando el promedio sea mayor o igual a 3.00.
 
+>### [PagoImpuestos](https://github.com/jdrodas/Csharp_funprog/tree/master/PagoImpuestos)
+>>- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+	el valor del salario de un empleado y diga si debe pagar impuestos o no.
+    Se considera que si debe pagar impuestos si el empleado gana más de $900.000.
+
 
 ### 3. Funciones
 
