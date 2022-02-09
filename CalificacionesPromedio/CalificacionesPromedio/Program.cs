@@ -1,5 +1,4 @@
 ﻿/*
-/*
 Programa:       CalificacionesPromedio
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
