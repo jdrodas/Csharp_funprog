@@ -84,6 +84,12 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Actualizado a .NET 6
 
 
+>### [CalificacionesPromedio](https://github.com/jdrodas/Csharp_funprog/tree/master/CalificacionesPromedio)
+>>- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+    5 calificaciones numéricas entre 0 y 5, calcule su promedio y finalmente que indique si aprobó o no.
+    Se considera aprobación cuando el promedio sea mayor o igual a 3.00.
+
+
 ### 3. Funciones
 
 >### [EjemploFunciones](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploFunciones)
