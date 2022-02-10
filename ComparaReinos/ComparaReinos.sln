@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparaReinos", "ComparaReinos\ComparaReinos.csproj", "{C731E7B6-3E0B-4930-BE64-189497C727F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C731E7B6-3E0B-4930-BE64-189497C727F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C731E7B6-3E0B-4930-BE64-189497C727F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C731E7B6-3E0B-4930-BE64-189497C727F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C731E7B6-3E0B-4930-BE64-189497C727F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AC52588-43E7-4A41-80B7-95C005CB7BE0}
+	EndGlobalSection
+EndGlobal

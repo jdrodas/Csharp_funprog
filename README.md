@@ -32,6 +32,11 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
 >>- Actualizado a .NET 6
 
+>### [ComparaReinos](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinos)
+>>- Demostrar la utilización de condicionales 
+>>- captura de datos desde consola
+>>- visualizar resultados 
+
 >### [MultiplosTres](https://github.com/jdrodas/Csharp_funprog/tree/master/MultiplosTres)
 >>- Demostrar el funcionamiento de los principales ciclos de control implementando una aplicación que visualice los múltiplos de tres hasta un número límite. Se hace con los ciclos While, Do-while y For.
 >>- Actualizado a .NET 6
@@ -76,13 +81,11 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Se coloca un condicional para validar que el número se encuentre en el rango.
 >>- Actualizado a .NET 6
 
-
 >### [CalculadoraBasica](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculadoraBasica)
 >>- Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división
     utilizando el ciclo de control While, el selector múltiple "switch/case" y control de excepciones
     con try/catch
 >>- Actualizado a .NET 6
-
 
 >### [CalificacionesPromedio](https://github.com/jdrodas/Csharp_funprog/tree/master/CalificacionesPromedio)
 >>- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
@@ -100,6 +103,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
     Equilatero: Los tres lados son iguales
     Isóceles: Dos lados son iguales
     Escaleno: Los tres lados son diferentes 
+
 
 
 ### 3. Funciones
