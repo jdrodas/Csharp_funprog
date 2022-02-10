@@ -8,8 +8,6 @@ Propósito:
 	el valor del salario de un empleado y diga si debe pagar impuestos o no.
     Se considera que si debe pagar impuestos si el empleado gana más de $900.000.
 
-Adicionalmente:
-    Identificar la cultura utilizada así como el separador decimal.
  */
 
 using System;
