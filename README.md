@@ -94,6 +94,13 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 	el valor del salario de un empleado y diga si debe pagar impuestos o no.
     Se considera que si debe pagar impuestos si el empleado gana más de $900.000.
 
+>### [ClasificaTriangulos](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaTriangulos)
+>>- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+    los valores de los tres lados de un triangulo y determine su clasificación:
+    Equilatero: Los tres lados son iguales
+    Isóceles: Dos lados son iguales
+    Escaleno: Los tres lados son diferentes 
+
 
 ### 3. Funciones
 
