@@ -313,6 +313,8 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [ex01_VacunacionEscolar](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_VacunacionEscolar)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Vacunación Escolar. Ejercicio resuelto.
 
+>>### [ex01_ProduccionLechera](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_ProduccionLechera)
+>>- Tema de examen 01: Condicionales y Ciclos de control. Producción Lechera. Ejercicio resuelto.
 
 ### Examen No. 2
 
