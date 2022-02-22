@@ -5,6 +5,7 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 - Implemementa una función que valida si un año es bisiesto
+- Implementa una función que indica si un numero es divisible por otro
 
  */
 
@@ -44,9 +45,9 @@ namespace ValidaBisiesto
             bool esBisiesto = EvaluaBisiesto(dato);
 
             if (esBisiesto)
-                Console.WriteLine("Si, ese año si es bisiesto!");
+                Console.WriteLine("Si, ese año SI es bisiesto!");
             else
-                Console.WriteLine("No, ese año no es bisiesto!");
+                Console.WriteLine("No, ese año NO es bisiesto!");
         }
 
         /// <summary>
@@ -58,17 +59,36 @@ namespace ValidaBisiesto
         {
             bool resultado = false;
 
-            //Preguntar si es divisible por 100 (o sea, terminado en 00)
-            if (elDato % 100 == 0)
+            //Paso 1: Validar si es divisible por 4:
+            if (EsDivisiblePor(elDato, 4) == true)
             {
-                if (elDato % 400 == 0)
+                //Paso 2: Validar si es divisible por 100:
+                if (EsDivisiblePor(elDato, 100))
+                {
+                    //Paso 3: Validar si siendo divisible por 100, es divisible por 400
+                    if (EsDivisiblePor(elDato, 400))
+                        resultado = true;
+                }
+                else
+                    //No es divisible por 100, pero si es divisible por 4, si es bisiesto
                     resultado = true;
             }
-            else
-            {
-                if (elDato % 4 == 0)
-                    resultado = true;
-            }
+
+            return resultado;
+        }
+
+        /// <summary>
+        /// Función que identifica si el divisor genera residuo 0
+        /// </summary>
+        /// <param name="dividendo">Valor a dividir</param>
+        /// <param name="divisor">El divisor</param>
+        /// <returns>Respuesta si es divisible</returns>
+        static bool EsDivisiblePor(int dividendo, int divisor)
+        {
+            bool resultado = false;
+
+            if (dividendo % divisor == 0)
+                resultado = true;
 
             return resultado;
         }
