@@ -211,6 +211,10 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
     y los ordenará según el criterio que indique el usuario
 >>- Actualizado a .NET 6
 
+>>### [GananciasCelebridades](https://github.com/jdrodas/Csharp_funprog/tree/master/GananciasCelebridades)
+>>- Crear una aplicación que utilizando funciones, calcule la tasa de impuestos de 
+    4 celebridades basado en sus ingresos y los rangos definidos para asignar dicha tasa
+
 ### 5. Principios de Programación Orientada a Objetos
 
 >>### [EjemploObjetos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploObjetos)
