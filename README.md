@@ -135,6 +135,10 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementa una función que indica si un numero es divisible por otro
 >>- Actualizado a .NET 6
 
+>### [CalculoTiempoSegundos](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculoTiempoSegundos)
+>>- Implementa un menú con opciones en consola utilizando ciclos do-while y condicionales
+>>- Implementa una función que devuelve sus resultados a través de parámetros "out"
+
 
 ### 4. Arreglos
 
