@@ -139,6 +139,11 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementa un menú con opciones en consola utilizando ciclos do-while y condicionales
 >>- Implementa una función que devuelve sus resultados a través de parámetros "out"
 
+>### [CalculoDetalladoEdad](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculoDetalladoEdad)
+>>- Calcular la edad en años, meses y días a partir de la información ingresada
+    para la fecha de nacimiento
+>>- Explorar el cambio del CultureInfo de acuerdo al valor de un país (es-CO)
+>>- Utilizar las estructuras Datetime y TimeSpan para manipulación de datos tipo fecha
 
 ### 4. Arreglos
 
