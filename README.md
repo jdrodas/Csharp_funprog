@@ -345,6 +345,9 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [ex02_CerrosTutelares](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_CerrosTutelares)
 >>- Leer 7 valores numéricos reales mayores que cero, buscar su promedio para identificar si cumplen una meta
 
+>>### [ex02_CoordenadasGeograficas](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_CoordenadasGeograficas)
+>>- Convertir Coordenadas Geográficas desde notación Grados-Minutos-Segundos a notación decimal y viceversa.
+
 ### Examen No. 3
 
 >>### [ex03_SimulacroVacunacion](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_SimulacroVacunacion)
