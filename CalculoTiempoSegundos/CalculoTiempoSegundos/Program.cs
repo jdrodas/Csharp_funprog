@@ -70,6 +70,13 @@ namespace CalculoTiempoSegundos
                 Console.Write("Ingresa la cantidad de minutos: ");
                 datoMinutoCorrecto = uint.TryParse(Console.ReadLine(), out minutos);
 
+                //Aqui validamos que los minutos estén en el intervalo [0;59)
+                if (minutos >= 60)
+                {
+                    Console.WriteLine("\nEl valor de los minutos no debe ser superior a 59. Intenta nuevamente");
+                    datoMinutoCorrecto = false;
+                }
+
                 if (datoHoraCorrecto == true && datoMinutoCorrecto == true)
                 {
                     segundos = (horas * 3600) + (minutos * 60);
