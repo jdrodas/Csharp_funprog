@@ -348,6 +348,10 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [ex02_CoordenadasGeograficas](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_CoordenadasGeograficas)
 >>- Convertir Coordenadas Geográficas desde notación Grados-Minutos-Segundos a notación decimal y viceversa.
 
+>>### [ex02_ConversionRGBaCMYK](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ConversionRGBaCMYK)
+>>- Convertir colores desde RGB hacia CMYK y viceversa.
+
+
 ### Examen No. 3
 
 >>### [ex03_SimulacroVacunacion](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_SimulacroVacunacion)
