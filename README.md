@@ -213,6 +213,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Demostrar la utilización de matrices como estructura de datos
 >>- Implementar funciones que totalicen por filas y por columnas
 >>- Utilizar ciclos while y for para llenar y visualizar contenidos de la matriz
+>>- Actualizado a .NET 6
 
 >### [EjemploArgsConsola](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArgsConsola)
 >>- Demostrar el funcionamiento de los argumentos que recibe la función Main()
