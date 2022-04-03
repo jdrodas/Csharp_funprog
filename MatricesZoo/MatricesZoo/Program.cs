@@ -6,31 +6,10 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 
-En un zoológico se desea llevar control de la cantidad de alimentación
-que se requiere por tipo de animal que se encuentra en las instalaciones.
-
-Para efectos de simplificación, se tendrán animales herbívoros, carnívoros
-en los entornos acuáticos, terrestres y aéreos.
-
-Se desea construir un programa que lea la cantidad de alimento en kg por
-cada combinación y al final se obtengan los totales por tipo de entorno
-y tipo de alimentación.
-
-la cantidad de alimento está en un rango entre 10 y 50 kg.
-
-El programa debe implementar funciones que se llamen "ObtieneTotalesAlimentacion" 
-y "ObtieneTotalesEntorno" que recibe como parametro la matriz con las cantidades 
-de alimento y devuelve el tipo de total que se requiere (entorno o tipo).
-
-Recomendaciones de mejora
--------------------------
-
--- Consolidar las funciones de ObtieneTotalesAlimentación y ObtieneTotalesEntorno
-   en una sola función que reciba atributos adicionales para identificar el tipo
-   de total requerido.
- 
- */
-using System;
+- Demostrar la utilización de matrices como estructura de datos
+- Implementar funciones que totalicen por filas y por columnas
+- Utilizar ciclos while y for para llenar y visualizar contenidos de la matriz
+*/
 
 namespace MatricesZoo
 {
@@ -47,127 +26,106 @@ namespace MatricesZoo
             string[] tipos = { "Herbívoros", "Carnívoros" };
             string[] entornos = { "Acuático", "Terrestre", "Aéreo" };
 
-            float[,] alimentos = new float[entornos.Length, tipos.Length];
+            float[,] alimentos = new float[tipos.Length, entornos.Length];
 
-            int totalTipos = 0, totalEntornos = 0;
-            float cantidad;
+            int tipo = 0, entorno;          //Son las variables de control de los ciclos while
+            float cantidad;                 //La variable que controlará el dato ingresado por el usuario
+            bool datoCorrecto = false;
 
-            //Captura de información e ingreso en la matriz
-            while (totalEntornos < entornos.Length)
+            //Empezamos recorriendo cada tipo
+            while (tipo < tipos.Length)
             {
-                //Para recorrer todos los tipos de este entorno
-                totalTipos = 0;
-
-                while (totalTipos < tipos.Length)
+                entorno = 0;
+                //Seguimos recorriendo cada entorno
+                while (entorno < entornos.Length)
                 {
-                    try
-                    {
-                        Console.Write("Ingresa la cantidad de alimentos para {0} en el entorno {1}: ",
-                            tipos[totalTipos],
-                            entornos[totalEntornos]);
-                        cantidad = float.Parse(Console.ReadLine());
+                    Console.Write($"Ingresa la cantidad de alimentos para {tipos[tipo]} " +
+                        $"en el entorno {entornos[entorno]}: ");
+                    datoCorrecto = float.TryParse(Console.ReadLine(), out cantidad);
 
-                        //verificamos que la cantidad esté en el rango [10;50]
+                    //Si el dato se convirtió correctamente a numero float
+                    if (datoCorrecto == true)
+                        //Si la cantidad está en el rango esperado
                         if (cantidad >= 10 && cantidad <= 50)
                         {
-                            alimentos[totalEntornos, totalTipos] = cantidad;
-                            totalTipos++;
+                            alimentos[tipo, entorno] = cantidad;
+                            entorno++; //Condición de salida del while de los entornos
                         }
                         else
-                            Console.WriteLine("La cantidad de alimento ingresada no está en el rango [10;50]. Intenta nuevamente! \n");
-
-                    }
-                    catch (FormatException error )
-                    {
-                        Console.WriteLine("Ingresaste un dato no numérico, intenta nuevamente!");
-                        Console.WriteLine("Error: {0} \n", error.Message);
-                    }
+                            Console.WriteLine("La cantidad de alimento ingresada no está en el rango [10;50]. Intenta nuevamente!\n");
+                    else
+                        Console.WriteLine("Ingresaste un dato no numérico, intenta nuevamente!\n");
                 }
 
-                //Terminamos los tipos, Incrementamos para el siguiente entorno
-                totalEntornos++;
+                //Terminamos los entornos, Incrementamos para el siguiente tipo
+                Console.WriteLine();
+                tipo++; //Condición de salida del while de los tipos
             }
 
-            //aqui calculamos los totales solicitados
-            float TotalCantidad = 0;
+            //Aqui calculamos los totales
+            float[] totalesEntorno = CalculaTotales(alimentos, "Entorno");
+            float[] totalesTipo = CalculaTotales(alimentos, "Tipo");
 
-            for (totalEntornos = 0; totalEntornos < entornos.Length; totalEntornos++)
-            { 
-                for (totalTipos = 0; totalTipos < tipos.Length; totalTipos++)
-                { 
-                    TotalCantidad += alimentos[totalEntornos, totalTipos];
-                }
-            }
+            //Calculamos la cantidad total de alimento para zoologico
+            float totalCantidad = 0;
+            for (entorno = 0; entorno < alimentos.GetLength(1); entorno++)
+                for (tipo = 0; tipo < alimentos.GetLength(0); tipo++)
+                    totalCantidad += alimentos[tipo, entorno];
 
-            //Arreglos que tienen los totales por filas (entornos) y columnas (tipos)
-            float[] CantidadTotalAlimentacion = ObtieneTotalAlimentacion(alimentos);
-            float[] CantidadTotalEntorno = ObtieneTotalEntorno(alimentos);
 
             //aqui visualizamos los resultados
             Console.WriteLine("\n\nLos resultados obtenidos son:");
-            Console.WriteLine("Total Kgs de alimento en todo el zoológico: {0}", TotalCantidad);
+            Console.WriteLine($"Total Kgs de alimento en todo el zoológico: {totalCantidad:00.00}");
 
             Console.WriteLine("\nTotal kgs de alimento por tipo de alimentación:");
-
             for (int i = 0; i < tipos.Length; i++)
-                Console.WriteLine("Tipo {0} se consume {1}",
-                    tipos[i], CantidadTotalAlimentacion[i]);
-            
+                Console.WriteLine($"Tipo {tipos[i]} se consume {totalesTipo[i]:00.00}");
+
             Console.WriteLine("\nTotal kgs de alimento por entorno:");
-
             for (int i = 0; i < entornos.Length; i++)
-                Console.WriteLine("Tipo {0} se consume {1}",
-                    entornos[i], CantidadTotalEntorno[i]);
-            
+                Console.WriteLine($"Tipo {entornos[i]} se consume {totalesEntorno[i]:00.00}");
         }
 
         /// <summary>
-        /// Función que obtiene el total de alimentos por tipo del animal
+        /// Calcula los totales según el criterio, Entorno o Tipo
         /// </summary>
-        /// <param name="matrizAlimentos">Matriz con las cantidades de alimento</param>
-        /// <returns>el arreglo con los totales por cada tipo</returns>
-        static float[] ObtieneTotalAlimentacion(float[,] matrizAlimentos)
+        /// <param name="cantidadAlimentos"></param>
+        /// <param name="claseTotal"></param>
+        /// <returns></returns>
+        static float[] CalculaTotales(float[,] cantidadAlimentos, string claseTotal)
         {
-            float[] resultado = new float[2]; //Dos tipos de alimentación
+            //La dimension 0 tiene los tipos
+            //La dimension 1 tiene los entornos
 
-            for (int i = 0; i < resultado.Length; i++)
-                resultado[i] = 0;
+            //Arbritrariamente lo declaro con el tamaño de la primera dimensión
+            float[] totales = new float[cantidadAlimentos.GetLength(0)];
+            int entorno, tipo;
 
-            //aqui recorremos la matriz, totalizando solo por tipo de alimentos
-            for (int entorno = 0; entorno <3; entorno++)
+            // Totalizamos por entorno del animal
+            if (claseTotal == "Entorno")
             {
-                for (int tipo = 0; tipo < 2; tipo++)
+                totales = new float[cantidadAlimentos.GetLength(1)];
+
+                for (entorno = 0; entorno < cantidadAlimentos.GetLength(1); entorno++)
                 {
-                    //totalizará solamente lo del mismo tipo
-                    resultado[tipo] += matrizAlimentos[entorno, tipo];
+                    totales[entorno] = 0; //Inicializamos la acumulación por entorno
+                    for (tipo = 0; tipo < cantidadAlimentos.GetLength(0); tipo++)
+                        totales[entorno] += cantidadAlimentos[tipo, entorno];
                 }
             }
 
-            return resultado;
-        }
-
-        /// <summary>
-        /// Función que obtiene el total de alimentos por entorno del animal
-        /// </summary>
-        /// <param name="matrizAlimentos">Matriz con las cantidades de alimento</param>
-        /// <returns>el arreglo con los totales por cada entorno</returns>
-        static float[] ObtieneTotalEntorno(float[,] matrizAlimentos)
-        {
-            float[] resultado = new float[3]; //Tres entornos
-
-            for (int i = 0; i < resultado.Length; i++)
-                resultado[i] = 0;
-
-            //aqui recorremos la matriz, totalizando solo por tipo de entorno
-            for (int entorno = 0; entorno < 3; entorno++)
+            //Totalizamos por tipo de animal
+            if (claseTotal == "Tipo")
             {
-                for (int tipo = 0; tipo < 2; tipo++)
+                totales = new float[cantidadAlimentos.GetLength(0)];
+                for (tipo = 0; tipo < cantidadAlimentos.GetLength(0); tipo++)
                 {
-                    //totalizará solamente lo del mismo tipo
-                    resultado[entorno] += matrizAlimentos[entorno, tipo];
+                    totales[tipo] = 0; //Inicializamos la acumulación por entorno
+                    for (entorno = 0; entorno < cantidadAlimentos.GetLength(1); entorno++)
+                        totales[tipo] += cantidadAlimentos[tipo, entorno];
                 }
             }
-            return resultado;
+            return totales;
         }
     }
 }

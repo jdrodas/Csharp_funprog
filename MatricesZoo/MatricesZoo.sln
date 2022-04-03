@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatricesZoo", "MatricesZoo\MatricesZoo.csproj", "{ABA001AD-1D87-4EBA-A636-7192109BF339}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatricesZoo", "MatricesZoo\MatricesZoo.csproj", "{C28C9D22-1DED-457B-8BDC-EC4D650C13CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ABA001AD-1D87-4EBA-A636-7192109BF339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ABA001AD-1D87-4EBA-A636-7192109BF339}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ABA001AD-1D87-4EBA-A636-7192109BF339}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABA001AD-1D87-4EBA-A636-7192109BF339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28C9D22-1DED-457B-8BDC-EC4D650C13CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28C9D22-1DED-457B-8BDC-EC4D650C13CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28C9D22-1DED-457B-8BDC-EC4D650C13CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28C9D22-1DED-457B-8BDC-EC4D650C13CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {01C74B86-1851-4B78-91E1-438FC68E6776}
+		SolutionGuid = {C4F2DD5F-C2A8-4FC3-B19A-0F97C02A4176}
 	EndGlobalSection
 EndGlobal
