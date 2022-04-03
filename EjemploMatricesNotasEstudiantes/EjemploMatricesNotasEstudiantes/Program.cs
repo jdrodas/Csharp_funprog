@@ -21,6 +21,15 @@ Implemente dos funciones, CalculaPromedioAlumno y CalculaPromedioMateria
 que reciban como parametro la matriz de notas y devuelva un arreglo de float
 con los valores correspondientes a los respectivos promedios
 
+Observaciones:
+--------------
+
+    -   Cuando utilizo Console.ReadLine() le coloco al final un "!" el "null-forgiving operator
+        que me permite eliminar la advertencia asociada al código CS8601 - Posible asignación
+        de referencia nula.
+
+        https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/operators/null-forgiving
+
 */
 
 namespace EjemploMatricesNotasEstudiantes
@@ -33,124 +42,144 @@ namespace EjemploMatricesNotasEstudiantes
             Console.WriteLine("Se ingresará 5 estudiantes para 5 materias");
             Console.WriteLine("Las notas van entre 0 y 5\n\n");
 
-            //Aqui declaramos la matriz que utilizaremos
-            float[,] lasNotas = new float[5, 5];
-            int alumno = 0, materia;
-            float valorNota;
+            /*
+            Partes a implementar
+            - Leer los nombres de 5 estudiantes y 5 materias
+            - Leer las notas de cada estudiante por cada materia
+            - Calcular el promedio por estudiante
+            - Calcular el promedio por materia
+            - Visualizar resultados
+             */
 
-            //las filas corresponden a estudiantes y las columnas a materias
-            while (alumno < 5)
+            //Paso 1: Leer los nombres de estudiantes y las materias
+            string[] nombreEstudiantes = new string[5];
+
+            Console.WriteLine("\n *** Nombres de los estudiantes *** ");
+            for (int i = 0; i < nombreEstudiantes.Length; i++)
             {
-                //Inicializamos el contador de materias
-                materia = 0;
+                Console.Write($"Ingresa el nombre del estudiante No. {i + 1}: ");
+                nombreEstudiantes[i] = Console.ReadLine()!;
+            }
 
-                while (materia < 5)
+            string[] nombreMaterias = new string[5];
+
+            Console.WriteLine("\n *** Nombres de las materias *** ");
+            for (int i = 0; i < nombreMaterias.Length; i++)
+            {
+                Console.Write($"Ingresa el nombre de la materia No. {i + 1}: ");
+                nombreMaterias[i] = Console.ReadLine()!;
+            }
+
+            //Paso 2: Leer las notas de cada estudiante por cada materia
+            Console.WriteLine("\nIngreso de notas para cada materia y cada estudiante: \n");
+
+            float[,] lasNotas = new float[nombreEstudiantes.Length, nombreMaterias.Length];
+
+            for (int estudiante = 0; estudiante < nombreEstudiantes.Length; estudiante++)
+            {
+                for (int materia = 0; materia < nombreMaterias.Length; materia++)
                 {
-                    try
-                    {
-                        Console.Write("Ingresa la calificación para la materia {0} del alumno {1}: ",
-                            materia + 1,
-                            alumno + 1);
-
-                        valorNota = float.Parse(Console.ReadLine()!);
-
-                        //aqui validamos que el número esté en el rango
-                        if (valorNota >= 0 && valorNota <= 5)
-                        {
-                            lasNotas[alumno, materia] = valorNota;
-
-                            //incrementamos para la siguiente materia
-                            materia++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("El valor no está en el rango válido [0;5]. Intenta nuevamnente! \n");
-                        }
-                    }
-                    catch (FormatException error)
-                    {
-                        Console.WriteLine("Ingresaste un dato no numérico. Intenta nuevamente!");
-                        Console.WriteLine("Error: {0} \n", error.Message);
-                    }
+                    Console.Write($"Ingresa la nota para {nombreEstudiantes[estudiante]} en " +
+                        $"la materia {nombreMaterias[materia]}: ");
+                    lasNotas[estudiante, materia] = float.Parse(Console.ReadLine()!);
                 }
-
-                //Incrementamos para el siguiente alumno
-                alumno++;
-
                 Console.WriteLine();
             }
+            /*
+             Para mejorar: Implementa control de excepciones al realizar el parse de
+             la entrada del usuario.
+             */
 
-            //aqui calculamos promedios
-            float[] promedioAlumnos = CalculaPromedioAlumno(lasNotas);
-            float[] promedioMaterias = CalculaPromedioMateria(lasNotas);
+            //Paso 3: Calcular el promedio por estudiante
+            float[] promediosEstudiante = CalculaPromediosEstudiante(lasNotas);
 
-            //aqui visualizamos el contenido de las notas ingresadas
-            Console.WriteLine("Las notas ingresadas fueron: ");
+            // Paso 4: Calcular el promedio por materia
+            float[] promediosMateria = CalculaPromediosMateria(lasNotas);
 
-            for (alumno = 0; alumno < 5; alumno++)
+
+            //Paso 5: Visualizar resultados
+            //Visualizar por nombre de estudiantes
+            Console.WriteLine("\nLos nombres de los estudiantes son:");
+            for (int estudiante = 0; estudiante < nombreEstudiantes.Length; estudiante++)
             {
-                Console.Write("Alumno {0}: ", alumno + 1);
+                Console.WriteLine($"{nombreEstudiantes[estudiante]}");
 
-                for (materia = 0; materia < 5; materia++)
-                    Console.Write(lasNotas[alumno, materia] + "\t");
+                //Aqui recorremos la materia con su calificación
+                for (int materia = 0; materia < nombreMaterias.Length; materia++)
+                {
+                    Console.WriteLine($"\tMateria: {nombreMaterias[materia]}, " +
+                        $"Calificación: {lasNotas[estudiante, materia]}");
+                }
 
-                //aqui visualizamos el promedio del alumno
-                Console.WriteLine("Promedio: {0}", promedioAlumnos[alumno]);
+                //Aqui colocamos el promedio del estudiante
+                Console.WriteLine($"\t\tEl promedio de {nombreEstudiantes[estudiante]} " +
+                    $"fue de: {promediosEstudiante[estudiante]}");
             }
 
-            Console.Write("Prom. \t");
-            for (materia = 0; materia < promedioMaterias.Length; materia++)
-            {
-                Console.Write(promedioMaterias[materia] + "\t");
-            }
+            //Visualizar por nombre de materias
+            Console.WriteLine("\nLos nombres de las materias son:");
 
-            Console.WriteLine();
+            for (int materia = 0; materia < nombreMaterias.Length; materia++)
+            {
+                Console.WriteLine($"{nombreMaterias[materia]}");
+                //Aqui recorremos el estudiante con su calificación
+                for (int estudiante = 0; estudiante < nombreEstudiantes.Length; estudiante++)
+                {
+                    Console.WriteLine($"\tEstudiante: {nombreEstudiantes[estudiante]}, " +
+                        $"Calificación: {lasNotas[estudiante, materia]}");
+                }
+                //Aqui colocamos el promedio de la materia              
+                Console.WriteLine($"\t\tEl promedio de {nombreMaterias[materia]} " +
+                    $"fue de: {promediosMateria[materia]}");
+            }
         }
 
         /// <summary>
-        /// Función que calcula el promedio de las notas del alumno
+        /// Función que calcula el promedio de las notas del estudiante
         /// </summary>
-        /// <param name="matrizNotas">La matriz de notas</param>
+        /// <param name="lasNotas">La matriz de notas</param>
         /// <returns>los promedios de los alumnos</returns>
-        static float[] CalculaPromedioAlumno(float[,] matrizNotas)
+        static float[] CalculaPromediosEstudiante(float[,] lasNotas)
         {
-            float[] promedios = new float[5];
-            int i, j; //recorrer el arreglo con el ciclo for
+            //La dimensión 0 del arreglo de notas corresponde a las estudiantes
+            //La dimensión 1 del arreglo de notas corresponde a las materias
+            float[] promedios = new float[lasNotas.GetLength(0)];
 
-            //i son filas (alumnos), j son columnas (materias)
-            for (i = 0; i < 5; i++)
+            for (int estudiante = 0; estudiante < lasNotas.GetLength(0); estudiante++)
             {
-                promedios[i] = 0; // Inicializamos la acumulacion
+                promedios[estudiante] = 0; // Inicializamos la acumulacion
 
-                for (j = 0; j < 5; j++)
-                {
-                    promedios[i] += matrizNotas[i, j];
-                }
+                for (int materia = 0; materia < lasNotas.GetLength(1); materia++)
+                    promedios[estudiante] += lasNotas[estudiante, materia];
 
-                promedios[i] /= 5; //aqui dividimos por la cantidad de elementos
+                //Dividimos la suma de las notas por la cantidad de materias
+                promedios[estudiante] /= lasNotas.GetLength(1);
             }
             return promedios;
         }
 
-        static float[] CalculaPromedioMateria(float[,] matrizNotas)
+        /// <summary>
+        /// Función que calcula el promedio de las notas de la materia
+        /// </summary>
+        /// <param name="lasNotas"></param>
+        /// <returns>los promedios de las materias</returns>
+        static float[] CalculaPromediosMateria(float[,] lasNotas)
         {
-            float[] promedios = new float[5];
-            int i, j; //recorrer el arreglo con el ciclo for
+            //La dimensión 0 del arreglo de notas corresponde a las estudiantes
+            //La dimensión 1 del arreglo de notas corresponde a las materias
+            float[] promedios = new float[lasNotas.GetLength(1)];
 
-            //i son filas (alumnos), j son columnas (materias)
-            for (j = 0; j < 5; j++)
+            for (int materia = 0; materia < lasNotas.GetLength(1); materia++)
             {
-                promedios[j] = 0;
-                for (i = 0; i < 5; i++)
-                {
-                    promedios[j] += matrizNotas[i, j];
-                }
+                promedios[materia] = 0; // Inicializamos la acumulacion
 
-                promedios[j] /= 5;
+                for (int estudiante = 0; estudiante < lasNotas.GetLength(0); estudiante++)
+                    promedios[materia] += lasNotas[estudiante, materia];
+
+                //Dividimos la suma de las notas por la cantidad de estudiantes
+                promedios[materia] /= lasNotas.GetLength(0);
             }
-
             return promedios;
         }
-
     }
 }
