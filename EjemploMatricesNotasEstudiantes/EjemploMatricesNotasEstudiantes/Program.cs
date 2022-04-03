@@ -24,7 +24,7 @@ con los valores correspondientes a los respectivos promedios
 Observaciones:
 --------------
 
-    -   Cuando utilizo Console.ReadLine() le coloco al final un "!" el "null-forgiving operator
+    -   Cuando utilizo Console.ReadLine() le coloco al final un "!" el "null-forgiving operator"
         que me permite eliminar la advertencia asociada al código CS8601 - Posible asignación
         de referencia nula.
 
