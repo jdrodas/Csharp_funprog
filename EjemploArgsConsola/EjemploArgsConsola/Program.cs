@@ -16,9 +16,10 @@ El programa recibe 4 argumentos:
 
 Validaciones:
 - Cantidad de argumentos: deben ser 4.
-- el primer argumento debe ser la palabra "ascendente" o "descendente"
-- el 2do, 3er y 4to argumento deben ser enteros positivos
-- el 2do y 3er argumento deben delimitar un rango
+- El primer argumento debe ser la palabra "ascendente" o "descendente"
+- El 2do, 3er y 4to argumento deben ser enteros positivos
+- El 2do y 3er argumento deben delimitar un rango
+- El 4to argumento debe ser una cantidad > 0
 
 Este programa debe ejecutarse desde una ventana de comandos para poder especificar los 4 argumentos
              
@@ -30,71 +31,112 @@ namespace EjemploArgsConsola
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             Console.WriteLine("Programa para demostrar la utilización del arreglo de argumentos");
 
             if (args.Length != 4)
-                Console.WriteLine($"El programa no recibió la cantidad de argumentos esperada. Se necesitan 4. \nRecibió {args.Length} argumentos.");
+                Console.WriteLine($"El programa no recibió la cantidad de argumentos esperada. " +
+                    $"Se necesitan 4. Recibió {args.Length} argumentos.");
             else
             {
-                Console.WriteLine($"El programa recibió {args.Length} argumentos. Podemos continuar!");
+                // Aqui seguimos cuando los argumentos son exactamente 4
+                Console.WriteLine("\nValidación de cantidad de argumentos cumplida! Argumentos recibidos");
+
+                for (int i = 0; i < args.Length; i++)
+                    Console.WriteLine($"Argumento No. {(i + 1)}, valor: {args[i]}");
 
                 //Aqui validamos que el primer argumento sea un string "ascendente" o "descendente"
                 if (args[0].ToLower() != "ascendente" && args[0].ToLower() != "descendente")
                     Console.WriteLine("El primer argumento no corresponde a un criterio de ordenamiento");
                 else
                 {
-                    Console.WriteLine($"El criterio de ordenamiento es: {args[0].ToLower()}");
+                    Console.WriteLine($"\nEl criterio de ordenamiento es: {args[0].ToLower()}");
                     string criterioOrden = args[0];
 
-                    //Aqui validamos que el 2do, 3ro y 4to argumento sean enteros y positivos
-                    int limiteInferior, limiteSuperior, cantidad;
-                    try
-                    {
-                        limiteInferior = int.Parse(args[1]);
-                        limiteSuperior = int.Parse(args[2]);
-                        cantidad = int.Parse(args[3]);
+                    bool datosCorrectos = true;
+                    bool[] conversionDatos = new bool[3];
+                    uint[] datosConvertidos = new uint[3];
 
-                        //Validamos que sean enteros positivos
-                        if (limiteInferior <= 0 || limiteSuperior <= 0 || cantidad <= 0)
-                            Console.WriteLine("Los límites inferior y superior así como la cantidad deben ser enteros positivos");
+                    //Aqui validamos si los datos convierten correctamente a enteros positivos
+                    for (int i = 0; i < datosConvertidos.Length; i++)
+                        conversionDatos[i] = uint.TryParse(args[i + 1], out datosConvertidos[i]);
+
+                    //Aqui revisamos si todos convirtieron bien. Si al menos uno es falso,
+                    //El proceso falla
+                    for (int i = 0; i < conversionDatos.Length; i++)
+                        if (conversionDatos[i] == false)
+                            datosCorrectos = false;
+
+                    //Si todos los datos se pudieron convertir, son enteros positivos
+                    if (datosCorrectos == false)
+                    {
+                        Console.WriteLine("Los argumentos 2, 3 y 4 no son enteros positivos.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nLos argumentos 2, 3 y 4 SON enteros positivos.");
+
+                        //Luego, hay que verificar que el 2 y el 3 definan un rango
+                        if (datosConvertidos[1] < datosConvertidos[0])
+                        {
+                            Console.WriteLine($"{datosConvertidos[0]} y {datosConvertidos[1]} NO definen un rango");
+                        }
                         else
                         {
-                            Console.WriteLine("Los limites inferior, superior y cantidad son enteros positivos");
+                            Console.WriteLine($"\n{datosConvertidos[0]} y {datosConvertidos[1]} SI definen un rango");
 
-                            //Validamos que el 2do y 3er argumento delimiten un rango. 
-                            //Si el inferior es mayor que el superior, no se delimita un rango
-                            if (limiteInferior >= limiteSuperior)
-                                Console.WriteLine($"{limiteInferior} y {limiteSuperior} NO delimitan un rango");
+                            //ya casi... falta validar si el 4 es mayor que cero
+                            if (datosConvertidos[2] == 0)
+                            {
+                                Console.WriteLine("El cuarto argumento no debe ser 0.");
+                            }
                             else
                             {
-                                Console.WriteLine($"{limiteInferior} y {limiteSuperior} delimitan un rango");
+                                Console.WriteLine($"\n{datosConvertidos[2]} define una cantidad!");
 
-                                //Por fin! Generemos el rango de valores
+                                //Por fin! ahora si hacemos los aleatorios
+                                int limiteInferior = (int)datosConvertidos[0];
+                                int limiteSuperior = (int)datosConvertidos[1];
+                                uint cantidad = datosConvertidos[2];
+
                                 int[] losNumeros = new int[cantidad];
-
                                 Random aleatorio = new Random();
 
+                                //Aqui generamos los numeros de manera aleatoria
                                 for (int i = 0; i < losNumeros.Length; i++)
                                     losNumeros[i] = aleatorio.Next(limiteInferior, limiteSuperior + 1);
+
+                                //Aqui visualizamos los numeros generados
+                                Console.WriteLine("\nLos numeros generados según los parámetros");
 
                                 //Aqui visualizamos los numeros generados hasta el momento
                                 EscribeNumerosEnConsola(losNumeros);
 
+                                //Aqui obtenemos el arreglo ordenado según el criterio
                                 int[] numerosOrdenados = OrdenaNumeros(losNumeros, criterioOrden);
 
-                                //Aqui visualizamos luego de la ordenación
-                                Console.WriteLine($"\nAplicando el criterio de ordenamiento {criterioOrden}, los numeros quedan asì:\n");
+                                //Aqui visualizamos los numeros ordenados según el criterio
+                                Console.WriteLine("\nLos numeros ordenados según los parámetros");
                                 EscribeNumerosEnConsola(numerosOrdenados);
                             }
                         }
                     }
-                    catch (FormatException elError)
-                    {
-                        Console.WriteLine("Los argumentos de lìmite inferior, superior o cantidad no son nùmeros enteros");
-                        Console.WriteLine(elError.Message);
-                        Console.WriteLine($"\nHabías ingresado {args[1]}, {args[2]} y {args[3]}  como lìmite inferior, superior y cantidad");
-                    }
                 }
+            }
+        }
+
+        /// <summary>
+        /// Función que escribe en pantalla un arreglo de numeros enteros
+        /// </summary>
+        /// <param name="arregloNumeros">el arreglo de numeros enteros a escribir</param>
+        static void EscribeNumerosEnConsola(int[] arregloNumeros)
+        {
+            for (int i = 0; i < arregloNumeros.Length; i++)
+            {
+                Console.Write($"{arregloNumeros[i]}\t");
+                //Si ya se han escrito una cantidad de valores que sea múltiplo de 10, haga salto de lìnea
+                if ((i + 1) % 10 == 0)
+                    Console.WriteLine();
             }
         }
 
@@ -148,19 +190,5 @@ namespace EjemploArgsConsola
             return resultado;
         }
 
-        /// <summary>
-        /// Función que escribe en pantalla un arreglo de numeros enteros
-        /// </summary>
-        /// <param name="arregloNumeros">el arreglo de numeros enteros a escribir</param>
-        static void EscribeNumerosEnConsola(int[] arregloNumeros)
-        {
-            for (int i = 0; i < arregloNumeros.Length; i++)
-            {
-                Console.Write($"{arregloNumeros[i]}\t");
-                //Si ya se han escrito una cantidad de valores que sea múltiplo de 10, haga salto de lìnea
-                if ((i + 1) % 10 == 0)
-                    Console.WriteLine();
-            }
-        }
     }
 }
