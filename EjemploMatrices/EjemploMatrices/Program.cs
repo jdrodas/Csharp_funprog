@@ -14,30 +14,40 @@ namespace EjemploMatrices
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Programa para llenar una matriz de 3x3 con los numeros enteros del 1 al 9\t");
+            Console.WriteLine("Programa para llenar una matriz de 4x3 \ncon numeros aleatorios entre 1 y 100\n");
 
-            int i, j, numero = 1;
-            int[,] matriz = new int[3, 3];
+            int filas, columnas;
+            int[,] matriz = new int[4, 3];
 
-            //aqui llenamos la matriz i para las filas, j para las columnas
-            for (i = 0; i < 3; i++)
-            {
-                for (j = 0; j < 3; j++)
-                {
-                    matriz[i, j] = numero;
-                    numero++;
-                }
-            }
+            Console.WriteLine($"La matriz tiene una capacidad de {matriz.Length} elementos");
+            Console.WriteLine($"La matriz tiene {matriz.Rank} dimensiones");
+            Console.WriteLine($"Tiene {matriz.GetLength(0)} filas y {matriz.GetLength(1)} columnas");
+
+            Random aleatorio = new Random();
+
+            //aqui llenamos la matriz utilizando los tamaños de cada dimensión
+            for (filas = 0; filas < matriz.GetLength(0); filas++)
+                for (columnas = 0; columnas < matriz.GetLength(1); columnas++)
+                    matriz[filas, columnas] = aleatorio.Next(100) + 1;
 
             //visualizamos la matriz
-            Console.WriteLine("La matriz con los números se ve asi:");
+            Console.WriteLine("\nEl contenido de la matriz es:\t");
 
-            for (i = 0; i < 3; i++)
+            for (filas = 0; filas < matriz.GetLength(0); filas++)
             {
-                for (j = 0; j < 3; j++)
-                {
-                    Console.Write(matriz[i, j] + "\t");
-                }
+                for (columnas = 0; columnas < matriz.GetLength(1); columnas++)
+                    Console.Write($"{matriz[filas, columnas]} \t");
+
+                Console.WriteLine();
+            }
+
+            //Que pasa si intercambiamos el orden de los ciclos "for" anidados?
+            Console.WriteLine("\n¿Es esta la matriz transpuesta?:\t");
+            for (columnas = 0; columnas < matriz.GetLength(1); columnas++)
+            {
+                for (filas = 0; filas < matriz.GetLength(0); filas++)
+                    Console.Write($"{matriz[filas, columnas]} \t");
+
                 Console.WriteLine();
             }
         }
