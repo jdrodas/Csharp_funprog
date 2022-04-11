@@ -268,6 +268,13 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales, indicando porcentaje del total.
 
+>### [ComparaReinosOO](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinosOO)
+>>- Mejorar la implementación del proyecto [ComparaReinos](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinos)
+    creando la clase "Reino" y ajustando la funcionalidad para utilizar el recurso.
+>>- Demostrar la utilización de condicionales 
+>>- captura de datos desde consola
+>>- visualizar resultados
+
 
 ### 6. Interfaces Graficas con Windows Forms
 
