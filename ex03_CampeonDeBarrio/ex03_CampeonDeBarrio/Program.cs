@@ -53,10 +53,6 @@ promedio                float
 
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ex03_CampeonDeBarrio
 {
@@ -142,36 +138,32 @@ namespace ex03_CampeonDeBarrio
         {
             //Arbitrariamente seleccionamos el campeón como el primer jugador del arreglo
             Jugador jugadorCampeon = arregloJugadores[0];
-            bool hayEmpate = false;
-            float promedioCampeon = 0f;
+            
 
             //Comparamos con el resto de jugadores
             for (int i = 1; i < arregloJugadores.Length; i++)
-            {
+                //Si hay un jugador con mejor promedio, es el nuevo campeón
                 if (jugadorCampeon.Promedio < arregloJugadores[i].Promedio)
                     jugadorCampeon = arregloJugadores[i];
 
-                //Validamos si hay empate
-                if (jugadorCampeon.Promedio == arregloJugadores[i].Promedio)
-                {
-                    hayEmpate = true;
-                    promedioCampeon = jugadorCampeon.Promedio;
-                }
-            }
+            //Contamos cuantos jugadores tienen ese mejor puntaje
+            int cantidadCampeones = 0;
 
-            //Aqui visualimamos resultados
-            if (hayEmpate == false)
-            {
+            foreach (Jugador unJugador in arregloJugadores)
+                if (unJugador.Promedio == jugadorCampeon.Promedio)
+                    cantidadCampeones++;
+
+            //Aqui visualizamos resultados
+            if (cantidadCampeones == 1)
                 Console.WriteLine($"\n\nEl Campeón del Barrio es {jugadorCampeon.Nombre}\n" +
                 $" que obtuvo promedio de {jugadorCampeon.Promedio.ToString("0.00")} puntos por campaña.");
-            }
             else
             {
-                Console.WriteLine($"\n\nSe presentó empate con un puntaje de {promedioCampeon} entre: ");
+                Console.WriteLine($"\n\nSe presentó empate con un puntaje de {jugadorCampeon.Promedio.ToString("0.00")} entre: ");
 
                 foreach (Jugador unJugador in arregloJugadores)
-                    if(unJugador.Promedio == promedioCampeon)
-                    Console.WriteLine($"- {unJugador.Nombre} con {unJugador.Campañas} campaña(s) jugadas");
+                    if (unJugador.Promedio == jugadorCampeon.Promedio)
+                        Console.WriteLine($"- {unJugador.Nombre} con {unJugador.Campañas} campaña(s) jugadas");
             }
         }
     }
