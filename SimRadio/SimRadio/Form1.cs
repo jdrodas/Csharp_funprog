@@ -41,229 +41,127 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace SimRadio
-{
+{ 
     public partial class Form1 : Form
     {
-        //atributo de la clase
-        private bool estado;
+        //Atributo de la clase
+        //private Radio miRadio;
         private float frecuencia;
         private int volumen;
+        private bool encendido;
 
-        /// <summary>
-        /// Método que asigna valores iniciales, invocado por el constructor Form1()
-        /// </summary>
-        private void InicializaAtributos()
-        {
-            estado = false;
-            frecuencia = 88.9f;
-            volumen = 0;
-        }
-
-        //Metodos para el cambio controlado de los atributos
-        //Aqui se implementan las reglas de los requerimiento
-
-        /// <summary>
-        /// Cambia el estado del radio. Pasa de encendido a apagado según sea el caso
-        /// </summary>
-        public void CambiaEstado()
-        {
-            if (estado)
-                estado = false;
-            else
-                estado = true;
-        }
-
-        /// <summary>
-        /// Incrementa en una unidad el volumen solo hasta el valor máximo de 10
-        /// </summary>
-        public void IncrementaVolumen()
-        {
-            //sube el volumen si el volumen es menor que 10
-            if (volumen < 10)
-                volumen++;
-        }
-
-        /// <summary>
-        /// Decrementa en una unidad el volumen solo hasta el valor mínimo de 0
-        /// </summary>
-        public void DecrementaVolumen()
-        {
-            //baja el volumen si el volumen es mayor que 0
-            if (volumen > 0)
-                volumen--;
-        }
-
-        /// <summary>
-        /// Incrementa el valor de la frecuencia actual en 1 MHz
-        /// </summary>
-        public void IncrementaFrecuencia()
-        {
-            //si se incrementa por encima del límite superior
-            //se devuelve al inferior. De lo contrario, incrementa en 1 MHz.
-            if (frecuencia >= 107.9f)
-                frecuencia = 88.9f;
-            else
-                frecuencia++;
-        }
-
-        /// <summary>
-        /// Decrementa el valor de la frecuencia actual en 1 MHz
-        /// </summary>
-        public void DecrementaFrecuencia()
-        {
-            if (frecuencia <= 88.9f)
-                frecuencia = 107.9f;
-            else
-                frecuencia--;
-        }
-
-        // Funcionalidades de visualización - Windows Forms
-
-        /// <summary>
-        /// El constructor de la clase Form1
-        /// </summary>
         public Form1()
         {
             InitializeComponent();
 
-            //inicializamos nuestros atributos
-            InicializaAtributos();
+            volumen = 0;
+            frecuencia = 88.9f;
+            encendido = false;
         }
 
-        /// <summary>
-        /// Evento de carga de la forma
-        /// </summary>
-        private void Form1_Load(object sender, EventArgs e)
+    private void botonEncendido_Click(object sender, EventArgs e)
+    {
+        //Cambiamos el estado de encendido del radio
+        CambiaEncendido();
+
+        //Aqui cambiamos el fondo del botón dependiendo del estado
+        ValidaEstadoRadio();
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        ValidaEstadoRadio();
+    }
+
+    private void ValidaEstadoRadio()
+    {
+        //Aqui cambiamos el fondo del botón dependiendo del estado
+        if (encendido == true)
         {
-            //Cuando el radio está apagado, nada se visualiza
-            if (estado == false)
-            {
-                LabelFrecuencia.Text = "";
-                LabelVolumen.Text = "";
+            botonEncendido.BackColor = Color.Green;
+            etiquetaValorFrecuencia.Text = frecuencia.ToString();
+            etiquetaValorVolumen.Text = volumen.ToString();
 
-                BotonFmas.Enabled = false;
-                BotonFmenos.Enabled = false;
-                BotonVmas.Enabled = false;
-                BotonVmenos.Enabled = false;
+            botonSubeVolumen.Enabled = true;
+            botonBajaVolumen.Enabled = true;
 
-                TrackVolumen.Enabled = false;
-                TrackFrecuencia.Enabled = false;
-                
-                BotonEstado.BackColor = Color.Red;
-                BotonEstado.Text = "Apagado";
-            }
+            botonSubeFrecuencia.Enabled = true;
+            botonBajaFrecuencia.Enabled = true;
+        }
+        else
+        {
+            botonEncendido.BackColor = Color.Red;
+            etiquetaValorFrecuencia.Text = "";
+            etiquetaValorVolumen.Text = "";
+
+            botonSubeVolumen.Enabled = false;
+            botonBajaVolumen.Enabled = false;
+
+            botonSubeFrecuencia.Enabled = false;
+            botonBajaFrecuencia.Enabled = false;
+        }
+    }
+
+    private void botonSubeVolumen_Click(object sender, EventArgs e)
+    {
+        SubirVolumen();
+        etiquetaValorVolumen.Text = volumen.ToString();
+    }
+
+    private void botonBajaVolumen_Click(object sender, EventArgs e)
+    {
+        BajarVolumen();
+        etiquetaValorVolumen.Text = volumen.ToString();
+
+    }
+
+    private void botonSubeFrecuencia_Click(object sender, EventArgs e)
+    {
+        SubirFrecuencia();
+        etiquetaValorFrecuencia.Text = frecuencia.ToString();
+    }
+
+    private void botonBajaFrecuencia_Click(object sender, EventArgs e)
+    {
+        BajarFrecuencia();
+        etiquetaValorFrecuencia.Text = frecuencia.ToString();
+    }
+
+        //Metodos
+        public void SubirVolumen()
+        {
+            if (volumen != 10)
+                volumen++;
         }
 
-        /// <summary>
-        /// Evento de click sobre el botón de estado
-        /// </summary>
-        private void BotonEstado_Click(object sender, EventArgs e)
+        public void BajarVolumen()
         {
-            CambiaEstado();
+            if (volumen != 0)
+                volumen--;
+        }
 
-            //Cuando el radio está apagado, nada se visualiza
-            if (estado == false)
-            {
-                LabelFrecuencia.Text = "";
-                LabelVolumen.Text = "";
-
-                BotonFmas.Enabled = false;
-                BotonFmenos.Enabled = false;
-                BotonVmas.Enabled = false;
-                BotonVmenos.Enabled = false;
-
-                TrackVolumen.Enabled = false;
-                TrackFrecuencia.Enabled = false;
-
-                BotonEstado.BackColor = Color.Red;
-                BotonEstado.Text = "Apagado";
-            }
+        public void SubirFrecuencia()
+        {
+            if (frecuencia != 107.9f)
+                frecuencia++;
             else
-            {
-                LabelFrecuencia.Text = frecuencia + "MHz";
-                LabelVolumen.Text = volumen.ToString();
-
-                TrackVolumen.Value = volumen;
-                TrackFrecuencia.Value = (int)(frecuencia * 10);
-
-                BotonFmas.Enabled = true;
-                BotonFmenos.Enabled = true;
-                BotonVmas.Enabled = true;
-                BotonVmenos.Enabled = true;
-
-                TrackVolumen.Enabled = true;
-                TrackFrecuencia.Enabled = true;
-
-                BotonEstado.BackColor = Color.Green;
-                BotonEstado.Text = "Encendido";
-            }
+                frecuencia = 88.9f;
         }
 
-        /// <summary>
-        /// Evento que incrementa el volumen a través del botón  y visualiza el valor resultante
-        /// </summary>
-        private void BotonVmas_Click(object sender, EventArgs e)
+        public void BajarFrecuencia()
         {
-            IncrementaVolumen();
-            LabelVolumen.Text = volumen.ToString();
-            TrackVolumen.Value = volumen;
+            if (frecuencia != 88.9f)
+                frecuencia--;
+            else
+                frecuencia = 107.9f;
         }
 
-        /// <summary>
-        /// Evento que decrementa el volumen a través del botón y visualiza el valor resultante
-        /// </summary>
-        private void BotonVmenos_Click(object sender, EventArgs e)
+        public void CambiaEncendido()
         {
-            DecrementaVolumen();
-            LabelVolumen.Text = volumen.ToString();
-            TrackVolumen.Value = volumen;
-        }
-
-        /// <summary>
-        /// Evento que modifica el valor del volumen a través del TrackBar y visualiza el valor resultante
-        /// </summary>
-        private void TrackVolumen_Scroll(object sender, EventArgs e)
-        {
-            volumen = TrackVolumen.Value;
-            LabelVolumen.Text = volumen.ToString();
-        }
-
-        /// <summary>
-        /// Evento que incrementa el valor de la frecuencia actual a través del botón y visualiza el valor resultante
-        /// </summary>
-        private void BotonFmas_Click(object sender, EventArgs e)
-        {
-            IncrementaFrecuencia();
-            LabelFrecuencia.Text = frecuencia + " MHz";
-
-            //Ajuste del valor del TrackFrecuencia
-            TrackFrecuencia.Value = (int)(frecuencia * 10);
-        }
-
-        /// <summary>
-        /// Evento que decrementa el valor de la frecuencia actual a través del botón y visualiza el valor resultante
-        /// </summary>
-        private void BotonFmenos_Click(object sender, EventArgs e)
-        {
-            DecrementaFrecuencia();
-            LabelFrecuencia.Text = frecuencia + " MHz";
-
-            //Ajuste del valor del TrackFrecuencia
-            TrackFrecuencia.Value = (int)(frecuencia * 10);
-        }
-
-        /// <summary>
-        /// Evento que modifica el valor del volumen a través del TrackBar y visualiza el valor resultante
-        /// </summary>
-        private void TrackFrecuencia_Scroll(object sender, EventArgs e)
-        {
-            //Solo nos interesa el cambio cuando la frecuencia termina en *.9 MHz
-            //Si el residuo de dividir por 10 da 9, nos sirve y hacemos la acción
-            if ((float)(TrackFrecuencia.Value) % 10 == 9)
-            {
-                frecuencia = (float)(TrackFrecuencia.Value) / 10;
-                LabelFrecuencia.Text = frecuencia.ToString() + " MHz";
-            }
+            if (encendido == true)
+                encendido = false;
+            else
+                encendido = true;
         }
     }
 }

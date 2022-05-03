@@ -28,174 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.botonEncendido = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.LabelFrecuencia = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.etiquetaValorFrecuencia = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.LabelVolumen = new System.Windows.Forms.Label();
-            this.BotonEstado = new System.Windows.Forms.Button();
-            this.BotonFmas = new System.Windows.Forms.Button();
-            this.BotonFmenos = new System.Windows.Forms.Button();
-            this.BotonVmas = new System.Windows.Forms.Button();
-            this.BotonVmenos = new System.Windows.Forms.Button();
-            this.TrackVolumen = new System.Windows.Forms.TrackBar();
-            this.TrackFrecuencia = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackVolumen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackFrecuencia)).BeginInit();
+            this.etiquetaValorVolumen = new System.Windows.Forms.Label();
+            this.botonSubeVolumen = new System.Windows.Forms.Button();
+            this.botonBajaVolumen = new System.Windows.Forms.Button();
+            this.botonSubeFrecuencia = new System.Windows.Forms.Button();
+            this.botonBajaFrecuencia = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // botonEncendido
+            // 
+            this.botonEncendido.BackColor = System.Drawing.Color.Navy;
+            this.botonEncendido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonEncendido.ForeColor = System.Drawing.Color.White;
+            this.botonEncendido.Location = new System.Drawing.Point(174, 12);
+            this.botonEncendido.Name = "botonEncendido";
+            this.botonEncendido.Size = new System.Drawing.Size(75, 23);
+            this.botonEncendido.TabIndex = 0;
+            this.botonEncendido.Text = "ON/OFF";
+            this.botonEncendido.UseVisualStyleBackColor = false;
+            this.botonEncendido.Click += new System.EventHandler(this.botonEncendido_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(16, 9);
+            this.label1.Location = new System.Drawing.Point(60, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Simulador de Radio";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Frecuencia:";
             // 
-            // LabelFrecuencia
+            // etiquetaValorFrecuencia
             // 
-            this.LabelFrecuencia.BackColor = System.Drawing.Color.Black;
-            this.LabelFrecuencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelFrecuencia.ForeColor = System.Drawing.Color.Yellow;
-            this.LabelFrecuencia.Location = new System.Drawing.Point(23, 91);
-            this.LabelFrecuencia.Name = "LabelFrecuencia";
-            this.LabelFrecuencia.Size = new System.Drawing.Size(342, 73);
-            this.LabelFrecuencia.TabIndex = 1;
-            this.LabelFrecuencia.Text = "000.0 MHz";
-            this.LabelFrecuencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Frecuencia actual:";
+            this.etiquetaValorFrecuencia.BackColor = System.Drawing.Color.Black;
+            this.etiquetaValorFrecuencia.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.etiquetaValorFrecuencia.ForeColor = System.Drawing.Color.Yellow;
+            this.etiquetaValorFrecuencia.Location = new System.Drawing.Point(62, 63);
+            this.etiquetaValorFrecuencia.Name = "etiquetaValorFrecuencia";
+            this.etiquetaValorFrecuencia.Size = new System.Drawing.Size(143, 55);
+            this.etiquetaValorFrecuencia.TabIndex = 2;
+            this.etiquetaValorFrecuencia.Text = "00.0";
+            this.etiquetaValorFrecuencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(430, 75);
+            this.label3.Location = new System.Drawing.Point(60, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Volumen:";
+            this.label3.Text = "Volumen";
             // 
-            // LabelVolumen
+            // etiquetaValorVolumen
             // 
-            this.LabelVolumen.BackColor = System.Drawing.Color.Black;
-            this.LabelVolumen.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelVolumen.ForeColor = System.Drawing.Color.Fuchsia;
-            this.LabelVolumen.Location = new System.Drawing.Point(429, 91);
-            this.LabelVolumen.Name = "LabelVolumen";
-            this.LabelVolumen.Size = new System.Drawing.Size(104, 73);
-            this.LabelVolumen.TabIndex = 4;
-            this.LabelVolumen.Text = "00";
-            this.LabelVolumen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.etiquetaValorVolumen.BackColor = System.Drawing.Color.Black;
+            this.etiquetaValorVolumen.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.etiquetaValorVolumen.ForeColor = System.Drawing.Color.Lime;
+            this.etiquetaValorVolumen.Location = new System.Drawing.Point(60, 160);
+            this.etiquetaValorVolumen.Name = "etiquetaValorVolumen";
+            this.etiquetaValorVolumen.Size = new System.Drawing.Size(145, 54);
+            this.etiquetaValorVolumen.TabIndex = 4;
+            this.etiquetaValorVolumen.Text = "11";
+            this.etiquetaValorVolumen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // BotonEstado
+            // botonSubeVolumen
             // 
-            this.BotonEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonEstado.Location = new System.Drawing.Point(442, 20);
-            this.BotonEstado.Name = "BotonEstado";
-            this.BotonEstado.Size = new System.Drawing.Size(136, 40);
-            this.BotonEstado.TabIndex = 5;
-            this.BotonEstado.Text = "Encendido / Apagado";
-            this.BotonEstado.UseVisualStyleBackColor = true;
-            this.BotonEstado.Click += new System.EventHandler(this.BotonEstado_Click);
+            this.botonSubeVolumen.Location = new System.Drawing.Point(211, 160);
+            this.botonSubeVolumen.Name = "botonSubeVolumen";
+            this.botonSubeVolumen.Size = new System.Drawing.Size(38, 23);
+            this.botonSubeVolumen.TabIndex = 5;
+            this.botonSubeVolumen.Text = "V+";
+            this.botonSubeVolumen.UseVisualStyleBackColor = true;
+            this.botonSubeVolumen.Click += new System.EventHandler(this.botonSubeVolumen_Click);
             // 
-            // BotonFmas
+            // botonBajaVolumen
             // 
-            this.BotonFmas.Location = new System.Drawing.Point(371, 91);
-            this.BotonFmas.Name = "BotonFmas";
-            this.BotonFmas.Size = new System.Drawing.Size(37, 23);
-            this.BotonFmas.TabIndex = 6;
-            this.BotonFmas.Text = "F+";
-            this.BotonFmas.UseVisualStyleBackColor = true;
-            this.BotonFmas.Click += new System.EventHandler(this.BotonFmas_Click);
+            this.botonBajaVolumen.Location = new System.Drawing.Point(211, 191);
+            this.botonBajaVolumen.Name = "botonBajaVolumen";
+            this.botonBajaVolumen.Size = new System.Drawing.Size(38, 23);
+            this.botonBajaVolumen.TabIndex = 6;
+            this.botonBajaVolumen.Text = "V-";
+            this.botonBajaVolumen.UseVisualStyleBackColor = true;
+            this.botonBajaVolumen.Click += new System.EventHandler(this.botonBajaVolumen_Click);
             // 
-            // BotonFmenos
+            // botonSubeFrecuencia
             // 
-            this.BotonFmenos.Location = new System.Drawing.Point(371, 141);
-            this.BotonFmenos.Name = "BotonFmenos";
-            this.BotonFmenos.Size = new System.Drawing.Size(37, 23);
-            this.BotonFmenos.TabIndex = 7;
-            this.BotonFmenos.Text = "F-";
-            this.BotonFmenos.UseVisualStyleBackColor = true;
-            this.BotonFmenos.Click += new System.EventHandler(this.BotonFmenos_Click);
+            this.botonSubeFrecuencia.Location = new System.Drawing.Point(211, 63);
+            this.botonSubeFrecuencia.Name = "botonSubeFrecuencia";
+            this.botonSubeFrecuencia.Size = new System.Drawing.Size(38, 23);
+            this.botonSubeFrecuencia.TabIndex = 7;
+            this.botonSubeFrecuencia.Text = "F+";
+            this.botonSubeFrecuencia.UseVisualStyleBackColor = true;
+            this.botonSubeFrecuencia.Click += new System.EventHandler(this.botonSubeFrecuencia_Click);
             // 
-            // BotonVmas
+            // botonBajaFrecuencia
             // 
-            this.BotonVmas.Location = new System.Drawing.Point(541, 91);
-            this.BotonVmas.Name = "BotonVmas";
-            this.BotonVmas.Size = new System.Drawing.Size(37, 23);
-            this.BotonVmas.TabIndex = 8;
-            this.BotonVmas.Text = "V+";
-            this.BotonVmas.UseVisualStyleBackColor = true;
-            this.BotonVmas.Click += new System.EventHandler(this.BotonVmas_Click);
-            // 
-            // BotonVmenos
-            // 
-            this.BotonVmenos.Location = new System.Drawing.Point(541, 141);
-            this.BotonVmenos.Name = "BotonVmenos";
-            this.BotonVmenos.Size = new System.Drawing.Size(37, 23);
-            this.BotonVmenos.TabIndex = 9;
-            this.BotonVmenos.Text = "V-";
-            this.BotonVmenos.UseVisualStyleBackColor = true;
-            this.BotonVmenos.Click += new System.EventHandler(this.BotonVmenos_Click);
-            // 
-            // TrackVolumen
-            // 
-            this.TrackVolumen.Location = new System.Drawing.Point(424, 178);
-            this.TrackVolumen.Name = "TrackVolumen";
-            this.TrackVolumen.Size = new System.Drawing.Size(104, 45);
-            this.TrackVolumen.TabIndex = 11;
-            this.TrackVolumen.Scroll += new System.EventHandler(this.TrackVolumen_Scroll);
-            // 
-            // TrackFrecuencia
-            // 
-            this.TrackFrecuencia.LargeChange = 10;
-            this.TrackFrecuencia.Location = new System.Drawing.Point(24, 178);
-            this.TrackFrecuencia.Maximum = 1079;
-            this.TrackFrecuencia.Minimum = 889;
-            this.TrackFrecuencia.Name = "TrackFrecuencia";
-            this.TrackFrecuencia.Size = new System.Drawing.Size(341, 45);
-            this.TrackFrecuencia.SmallChange = 10;
-            this.TrackFrecuencia.TabIndex = 12;
-            this.TrackFrecuencia.TickFrequency = 10;
-            this.TrackFrecuencia.Value = 889;
-            this.TrackFrecuencia.Scroll += new System.EventHandler(this.TrackFrecuencia_Scroll);
+            this.botonBajaFrecuencia.Location = new System.Drawing.Point(211, 95);
+            this.botonBajaFrecuencia.Name = "botonBajaFrecuencia";
+            this.botonBajaFrecuencia.Size = new System.Drawing.Size(38, 23);
+            this.botonBajaFrecuencia.TabIndex = 8;
+            this.botonBajaFrecuencia.Text = "F-";
+            this.botonBajaFrecuencia.UseVisualStyleBackColor = true;
+            this.botonBajaFrecuencia.Click += new System.EventHandler(this.botonBajaFrecuencia_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(595, 235);
-            this.Controls.Add(this.TrackFrecuencia);
-            this.Controls.Add(this.TrackVolumen);
-            this.Controls.Add(this.BotonVmenos);
-            this.Controls.Add(this.BotonVmas);
-            this.Controls.Add(this.BotonFmenos);
-            this.Controls.Add(this.BotonFmas);
-            this.Controls.Add(this.BotonEstado);
-            this.Controls.Add(this.LabelVolumen);
+            this.ClientSize = new System.Drawing.Size(315, 234);
+            this.Controls.Add(this.botonBajaFrecuencia);
+            this.Controls.Add(this.botonSubeFrecuencia);
+            this.Controls.Add(this.botonBajaVolumen);
+            this.Controls.Add(this.botonSubeVolumen);
+            this.Controls.Add(this.etiquetaValorVolumen);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.LabelFrecuencia);
+            this.Controls.Add(this.etiquetaValorFrecuencia);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.botonEncendido);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulador de Radio";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.TrackVolumen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackFrecuencia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,18 +159,15 @@
 
         #endregion
 
+        private System.Windows.Forms.Button botonEncendido;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label LabelFrecuencia;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label etiquetaValorFrecuencia;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label LabelVolumen;
-        private System.Windows.Forms.Button BotonEstado;
-        private System.Windows.Forms.Button BotonFmas;
-        private System.Windows.Forms.Button BotonFmenos;
-        private System.Windows.Forms.Button BotonVmas;
-        private System.Windows.Forms.Button BotonVmenos;
-        private System.Windows.Forms.TrackBar TrackVolumen;
-        private System.Windows.Forms.TrackBar TrackFrecuencia;
+        private System.Windows.Forms.Label etiquetaValorVolumen;
+        private System.Windows.Forms.Button botonSubeVolumen;
+        private System.Windows.Forms.Button botonBajaVolumen;
+        private System.Windows.Forms.Button botonSubeFrecuencia;
+        private System.Windows.Forms.Button botonBajaFrecuencia;
     }
 }
 
