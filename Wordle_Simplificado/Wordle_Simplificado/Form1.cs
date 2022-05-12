@@ -25,14 +25,46 @@ namespace Wordle_Simplificado
         private bool activadoAltoContraste = false;
 
         //atributos para manejar las casillas de las letras
-        private TextBox[,] matrizCasillas;
+        private Label[,] matrizCasillas;
 
+        /// <summary>
+        /// Constructor de la clase
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
+        }
 
-            //Este método inicializa los atributos de la lógica
+        /// <summary>
+        /// Evento asociado al cargue de la forma
+        /// </summary>
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //Inicializamos la lógica del juego
             InicializaLogicaJuego();
+
+            //Inicializamos la presentación
+            InicializaPresentacionJuego();
+        }
+
+        /// <summary>
+        /// Inicializa los atributos de la lógica antes del juego
+        /// </summary>
+        private void InicializaLogicaJuego()
+        {
+            intentoActual = 0;
+            hayDerrota = false;
+
+            //Inicializamos el diccionario
+            InicializaDiccionario();
+
+            //Seleccionar una palabra buscada
+            Random aleatorio = new Random();
+            palabraBuscada =
+                diccionarioPalabras[aleatorio.Next(diccionarioPalabras.Length)];
+
+            //Inicializamos el resultado de la validación de letras
+            evaluacionLetras = "-----".ToCharArray();
         }
 
         /// <summary>
@@ -75,67 +107,107 @@ namespace Wordle_Simplificado
         /// </summary>
         private void InicializaPresentacionJuego()
         {
+            //Inicializamos la matriz de casillas
+            InicializaMatrizCasillas();
+
+            //Inicializamos el textbox de la palabra ingresada
+            btnEvaluaPalabra.Enabled = true;
             txtPalabraIngresada.Text = "";
+            txtPalabraIngresada.Enabled = true;
+            this.ActiveControl = txtPalabraIngresada;
+
 
             //Asignamos los colores para utilizar en el juego
             activadoAltoContraste = false;
-            CambiaColorAltoContraste();
-
-            //Inicializamos la matriz de casillas
-            InicializaMatrizCasillas();
+            activarColoresAltoContrasteToolStripMenuItem.Checked = false;
+            InicializaColoresFondo();            
         }
 
+        /// <summary>
+        /// Define los colores predeterminados para el fondo de las casillas
+        /// </summary>
+        private void InicializaColoresFondo()
+        {
+            colorLetraCorrecta = Color.DarkGreen;
+            colorLetraFallida = Color.DarkGray;
+            colorLetraDesubicada = Color.Orange;
+
+            ActualizaColoresFondo();
+        }
+
+        /// <summary>
+        /// Cambia los colores de fondo de las casillas dependiendo de la opción de alto contraste
+        /// </summary>
         private void CambiaColorAltoContraste()
         {
             //Aqui cambiamos el estado del color de alto contraste
             if (activadoAltoContraste)
+            {
                 activadoAltoContraste = false;
-            else
-                activadoAltoContraste = true;
-
-            //cambiamos los colores
-            if (activadoAltoContraste == true)
-            {
-                colorLetraCorrecta = Color.DarkBlue;
-                colorLetraFallida = Color.Black;
-                colorLetraDesubicada = Color.Orange;
-            }
-            else
-            {
+                activarColoresAltoContrasteToolStripMenuItem.Checked = false;
                 colorLetraCorrecta = Color.DarkGreen;
                 colorLetraFallida = Color.DarkGray;
                 colorLetraDesubicada = Color.Orange;
             }
+            else
+            {
+                activadoAltoContraste = true;
+                activarColoresAltoContrasteToolStripMenuItem.Checked = true;
+                colorLetraCorrecta = Color.DodgerBlue;
+                colorLetraFallida = Color.Black;
+                colorLetraDesubicada = Color.Orange;
+            }
 
-            //Asignamos los colores
-            txtColorCorrecto.BackColor = colorLetraCorrecta;
-            txtColorDesubicado.BackColor = colorLetraDesubicada;
-            txtColorFallido.BackColor = colorLetraFallida;
+            //Asignamos los colores de fondo
+            ActualizaColoresFondo();
         }
 
         /// <summary>
-        /// Inicializa los atributos de la lógica antes del juego
+        /// Actualiza los colores de fondo en las casillas de acuerdo a los valores vigentes
         /// </summary>
-        private void InicializaLogicaJuego()
+        private void ActualizaColoresFondo()
         {
-            intentoActual = 0;
-            hayDerrota = false;
+            lblColorCorrecto.BackColor = colorLetraCorrecta;
+            lblColorDesubicado.BackColor = colorLetraDesubicada;
+            lblColorFallido.BackColor = colorLetraFallida;
 
-            //Inicializamos el diccionario
-            InicializaDiccionario();
+            string colorFondo;
 
-            //Seleccionar una palabra buscada
-            Random aleatorio = new Random();
-            palabraBuscada =
-                diccionarioPalabras[aleatorio.Next(diccionarioPalabras.Length)];
+            //Aqui cambiamos el color de fondo de cada casilla
+            foreach (Label unaCasilla in matrizCasillas)
+            {
+                colorFondo = unaCasilla.BackColor.Name;
+                switch (colorFondo)
+                {
+                    case "DodgerBlue":
+                        unaCasilla.BackColor = Color.DarkGreen;
+                        break;
 
-            //Inicializamos el resultado de la validación de letras
-            evaluacionLetras = "-----".ToCharArray();
+                    case "DarkGreen":
+                        unaCasilla.BackColor = Color.DodgerBlue;
+                        break;
+
+                    case "DarkGray":
+                        unaCasilla.BackColor = Color.Black;
+                        break;
+
+                    case "Black":
+                        unaCasilla.BackColor = Color.DarkGray;
+                        break;
+                }
+            }
+
         }
 
+        /// <summary>
+        /// Evento asociado al botón EvaluaPalabra
+        /// </summary>
+        private void BtnEvaluaPalabra_Click(object sender, EventArgs e)
+        {
+            ValidacionPalabraIngresada();
+        }
 
-
-        private void btnEvaluaPalabra_Click(object sender, EventArgs e)
+        private void ValidacionPalabraIngresada()
         {
             //Aqui evaluamos si la palabra tiene 5 letras
             if (txtPalabraIngresada.Text.Length == 5)
@@ -160,17 +232,24 @@ namespace Wordle_Simplificado
                     if (hayDerrota == true)
                     {
                         MessageBox.Show($"Fuiste derrotado! la palabra era {palabraBuscada}");
+
+                        //Bloqueamos el textbox de palabra ingresada y botón de evaluación pues el juego terminó
+                        txtPalabraIngresada.Enabled = false;
+                        btnEvaluaPalabra.Enabled = false;
                     }
                     else
                     {
                         string resultadoValidacion = new string(evaluacionLetras);
                         if (resultadoValidacion == "VVVVV")
                         {
-                            MessageBox.Show($"Lograte la victoria! encontraste la palabra {palabraBuscada}");
+                            MessageBox.Show($"Lograte la victoria! encontraste la palabra {palabraBuscada} en {intentoActual} intentos");
+                            
+                            //Bloqueamos el textbox de palabra ingresada y botón de evaluación pues el juego terminó
+                            txtPalabraIngresada.Enabled = false;
+                            btnEvaluaPalabra.Enabled = false;
                         }
-                    }                    
+                    }
                 }
-
             }
             else
             {
@@ -180,17 +259,6 @@ namespace Wordle_Simplificado
             //Finalmente, reiniciamos el textbox de la palabra ingresada y le asignamos el foco
             txtPalabraIngresada.Text = "";
             this.ActiveControl = txtPalabraIngresada;
-
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //Inicializamos la lógica del juego
-            InicializaLogicaJuego();
-
-            //Inicializamos la presentación
-            InicializaPresentacionJuego();
         }
 
         /// <summary>
@@ -249,17 +317,26 @@ namespace Wordle_Simplificado
             }
         }
 
-        private void activarColoresAltoContrasteToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Evento asociado a la opción de menú para el cambio de colores
+        /// </summary>
+        private void ActivarColoresAltoContrasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CambiaColorAltoContraste();
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Evento asociado a la opción de menú para salir de la aplicación
+        /// </summary>
+        private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Evento asociado a la opción de menu de nuevo juego
+        /// </summary>
+        private void NuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Inicializamos la lógica del juego
             InicializaLogicaJuego();
@@ -268,64 +345,80 @@ namespace Wordle_Simplificado
             InicializaPresentacionJuego();
         }
 
+        /// <summary>
+        /// Inicializa la matriz de casillas que se utilizará para acceder a los elementos
+        /// </summary>
         private void InicializaMatrizCasillas()
         {
-            matrizCasillas = new TextBox[6, 5];
+            matrizCasillas = new Label[6, 5];
 
             //La parte "maluca"...
             //Primera fila
-            matrizCasillas[0, 0] = txtletra_intento1_posicion1;
-            matrizCasillas[0, 1] = txtletra_intento1_posicion2;
-            matrizCasillas[0, 2] = txtletra_intento1_posicion3;
-            matrizCasillas[0, 3] = txtletra_intento1_posicion4;
-            matrizCasillas[0, 4] = txtletra_intento1_posicion5;
+            matrizCasillas[0, 0] = lblLetra_intento1_posicion1;
+            matrizCasillas[0, 1] = lblLetra_intento1_posicion2;
+            matrizCasillas[0, 2] = lblLetra_intento1_posicion3;
+            matrizCasillas[0, 3] = lblLetra_intento1_posicion4;
+            matrizCasillas[0, 4] = lblLetra_intento1_posicion5;
 
             //Segunda fila
-            matrizCasillas[1, 0] = txtletra_intento2_posicion1;
-            matrizCasillas[1, 1] = txtletra_intento2_posicion2;
-            matrizCasillas[1, 2] = txtletra_intento2_posicion3;
-            matrizCasillas[1, 3] = txtletra_intento2_posicion4;
-            matrizCasillas[1, 4] = txtletra_intento2_posicion5;
+            matrizCasillas[1, 0] = lblLetra_intento2_posicion1;
+            matrizCasillas[1, 1] = lblLetra_intento2_posicion2;
+            matrizCasillas[1, 2] = lblLetra_intento2_posicion3;
+            matrizCasillas[1, 3] = lblLetra_intento2_posicion4;
+            matrizCasillas[1, 4] = lblLetra_intento2_posicion5;
 
             //tercera fila
-            matrizCasillas[2, 0] = txtletra_intento3_posicion1;
-            matrizCasillas[2, 1] = txtletra_intento3_posicion2;
-            matrizCasillas[2, 2] = txtletra_intento3_posicion3;
-            matrizCasillas[2, 3] = txtletra_intento3_posicion4;
-            matrizCasillas[2, 4] = txtletra_intento3_posicion5;
+            matrizCasillas[2, 0] = lblLetra_intento3_posicion1;
+            matrizCasillas[2, 1] = lblLetra_intento3_posicion2;
+            matrizCasillas[2, 2] = lblLetra_intento3_posicion3;
+            matrizCasillas[2, 3] = lblLetra_intento3_posicion4;
+            matrizCasillas[2, 4] = lblLetra_intento3_posicion5;
 
             //cuarta fila
-            matrizCasillas[3, 0] = txtletra_intento4_posicion1;
-            matrizCasillas[3, 1] = txtletra_intento4_posicion2;
-            matrizCasillas[3, 2] = txtletra_intento4_posicion3;
-            matrizCasillas[3, 3] = txtletra_intento4_posicion4;
-            matrizCasillas[3, 4] = txtletra_intento4_posicion5;
+            matrizCasillas[3, 0] = lblLetra_intento4_posicion1;
+            matrizCasillas[3, 1] = lblLetra_intento4_posicion2;
+            matrizCasillas[3, 2] = lblLetra_intento4_posicion3;
+            matrizCasillas[3, 3] = lblLetra_intento4_posicion4;
+            matrizCasillas[3, 4] = lblLetra_intento4_posicion5;
 
             //quinta fila
-            matrizCasillas[4, 0] = txtletra_intento5_posicion1;
-            matrizCasillas[4, 1] = txtletra_intento5_posicion2;
-            matrizCasillas[4, 2] = txtletra_intento5_posicion3;
-            matrizCasillas[4, 3] = txtletra_intento5_posicion4;
-            matrizCasillas[4, 4] = txtletra_intento5_posicion5;
+            matrizCasillas[4, 0] = lblLetra_intento5_posicion1;
+            matrizCasillas[4, 1] = lblLetra_intento5_posicion2;
+            matrizCasillas[4, 2] = lblLetra_intento5_posicion3;
+            matrizCasillas[4, 3] = lblLetra_intento5_posicion4;
+            matrizCasillas[4, 4] = lblLetra_intento5_posicion5;
 
             //sexta fila
-            matrizCasillas[5, 0] = txtletra_intento6_posicion1;
-            matrizCasillas[5, 1] = txtletra_intento6_posicion2;
-            matrizCasillas[5, 2] = txtletra_intento6_posicion3;
-            matrizCasillas[5, 3] = txtletra_intento6_posicion4;
-            matrizCasillas[5, 4] = txtletra_intento6_posicion5;
+            matrizCasillas[5, 0] = lblLetra_intento6_posicion1;
+            matrizCasillas[5, 1] = lblLetra_intento6_posicion2;
+            matrizCasillas[5, 2] = lblLetra_intento6_posicion3;
+            matrizCasillas[5, 3] = lblLetra_intento6_posicion4;
+            matrizCasillas[5, 4] = lblLetra_intento6_posicion5;
 
             //Inicializamos todas las casillas, asignando para cada una de ellas
             //un color neutro y un contenido vacío
-            foreach (TextBox unaCasilla in matrizCasillas)
+            foreach (Label unaCasilla in matrizCasillas)
             {
                 unaCasilla.Text = "";
                 unaCasilla.BackColor = Color.White;
                 unaCasilla.ForeColor = Color.White;
-                unaCasilla.Enabled = false;
             }
         }
 
+        //Evento asociado al presionado de teclas dentro de la forma
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Si se presiona la tecla "Enter":
+            if(e.KeyCode == Keys.Enter)
+                ValidacionPalabraIngresada();
+        }
+
+        /// <summary>
+        /// Actualiza la fila de casillas correspondiente al intento con la palabra ingresada
+        /// </summary>
+        /// <param name="palabraIngresada"></param>
+        /// <param name="elIntento"></param>
+        /// <param name="resultadoEvaluacion"></param>
         private void ActualizaCasillasConResultados(string palabraIngresada,
             int elIntento,
             char[] resultadoEvaluacion)
