@@ -1,6 +1,7 @@
 ﻿/*
 Programa:       HolaMundo
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
+
 Propósito:
 ----------
 - Demostrar el funcionamiento básico del Entorno Integrado de Desarrollo (IDE), realizando
@@ -11,8 +12,9 @@ Propósito:
 - Declarar variables tipo string y visualizar su contenido en la consola.
 
 - Demostrar el funcionamiento de los métodos WriteLine y Write de la clase Console.
-
  */
+
+using System;
 
 namespace HolaMundo
 {
