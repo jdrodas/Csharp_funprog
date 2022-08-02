@@ -24,11 +24,13 @@ Operadores lógicos:
 Operadores de nulidad:
 ?       Permite indicar al compilador que el valor puede ser nulo
         Se coloca después del tipo de datos al momento de la declaración de la variable
+
 !       Permite indicar al compilador que sabemos que el valor NO SERÁ nulo
         Se coloca despues de la variable y antes de cualquier otra operación
 
  */
 
+using System;
 
 namespace EjemploCondicionales
 {
@@ -45,12 +47,17 @@ namespace EjemploCondicionales
             int edad = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("\nCual es tu país de nacimiento? ");
+            
+            // A partir de .NET 5, se hace necesario hacer explicito el manejo de nulos
             // El operador "?" nos permite indicar que este valor puede ser nulo
             // El operador "!" nos permite que sabemos que este valor NO SERÁ nulo
-            string? nacion = Console.ReadLine()!.ToUpper(); // ToUpper: Lo colocamos en mayúsculas
+            //string? nacion = Console.ReadLine()!.ToUpper(); // ToUpper: Lo colocamos en mayúsculas
+
+            //En .NET Framework 4.x lo hacemos así:
+            string nacion = Console.ReadLine().ToUpper();
 
             //Condicional básico para validar si es mayor a 18 años
-            if (edad > 18 || edad == 18)
+            if (edad >= 18)
             {
                 Console.WriteLine("Tu edad es mayor o igual a 18 años, puedes ser considerado como ciudadano.");
             }
