@@ -15,6 +15,8 @@ el control de excepciones con las instrucciones try - catch
  
  */
 
+using System;
+
 namespace EntradaDatos
 {
     class Program
@@ -25,13 +27,16 @@ namespace EntradaDatos
 
             Console.Write("¿Cuál es tu nombre? ");
 
-            //Console.ReadLine() puede generar un valor nulo, por eso utilizamos el simbolo "?"
-            //depués del tipo de dato para indicarle al compilador que esta variable puede ser nula
-            string? nombre = Console.ReadLine();
+            //En .NET 5 o superior, Console.ReadLine() puede generar valor nulo, por eso
+            //Se utiliza el simbolo "?" después del tipo de dato para indicar al compilador
+            //Que esa variable puede ser nula.
+            //string? nombre = Console.ReadLine();
 
-            //Para el apellido, se puede también asignar al momento de la declaración
+            // En .NET Framework 4.8 o inferior, se puede colocar asi:
+            string nombre = Console.ReadLine();
+
             Console.Write("¿Cuál es tu apellido? ");
-            string? apellido = Console.ReadLine();
+            string apellido = Console.ReadLine();
 
             //El contenido se puede visualizar con WriteLine
             Console.WriteLine($"Mucho gusto conocerte, {nombre} {apellido}.");
@@ -64,8 +69,11 @@ namespace EntradaDatos
                 //estatura = (float)Convert.ToDouble(Console.ReadLine()); 
 
                 // Float es un alias para Single, para convertirlo usamos ToSingle
-                estatura = Convert.ToSingle(Console.ReadLine());
-                //estatura = float.Parse(Console.ReadLine());
+                //estatura = Convert.ToSingle(Console.ReadLine());
+                //O hacemos un Parse
+                estatura = float.Parse(Console.ReadLine());
+                
+                //Podemos convertir el dato float a string, especificando el formato de salida
                 Console.WriteLine($"Dijiste que tu estatura es de {estatura.ToString("0.00")}");
             }
             catch (FormatException error)
