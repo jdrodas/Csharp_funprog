@@ -340,6 +340,10 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [ex01_ConcursoOrquideas](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_ConcursoOrquideas)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Concurso Orquideas. Ejercicio resuelto.
 
+>>### [ex01_DesfileSilleteros](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_DesfileSilleteros)
+>>- Tema de examen 01: Condicionales y Ciclos de control. Concurso Orquideas. Ejercicio resuelto.
+
+
 ### Examen No. 2
 
 >>### [ex02_ColonizacionMarte](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ColonizacionMarte)
