@@ -116,6 +116,12 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementar función que no recibe parámetros y no retorna valor
 >>- Actualizado a .NET 6
 
+>### [EjemploTipoParametrosFunciones](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploTipoParametrosFunciones)
+>>- Demostrar los diferentes modificadores aplicables al paso de parametros de las funciones
+>>- Paso de parámetros por valor
+>>- Paso de parámetros por referencia
+>>- Paso de parámetros con modificadores in y out
+
 >### [ValidaNumeroPrimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaNumeroPrimo)
 >>- Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
 >>- Identificar si un numero entero es primo
