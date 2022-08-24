@@ -23,7 +23,6 @@ namespace CalculoDetalladoEdad
     {
         static void Main(string[] args)
         {
-
             // Cambiamos la cultura usada en la aplicación para que se ajuste a Español - Colombia
             CultureInfo.CurrentCulture = new CultureInfo("es-CO", false);
 
@@ -35,25 +34,45 @@ namespace CalculoDetalladoEdad
 
             do
             {
-                Console.Write("\nIngresa tu día de nacimiento: ");
-                diaCorrecto = int.TryParse(Console.ReadLine(), out dia);
-                Console.Write("Ingresa tu mes de nacimiento: ");
-                mesCorrecto = int.TryParse(Console.ReadLine(), out mes);
-                Console.Write("Ingresa tu año de nacimiento: ");
-                añoCorrecto = int.TryParse(Console.ReadLine(), out año);
+                do
+                {
+                    Console.Write("\nIngresa el número de tu día de nacimiento: ");
+                    diaCorrecto = int.TryParse(Console.ReadLine(), out dia);
+                    if (diaCorrecto == false)
+                        Console.WriteLine("El dato del día no es válido, intenta nuevamente!");
+                } while (!diaCorrecto);
 
+                do
+                {
+                    Console.Write("Ingresa  el número de tu mes de nacimiento: ");
+                    mesCorrecto = int.TryParse(Console.ReadLine(), out mes);
+                    if (mesCorrecto == false)
+                        Console.WriteLine("El dato del mes no es válido, intenta nuevamente!");
+                } while (!mesCorrecto);
+
+                do
+                {
+                    Console.Write("Ingresa  el número de tu año de nacimiento: ");
+                    añoCorrecto = int.TryParse(Console.ReadLine(), out año);
+                    if (añoCorrecto == false)
+                        Console.WriteLine("El dato del año no es válido, intenta nuevamente!");
+                } while (!añoCorrecto);
+
+                //Ahora intentamos validar si esa combinación produce una fecha válida
+                //Aqui intentamos hacer una fecha
                 try
                 {
-                    //Aqui intentamos hacer una fecha
                     fechaNacimiento = new DateTime(año, mes, dia);
 
                     //Si está correcto, visualizamos la fecha generada
                     Console.WriteLine($"\nTu fecha de nacimiento es {fechaNacimiento.ToLongDateString()}");
                     fechaCorrecta = true;
 
-                    //Aqui invocamos la función que calcula la edad
-                    CalculaEdad(fechaNacimiento);
-
+                    //Como la fecha es correcta, podemos calcular la edad
+                    //Usaremos una función con parámetros tipo out:
+                    int edadAños, edadMeses, edadDias;
+                    CalculaEdad(fechaNacimiento, out edadAños, out edadMeses, out edadDias);
+                    Console.WriteLine($"Tu edad en detallada es {edadAños} años, {edadMeses} meses y {edadDias} dias");
                 }
                 catch (ArgumentOutOfRangeException elError)
                 {
@@ -63,26 +82,30 @@ namespace CalculoDetalladoEdad
                 }
             }
             while (!diaCorrecto || !mesCorrecto || !añoCorrecto || !fechaCorrecta);
-
         }
 
         /// <summary>
-        /// Función que calcula la edad de una persona con respecto a la fecha de hoy
+        /// Función que calcula la edad en años, meses y días
         /// </summary>
         /// <param name="fechaNacimiento">La fecha de nacimiento</param>
-        static void CalculaEdad(DateTime fechaNacimiento)
+        /// <param name="edadAños">Parametro de salida con el dato de los años</param>
+        /// <param name="edadMeses">Parametro de salida con el dato de los meses</param>
+        /// <param name="edadDias">Parametro de salida con el dato de los días</param>
+        static void CalculaEdad(DateTime fechaNacimiento,
+                                out int edadAños,
+                                out int edadMeses,
+                                out int edadDias)
         {
             DateTime fechaHoy = DateTime.Now;
             TimeSpan intervaloEdad = fechaHoy - fechaNacimiento;
 
             DateTime edad = DateTime.MinValue.AddDays(intervaloEdad.Days);
 
-            int edadAños = edad.Year - 1;
-            int edadMeses = edad.Month - 1;
-            int edadDias = edad.Day - 1;
+            edadAños = edad.Year - 1;
+            edadMeses = edad.Month - 1;
+            edadDias = edad.Day - 1;
 
             Console.WriteLine($"La fecha actual es {fechaHoy.ToLongDateString()}");
-            Console.WriteLine($"Tu edad en detallada es {edadAños} años, {edadMeses} meses y {edadDias} dias");
         }
     }
 }
