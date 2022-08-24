@@ -151,6 +151,12 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Explorar el cambio del CultureInfo de acuerdo al valor de un país (es-CO)
 >>- Utilizar las estructuras Datetime y TimeSpan para manipulación de datos tipo fecha
 
+>### [CalendarioMes](https://github.com/jdrodas/Csharp_funprog/tree/master/CalendarioMes)
+>>- Visualizar en consola el calendario de un mes a partir de los datos de año y mes
+>>- Modificar la visualización para que las semanas comiencen el día lunes
+>>- Utilización de la función AddDays() y la propiedad DayOfWeek de los objetos tipo DateTime
+
+
 ### 4. Arreglos
 
 >### [EjemploArreglos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploArreglos)
