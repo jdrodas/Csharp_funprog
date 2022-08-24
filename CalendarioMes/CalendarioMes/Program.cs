@@ -53,16 +53,22 @@ namespace CalendarioMes
         static void GeneraCalendarioDelMes(int año, int mes)
         {
             //Generando encabezado del calendario con los nombres del día
+            
+            /*
+            //Si desea utilizar arreglos para el encabezado, lo puedes hacer asi:
             string[] nombresDelDia = { "LUN", "MAR", "MIE", "JUE", "VIE", "SAB", "DOM" };
 
             //Encabezado de las columnas
             foreach (string nombre in nombresDelDia)
                 Console.Write($" {nombre}");
             Console.WriteLine();
+            */
 
-            //Aqui creamos un objeto tipo fecha para mejor manipulación,
-            //empezando con el día 1 del mes
-            DateTime fechaInicial = new DateTime(año, mes, 1);
+            Console.WriteLine(" LUN MAR MIE JUE VIE SAB DOM");
+
+           //Aqui creamos un objeto tipo fecha para mejor manipulación,
+           //empezando con el día 1 del mes
+           DateTime fechaInicial = new DateTime(año, mes, 1);
             int diaDeLaSemana = (int)fechaInicial.DayOfWeek;
 
             //Calculamos y escribimos el corrimiento del calendario para la
