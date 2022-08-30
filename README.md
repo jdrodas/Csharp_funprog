@@ -310,6 +310,12 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementación de una aplicación para encontrar 8 parejas de números.
 >>- Cuenta los intentos realizados así como las parejas encontradas.
 
+>>### [Wordle_Simplificado](https://github.com/jdrodas/Csharp_funprog/tree/master/Wordle_Simplificado)
+>>- Implementación en Windows Forms con lógica y visualización en una sola clase.
+>>- Implementación de una aplicación para encontrar 8 parejas de números.
+>>- Cuenta los intentos realizados así como las parejas encontradas.
+
+
 # ---------------------------------------
 
 ## Soluciones a examenes anteriores
