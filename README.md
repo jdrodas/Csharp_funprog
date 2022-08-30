@@ -176,6 +176,13 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Crear una cadena de caracteres a partir de un arreglo de caracteres
 >>- Actualizado a .NET 6
 
+>### [IdentificaPalindromo](https://github.com/jdrodas/Csharp_funprog/tree/master/IdentificaPalindromo)
+>>- Demostrar el funcionamiento básico de los arreglos
+>>- Convertir cadena de caracteres a un arreglo de caracteres
+>>- Convertir un arreglo de caracteres a una cadena de caracteres
+>>- Implementar una función que remueva los espacios de una cadena de caracteres
+
+
 >### [EjemploFuncionesArreglos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploFuncionesArreglos)
 - Generar un arreglo con valores enteros aleatorios
 >>- Implementar funciones que encuentre los valore menores y mayores del arreglo
@@ -312,8 +319,8 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 >>### [Wordle_Simplificado](https://github.com/jdrodas/Csharp_funprog/tree/master/Wordle_Simplificado)
 >>- Implementación en Windows Forms con lógica y visualización en una sola clase.
->>- Implementación de una aplicación para encontrar 8 parejas de números.
->>- Cuenta los intentos realizados así como las parejas encontradas.
+>>- Implementación de una aplicación para encontrar una palabra de 5 letras antes de 6 intentos.
+>>- Implementa selector de colores normales y de alto contraste.
 
 
 # ---------------------------------------
@@ -384,6 +391,11 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [ex02_ConversionRGBaCMYK](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ConversionRGBaCMYK)
 >>- Convertir colores desde RGB hacia CMYK y viceversa.
 
+>>### [ex02_ContaminacionAire](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ContaminacionAire)
+>>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+
+>>### [ex02_EleccionRepresentantes](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_EleccionRepresentantes)
+>>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
 
 ### Examen No. 3
 
