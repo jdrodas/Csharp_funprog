@@ -397,6 +397,9 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>### [ex02_EleccionRepresentantes](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_EleccionRepresentantes)
 >>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
 
+>>### [ex02_PescaRecreativa](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_PescaRecreativa)
+>>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+
 ### Examen No. 3
 
 >>### [ex03_SimulacroVacunacion](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_SimulacroVacunacion)
