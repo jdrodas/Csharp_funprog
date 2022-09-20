@@ -18,40 +18,49 @@ namespace BarajaEspanola
         static void Main(string[] args)
         {
             Console.WriteLine("Programa para generar la baraja española");
-            Console.Write("Valores de 48 cartas... ");
+            Console.WriteLine("Valores de 48 cartas:");
 
-            string[] palos = { "oros", "copas", "espadas", "bastos" };
-            string[] valores = {
-                            "uno",
-                            "dos",
-                            "tres",
-                            "cuatro",
-                            "cinco",
-                            "seis",
-                            "siete",
-                            "ocho",
-                            "nueve",
-                            "sota",
-                            "caballero",
-                            "rey"};
-
-            Carta[] Baraja = new Carta[palos.Length * valores.Length];
-
-            //aqui inicializamos la baraja con palos y valores definidos
-            int contadorCartas = 0;
-
-            while (contadorCartas < Baraja.Length)
+            string[] losPalos = { "oros", "copas", "espadas", "bastos" };
+            string[] losValores =
             {
-                for (int contadorPalos = 0; contadorPalos < palos.Length; contadorPalos++)
-                {
-                    for (int contadorValores = 0; contadorValores < valores.Length; contadorValores++)
-                    {
-                        Baraja[contadorCartas] = new Carta();
-                        Baraja[contadorCartas].Palo = palos[contadorPalos];
-                        Baraja[contadorCartas].Valor = valores[contadorValores];
+                "uno",
+                "dos",
+                "tres",
+                "cuatro",
+                "cinco",
+                "seis",
+                "siete",
+                "ocho",
+                "nueve",
+                "sota",
+                "caballero",
+                "rey"
+            };
 
-                        contadorCartas++;
-                    }
+            Console.WriteLine("Los palos de la baraja son:");
+
+            foreach (string unPalo in losPalos)
+                Console.WriteLine($"- {unPalo}");
+
+            Console.WriteLine("\nLos valores de la baraja son:");
+
+            foreach (string unValor in losValores)
+                Console.WriteLine($"- {unValor}");
+
+            int totalCartas = losValores.Length * losPalos.Length;
+            Carta[] baraja = new Carta[totalCartas];
+
+            //Procedemos a inicializar el arreglo de cartas
+            int contadorCarta = 0;
+
+            for (int i = 0; i < losPalos.Length; i++)
+            {
+                for (int j = 0; j < losValores.Length; j++)
+                {
+                    baraja[contadorCarta] = new Carta();
+                    baraja[contadorCarta].Valor = losValores[j];
+                    baraja[contadorCarta].Palo = losPalos[i];
+                    contadorCarta++;
                 }
             }
 
@@ -68,11 +77,10 @@ namespace BarajaEspanola
                     numeroCarta = int.Parse(Console.ReadLine()!);
 
                     if (numeroCarta >= 1 && numeroCarta <= 48)
-                        Console.WriteLine($"La carta No. {numeroCarta}, es {Baraja[numeroCarta - 1].Valor} de {Baraja[numeroCarta - 1].Palo}");
+                        Console.WriteLine($"La carta No. {numeroCarta}, es {baraja[numeroCarta - 1].Valor} de {baraja[numeroCarta - 1].Palo}");
                     else
                         if (numeroCarta != 0)
                         Console.WriteLine("Ingresaste un número fuera del rango. Intenta nuevamente!\n\n");
-
                 }
                 catch (FormatException error)
                 {
@@ -85,20 +93,20 @@ namespace BarajaEspanola
             Console.WriteLine("Fin de la visualización individual.");
 
             Console.WriteLine("\n\nBaraja ordenada queda asi:");
-            VisualizaBaraja(Baraja);
+            VisualizaBaraja(baraja);
 
             // un "algoritmo" para desordenar el arreglo
             Random aleatorio = new Random();
             Carta cartaTemporal;
             int posicionAleatoria;
 
-            for (int i = 0; i < Baraja.Length; i++)
+            for (int i = 0; i < baraja.Length; i++)
             {
-                posicionAleatoria = aleatorio.Next(Baraja.Length);
+                posicionAleatoria = aleatorio.Next(baraja.Length);
 
-                cartaTemporal = Baraja[posicionAleatoria];
-                Baraja[posicionAleatoria] = Baraja[i];
-                Baraja[i] = cartaTemporal;
+                cartaTemporal = baraja[posicionAleatoria];
+                baraja[posicionAleatoria] = baraja[i];
+                baraja[i] = cartaTemporal;
             }
 
             Console.WriteLine("\nLa baraja ha sido mezclada!");
@@ -116,19 +124,22 @@ namespace BarajaEspanola
                 if (valorCarta == "" || valorCarta == "ninguno")
                     quieroSalir = true;
 
-                if (ValidarValor(valorCarta, valores))
+                //utilizamos una función para verificar si el dato es válido
+                if (ValidarValor(valorCarta, losValores))
                 {
-                    for (int i = 0; i < Baraja.Length; i++)
-                        if (Baraja[i].Valor == valorCarta)
-                            Console.WriteLine($"Posicion: {i + 1}, es {Baraja[i].Valor} de {Baraja[i].Palo}");
+                    for (int i = 0; i < baraja.Length; i++)
+                        if (baraja[i].Valor == valorCarta)
+                            Console.WriteLine($"Posicion: {i + 1}, es {baraja[i].Valor} de {baraja[i].Palo}");
                 }
                 else
+                {
                     if (!quieroSalir)
-                    Console.WriteLine("Ingresaste un valor de carta inválido. Intenta nuevamente! \n");
+                        Console.WriteLine("Ingresaste un valor de carta inválido. Intenta nuevamente! \n");
+                }
 
             } while (!quieroSalir);
 
-            Console.WriteLine("Ejecución Finalizada!");
+            Console.WriteLine("\n\nEjecución Finalizada!");
         }
 
         /// <summary>
