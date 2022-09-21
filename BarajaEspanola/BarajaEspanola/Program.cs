@@ -8,7 +8,8 @@ Propósito:
 - Crear un arreglo de objetos e inicializarlo de manera secuencial según 
   valores establecidos para los atributos.
 - Visualizar la colección de cartas, una carta a la vez
-- Implementar un mecanismo para mezclar las cartas de manera aleatoria
+- Implementar un función para mezclar las cartas de manera aleatoria
+- Implementar una función para validar si un valor de una carta es correcto
  */
 
 namespace BarajaEspanola
@@ -65,8 +66,7 @@ namespace BarajaEspanola
             }
 
             Console.WriteLine("Baraja inicializada!\n\n");
-            int numeroCarta = 1;
-
+            int numeroCarta=1; //Visualización de la primera carta
 
             //Aqui podemos consultar que carta hay en una posición
             do
@@ -95,21 +95,32 @@ namespace BarajaEspanola
             Console.WriteLine("\n\nBaraja ordenada queda asi:");
             VisualizaBaraja(baraja);
 
-            // un "algoritmo" para desordenar el arreglo
-            Random aleatorio = new Random();
-            Carta cartaTemporal;
-            int posicionAleatoria;
+            //Aqui mezclamos la baraja tantas veces como el usuario pida
+            int cantidadVeces=0;
+            bool datoCorrecto = false;
 
-            for (int i = 0; i < baraja.Length; i++)
+            while (datoCorrecto == false)
             {
-                posicionAleatoria = aleatorio.Next(baraja.Length);
+                Console.Write("\nCuantas veces quieres mezclar la baraja? ");
+                datoCorrecto = int.TryParse(Console.ReadLine(), out cantidadVeces);
 
-                cartaTemporal = baraja[posicionAleatoria];
-                baraja[posicionAleatoria] = baraja[i];
-                baraja[i] = cartaTemporal;
+                if (datoCorrecto == false || cantidadVeces < 0)
+                {
+                    Console.WriteLine("El dato ingresado no es válido. Intenta nuevamente!");
+                    datoCorrecto = false;
+                }                
+                else
+                {
+                    if (cantidadVeces == 0)
+                        Console.WriteLine($"{cantidadVeces} implica que no se mezclará!");
+                    else
+                    {
+                        Console.Write($"Mezclando la baraja {cantidadVeces} veces...");
+                        MezclarBaraja(baraja, cantidadVeces);
+                        Console.WriteLine("Terminado!");
+                    }
+                }                    
             }
-
-            Console.WriteLine("\nLa baraja ha sido mezclada!");
 
             //Aqui buscamos donde quedaron las cartas de un valor específico
             string valorCarta = "oro";
@@ -140,6 +151,24 @@ namespace BarajaEspanola
             } while (!quieroSalir);
 
             Console.WriteLine("\n\nEjecución Finalizada!");
+        }
+
+        static void MezclarBaraja(Carta[] arregloCartas, int cantidadVeces)
+        {
+            Random aleatorio = new Random();
+            Carta cartaTemporal;
+            int posicionAleatoria;
+
+            for (int vez = 1; vez <= cantidadVeces; vez++)
+            {
+                for (int i = 0; i < arregloCartas.Length; i++)
+                {
+                    posicionAleatoria = aleatorio.Next(0, arregloCartas.Length);
+                    cartaTemporal = arregloCartas[i];
+                    arregloCartas[i] = arregloCartas[posicionAleatoria];
+                    arregloCartas[posicionAleatoria] = cartaTemporal;
+                }
+            }
         }
 
         /// <summary>
