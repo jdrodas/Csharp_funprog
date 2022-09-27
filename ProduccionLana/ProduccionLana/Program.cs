@@ -47,8 +47,8 @@ namespace ProduccionLana
             {
                 if (lasOvejas[k].EsApta)
                 {
-                        Console.WriteLine($"Oveja No. {k + 1}, Edad: {lasOvejas[k].Edad}, " +
-                            $"Peso: {lasOvejas[k].Peso}, Cantidad Lana: {lasOvejas[k].CantidadLana}");
+                    Console.WriteLine($"Oveja No. {k + 1}, Edad: {lasOvejas[k].Edad}, " +
+                        $"Peso: {lasOvejas[k].Peso}, Cantidad Lana: {lasOvejas[k].CantidadLana}");
                 }
             }
 

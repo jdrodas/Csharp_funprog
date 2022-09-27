@@ -38,7 +38,6 @@ namespace ProduccionLana
         public bool EsApta
         {
             get { return esApta; }
-            set { esApta = value; }
         }
 
         //Metodos
