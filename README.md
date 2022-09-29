@@ -302,6 +302,14 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- captura de datos desde consola
 >>- visualizar resultados
 
+>### [PescaArtesanalOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PescaArtesanalOO)
+>>- Mejorar la implementación del proyecto [ex02_MatricesPescaArtesanal](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_MatricesPescaArtesanal)
+    creando la clase "Pesca" y ajustando la funcionalidad para utilizar el recurso.
+>>- Demostrar la utilización de condicionales 
+>>- captura de datos desde consola
+>>- visualizar resultados
+>>- Calcular totales y promedios recorriendo un arreglo de objetos y utilizando funciones
+
 
 ### 6. Interfaces Graficas con Windows Forms
 
