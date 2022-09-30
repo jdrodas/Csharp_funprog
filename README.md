@@ -184,7 +184,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 
 >### [EjemploFuncionesArreglos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploFuncionesArreglos)
-- Generar un arreglo con valores enteros aleatorios
+>>- Generar un arreglo con valores enteros aleatorios
 >>- Implementar funciones que encuentre los valore menores y mayores del arreglo
 >>- Implementar una función que encuentre las posiciones donde está un valor
 >>- Implementar una función que ordene un arreglo entero utilizando el algortimo burbuja
@@ -246,17 +246,17 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 
 ### 5. Principios de Programación Orientada a Objetos
 
->>### [EjemploObjetos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploObjetos)
+>### [EjemploObjetos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploObjetos)
 >>- Demostrar los conceptos básicos de clase, objeto, encapsulación, métodos
 >>- Crear un arreglo de objetos, asignando y leyendo información para cada atributo
 >>- Actualizado a .NET 6
 
->>### [TiendaGomitas](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaGomitas)
+>### [TiendaGomitas](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaGomitas)
 >>- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 >>- Crear un arreglo de objetos y pasarlo como parámetro a una función.
 >>- Crear un arreglo multidimensional y generar mecanismos para recorrerlo
 
->>### [BarajaEspanola](https://github.com/jdrodas/Csharp_funprog/tree/master/BarajaEspanola)
+>### [BarajaEspanola](https://github.com/jdrodas/Csharp_funprog/tree/master/BarajaEspanola)
 >>- Demostrar conceptos de clase, objeto, encapsulación, atributos, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
     valores establecidos para los atributos.
@@ -264,7 +264,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementar un mecanismo para mezclar las cartas de manera aleatoria
 >>- Actualizado a .NET 6
 
->>### [ProduccionLana](https://github.com/jdrodas/Csharp_funprog/tree/master/ProduccionLana)
+>### [ProduccionLana](https://github.com/jdrodas/Csharp_funprog/tree/master/ProduccionLana)
 >>- Demostrar conceptos de clase, objeto, encapsulación, atributos, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
     valores establecidos para los atributos.
@@ -272,7 +272,7 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementar un mecanismo para mezclar las cartas de manera aleatoria
 
 
->>### [MaquinaExpendedoraComida](https://github.com/jdrodas/Csharp_funprog/tree/master/MaquinaExpendedoraComida)
+>### [MaquinaExpendedoraComida](https://github.com/jdrodas/Csharp_funprog/tree/master/MaquinaExpendedoraComida)
 >>- Demostrar conceptos de clase, objeto, encapsulación, propiedades
 >>- Crear un objeto "MaquinaVenta" que contiene un arreglo de "Ubicacion"
 >>- Implementar funciones para inicializar ubicaciones, validar y acceder a ellas
@@ -281,14 +281,14 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementar algoritmo para realizar venta de producto.
 >>- Visualizar cuanto vendió y cuantos productos se vendieron
 
->>### [VentaEmpanadas](https://github.com/jdrodas/Csharp_funprog/tree/master/VentaEmpanadas)
+>### [VentaEmpanadas](https://github.com/jdrodas/Csharp_funprog/tree/master/VentaEmpanadas)
 >>- Demostrar conceptos de clase, objeto, encapsulación, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
   valores establecidos para los atributos.
 >>- Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales.
 
->>### [RegistroSimCards](https://github.com/jdrodas/Csharp_funprog/tree/master/RegistroSimCards)
+>### [RegistroSimCards](https://github.com/jdrodas/Csharp_funprog/tree/master/RegistroSimCards)
 >>- Demostrar conceptos de clase, objeto, encapsulación, propiedades
 >>- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
   valores establecidos para los atributos.
@@ -314,26 +314,26 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 ### 6. Interfaces Graficas con Windows Forms
 
 
->>### [SimRadio](https://github.com/jdrodas/Csharp_funprog/tree/master/SimRadio)
+>### [SimRadio](https://github.com/jdrodas/Csharp_funprog/tree/master/SimRadio)
 >>- Programa de introducción a las interfaces gráficas de usuario en Windows Forms
 >>- Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
 
->>### [AhorcaditoSimple](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoSimple)
+>### [AhorcaditoSimple](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoSimple)
 >>- Implementación de una aplicación para adivinar una palabra de 10 letras.
 >>- Cuenta los fallos y los aciertos 
 >>- Implementación en Windows Forms.
 
->>### [AhorcaditoGrafico](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoGrafico)
+>### [AhorcaditoGrafico](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoGrafico)
 >>- Implementación de una aplicación para adivinar una palabra de 10 letras.
 >>- Cuenta los fallos y los aciertos y dibuja el personaje a medida que se incrementa los fallos
 >>- Implementación en Windows Forms con lógica del juego en clase independiente.
 
->>### [EncuentraParejasNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/EncuentraParejasNumeros)
+>### [EncuentraParejasNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/EncuentraParejasNumeros)
 >>- Implementación en Windows Forms con lógica y visualización en una sola clase.
 >>- Implementación de una aplicación para encontrar 8 parejas de números.
 >>- Cuenta los intentos realizados así como las parejas encontradas.
 
->>### [Wordle_Simplificado](https://github.com/jdrodas/Csharp_funprog/tree/master/Wordle_Simplificado)
+>### [Wordle_Simplificado](https://github.com/jdrodas/Csharp_funprog/tree/master/Wordle_Simplificado)
 >>- Implementación en Windows Forms con lógica y visualización en una sola clase.
 >>- Implementación de una aplicación para encontrar una palabra de 5 letras antes de 6 intentos.
 >>- Implementa selector de colores normales y de alto contraste.
