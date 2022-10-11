@@ -431,6 +431,12 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Calcular el total de vacunados por ciuidad y biológico utilizado.
 >>- Calcular la edad promedio por ciudad y por biológico
 
+>>### [ex03_VentasBarrio](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_VentasBarrio)
+>>- Generar arreglo de Pedidos de Galletas para 5 barrios e identificar cantidad de pedidos por barrio, 
+la cantidad de galletas por barrio, cual fue el barrio con mejor promedio 
+
+
+
 ### Examen No. 4
 
 >>### ex04_EncuentraParejasNumeros
