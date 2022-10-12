@@ -435,6 +435,10 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Generar arreglo de Pedidos de Galletas para 5 barrios e identificar cantidad de pedidos por barrio, 
 la cantidad de galletas por barrio, cual fue el barrio con mejor promedio 
 
+>>### [ex03_ViajesMetroplus](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_ViajesMetroplus)
+>>- Generar arreglo de Viajes de pasajeros para 5 rutas e identificar cantidad de pasajeros por ruta, 
+Porcentaje del total y  cual fue la ruta con menor cantidad de pasajeros transportados 
+
 
 
 ### Examen No. 4
