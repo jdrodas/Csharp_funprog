@@ -30,7 +30,7 @@ namespace OrdenaNumeros
         private void InitializeComponent()
         {
             this.barraMenu = new System.Windows.Forms.MenuStrip();
-            this.menuItemNuevo = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemArchivo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemReiniciaJuego = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.boton1 = new System.Windows.Forms.Button();
@@ -54,28 +54,29 @@ namespace OrdenaNumeros
             // 
             // barraMenu
             // 
+            this.barraMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.barraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemNuevo});
+            this.menuItemArchivo});
             this.barraMenu.Location = new System.Drawing.Point(0, 0);
             this.barraMenu.Name = "barraMenu";
-            this.barraMenu.Size = new System.Drawing.Size(353, 24);
+            this.barraMenu.Size = new System.Drawing.Size(471, 28);
             this.barraMenu.TabIndex = 0;
             this.barraMenu.Text = "menuStrip1";
             // 
-            // menuItemNuevo
+            // menuItemArchivo
             // 
-            this.menuItemNuevo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemArchivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemReiniciaJuego,
             this.menuItemSalir});
-            this.menuItemNuevo.Name = "menuItemNuevo";
-            this.menuItemNuevo.Size = new System.Drawing.Size(60, 20);
-            this.menuItemNuevo.Text = "Archivo";
+            this.menuItemArchivo.Name = "menuItemArchivo";
+            this.menuItemArchivo.Size = new System.Drawing.Size(73, 24);
+            this.menuItemArchivo.Text = "Archivo";
             // 
             // menuItemReiniciaJuego
             // 
             this.menuItemReiniciaJuego.Name = "menuItemReiniciaJuego";
             this.menuItemReiniciaJuego.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.menuItemReiniciaJuego.Size = new System.Drawing.Size(195, 22);
+            this.menuItemReiniciaJuego.Size = new System.Drawing.Size(244, 26);
             this.menuItemReiniciaJuego.Text = "Reiniciar juego";
             this.menuItemReiniciaJuego.Click += new System.EventHandler(this.menuItemReiniciaJuego_Click);
             // 
@@ -83,7 +84,7 @@ namespace OrdenaNumeros
             // 
             this.menuItemSalir.Name = "menuItemSalir";
             this.menuItemSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.menuItemSalir.Size = new System.Drawing.Size(195, 22);
+            this.menuItemSalir.Size = new System.Drawing.Size(244, 26);
             this.menuItemSalir.Text = "Salir";
             this.menuItemSalir.Click += new System.EventHandler(this.menuItemSalir_Click);
             // 
@@ -92,9 +93,10 @@ namespace OrdenaNumeros
             this.boton1.BackColor = System.Drawing.Color.LightGray;
             this.boton1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton1.Location = new System.Drawing.Point(40, 50);
+            this.boton1.Location = new System.Drawing.Point(53, 62);
+            this.boton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton1.Name = "boton1";
-            this.boton1.Size = new System.Drawing.Size(60, 60);
+            this.boton1.Size = new System.Drawing.Size(80, 74);
             this.boton1.TabIndex = 2;
             this.boton1.Text = "0";
             this.boton1.UseVisualStyleBackColor = false;
@@ -105,9 +107,10 @@ namespace OrdenaNumeros
             this.boton2.BackColor = System.Drawing.Color.LightGray;
             this.boton2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton2.Location = new System.Drawing.Point(110, 50);
+            this.boton2.Location = new System.Drawing.Point(147, 62);
+            this.boton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton2.Name = "boton2";
-            this.boton2.Size = new System.Drawing.Size(60, 60);
+            this.boton2.Size = new System.Drawing.Size(80, 74);
             this.boton2.TabIndex = 3;
             this.boton2.Text = "0";
             this.boton2.UseVisualStyleBackColor = false;
@@ -118,9 +121,10 @@ namespace OrdenaNumeros
             this.boton3.BackColor = System.Drawing.Color.LightGray;
             this.boton3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton3.Location = new System.Drawing.Point(180, 50);
+            this.boton3.Location = new System.Drawing.Point(240, 62);
+            this.boton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton3.Name = "boton3";
-            this.boton3.Size = new System.Drawing.Size(60, 60);
+            this.boton3.Size = new System.Drawing.Size(80, 74);
             this.boton3.TabIndex = 4;
             this.boton3.Text = "0";
             this.boton3.UseVisualStyleBackColor = false;
@@ -131,9 +135,10 @@ namespace OrdenaNumeros
             this.boton4.BackColor = System.Drawing.Color.LightGray;
             this.boton4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton4.Location = new System.Drawing.Point(250, 50);
+            this.boton4.Location = new System.Drawing.Point(333, 62);
+            this.boton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton4.Name = "boton4";
-            this.boton4.Size = new System.Drawing.Size(60, 60);
+            this.boton4.Size = new System.Drawing.Size(80, 74);
             this.boton4.TabIndex = 5;
             this.boton4.Text = "0";
             this.boton4.UseVisualStyleBackColor = false;
@@ -144,9 +149,10 @@ namespace OrdenaNumeros
             this.boton5.BackColor = System.Drawing.Color.LightGray;
             this.boton5.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton5.Location = new System.Drawing.Point(40, 120);
+            this.boton5.Location = new System.Drawing.Point(53, 148);
+            this.boton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton5.Name = "boton5";
-            this.boton5.Size = new System.Drawing.Size(60, 60);
+            this.boton5.Size = new System.Drawing.Size(80, 74);
             this.boton5.TabIndex = 9;
             this.boton5.Text = "0";
             this.boton5.UseVisualStyleBackColor = false;
@@ -157,9 +163,10 @@ namespace OrdenaNumeros
             this.boton6.BackColor = System.Drawing.Color.LightGray;
             this.boton6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton6.Location = new System.Drawing.Point(110, 120);
+            this.boton6.Location = new System.Drawing.Point(147, 148);
+            this.boton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton6.Name = "boton6";
-            this.boton6.Size = new System.Drawing.Size(60, 60);
+            this.boton6.Size = new System.Drawing.Size(80, 74);
             this.boton6.TabIndex = 8;
             this.boton6.Text = "0";
             this.boton6.UseVisualStyleBackColor = false;
@@ -170,9 +177,10 @@ namespace OrdenaNumeros
             this.boton7.BackColor = System.Drawing.Color.LightGray;
             this.boton7.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton7.Location = new System.Drawing.Point(180, 120);
+            this.boton7.Location = new System.Drawing.Point(240, 148);
+            this.boton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton7.Name = "boton7";
-            this.boton7.Size = new System.Drawing.Size(60, 60);
+            this.boton7.Size = new System.Drawing.Size(80, 74);
             this.boton7.TabIndex = 7;
             this.boton7.Text = "0";
             this.boton7.UseVisualStyleBackColor = false;
@@ -183,9 +191,10 @@ namespace OrdenaNumeros
             this.boton8.BackColor = System.Drawing.Color.LightGray;
             this.boton8.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton8.Location = new System.Drawing.Point(250, 120);
+            this.boton8.Location = new System.Drawing.Point(333, 148);
+            this.boton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton8.Name = "boton8";
-            this.boton8.Size = new System.Drawing.Size(60, 60);
+            this.boton8.Size = new System.Drawing.Size(80, 74);
             this.boton8.TabIndex = 6;
             this.boton8.Text = "0";
             this.boton8.UseVisualStyleBackColor = false;
@@ -196,9 +205,10 @@ namespace OrdenaNumeros
             this.boton9.BackColor = System.Drawing.Color.LightGray;
             this.boton9.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton9.Location = new System.Drawing.Point(40, 190);
+            this.boton9.Location = new System.Drawing.Point(53, 234);
+            this.boton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton9.Name = "boton9";
-            this.boton9.Size = new System.Drawing.Size(60, 60);
+            this.boton9.Size = new System.Drawing.Size(80, 74);
             this.boton9.TabIndex = 17;
             this.boton9.Text = "0";
             this.boton9.UseVisualStyleBackColor = false;
@@ -209,9 +219,10 @@ namespace OrdenaNumeros
             this.boton10.BackColor = System.Drawing.Color.LightGray;
             this.boton10.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton10.Location = new System.Drawing.Point(110, 190);
+            this.boton10.Location = new System.Drawing.Point(147, 234);
+            this.boton10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton10.Name = "boton10";
-            this.boton10.Size = new System.Drawing.Size(60, 60);
+            this.boton10.Size = new System.Drawing.Size(80, 74);
             this.boton10.TabIndex = 16;
             this.boton10.Text = "0";
             this.boton10.UseVisualStyleBackColor = false;
@@ -222,9 +233,10 @@ namespace OrdenaNumeros
             this.boton11.BackColor = System.Drawing.Color.LightGray;
             this.boton11.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton11.Location = new System.Drawing.Point(180, 190);
+            this.boton11.Location = new System.Drawing.Point(240, 234);
+            this.boton11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton11.Name = "boton11";
-            this.boton11.Size = new System.Drawing.Size(60, 60);
+            this.boton11.Size = new System.Drawing.Size(80, 74);
             this.boton11.TabIndex = 15;
             this.boton11.Text = "0";
             this.boton11.UseVisualStyleBackColor = false;
@@ -235,9 +247,10 @@ namespace OrdenaNumeros
             this.boton12.BackColor = System.Drawing.Color.LightGray;
             this.boton12.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton12.Location = new System.Drawing.Point(250, 190);
+            this.boton12.Location = new System.Drawing.Point(333, 234);
+            this.boton12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton12.Name = "boton12";
-            this.boton12.Size = new System.Drawing.Size(60, 60);
+            this.boton12.Size = new System.Drawing.Size(80, 74);
             this.boton12.TabIndex = 14;
             this.boton12.Text = "0";
             this.boton12.UseVisualStyleBackColor = false;
@@ -248,9 +261,10 @@ namespace OrdenaNumeros
             this.boton13.BackColor = System.Drawing.Color.LightGray;
             this.boton13.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton13.Location = new System.Drawing.Point(40, 260);
+            this.boton13.Location = new System.Drawing.Point(53, 320);
+            this.boton13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton13.Name = "boton13";
-            this.boton13.Size = new System.Drawing.Size(60, 60);
+            this.boton13.Size = new System.Drawing.Size(80, 74);
             this.boton13.TabIndex = 13;
             this.boton13.Text = "0";
             this.boton13.UseVisualStyleBackColor = false;
@@ -261,9 +275,10 @@ namespace OrdenaNumeros
             this.boton14.BackColor = System.Drawing.Color.LightGray;
             this.boton14.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton14.Location = new System.Drawing.Point(110, 260);
+            this.boton14.Location = new System.Drawing.Point(147, 320);
+            this.boton14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton14.Name = "boton14";
-            this.boton14.Size = new System.Drawing.Size(60, 60);
+            this.boton14.Size = new System.Drawing.Size(80, 74);
             this.boton14.TabIndex = 12;
             this.boton14.Text = "0";
             this.boton14.UseVisualStyleBackColor = false;
@@ -274,9 +289,10 @@ namespace OrdenaNumeros
             this.boton15.BackColor = System.Drawing.Color.LightGray;
             this.boton15.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton15.Location = new System.Drawing.Point(180, 260);
+            this.boton15.Location = new System.Drawing.Point(240, 320);
+            this.boton15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton15.Name = "boton15";
-            this.boton15.Size = new System.Drawing.Size(60, 60);
+            this.boton15.Size = new System.Drawing.Size(80, 74);
             this.boton15.TabIndex = 11;
             this.boton15.Text = "0";
             this.boton15.UseVisualStyleBackColor = false;
@@ -287,9 +303,10 @@ namespace OrdenaNumeros
             this.boton16.BackColor = System.Drawing.Color.LightGray;
             this.boton16.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.boton16.Location = new System.Drawing.Point(250, 260);
+            this.boton16.Location = new System.Drawing.Point(333, 320);
+            this.boton16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boton16.Name = "boton16";
-            this.boton16.Size = new System.Drawing.Size(60, 60);
+            this.boton16.Size = new System.Drawing.Size(80, 74);
             this.boton16.TabIndex = 10;
             this.boton16.Text = "0";
             this.boton16.UseVisualStyleBackColor = false;
@@ -297,10 +314,10 @@ namespace OrdenaNumeros
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(353, 361);
+            this.ClientSize = new System.Drawing.Size(471, 444);
             this.Controls.Add(this.boton9);
             this.Controls.Add(this.boton10);
             this.Controls.Add(this.boton11);
@@ -319,6 +336,7 @@ namespace OrdenaNumeros
             this.Controls.Add(this.boton1);
             this.Controls.Add(this.barraMenu);
             this.MainMenuStrip = this.barraMenu;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ordena Numeros!";
@@ -333,7 +351,7 @@ namespace OrdenaNumeros
         #endregion
 
         private System.Windows.Forms.MenuStrip barraMenu;
-        private System.Windows.Forms.ToolStripMenuItem menuItemNuevo;
+        private System.Windows.Forms.ToolStripMenuItem menuItemArchivo;
         private System.Windows.Forms.ToolStripMenuItem menuItemReiniciaJuego;
         private System.Windows.Forms.ToolStripMenuItem menuItemSalir;
         private System.Windows.Forms.Button boton1;

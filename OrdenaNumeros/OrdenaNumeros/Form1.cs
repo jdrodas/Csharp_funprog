@@ -7,9 +7,8 @@ namespace OrdenaNumeros
     public partial class Form1 : Form
     {
         //Atributos propios del juego
-        private int[,] matrizValores;
         private Button[,] matrizBotones;
-        private int posicionFila, posicionColumna;
+        private LogicaJuego miLogica;
 
         /// <summary>
         /// Constructor de la clase Form1
@@ -18,15 +17,12 @@ namespace OrdenaNumeros
         {
             InitializeComponent();
 
-            posicionFila = 0;
-            posicionColumna = 0;
+            miLogica = new LogicaJuego();
+            miLogica.InicializaMatrizValores();
 
             matrizBotones = new Button[4, 4];
-            matrizValores = new int[4, 4];
-
             //Aqui se invocan los metodos que inicializan las matrices
             InicializaMatrizBotones();
-            InicializaMatrizValores();
         }
 
         /// <summary>
@@ -64,43 +60,7 @@ namespace OrdenaNumeros
             matrizBotones[3, 3] = boton16;
         }
 
-        /// <summary>
-        /// Inicializa la matriz de valores, asignando los numeros a organizar
-        /// </summary>
-        private void InicializaMatrizValores()
-        {
-            int valor = 0;
 
-            //Inicialmente se asignan los números del 0 al 15 en toda la matriz
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 0; j < 4; j++)
-                {
-                    matrizValores[i, j] = valor;
-                    valor++;
-                }
-            }
-
-            //Luego, procedemos a cambiar los valores de posición de manera aleatoria
-
-            Random aleatorio = new Random();
-            int posicionHorizontal, posicionVertical, valorTemporal;
-
-            //Aqui desordenamos la matriz, calculando posiciones horizontales y
-            //verticales dentro de la matriz
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 0; j < 4; j++)
-                {
-                    valorTemporal = matrizValores[i, j];
-                    posicionHorizontal = aleatorio.Next(4);
-                    posicionVertical = aleatorio.Next(4);
-
-                    matrizValores[i, j] = matrizValores[posicionHorizontal, posicionVertical];
-                    matrizValores[posicionHorizontal, posicionVertical] = valorTemporal;
-                }
-            }
-        }
 
         /// <summary>
         /// Asigna los valores de la matrizValores como etiquetas de los
@@ -109,7 +69,7 @@ namespace OrdenaNumeros
         private void InicializaEtiquetaBotones()
         {
             //Recalculamos la matriz de valores
-            InicializaMatrizValores();
+            miLogica.InicializaMatrizValores();
 
             for (int i = 0; i < 4; i++)
             {
@@ -117,10 +77,10 @@ namespace OrdenaNumeros
                 {
                     //El botón que tenga el valor 0, se verá como vacío
                     //para que el usuario pueda "desplazar" el valor allí
-                    if (matrizValores[i, j] == 0)
+                    if (miLogica.MatrizValores[i, j] == 0)
                         matrizBotones[i, j].Text = "";
                     else
-                        matrizBotones[i, j].Text = matrizValores[i, j].ToString();
+                        matrizBotones[i, j].Text = miLogica.MatrizValores[i, j].ToString();
                 }
             }
         }
@@ -239,8 +199,8 @@ namespace OrdenaNumeros
         /// <param name="datoColumna">Columna en la matriz a la que pertenece el botón</param>
         private void EvaluaBotonPresionado(int numeroBoton, int datoFila, int datoColumna)
         {
-            posicionFila = datoFila;
-            posicionColumna = datoColumna;
+            miLogica.PosicionFila = datoFila;
+            miLogica.PosicionColumna = datoColumna;
 
             //Aqui evaluamos en la matrizValores, la posición correspondiente al botón presionado
             EvaluaPosicion();
@@ -257,46 +217,46 @@ namespace OrdenaNumeros
             int valorTemporal = 0;
 
             //Validamos el valor superior a donde presionamos si está el cero
-            if (posicionFila > 0)
+            if (miLogica.PosicionFila > 0)
             {
-                if (matrizValores[posicionFila - 1, posicionColumna] == 0)
+                if (miLogica.MatrizValores[miLogica.PosicionFila - 1, miLogica.PosicionColumna] == 0)
                 {
-                    valorTemporal = matrizValores[posicionFila, posicionColumna];
-                    matrizValores[posicionFila, posicionColumna] = 0;
-                    matrizValores[posicionFila - 1, posicionColumna] = valorTemporal;
+                    valorTemporal = miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna];
+                    miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna] = 0;
+                    miLogica.MatrizValores[miLogica.PosicionFila - 1, miLogica.PosicionColumna] = valorTemporal;
                 }
             }
 
             //Validamos el valor inferior a donde presionamos si está el cero
-            if (posicionFila < 3)
+            if (miLogica.PosicionFila < 3)
             {
-                if (matrizValores[posicionFila + 1, posicionColumna] == 0)
+                if (miLogica.MatrizValores[miLogica.PosicionFila + 1, miLogica.PosicionColumna] == 0)
                 {
-                    valorTemporal = matrizValores[posicionFila, posicionColumna];
-                    matrizValores[posicionFila, posicionColumna] = 0;
-                    matrizValores[posicionFila + 1, posicionColumna] = valorTemporal;
+                    valorTemporal = miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna];
+                    miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna] = 0;
+                    miLogica.MatrizValores[miLogica.PosicionFila + 1, miLogica.PosicionColumna] = valorTemporal;
                 }
             }
 
             //Validamos el valor izquierdo a donde presionamos si está el cero
-            if (posicionColumna > 0)
+            if (miLogica.PosicionColumna > 0)
             {
-                if (matrizValores[posicionFila, posicionColumna - 1] == 0)
+                if (miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna - 1] == 0)
                 {
-                    valorTemporal = matrizValores[posicionFila, posicionColumna];
-                    matrizValores[posicionFila, posicionColumna] = 0;
-                    matrizValores[posicionFila, posicionColumna - 1] = valorTemporal;
+                    valorTemporal = miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna];
+                    miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna] = 0;
+                    miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna - 1] = valorTemporal;
                 }
             }
 
             //Validamos el valor derecho a donde presionamos si está el cero
-            if (posicionColumna < 3)
+            if (miLogica.PosicionColumna < 3)
             {
-                if (matrizValores[posicionFila, posicionColumna + 1] == 0)
+                if (miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna + 1] == 0)
                 {
-                    valorTemporal = matrizValores[posicionFila, posicionColumna];
-                    matrizValores[posicionFila, posicionColumna] = 0;
-                    matrizValores[posicionFila, posicionColumna + 1] = valorTemporal;
+                    valorTemporal = miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna];
+                    miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna] = 0;
+                    miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna + 1] = valorTemporal;
                 }
             }
 
@@ -305,10 +265,10 @@ namespace OrdenaNumeros
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    if (matrizValores[i, j] == 0)
+                    if (miLogica.MatrizValores[i, j] == 0)
                         matrizBotones[i, j].Text = "";
                     else
-                        matrizBotones[i, j].Text = matrizValores[i, j].ToString();
+                        matrizBotones[i, j].Text = miLogica.MatrizValores[i, j].ToString();
                 }
             }
 
@@ -335,11 +295,11 @@ namespace OrdenaNumeros
                     valorBuscado++;
 
                     //Si los valores son diferentes, entonces todavía necesitamos seguir jugando!!!
-                    if (matrizValores[i, j] != valorBuscado)
+                    if (miLogica.MatrizValores[i, j] != valorBuscado)
                     {
                         // Validamos si estamos en la última casilla, el valor existente es 0,
                         // el valor buscado ya llegó a 16 y la condición de victoria sigue siendo true
-                        if (matrizValores[i, j] == 0 && valorBuscado == 16 && condicionVictoria == true)
+                        if (miLogica.MatrizValores[i, j] == 0 && valorBuscado == 16 && condicionVictoria == true)
                             condicionVictoria = true;
 
                         // De lo contrario, es porque estamos en cualquier otra casilla y los valores
@@ -406,13 +366,13 @@ namespace OrdenaNumeros
             for (int i = 0; i < totalFilas; i++)
                 for (int j = 0; j < totalColumnas; j++)
                 {
-                    if (matrizValores[i, j] == valoresEsperados[i, j])
+                    if (miLogica.MatrizValores[i, j] == valoresEsperados[i, j])
                         matrizBotones[i, j].BackColor = Color.LightGreen;
                     else
                         matrizBotones[i, j].BackColor = Color.LightGray;
 
                     //El botón que tiene el 0 no deberá cambiar de color
-                    if(matrizValores[i, j]==0)
+                    if(miLogica.MatrizValores[i, j]==0)
                         matrizBotones[i, j].BackColor = Color.LightGray;
                 }
         }

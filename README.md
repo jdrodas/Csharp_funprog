@@ -333,6 +333,11 @@ Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tend
 >>- Implementación de una aplicación para encontrar 8 parejas de números.
 >>- Cuenta los intentos realizados así como las parejas encontradas.
 
+>### [OrdenaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/OrdenaNumeros)
+>>- Implementación en Windows Forms con lógica y visualización en clases independientes.
+>>- Implementación de una aplicación para ordernar 15 numeros.
+
+
 >### [Wordle_Simplificado](https://github.com/jdrodas/Csharp_funprog/tree/master/Wordle_Simplificado)
 >>- Implementación en Windows Forms con lógica y visualización en una sola clase.
 >>- Implementación de una aplicación para encontrar una palabra de 5 letras antes de 6 intentos.
