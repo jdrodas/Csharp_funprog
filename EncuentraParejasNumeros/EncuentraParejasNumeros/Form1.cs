@@ -35,95 +35,34 @@ namespace EncuentraParejasNumeros
     public partial class Form1 : Form
     {
         //Aqui declaramos los atributos del juego
-        private int totalIntentos;
-        private int totalParejas;
+        private LogicaJuego miLogica;
 
-        //Estos dos arreglos tienen tienen los valores y los botones
-        private int[] arregloValores;
         private Button[] arregloBotones;
-        private bool[] valoresEncontrados;
-
-        //Estos atributos se refieren a la parte de la pareja a encontrar
-        int parejaParteA, parejaParteB;
 
         public Form1()
         {
             InitializeComponent();
+            miLogica = new LogicaJuego();   
 
             //Aqui inicializamos los atributos del juego
             InicializaAtributos();
 
             //Llevamos los valores de los atributos a los cuadros de texto
-            textoTotalIntentos.Text = totalIntentos.ToString();
-            textoParejasEncontradas.Text = totalParejas.ToString();
+            textoTotalIntentos.Text = miLogica.TotalIntentos.ToString();
+            textoParejasEncontradas.Text = miLogica.TotalParejas.ToString();
 
         }
 
         private void InicializaAtributos()
         {
-            totalIntentos = 0;
-            totalParejas = 0;
-
-            //Inicializamos las partes de la pareja
-            parejaParteA = 0;
-            parejaParteB = 0;
+            //Aqui inicializamos la lógica
+            miLogica.InicializaLogica();
 
             //Aqui invocamos las funciones de inicialización de arreglo
             InicializaArregloBotones();
-            InicializaArregloValores();
         }
 
-        //Este metodo Inicializa el arreglo de valores
-        private void InicializaArregloValores()
-        {
-            //Estas son las variables de la función
-            //Los números a ubicar... va de 1 a 8
-            int contadorNumeros = 1;
-            //Las ubicaciones: cada número tiene 2 ubicaciones
-            int contadorUbicacion = 0;
-
-            //La variable que llevará control de la ubicación del número
-            int ubicacionValor;
-
-            //Esta es la variable aleatoria que utilizaremos
-            Random aleatorio = new Random();
-
-            //primero inicializamos el arreglo en ceros
-            arregloValores = new int[16];
-
-            for (int i = 0; i < arregloValores.Length; i++)
-                arregloValores[i] = 0;
-
-            //Este ciclo while ubica los numeros en el arreglo
-            while (contadorNumeros <= 8) //Total números a ubicar
-            {
-                ubicacionValor = aleatorio.Next(arregloValores.Length);
-
-                //Si en esa ubicación hay un cero, almacenamos el número
-                if (arregloValores[ubicacionValor] == 0)
-                {
-                    arregloValores[ubicacionValor] = contadorNumeros;
-                    contadorUbicacion++;
-                }
-
-                // Si ya ubicamos los dos valores por numero, continuamos 
-                // con el siguiente valor
-                if (contadorUbicacion == 2)
-                {
-                    contadorNumeros++;
-                    contadorUbicacion = 0;
-                }
-            }
-
-            //Aqui inicializamos el arreglo que contiene los valores encontrados
-            valoresEncontrados = new bool[8];
-
-            for (int i = 0; i < valoresEncontrados.Length; i++)
-                valoresEncontrados[i] = false;
-
-        }
-
-        // Este método inicializa los Botones<s
+        // Este método inicializa los Botones
         private void InicializaArregloBotones()
         {
             arregloBotones = new Button[16];
@@ -158,8 +97,8 @@ namespace EncuentraParejasNumeros
             InicializaAtributos();
 
             //Llevamos los valores de los atributos a los cuadros de texto
-            textoTotalIntentos.Text = totalIntentos.ToString();
-            textoParejasEncontradas.Text = totalParejas.ToString();
+            textoTotalIntentos.Text = miLogica.TotalIntentos.ToString();
+            textoParejasEncontradas.Text = miLogica.TotalParejas.ToString();
 
             textoEstado.Text = "Juego reinicializado.";
 
@@ -168,92 +107,46 @@ namespace EncuentraParejasNumeros
         private void AnalizaBotonPresionado(int numeroBoton)
         {
             //Aqui leemos el valor del dato correspondiente al boton presionado
-            int datoValor = arregloValores[numeroBoton - 1];
+            int datoValor = miLogica.ArregloValores[numeroBoton - 1];
 
-            //Y también desactivamos el botón para que no se vuelva a usar mientras se
-            //define la busqueda de la pareja
-            arregloBotones[numeroBoton - 1].Enabled = false;
+            //Luego visualizamos el valor en el botón presionado
+            arregloBotones[numeroBoton - 1].Text = datoValor.ToString();
 
             //preparamos el texto para el texto de estado
             textoEstado.Text = "Presionaste el botón " +
                 numeroBoton.ToString() + ", el valor aqui es: " +
                  datoValor.ToString();
 
-            //Aqui identificamos si el valor presionado corresponde a la parte A o B
-            if (parejaParteA == 0)
-                //Luego almacenamos en la respectiva parte el valor del arreglo
-                parejaParteA = datoValor;
-            else // De lo contrario, lo almacenamos en la parteB
-                parejaParteB = datoValor;
+            //Y también desactivamos el botón para que no se vuelva a usar mientras se
+            //define la busqueda de la pareja
+            arregloBotones[numeroBoton - 1].Enabled = false;
 
-            //Luego visualizamos el valor en el botón presionado
-            arregloBotones[numeroBoton - 1].Text = datoValor.ToString();
+            string resultadoAnalisis = miLogica.AnalizaPosicionSeleccionada(numeroBoton);
 
-            string mensaje; //El mensaje que se visualizará en el cuadro de diálogo
+            if (miLogica.ParejaParteA != 0 && miLogica.ParejaParteB != 0)
+                ValidaEtiquetasBotones();
 
-            //Aqui se comparan las partes de la pareja
-            //Primero se valida si las partes están ingresadas
-            if (parejaParteA != 0 && parejaParteB != 0)
+            if (miLogica.ParejaParteB != 0)
             {
-                //Aqui colocamos un cuadro de Dialogo con los valores encontrados
-                mensaje = "Parte A: " + parejaParteA.ToString() + 
-                          "\nParte B: " + parejaParteB.ToString();
+                //Se visualiza en un cuadro de dialogo que se ha encontrado una pareja
+                MessageBox.Show(resultadoAnalisis, "Resultado del Análisis", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Si las partes son iguales, se encontró una pareja
-                if (parejaParteA == parejaParteB)
-                {
-                    //Se visualiza en un cuadro de dialogo que se ha encontrado una pareja
-                    MessageBox.Show(mensaje, "Pareja encontrada!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    valoresEncontrados[datoValor - 1] = true;
-                    EvaluarCondicionVictoria();
-                }
-                // De lo contrario, se vuelve a ocultar las etiquetas
-                else
-                {
-                    //Se visualiza en un cuadro de dialogo los valores que se revelaron
-                    MessageBox.Show(mensaje, "Valores revelados:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    //Este método oculta las etiquetas de los valores no encontrados
-                    ValidaEtiquetasBotones();
-                }
-
-                //reiniciamos los valores de las partes para el siguiente intento
-                parejaParteA = 0;
-                parejaParteB = 0;
-
-                //En cualquier caso, se incrementa el número de intentos
-                totalIntentos++;
+                miLogica.ActualizaIntentos();
             }
 
             //Aqui actualizamos la información de los usuarios
-            textoTotalIntentos.Text = totalIntentos.ToString();
-            textoParejasEncontradas.Text = totalParejas.ToString();
-        }
+            textoTotalIntentos.Text = miLogica.TotalIntentos.ToString();
+            textoParejasEncontradas.Text = miLogica.TotalParejas.ToString();
 
-        //Aqui validamos la condición de victoria
-        private void EvaluarCondicionVictoria()
-        {
-            //Reiniciamos el contador de parejas encontradas
-            totalParejas = 0;
+            //Evaluamos condicion de victoria
+            bool victoriaAlcanzada = miLogica.EvaluarCondicionVictoria();
 
-            for (int i = 0; i < valoresEncontrados.Length; i++)
+            if (victoriaAlcanzada)
             {
-                if (valoresEncontrados[i] == true)
-                    totalParejas++;
-            }
-
-            //Si el total de parejas es 8, la victoria se ha obtenido
-            if (totalParejas == 8)
-            {
-                textoEstado.Text = "Victoria Alcanzada!";
-
-                /*
-                //Aqui se bloquean todos los botones para que no sigan activos
-                for (int i = 0; i < arregloBotones.Length; i++)
-                    arregloBotones[i].Enabled = false;
-                */
+                MessageBox.Show("Victoria Alcanzada!");
             }
         }
-
+        
         //Este método se encarga de volver a esconder aquellos valores que no han sido
         //relacionados en parejas, colocando en el botón una X
         private void ValidaEtiquetasBotones()
@@ -261,12 +154,12 @@ namespace EncuentraParejasNumeros
             int datoValor;
 
             //Se valida si el valor fue encontrado. Si no, se vuelve a colocar la X
-            for (int i = 0; i < arregloValores.Length; i++)
+            for (int i = 0; i < miLogica.ArregloValores.Length; i++)
             {
-                datoValor = arregloValores[i];
+                datoValor = miLogica.ArregloValores[i];
 
                 //Se identifica en el arreglo de valoresEncontrados si ya se identificó la pareja
-                if (valoresEncontrados[datoValor - 1] == false)
+                if (miLogica.ValoresEncontrados[datoValor - 1] == false)
                 {
                     //Si el valor no fue encontrado, el botón se coloca con X
                     arregloBotones[i].Text = "X";
