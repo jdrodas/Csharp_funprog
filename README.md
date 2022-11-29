@@ -4,7 +4,7 @@ Proyectos del curso de Fundamentos de Programación en C#
 La siguiente especificación de contenidos presenta los proyectos según el avance por temas de un curso general de Fundamentos de programación.
 
 ## Aviso
-Este repo se encuentra en proceso de actualización a .NET 6. Cada proyecto tendrá su notificación de estado.
+Este repo se encuentra en proceso de actualización a .NET 7. Cada proyecto tendrá su notificación de estado.
 
 ## Temas
 
