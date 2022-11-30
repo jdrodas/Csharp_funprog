@@ -47,14 +47,11 @@ namespace EjemploCondicionales
             int edad = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("\nCual es tu país de nacimiento? ");
-            
+
             // A partir de .NET 5, se hace necesario hacer explicito el manejo de nulos
             // El operador "?" nos permite indicar que este valor puede ser nulo
             // El operador "!" nos permite que sabemos que este valor NO SERÁ nulo
-            //string? nacion = Console.ReadLine()!.ToUpper(); // ToUpper: Lo colocamos en mayúsculas
-
-            //En .NET Framework 4.x lo hacemos así:
-            string nacion = Console.ReadLine().ToUpper();
+            string? nacion = Console.ReadLine()!.ToUpper(); // ToUpper: Lo colocamos en mayúsculas
 
             //Condicional básico para validar si es mayor a 18 años
             if (edad >= 18)
