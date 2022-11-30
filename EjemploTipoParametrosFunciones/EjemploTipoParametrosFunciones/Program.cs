@@ -74,7 +74,7 @@ namespace EjemploTipoParametrosFunciones
 
             //Esta linea genera error CS8331: no se puede asignar porque es variable readonly
             //mes1 = "Diciembre";
-                        
+
             Console.WriteLine($"Los meses son {mes1}, {mes2}, {mes3}");
         }
 
@@ -96,8 +96,6 @@ namespace EjemploTipoParametrosFunciones
             mes3 = "Diciembre";
         }
 
-
-
         /// <summary>
         /// Función que incrementa un número recibido como parámetro por referencia
         /// </summary>
@@ -117,19 +115,5 @@ namespace EjemploTipoParametrosFunciones
             numero += 5;
             Console.WriteLine($"El número incrementado en la función por valor es {numero}");
         }
-
-
-
-
-
-        static int NumeroIncrementado(int numero)
-        {
-            numero += 5;
-            return numero;
-        }
-
-
-
-
     }
 }
