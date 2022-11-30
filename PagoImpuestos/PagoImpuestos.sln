@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.32126.317
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagoImpuestos", "PagoImpuestos\PagoImpuestos.csproj", "{D2000E8C-0882-47A7-A587-0D72345370B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagoImpuestos", "PagoImpuestos\PagoImpuestos.csproj", "{FA427BB9-4549-41C9-94EE-31BE7BB7EDB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D2000E8C-0882-47A7-A587-0D72345370B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2000E8C-0882-47A7-A587-0D72345370B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2000E8C-0882-47A7-A587-0D72345370B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2000E8C-0882-47A7-A587-0D72345370B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA427BB9-4549-41C9-94EE-31BE7BB7EDB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA427BB9-4549-41C9-94EE-31BE7BB7EDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA427BB9-4549-41C9-94EE-31BE7BB7EDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA427BB9-4549-41C9-94EE-31BE7BB7EDB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1D1FDE21-7942-4081-B829-19AE4D0969BB}
+		SolutionGuid = {CE356C80-4F9B-4D94-9E98-9B02F7236779}
 	EndGlobalSection
 EndGlobal

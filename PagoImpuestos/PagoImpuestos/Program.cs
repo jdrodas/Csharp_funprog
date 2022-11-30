@@ -33,7 +33,7 @@ namespace PagoImpuestos
                 try
                 {
                     Console.Write($"Ingresa el valor del salario: ");
-                    salarioEmpleado = float.Parse(Console.ReadLine());
+                    salarioEmpleado = float.Parse(Console.ReadLine()!);
                     if (salarioEmpleado >= 0)
                     {
                         datoCorrecto = true;
