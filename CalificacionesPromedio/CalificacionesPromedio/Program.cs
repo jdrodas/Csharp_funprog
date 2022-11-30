@@ -34,10 +34,10 @@ namespace CalificacionesPromedio
 
             //Constantes a utilizar
             const int cantidadNotas = 5;
-            
+
             //Variables a utilizar:            
             int notaActual = 1; // Contador de notas
-            float nota=0, promedio=0;  // Variables para leer la nota y almacenar el promedio
+            float nota = 0, promedio = 0;  // Variables para leer la nota y almacenar el promedio
             bool datoCorrecto; // Variable booleana para saber si el dato ingresado es correcto
 
             while (notaActual <= cantidadNotas)
@@ -48,7 +48,7 @@ namespace CalificacionesPromedio
                     try
                     {
                         Console.Write($"Ingresa el valor de la nota No. {notaActual}: ");
-                        nota = float.Parse(Console.ReadLine());
+                        nota = float.Parse(Console.ReadLine()!);
                         if (nota >= 0 && nota <= 5.00)
                         {
                             datoCorrecto = true;
@@ -66,11 +66,11 @@ namespace CalificacionesPromedio
                 }
 
                 notaActual++;
-                promedio += nota; 
+                promedio += nota;
             }
 
             // Terminado el ingreso de datos, se calcula el promedio
-            promedio /=  cantidadNotas; //Utilizamos la asignación compuesta: Dividimos lo que había en promedio con la cantidad de notas
+            promedio /= cantidadNotas; //Utilizamos la asignación compuesta: Dividimos lo que había en promedio con la cantidad de notas
 
             //Visualizamos los resultados
             Console.Write($"\n\nEl promedio de las 5 notas es {promedio}. ");
