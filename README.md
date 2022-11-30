@@ -80,7 +80,7 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 - Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
 - Se utiliza control de excepciones para evitar ingresar un dato no numérico.
 - Se coloca un condicional para validar que el número se encuentre en el rango.
-- Actualizado a .NET 6
+- Actualizado a .NET 7
 
 ### [CalculadoraBasica](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculadoraBasica)
 - Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división
