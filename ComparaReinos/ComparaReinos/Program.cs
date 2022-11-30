@@ -26,7 +26,7 @@ using System;
 
 namespace ComparaReinos
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -51,8 +51,8 @@ namespace ComparaReinos
             En la vida real esto no pasa, por lo que es necesario establecer los controles necesarios para
             "blindar" el funcionamiento a pesar de posibles errores del usuario.
             
-            Esta versión es la increiblemente simplificada. Proximamente realizaremos una versión más competente
-            que demuestre muchos mas conceptos de programación
+            Esta versión es la increiblemente simplificada. Una versión mejorada la encuentras en:
+            https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinosOO
 
             */
 
@@ -65,27 +65,27 @@ namespace ComparaReinos
             //Leemos los datos para cada reino
             Console.WriteLine("\nInformación para el reino de Nidas:");
             Console.Write("Cantidad de estados: ");
-            nidasEstados = int.Parse(Console.ReadLine());
+            nidasEstados = int.Parse(Console.ReadLine()!);
             Console.Write("Cantidad de ducados: ");
-            nidasDucados = int.Parse(Console.ReadLine());
+            nidasDucados = int.Parse(Console.ReadLine()!);
             Console.Write("Cantidad de provincias: ");
-            nidasProvincias = int.Parse(Console.ReadLine());
+            nidasProvincias = int.Parse(Console.ReadLine()!);
 
             Console.WriteLine("\nInformación para el reino de Saladino:");
             Console.Write("Cantidad de estados: ");
-            saladinoEstados = int.Parse(Console.ReadLine());
+            saladinoEstados = int.Parse(Console.ReadLine()!);
             Console.Write("Cantidad de ducados: ");
-            saladinoDucados = int.Parse(Console.ReadLine());
+            saladinoDucados = int.Parse(Console.ReadLine()!);
             Console.Write("Cantidad de provincias: ");
-            saladinoProvincias = int.Parse(Console.ReadLine());
+            saladinoProvincias = int.Parse(Console.ReadLine()!);
 
             Console.WriteLine("\nInformación para el reino de Victoria:");
             Console.Write("Cantidad de estados: ");
-            victoriaEstados = int.Parse(Console.ReadLine());
+            victoriaEstados = int.Parse(Console.ReadLine()!);
             Console.Write("Cantidad de ducados: ");
-            victoriaDucados = int.Parse(Console.ReadLine());
+            victoriaDucados = int.Parse(Console.ReadLine()!);
             Console.Write("Cantidad de provincias: ");
-            victoriaProvincias = int.Parse(Console.ReadLine());
+            victoriaProvincias = int.Parse(Console.ReadLine()!);
 
             //Calculamos la puntuación para cada reino
             nidasPuntos = (nidasEstados * 2) +
