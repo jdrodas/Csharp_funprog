@@ -46,11 +46,11 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 - Demostrar el funcionamiento de los principales ciclos de control implementando la visualización de la tabla de multiplicar de un número. Se hace con los ciclos While, Do-while y For.
 - Actualizado a .NET 7
 
->### [ClasificaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaNumeros)
+### [ClasificaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaNumeros)
 - Demostrar la característica específica del ciclo do-while al momento de evaluar la condición. Utilización del concepto de variable "bandera".
 - Actualizado a .NET 7
 
->### [NumeroNarcisista](https://github.com/jdrodas/Csharp_funprog/tree/master/NumeroNarcisista)
+### [NumeroNarcisista](https://github.com/jdrodas/Csharp_funprog/tree/master/NumeroNarcisista)
 - Identificar si un número entero de tres cifras es narcisista
 - Actualizado a .NET 7
 
@@ -76,35 +76,38 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 - Generar patrones piramidales con asteriscos en una aplicación de consola utilizando ciclos repetitivos. 
 - Actualizado a .NET 7
 
->### [AdivinaAleatorio](https://github.com/jdrodas/Csharp_funprog/tree/master/AdivinaAleatorio)
->>- Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
->>- Se utiliza control de excepciones para evitar ingresar un dato no numérico.
->>- Se coloca un condicional para validar que el número se encuentre en el rango.
->>- Actualizado a .NET 6
+### [AdivinaAleatorio](https://github.com/jdrodas/Csharp_funprog/tree/master/AdivinaAleatorio)
+- Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
+- Se utiliza control de excepciones para evitar ingresar un dato no numérico.
+- Se coloca un condicional para validar que el número se encuentre en el rango.
+- Actualizado a .NET 6
 
->### [CalculadoraBasica](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculadoraBasica)
->>- Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división
+### [CalculadoraBasica](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculadoraBasica)
+- Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división
     utilizando el ciclo de control While, el selector múltiple "switch/case" y control de excepciones
     con try/catch
->>- Actualizado a .NET 6
+- Actualizado a .NET 7
 
->### [CalificacionesPromedio](https://github.com/jdrodas/Csharp_funprog/tree/master/CalificacionesPromedio)
->>- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+### [CalificacionesPromedio](https://github.com/jdrodas/Csharp_funprog/tree/master/CalificacionesPromedio)
+- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
     5 calificaciones numéricas entre 0 y 5, calcule su promedio y finalmente que indique si aprobó o no.
     Se considera aprobación cuando el promedio sea mayor o igual a 3.00.
+- Actualizado a .NET 7
 
->### [PagoImpuestos](https://github.com/jdrodas/Csharp_funprog/tree/master/PagoImpuestos)
->>- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+### [PagoImpuestos](https://github.com/jdrodas/Csharp_funprog/tree/master/PagoImpuestos)
+- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
 	el valor del salario de un empleado y diga si debe pagar impuestos o no.
     Se considera que si debe pagar impuestos si el empleado gana más de $900.000.
+- Actualizado a .NET 7
 
->### [ClasificaTriangulos](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaTriangulos)
->>- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+
+### [ClasificaTriangulos](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaTriangulos)
+- Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
     los valores de los tres lados de un triangulo y determine su clasificación:
     Equilatero: Los tres lados son iguales
     Isóceles: Dos lados son iguales
     Escaleno: Los tres lados son diferentes 
-
+- Actualizado a .NET 7
 
 
 ### 3. Funciones
