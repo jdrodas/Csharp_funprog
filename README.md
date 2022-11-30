@@ -4,33 +4,33 @@ Proyectos del curso de Fundamentos de Programación en C#
 La siguiente especificación de contenidos presenta los proyectos según el avance por temas de un curso general de Fundamentos de programación.
 
 ## Aviso
-Este repo se encuentra en proceso de actualización a .NET 7. Cada proyecto tendrá su notificación de estado.
+Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto tendrá su notificación de estado.
 
-## Temas
+## Tabla de Contenidos - Proyectos por tema
 
 ### 1. Ingreso y visualización de datos
 
->### [HolaMundo](https://github.com/jdrodas/Csharp_funprog/tree/master/HolaMundo)
->>- Visualizar información en la consola, en forma de cadena de caracteres.
->>- Declarar variables tipo string y visualizar su contenido en la consola.
->>- Demostrar el funcionamiento de los métodos WriteLine() y Write() de la clase Console.
->>- Actualizado a .NET 6
+### [HolaMundo](https://github.com/jdrodas/Csharp_funprog/tree/master/HolaMundo)
+- Visualizar información en la consola, en forma de cadena de caracteres.
+- Declarar variables tipo string y visualizar su contenido en la consola.
+- Demostrar el funcionamiento de los métodos WriteLine() y Write() de la clase Console.
+- Actualizado a .NET 7
 
->### [EntradaDatos](https://github.com/jdrodas/Csharp_funprog/tree/master/EntradaDatos)
->>- Demostrar el funcionamiento básico de la captura de datos desde la consola, utilizando el método ReadLine().
->>- Demostrar el cambio de tipo de datos desde string hasta int y float, utilizando los métodos float.Parse() y Convert.ToInt32()
->>- Demostrar la prevención básica de errores por ingreso de datos equivocados utilizando el control de excepciones con las instrucciones try - catch
->>- Actualizado a .NET 6
+### [EntradaDatos](https://github.com/jdrodas/Csharp_funprog/tree/master/EntradaDatos)
+- Demostrar el funcionamiento básico de la captura de datos desde la consola, utilizando el método ReadLine().
+- Demostrar el cambio de tipo de datos desde string hasta int y float, utilizando los métodos float.Parse() y Convert.ToInt32()
+- Demostrar la prevención básica de errores por ingreso de datos equivocados utilizando el control de excepciones con las instrucciones try - catch
+- Actualizado a .NET 7
 
 ### 2. Condicionales y ciclos de control
 
->### [EjemploCondicionales](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCondicionales)
->>- Demostrar el funcionamiento de los condicionales utilizando operadores relacionales, operadores de igualdad y operadores lógicos.
->>- Actualizado a .NET 6
+### [EjemploCondicionales](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCondicionales)
+- Demostrar el funcionamiento de los condicionales utilizando operadores relacionales, operadores de igualdad y operadores lógicos.
+- Actualizado a .NET 7
 
->### [EjemploCiclosControl](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCiclosControl)
->>- Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
->>- Actualizado a .NET 6
+### [EjemploCiclosControl](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCiclosControl)
+- Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
+- Actualizado a .NET 7
 
 >### [ComparaReinos](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinos)
 >>- Demostrar la utilización de condicionales 
