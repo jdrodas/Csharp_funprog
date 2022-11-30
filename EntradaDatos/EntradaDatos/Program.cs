@@ -33,10 +33,10 @@ namespace EntradaDatos
             //string? nombre = Console.ReadLine();
 
             // En .NET Framework 4.8 o inferior, se puede colocar asi:
-            string nombre = Console.ReadLine();
+            string? nombre = Console.ReadLine();
 
             Console.Write("¿Cuál es tu apellido? ");
-            string apellido = Console.ReadLine();
+            string? apellido = Console.ReadLine();
 
             //El contenido se puede visualizar con WriteLine
             Console.WriteLine($"Mucho gusto conocerte, {nombre} {apellido}.");
@@ -71,7 +71,7 @@ namespace EntradaDatos
                 // Float es un alias para Single, para convertirlo usamos ToSingle
                 //estatura = Convert.ToSingle(Console.ReadLine());
                 //O hacemos un Parse
-                estatura = float.Parse(Console.ReadLine());
+                estatura = float.Parse(Console.ReadLine()!);
                 
                 //Podemos convertir el dato float a string, especificando el formato de salida
                 Console.WriteLine($"Dijiste que tu estatura es de {estatura.ToString("0.00")}");
