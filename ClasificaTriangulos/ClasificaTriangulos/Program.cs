@@ -22,7 +22,7 @@ namespace ClasificaTriangulos
             Console.WriteLine("Los triangulos pueden ser equilateros, isoceles y escalenos\n\n");
 
             //Declaramos las variables a utilizar
-            uint lado1=0, lado2=0, lado3=0;
+            uint lado1 = 0, lado2 = 0, lado3 = 0;
             bool datoCorrecto;
 
             /*
