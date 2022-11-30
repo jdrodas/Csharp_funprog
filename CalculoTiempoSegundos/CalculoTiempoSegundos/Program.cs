@@ -1,8 +1,21 @@
-﻿using System;
+﻿/*
+Programa:       CalculoTiempoSegundos
+Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
+
+Propósito:
+----------
+
+- Implementa un menú con opciones en consola utilizando ciclos do-while y condicionales
+- Implementa una función que devuelve sus resultados a través de parámetros "out"
+
+*/
+
+
+using System;
 
 namespace CalculoTiempoSegundos
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
