@@ -1,4 +1,18 @@
-﻿using System;
+﻿/*
+Programa:       CalendarioMes
+Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
+
+Propósito:
+----------
+
+- Visualizar en consola el calendario de un mes a partir de los datos de año y mes
+- Modificar la visualización para que las semanas comiencen el día lunes
+- Utilización de la función AddDays() y la propiedad DayOfWeek de los objetos tipo DateTime
+
+*/
+
+
+using System;
 using System.Globalization;
 
 namespace CalendarioMes
@@ -53,22 +67,12 @@ namespace CalendarioMes
         static void GeneraCalendarioDelMes(int año, int mes)
         {
             //Generando encabezado del calendario con los nombres del día
-            
-            /*
-            //Si desea utilizar arreglos para el encabezado, lo puedes hacer asi:
-            string[] nombresDelDia = { "LUN", "MAR", "MIE", "JUE", "VIE", "SAB", "DOM" };
-
-            //Encabezado de las columnas
-            foreach (string nombre in nombresDelDia)
-                Console.Write($" {nombre}");
-            Console.WriteLine();
-            */
 
             Console.WriteLine(" LUN MAR MIE JUE VIE SAB DOM");
 
-           //Aqui creamos un objeto tipo fecha para mejor manipulación,
-           //empezando con el día 1 del mes
-           DateTime fechaInicial = new DateTime(año, mes, 1);
+            //Aqui creamos un objeto tipo fecha para mejor manipulación,
+            //empezando con el día 1 del mes
+            DateTime fechaInicial = new DateTime(año, mes, 1);
             int diaDeLaSemana = (int)fechaInicial.DayOfWeek;
 
             //Calculamos y escribimos el corrimiento del calendario para la
