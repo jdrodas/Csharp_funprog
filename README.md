@@ -6,9 +6,6 @@ La siguiente especificación de contenidos presenta los proyectos según el avan
 ## Aviso
 Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto tendrá su notificación de estado.
 
-![Información de visitantes](https://vistr.dev/badge?repo=jdrodas.Csharp_funprog)
-
-
 ## Tabla de Contenidos - Proyectos por tema
 
 ### 1. Ingreso y visualización de datos
