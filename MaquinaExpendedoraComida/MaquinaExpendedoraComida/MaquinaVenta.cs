@@ -31,14 +31,14 @@ namespace MaquinaExpendedoraComida
             int ubicacionActual = 0;
 
             while (ubicacionActual < LasUbicaciones.Length)
-            { 
+            {
                 for (int j = 0; j < letrasIdentificacion.Length; j++)
                 {
                     for (int k = 0; k < 10; k++)
                     {
                         //Obtiene la combinación letra-Numero que se utilizará para la identificacion
                         valorIdentificacion = letrasIdentificacion[j] + k;
-                        
+
                         //Inicializamos cada posición con los valores predeterminados
                         LasUbicaciones[ubicacionActual] = new Ubicacion();
                         LasUbicaciones[ubicacionActual].Identificacion = valorIdentificacion;
@@ -49,8 +49,8 @@ namespace MaquinaExpendedoraComida
                         //Aqui cambiamos a la ubicación siguiente
                         ubicacionActual++;
                     }
-                }                
-            }        
+                }
+            }
         }
 
         /// <summary>

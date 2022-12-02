@@ -113,7 +113,7 @@ namespace MaquinaExpendedoraComida
                     Console.WriteLine("\nLa ubicación no es válida. Intenta nuevamente. \n\n");
 
 
-            Console.Write("\n¿Desea seguir comprando en otra ubicación (S/N)? ");
+                Console.Write("\n¿Desea seguir comprando en otra ubicación (S/N)? ");
                 seguirComprando = Console.ReadLine().ToUpper();
 
                 if (seguirComprando == "N")

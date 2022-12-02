@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31129.286
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaquinaExpendedoraComida", "MaquinaExpendedoraComida\MaquinaExpendedoraComida.csproj", "{C0BB373C-D78A-4294-8C48-7424BC681E3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaquinaExpendedoraComida", "MaquinaExpendedoraComida\MaquinaExpendedoraComida.csproj", "{01799539-63BE-4CE1-9C26-6DBDD96CF779}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C0BB373C-D78A-4294-8C48-7424BC681E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0BB373C-D78A-4294-8C48-7424BC681E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0BB373C-D78A-4294-8C48-7424BC681E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0BB373C-D78A-4294-8C48-7424BC681E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01799539-63BE-4CE1-9C26-6DBDD96CF779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01799539-63BE-4CE1-9C26-6DBDD96CF779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01799539-63BE-4CE1-9C26-6DBDD96CF779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01799539-63BE-4CE1-9C26-6DBDD96CF779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EB652055-4DCC-441D-855F-124AB3760BDC}
+		SolutionGuid = {FBB141E9-6168-4FE9-BEAB-0DDC28A4EBDE}
 	EndGlobalSection
 EndGlobal
