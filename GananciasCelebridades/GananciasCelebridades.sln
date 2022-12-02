@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.32126.317
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GananciasCelebridades", "GananciasCelebridades\GananciasCelebridades.csproj", "{C0206415-1B79-497C-8D19-46B9F265E64F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GananciasCelebridades", "GananciasCelebridades\GananciasCelebridades.csproj", "{B589C7D0-CB9B-4CAA-A52F-5DB8DCD5786A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C0206415-1B79-497C-8D19-46B9F265E64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0206415-1B79-497C-8D19-46B9F265E64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0206415-1B79-497C-8D19-46B9F265E64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0206415-1B79-497C-8D19-46B9F265E64F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B589C7D0-CB9B-4CAA-A52F-5DB8DCD5786A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B589C7D0-CB9B-4CAA-A52F-5DB8DCD5786A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B589C7D0-CB9B-4CAA-A52F-5DB8DCD5786A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B589C7D0-CB9B-4CAA-A52F-5DB8DCD5786A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4F4F54E9-34CF-4CB7-9F92-96FC94447DEC}
+		SolutionGuid = {41B687B0-A520-4576-90DE-4093D2BFC170}
 	EndGlobalSection
 EndGlobal

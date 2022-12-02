@@ -45,7 +45,7 @@ namespace GananciasCelebridades
             //Calculamos los descuentos aplicados
             float[] descuentosImpuestos = new float[tasaImpuestos.Length];
 
-            for (int i = 0; i<tasaImpuestos.Length; i++)
+            for (int i = 0; i < tasaImpuestos.Length; i++)
                 descuentosImpuestos[i] = tasaImpuestos[i] * salariosCelebridades[i];
 
             //Visualizamos resultados
@@ -80,7 +80,7 @@ namespace GananciasCelebridades
                 if (arregloSalarios[i] < 1000)
                     resultadoTasas[i] = 0;
 
-                if (arregloSalarios[i] >= 1000 && arregloSalarios[i] <3500)
+                if (arregloSalarios[i] >= 1000 && arregloSalarios[i] < 3500)
                     resultadoTasas[i] = 0.05f;
 
                 if (arregloSalarios[i] >= 3500 && arregloSalarios[i] < 4500)
