@@ -120,8 +120,8 @@ namespace TiendaGomitas
                             if (arregloGomitas[contador].Color == arregloColores[i] &&
                                 arregloGomitas[contador].Sabor == arregloSabores[j] &&
                                 arregloGomitas[contador].Forma == arregloFormas[k])
-                                    totalizador[i, j, k]++;
-    
+                                totalizador[i, j, k]++;
+
             //ahora vamos a identificar cual es la primera combinación que tiene la mayor cantidad de gomitas
             int mayorValor = 0, mayori = 0, mayorj = 0, mayork = 0;
 
