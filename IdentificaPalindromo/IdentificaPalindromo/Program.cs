@@ -1,4 +1,18 @@
-﻿using System;
+﻿/*
+Programa:       IdentificaPalindromo
+Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
+
+Propósito:
+----------
+
+- Demostrar el funcionamiento básico de los arreglos
+- Convertir cadena de caracteres a un arreglo de caracteres
+- Convertir un arreglo de caracteres a una cadena de caracteres
+- Implementar una función que remueva los espacios de una cadena de caracteres 
+
+ */
+
+using System;
 
 namespace IdentificaPalindromo
 {
@@ -10,7 +24,7 @@ namespace IdentificaPalindromo
             Console.WriteLine("Palíndromo es que se lee igual en cualquier sentido\n");
 
             Console.Write("Ingresa una frase: ");
-            string frase = Console.ReadLine().ToUpper();
+            string frase = Console.ReadLine()!.ToUpper();
 
             bool resultadoValidacion = ValidaPalindromo(frase);
 
@@ -35,7 +49,7 @@ namespace IdentificaPalindromo
             for (int i = arregloFrase.Length - 1; i >= 0; i--)
             {
                 arregloFraseInvertida[posicion] = arregloFrase[i];
-                posicion++;                
+                posicion++;
             }
 
             string fraseOriginal = new string(arregloFrase);
@@ -59,7 +73,7 @@ namespace IdentificaPalindromo
             int contadorEspacios = 0;
 
             //Aqui contamos los espacios de la frase original
-            foreach (char letra in arregloFrase)            
+            foreach (char letra in arregloFrase)
                 if (letra == ' ')
                     contadorEspacios++;
 
@@ -74,7 +88,7 @@ namespace IdentificaPalindromo
                 {
                     fraseSinEspacios[j] = arregloFrase[i];
                     j++;
-                }                
+                }
             }
 
             return fraseSinEspacios;
