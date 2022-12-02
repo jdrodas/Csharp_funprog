@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.3.32825.248
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProduccionLana", "ProduccionLana\ProduccionLana.csproj", "{0FFC9C6E-1357-4A25-AE29-F82A31675573}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProduccionLana", "ProduccionLana\ProduccionLana.csproj", "{41523037-BB1F-4FBD-A910-331DF71D3CEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0FFC9C6E-1357-4A25-AE29-F82A31675573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FFC9C6E-1357-4A25-AE29-F82A31675573}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FFC9C6E-1357-4A25-AE29-F82A31675573}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FFC9C6E-1357-4A25-AE29-F82A31675573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41523037-BB1F-4FBD-A910-331DF71D3CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41523037-BB1F-4FBD-A910-331DF71D3CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41523037-BB1F-4FBD-A910-331DF71D3CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41523037-BB1F-4FBD-A910-331DF71D3CEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {913DBB42-A543-46F1-BA73-2ECF53A1154E}
+		SolutionGuid = {1E3CBEDE-4A27-4469-9245-B5C2E01A4162}
 	EndGlobalSection
 EndGlobal
