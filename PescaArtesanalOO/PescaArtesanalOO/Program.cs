@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PescaArtesanalOO
 {
@@ -82,7 +78,7 @@ namespace PescaArtesanalOO
                 if (unaPesca.Cantidad > 200)
                     Console.WriteLine("Se superó el tope máximo!");
                 else
-                    Console.WriteLine("La cantidad estuvo en los limites permitidos");                        
+                    Console.WriteLine("La cantidad estuvo en los limites permitidos");
             }
 
             Console.WriteLine($"\nEL promedio de la jornada fue {promedioPesca.ToString("0.00")} kgs");
@@ -113,7 +109,7 @@ namespace PescaArtesanalOO
         {
             //Arbitrariamente definimos que el primer elemento del arreglo es el máximo
             pescaMaxima = arregloPesca[0];
-            
+
             for (int i = 0; i < arregloPesca.Length; i++)
             {
                 //Si es mayor la cantidad de la siguiente posición, esa es la nueva pesca máxima

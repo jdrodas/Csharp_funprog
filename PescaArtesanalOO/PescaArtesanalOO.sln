@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.3.32825.248
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PescaArtesanalOO", "PescaArtesanalOO\PescaArtesanalOO.csproj", "{E9E7EB2D-1E66-4E04-A230-F0D1EBD51AFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PescaArtesanalOO", "PescaArtesanalOO\PescaArtesanalOO.csproj", "{AC339CB6-50B7-4801-AA10-A82256F8BE26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9E7EB2D-1E66-4E04-A230-F0D1EBD51AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9E7EB2D-1E66-4E04-A230-F0D1EBD51AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9E7EB2D-1E66-4E04-A230-F0D1EBD51AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9E7EB2D-1E66-4E04-A230-F0D1EBD51AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC339CB6-50B7-4801-AA10-A82256F8BE26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC339CB6-50B7-4801-AA10-A82256F8BE26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC339CB6-50B7-4801-AA10-A82256F8BE26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC339CB6-50B7-4801-AA10-A82256F8BE26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {98E04268-264B-4F53-80F0-365C725F330B}
+		SolutionGuid = {6BB2A03D-BED2-4227-8900-AA41833B1952}
 	EndGlobalSection
 EndGlobal
