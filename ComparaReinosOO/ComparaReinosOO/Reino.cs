@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ComparaReinosOO
+﻿namespace ComparaReinosOO
 {
     class Reino
     {
@@ -13,7 +7,7 @@ namespace ComparaReinosOO
         private int ducados, estados, provincias, puntos;
 
         //zona de propiedades
-        
+
         /// <summary>
         /// Obtiene o establece el nombre del rey para el reino
         /// </summary>

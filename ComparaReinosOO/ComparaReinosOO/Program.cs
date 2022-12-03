@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ComparaReinos
+Programa:       ComparaReinosOO
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Problema Propuesto:
@@ -59,16 +59,16 @@ namespace ComparaReinosOO
                 {
                     Console.WriteLine($"\nInformación para el reino de {losReinos[elReino].Rey}:");
                     Console.Write("Cantidad de estados: ");
-                    losReinos[elReino].Estados = int.Parse(Console.ReadLine());
+                    losReinos[elReino].Estados = int.Parse(Console.ReadLine()!);
                     Console.Write("Cantidad de ducados: ");
-                    losReinos[elReino].Ducados = int.Parse(Console.ReadLine());
+                    losReinos[elReino].Ducados = int.Parse(Console.ReadLine()!);
                     Console.Write("Cantidad de provincias: ");
-                    losReinos[elReino].Provincias = int.Parse(Console.ReadLine());
+                    losReinos[elReino].Provincias = int.Parse(Console.ReadLine()!);
 
                     //Aqui validamos si las cantidades ingresadas sean cantidades positivas
-                    if (losReinos[elReino].Estados>=0 && 
-                        losReinos[elReino].Provincias >=0 &&
-                        losReinos[elReino].Ducados >=0)
+                    if (losReinos[elReino].Estados >= 0 &&
+                        losReinos[elReino].Provincias >= 0 &&
+                        losReinos[elReino].Ducados >= 0)
                     {
                         elReino++;
                     }

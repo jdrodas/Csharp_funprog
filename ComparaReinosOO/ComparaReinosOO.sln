@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32328.378
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparaReinosOO", "ComparaReinosOO\ComparaReinosOO.csproj", "{C5C25C71-E64B-4342-B3BE-78AA2BF797BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparaReinosOO", "ComparaReinosOO\ComparaReinosOO.csproj", "{201ECAC8-E9BD-4BFB-A9A9-F4A12A9864C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C5C25C71-E64B-4342-B3BE-78AA2BF797BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5C25C71-E64B-4342-B3BE-78AA2BF797BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5C25C71-E64B-4342-B3BE-78AA2BF797BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5C25C71-E64B-4342-B3BE-78AA2BF797BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201ECAC8-E9BD-4BFB-A9A9-F4A12A9864C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201ECAC8-E9BD-4BFB-A9A9-F4A12A9864C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201ECAC8-E9BD-4BFB-A9A9-F4A12A9864C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201ECAC8-E9BD-4BFB-A9A9-F4A12A9864C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B577260D-C25E-452A-ABBE-7267B7241E43}
+		SolutionGuid = {67C2F683-0111-4964-BFA8-70FB9DE55ECE}
 	EndGlobalSection
 EndGlobal
