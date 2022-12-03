@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31129.286
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistroSimCards", "RegistroSimCards\RegistroSimCards.csproj", "{F0F04DBD-504C-4D4D-BA46-CAD164AAD81A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistroSimCards", "RegistroSimCards\RegistroSimCards.csproj", "{3329D9DF-6026-4A8F-989F-ABE126C68436}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F0F04DBD-504C-4D4D-BA46-CAD164AAD81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0F04DBD-504C-4D4D-BA46-CAD164AAD81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0F04DBD-504C-4D4D-BA46-CAD164AAD81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0F04DBD-504C-4D4D-BA46-CAD164AAD81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3329D9DF-6026-4A8F-989F-ABE126C68436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3329D9DF-6026-4A8F-989F-ABE126C68436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3329D9DF-6026-4A8F-989F-ABE126C68436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3329D9DF-6026-4A8F-989F-ABE126C68436}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4DC931C2-403C-4B80-A170-BE20AFC9D97E}
+		SolutionGuid = {DDA34F36-E1E8-41D3-A9E1-D8A540E9A5F7}
 	EndGlobalSection
 EndGlobal
