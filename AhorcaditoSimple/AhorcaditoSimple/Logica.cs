@@ -2,32 +2,22 @@
 
 namespace AhorcaditoSimple
 {
-    class Logica
+    public class Logica
     {
         //Los atributos 
-        private string[] diccionarioPalabras;
+        private string?[] diccionarioPalabras;
 
         //Propiedades para la clase
         public int TotalFallos { set; get; }
         public int TotalAciertos { set; get; }
-        public string PalabraBuscada { set; get; }
-        public string LetrasIngresadas { set; get; }
+        public string? PalabraBuscada { set; get; }
+        public string? LetrasIngresadas { set; get; }
 
         //Constructor de la clase
         public Logica()
         {
-            InicializaParametrosJuego();
-        }
-
-        public void InicializaParametrosJuego() 
-        {
-            TotalFallos = 0;
-            TotalAciertos = 0;
-            PalabraBuscada = "";
-            LetrasIngresadas = "";
-
             //Inicializamos el Diccionario de palabras
-            diccionarioPalabras = new string[] {
+            diccionarioPalabras = new string?[] {
                 "PALINDROMO",
                 "COMBUSTION",
                 "EMPANADITA",
@@ -64,7 +54,17 @@ namespace AhorcaditoSimple
                 "FEUDALISMO",
                 "SOVIETICOS"
             };
-            
+
+            InicializaParametrosJuego();
+        }
+
+        public void InicializaParametrosJuego()
+        {
+            TotalFallos = 0;
+            TotalAciertos = 0;
+            PalabraBuscada = "";
+            LetrasIngresadas = "";
+
             Random aleatorio = new Random();
             PalabraBuscada = diccionarioPalabras[aleatorio.Next(diccionarioPalabras.Length)];
 
@@ -103,7 +103,7 @@ namespace AhorcaditoSimple
             bool resultado = false;
 
             // Validamos si es la primera letra del juego
-            if (LetrasIngresadas.Length > 0)
+            if (LetrasIngresadas!.Length > 0)
             {
                 char[] arregloLetras = LetrasIngresadas.ToCharArray();
 
@@ -124,7 +124,7 @@ namespace AhorcaditoSimple
         {
             int resultado = 0;
 
-            char[] arregloLetras = PalabraBuscada.ToCharArray();
+            char[] arregloLetras = PalabraBuscada!.ToCharArray();
 
             for (int i = 0; i < arregloLetras.Length; i++)
                 if (arregloLetras[i].ToString() == unaLetra)

@@ -1,4 +1,4 @@
-Ôªøusing System;
+using System;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
@@ -6,14 +6,14 @@ namespace AhorcaditoSimple
 {
     public partial class Form1 : Form
     {
-        Logica logicaJuego;
-        TextBox[] lasCasillas;
+        private Logica logicaJuego;
+        private TextBox[] lasCasillas;
 
         public Form1()
         {
             InitializeComponent();
-            
-            //Inicializamos el atributo que tiene la l√≥gica
+
+            //Inicializamos el atributo que tiene la lÛgica
             logicaJuego = new Logica();
             lasCasillas = new TextBox[10];
         }
@@ -23,7 +23,7 @@ namespace AhorcaditoSimple
         /// </summary>
         public void InicializaParametrosJuego()
         {
-            //Inicializamos el atributo que tiene la l√≥gica
+            //Inicializamos el atributo que tiene la lÛgica
             logicaJuego = new Logica();
             lasCasillas = new TextBox[10];
         }
@@ -44,7 +44,6 @@ namespace AhorcaditoSimple
 
             ActualizaInterfaz();
         }
-
         /// <summary>
         /// Actualiza los elementos informativos de la interfaz
         /// </summary>
@@ -59,11 +58,11 @@ namespace AhorcaditoSimple
         }
 
         /// <summary>
-        /// Inicializa el arreglo de casillas para facilitar la manipulaci√≥n
+        /// Inicializa el arreglo de casillas para facilitar la manipulaciÛn
         /// </summary>
         private void InicializaArregloCasillas()
         {
-            //Asignar cada casilla en su poisici√≥n dentro del arreglo
+            //Asignar cada casilla en su poisiciÛn dentro del arreglo
             lasCasillas[0] = textoLetra1;
             lasCasillas[1] = textoLetra2;
             lasCasillas[2] = textoLetra3;
@@ -76,21 +75,21 @@ namespace AhorcaditoSimple
             lasCasillas[9] = textoLetra10;
 
             //Borramos los contenidos de las casillas
-            foreach(TextBox unaCasilla in lasCasillas)
+            foreach (TextBox unaCasilla in lasCasillas)
                 unaCasilla.Text = "";
         }
-        
+
         private void botonReiniciaJuego_Click(object sender, EventArgs e)
         {
             InicializaInterfaz();
         }
-        
+
         private void botonEvaluaLetra_Click(object sender, EventArgs e)
         {
             if (textoLetraIngresada.Text != "")
             {
                 //aqui vamos a validar que solo sean letras
-                Regex patron = new Regex("[a-zA-Z√±√ë]");
+                Regex patron = new Regex("[a-zA-ZÒ—]");
 
                 if (patron.IsMatch(textoLetraIngresada.Text) == true)
                 {
@@ -104,12 +103,12 @@ namespace AhorcaditoSimple
         }
 
         /// <summary>
-        /// Actualiza el contenido de las casillas si la letra est√° en la palabra
+        /// Actualiza el contenido de las casillas si la letra est· en la palabra
         /// </summary>
         /// <param name="unaLetra">Letra evaluada</param>
         private void ActualizaContenidoCasillas(string unaLetra)
         {
-            char[] letrasEnPalabraBuscada = logicaJuego.PalabraBuscada.ToCharArray();
+            char[] letrasEnPalabraBuscada = logicaJuego.PalabraBuscada!.ToCharArray();
 
             for (int i = 0; i < letrasEnPalabraBuscada.Length; i++)
 
@@ -118,7 +117,7 @@ namespace AhorcaditoSimple
         }
 
         /// <summary>
-        /// Identifica si se gan√≥ o perdi√≥ en el juego
+        /// Identifica si se ganÛ o perdiÛ en el juego
         /// </summary>
         private void EvaluaCondicionVictoria()
         {
@@ -147,5 +146,6 @@ namespace AhorcaditoSimple
         {
             InicializaInterfaz();
         }
+
     }
 }
