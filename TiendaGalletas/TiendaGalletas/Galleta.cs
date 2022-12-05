@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TiendaGalletas
+﻿namespace TiendaGalletas
 {
     class Galleta
     {
@@ -36,6 +30,6 @@ namespace TiendaGalletas
         {
             get { return relleno; }
             set { relleno = value; }
-        }       
+        }
     }
 }

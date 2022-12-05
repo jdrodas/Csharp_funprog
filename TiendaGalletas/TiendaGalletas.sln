@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaGalletas", "TiendaGalletas\TiendaGalletas.csproj", "{4FD23A77-8DBA-4301-8148-ECDA0ABDE2ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaGalletas", "TiendaGalletas\TiendaGalletas.csproj", "{F88A52AF-BEE4-4F4D-9EF2-79CFE32E06A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4FD23A77-8DBA-4301-8148-ECDA0ABDE2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FD23A77-8DBA-4301-8148-ECDA0ABDE2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FD23A77-8DBA-4301-8148-ECDA0ABDE2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FD23A77-8DBA-4301-8148-ECDA0ABDE2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88A52AF-BEE4-4F4D-9EF2-79CFE32E06A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88A52AF-BEE4-4F4D-9EF2-79CFE32E06A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88A52AF-BEE4-4F4D-9EF2-79CFE32E06A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88A52AF-BEE4-4F4D-9EF2-79CFE32E06A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2231B5B9-3C0E-42BD-92A7-41C3053E61C0}
+		SolutionGuid = {67AD93FA-30EB-446E-A9D9-BE7597948ABF}
 	EndGlobalSection
 EndGlobal

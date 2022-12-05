@@ -53,7 +53,7 @@ namespace TiendaGalletas
             Console.WriteLine("\n\nVisualizando totales:");
 
             Console.WriteLine("Totales por sabor..");
-            for (int i = 0; i < sabores.Length; i++)            
+            for (int i = 0; i < sabores.Length; i++)
                 Console.WriteLine("Sabor {0}, Total Galletas: {1}", sabores[i], totalSabores[i]);
 
             Console.WriteLine("\nTotales por topping..");
@@ -87,9 +87,9 @@ namespace TiendaGalletas
                             sabores[i],
                             rellenos[j],
                             toppings[k],
-                            totalCombinacion[i,j,k]);
+                            totalCombinacion[i, j, k]);
                     }
-        
+
         }
 
         /// <summary>
