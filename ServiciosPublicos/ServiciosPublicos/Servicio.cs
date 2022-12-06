@@ -1,5 +1,4 @@
-﻿
-namespace ServiciosPublicos
+﻿namespace ServiciosPublicos
 {
     class Servicio
     {
@@ -12,6 +11,6 @@ namespace ServiciosPublicos
         {
             Nombre = "";
             Consumo = 0;
-        }        
+        }
     }
 }

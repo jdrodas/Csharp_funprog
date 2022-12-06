@@ -29,7 +29,7 @@ namespace ServiciosPublicos
             float[] promediosServicios = CalculaPromedios(losServicios, nombresServicios);
             float[] minimoConsumoServicios = BuscaMinimoConsumo(losServicios, nombresServicios);
             float[] maximoConsumoServicios = BuscaMaximoConsumo(losServicios, nombresServicios);
-            
+
             //Visualizamos los resultados
             Console.WriteLine("\nResultados de la simulación:\n");
             int totalRegistros = 0;
@@ -90,7 +90,7 @@ namespace ServiciosPublicos
             for (i = 0; i < arregloServicios.Length; i++)
                 for (int j = 0; j < arregloNombres.Length; j++)
                     // Aqui validamos si el servicio es del tipo definido en los nombres
-                    if(arregloServicios[i].Nombre == arregloNombres[j])
+                    if (arregloServicios[i].Nombre == arregloNombres[j])
                         //Aqui preguntamos si el consumo de este servicio es menor
                         //que el valor actual encontrado para este servicio
                         if (arregloServicios[i].Consumo < minimos[j])
@@ -125,7 +125,7 @@ namespace ServiciosPublicos
             for (i = 0; i < promedios.Length; i++)
             {
                 //promedios[i] /= totales[i];
-                promedios[i] = promedios[i]/totales[i];
+                promedios[i] = promedios[i] / totales[i];
             }
 
             return promedios;
