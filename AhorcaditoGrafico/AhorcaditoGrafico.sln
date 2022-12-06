@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AhorcaditoGrafico", "AhorcaditoGrafico\AhorcaditoGrafico.csproj", "{7F259002-D5E8-4A1F-9519-84DAF7A9A19D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AhorcaditoGrafico", "AhorcaditoGrafico\AhorcaditoGrafico.csproj", "{DF5D6699-D935-4EB7-BEE6-BD5723AB8FBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F259002-D5E8-4A1F-9519-84DAF7A9A19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F259002-D5E8-4A1F-9519-84DAF7A9A19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F259002-D5E8-4A1F-9519-84DAF7A9A19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F259002-D5E8-4A1F-9519-84DAF7A9A19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5D6699-D935-4EB7-BEE6-BD5723AB8FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5D6699-D935-4EB7-BEE6-BD5723AB8FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5D6699-D935-4EB7-BEE6-BD5723AB8FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5D6699-D935-4EB7-BEE6-BD5723AB8FBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6FA1A2B3-FF7C-4EE4-B6ED-9F3C64A8D526}
+		SolutionGuid = {362581CF-D87A-410E-B891-6D3F274548F6}
 	EndGlobalSection
 EndGlobal

@@ -1,18 +1,18 @@
-Ôªø/*
+/*
 
-Ahorcadito Gr√°fico
+Ahorcadito Gr·fico
 
 Requerimientos del programa
 
-- Se adivinar√° una sola palabra de 10 letras
-- Se tendr√°n 10 intentos err√≥neos antes de perder
-- No marcar√° error por letra repetida
-- Tendr√° un bot√≥n de reinicio de juego y selecciona una nueva palabra
-- Se evaluar√° la condici√≥n de victoria si adivina la totalidad de las letras
+- Se adivinar· una sola palabra de 10 letras
+- Se tendr·n 10 intentos errÛneos antes de perder
+- No marcar· error por letra repetida
+- Tendr· un botÛn de reinicio de juego y selecciona una nueva palabra
+- Se evaluar· la condiciÛn de victoria si adivina la totalidad de las letras
 - Contamos los aciertos y los fallos
-- No tendr√° en cuenta las tildes
-- Visualizar√° las letras ingresadas.
-- Dibujar√° el personaje a medida que se incrementen los fallos
+- No tendr· en cuenta las tildes
+- Visualizar· las letras ingresadas.
+- Dibujar· el personaje a medida que se incrementen los fallos
 
 */
 
@@ -89,9 +89,9 @@ namespace AhorcaditoGrafico
             if (TextoLetraIngresada.Text.Length > 0)
             {
                 //aqui vamos a validar que solo sean letras
-                Regex patron = new Regex("[a-zA-Z√±√ë]");
+                Regex patron = new Regex("[a-zA-ZÒ—]");
 
-                //aqui preguntamos si la letra est√° en el patr√≥n
+                //aqui preguntamos si la letra est· en el patrÛn
                 if (patron.IsMatch(TextoLetraIngresada.Text) == true)
                 {
                     bool resultado = miLogica.EvaluaLetra(TextoLetraIngresada.Text.ToUpper());
@@ -110,7 +110,7 @@ namespace AhorcaditoGrafico
             //Preguntamos si ya nos derrotaron
             if (miLogica.FuimosDerrotados() == true)
             {
-                //si est√° true, ya perdimos. No seguimos evaluando letras
+                //si est· true, ya perdimos. No seguimos evaluando letras
                 BotonEvaluaLetra.Enabled = false;
                 TextoLetraIngresada.Enabled = false;
 
@@ -119,13 +119,13 @@ namespace AhorcaditoGrafico
 
                 //visualizamos una ventana emergente notificando la derrota
                 MessageBox.Show("Has sido derrotado!!!",
-                    "No se consigui√≥ la victoria!");
+                    "No se consiguiÛ la victoria!");
             }
 
             //Preguntamos si ya ganamos
             if (miLogica.FuimosVictoriosos() == true)
             {
-                //si est√° true, ya perdimos. No seguimos evaluando letras
+                //si est· true, ya perdimos. No seguimos evaluando letras
                 BotonEvaluaLetra.Enabled = false;
                 TextoLetraIngresada.Enabled = false;
 
@@ -149,7 +149,7 @@ namespace AhorcaditoGrafico
 
             for (int i = 0; i < letrasBuscadas.Length; i++)
             {
-                //si la letra ingresada corresponde con esta posici√≥n
+                //si la letra ingresada corresponde con esta posiciÛn
                 //la visualizamos en la casilla equivalente
                 if (TextoLetraIngresada.Text.ToUpper() == letrasBuscadas[i].ToString())
                 {

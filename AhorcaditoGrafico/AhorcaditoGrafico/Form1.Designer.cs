@@ -58,39 +58,39 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Navy;
             this.label1.Location = new System.Drawing.Point(117, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 52);
+            this.label1.Size = new System.Drawing.Size(323, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ahorcadito Gráfico";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(11, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 25);
+            this.label2.Size = new System.Drawing.Size(109, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ingresa una letra:";
             // 
             // TextoLetraIngresada
             // 
-            this.TextoLetraIngresada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetraIngresada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetraIngresada.Location = new System.Drawing.Point(189, 100);
             this.TextoLetraIngresada.MaxLength = 1;
             this.TextoLetraIngresada.Name = "TextoLetraIngresada";
-            this.TextoLetraIngresada.Size = new System.Drawing.Size(37, 30);
+            this.TextoLetraIngresada.Size = new System.Drawing.Size(37, 22);
             this.TextoLetraIngresada.TabIndex = 2;
             this.TextoLetraIngresada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BotonEvaluaLetra
             // 
-            this.BotonEvaluaLetra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonEvaluaLetra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BotonEvaluaLetra.ForeColor = System.Drawing.Color.Black;
             this.BotonEvaluaLetra.Location = new System.Drawing.Point(230, 97);
             this.BotonEvaluaLetra.Name = "BotonEvaluaLetra";
@@ -104,11 +104,11 @@
             // 
             this.TextoLetra1.BackColor = System.Drawing.Color.White;
             this.TextoLetra1.Enabled = false;
-            this.TextoLetra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra1.Location = new System.Drawing.Point(50, 150);
             this.TextoLetra1.MaxLength = 1;
             this.TextoLetra1.Name = "TextoLetra1";
-            this.TextoLetra1.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra1.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra1.TabIndex = 4;
             this.TextoLetra1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -116,11 +116,11 @@
             // 
             this.TextoLetra2.BackColor = System.Drawing.Color.White;
             this.TextoLetra2.Enabled = false;
-            this.TextoLetra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra2.Location = new System.Drawing.Point(80, 150);
             this.TextoLetra2.MaxLength = 1;
             this.TextoLetra2.Name = "TextoLetra2";
-            this.TextoLetra2.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra2.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra2.TabIndex = 5;
             this.TextoLetra2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -128,11 +128,11 @@
             // 
             this.TextoLetra4.BackColor = System.Drawing.Color.White;
             this.TextoLetra4.Enabled = false;
-            this.TextoLetra4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra4.Location = new System.Drawing.Point(139, 150);
             this.TextoLetra4.MaxLength = 1;
             this.TextoLetra4.Name = "TextoLetra4";
-            this.TextoLetra4.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra4.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra4.TabIndex = 7;
             this.TextoLetra4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -140,11 +140,11 @@
             // 
             this.TextoLetra3.BackColor = System.Drawing.Color.White;
             this.TextoLetra3.Enabled = false;
-            this.TextoLetra3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra3.Location = new System.Drawing.Point(109, 150);
             this.TextoLetra3.MaxLength = 1;
             this.TextoLetra3.Name = "TextoLetra3";
-            this.TextoLetra3.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra3.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra3.TabIndex = 6;
             this.TextoLetra3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -152,11 +152,11 @@
             // 
             this.TextoLetra8.BackColor = System.Drawing.Color.White;
             this.TextoLetra8.Enabled = false;
-            this.TextoLetra8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra8.Location = new System.Drawing.Point(257, 150);
             this.TextoLetra8.MaxLength = 1;
             this.TextoLetra8.Name = "TextoLetra8";
-            this.TextoLetra8.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra8.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra8.TabIndex = 11;
             this.TextoLetra8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -164,11 +164,11 @@
             // 
             this.TextoLetra7.BackColor = System.Drawing.Color.White;
             this.TextoLetra7.Enabled = false;
-            this.TextoLetra7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra7.Location = new System.Drawing.Point(227, 150);
             this.TextoLetra7.MaxLength = 1;
             this.TextoLetra7.Name = "TextoLetra7";
-            this.TextoLetra7.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra7.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra7.TabIndex = 10;
             this.TextoLetra7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -176,11 +176,11 @@
             // 
             this.TextoLetra6.BackColor = System.Drawing.Color.White;
             this.TextoLetra6.Enabled = false;
-            this.TextoLetra6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra6.Location = new System.Drawing.Point(198, 150);
             this.TextoLetra6.MaxLength = 1;
             this.TextoLetra6.Name = "TextoLetra6";
-            this.TextoLetra6.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra6.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra6.TabIndex = 9;
             this.TextoLetra6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -188,11 +188,11 @@
             // 
             this.TextoLetra5.BackColor = System.Drawing.Color.White;
             this.TextoLetra5.Enabled = false;
-            this.TextoLetra5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra5.Location = new System.Drawing.Point(168, 150);
             this.TextoLetra5.MaxLength = 1;
             this.TextoLetra5.Name = "TextoLetra5";
-            this.TextoLetra5.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra5.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra5.TabIndex = 8;
             this.TextoLetra5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -200,11 +200,11 @@
             // 
             this.TextoLetra10.BackColor = System.Drawing.Color.White;
             this.TextoLetra10.Enabled = false;
-            this.TextoLetra10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra10.Location = new System.Drawing.Point(316, 150);
             this.TextoLetra10.MaxLength = 1;
             this.TextoLetra10.Name = "TextoLetra10";
-            this.TextoLetra10.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra10.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra10.TabIndex = 13;
             this.TextoLetra10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -212,22 +212,22 @@
             // 
             this.TextoLetra9.BackColor = System.Drawing.Color.White;
             this.TextoLetra9.Enabled = false;
-            this.TextoLetra9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetra9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetra9.Location = new System.Drawing.Point(286, 150);
             this.TextoLetra9.MaxLength = 1;
             this.TextoLetra9.Name = "TextoLetra9";
-            this.TextoLetra9.Size = new System.Drawing.Size(26, 30);
+            this.TextoLetra9.Size = new System.Drawing.Size(26, 22);
             this.TextoLetra9.TabIndex = 12;
             this.TextoLetra9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(8, 193);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 25);
+            this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 14;
             this.label3.Text = "Letras colocadas:";
             // 
@@ -235,41 +235,41 @@
             // 
             this.TextoLetrasColocadas.BackColor = System.Drawing.Color.White;
             this.TextoLetrasColocadas.Enabled = false;
-            this.TextoLetrasColocadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLetrasColocadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoLetrasColocadas.Location = new System.Drawing.Point(179, 188);
             this.TextoLetrasColocadas.Name = "TextoLetrasColocadas";
-            this.TextoLetrasColocadas.Size = new System.Drawing.Size(163, 30);
+            this.TextoLetrasColocadas.Size = new System.Drawing.Size(163, 22);
             this.TextoLetrasColocadas.TabIndex = 15;
             // 
             // TextoPalabraBuscada
             // 
             this.TextoPalabraBuscada.BackColor = System.Drawing.Color.White;
             this.TextoPalabraBuscada.Enabled = false;
-            this.TextoPalabraBuscada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoPalabraBuscada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoPalabraBuscada.Location = new System.Drawing.Point(179, 225);
             this.TextoPalabraBuscada.Name = "TextoPalabraBuscada";
-            this.TextoPalabraBuscada.Size = new System.Drawing.Size(163, 30);
+            this.TextoPalabraBuscada.Size = new System.Drawing.Size(163, 22);
             this.TextoPalabraBuscada.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(8, 230);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 25);
+            this.label4.Size = new System.Drawing.Size(114, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "Palabra buscada:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(87, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 25);
+            this.label5.Size = new System.Drawing.Size(47, 16);
             this.label5.TabIndex = 18;
             this.label5.Text = "Fallos:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -278,16 +278,16 @@
             // 
             this.TextoTotalFallos.BackColor = System.Drawing.Color.White;
             this.TextoTotalFallos.Enabled = false;
-            this.TextoTotalFallos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoTotalFallos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoTotalFallos.Location = new System.Drawing.Point(150, 259);
             this.TextoTotalFallos.Name = "TextoTotalFallos";
-            this.TextoTotalFallos.Size = new System.Drawing.Size(45, 30);
+            this.TextoTotalFallos.Size = new System.Drawing.Size(45, 22);
             this.TextoTotalFallos.TabIndex = 19;
             this.TextoTotalFallos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // BotonReiniciaJuego
             // 
-            this.BotonReiniciaJuego.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonReiniciaJuego.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BotonReiniciaJuego.Location = new System.Drawing.Point(52, 308);
             this.BotonReiniciaJuego.Name = "BotonReiniciaJuego";
             this.BotonReiniciaJuego.Size = new System.Drawing.Size(300, 29);
@@ -300,21 +300,21 @@
             // 
             this.TextoTotalAciertos.BackColor = System.Drawing.Color.White;
             this.TextoTotalAciertos.Enabled = false;
-            this.TextoTotalAciertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoTotalAciertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextoTotalAciertos.Location = new System.Drawing.Point(296, 259);
             this.TextoTotalAciertos.Name = "TextoTotalAciertos";
-            this.TextoTotalAciertos.Size = new System.Drawing.Size(45, 30);
+            this.TextoTotalAciertos.Size = new System.Drawing.Size(45, 22);
             this.TextoTotalAciertos.TabIndex = 22;
             this.TextoTotalAciertos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(211, 265);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 25);
+            this.label6.Size = new System.Drawing.Size(59, 16);
             this.label6.TabIndex = 21;
             this.label6.Text = "Aciertos:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -330,7 +330,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(27F, 54F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(656, 377);
             this.Controls.Add(this.CuadroImagen);
@@ -357,7 +357,7 @@
             this.Controls.Add(this.TextoLetraIngresada);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.Name = "Form1";

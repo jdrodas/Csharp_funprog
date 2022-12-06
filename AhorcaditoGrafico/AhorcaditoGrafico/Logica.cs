@@ -30,23 +30,17 @@ namespace AhorcaditoGrafico
     class Logica
     {
         //Atributos de la clase
-        private string[] diccionarioPalabras;
+        private string?[] diccionarioPalabras;
         private int contadorFallos;
         private int contadorAciertos;
-        private string palabraBuscada;
-        private string letrasColocadas;
+        private string? palabraBuscada;
+        private string? letrasColocadas;
         private Bitmap imagenAhorcado;
 
         //El constructor de la clase
         public Logica()
         {
-            InicializaDiccionario();
-            ReiniciaJuego();
-        }
-
-        private void InicializaDiccionario()
-        {
-            diccionarioPalabras = new string[] {
+            diccionarioPalabras = new string?[] {
             "EVALUACION",
             "PROLETARIO",
             "ICOSAEDROS",
@@ -66,8 +60,8 @@ namespace AhorcaditoGrafico
             "HABICHUELA",
             "ECLIPSABLE"};
 
+            ReiniciaJuego();
         }
-
 
         /// <summary>
         /// Método que reinicia los atributos de la clase
@@ -126,7 +120,7 @@ namespace AhorcaditoGrafico
         //Metodos públicos de la clase
         public bool EvaluaLetra(string laLetra)
         {
-            char[] arregloLetrasColocadas = letrasColocadas.ToCharArray();
+            char[] arregloLetrasColocadas = letrasColocadas!.ToCharArray();
             bool fueIngresada = false;
             bool fueEncontrada = false;
 
