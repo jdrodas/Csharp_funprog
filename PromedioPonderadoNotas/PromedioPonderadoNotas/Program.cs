@@ -80,7 +80,7 @@ namespace PromedioPonderadoNotas
                         notasMaterias[notasIngresadas] = float.Parse(Console.ReadLine());
 
                         //Si la nota está en el rango requerido, avanzamos a la siguiente nota
-                        if (notasMaterias[notasIngresadas] >= 0f && notasMaterias[notasIngresadas] <= 5f)                        
+                        if (notasMaterias[notasIngresadas] >= 0f && notasMaterias[notasIngresadas] <= 5f)
                             notasIngresadas++;
                         else
                             Console.WriteLine("La nota no está en el rango [0;5]. Debes ingresar otra vez la información de esta nota! \n");
