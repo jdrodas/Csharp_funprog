@@ -18,21 +18,21 @@ namespace PuntuacionEquiposOO
             nombre = "";
             puntaje = 0;
         }
-        
+
         //Propiedades
         public string Nombre
         {
             get { return nombre; }
             set { nombre = value; }
         }
-        
-        public int Puntaje 
+
+        public int Puntaje
         {
             get { return puntaje; }
             set { puntaje = value; }
-        
+
         }
-        
+
         //Metodos
 
     }

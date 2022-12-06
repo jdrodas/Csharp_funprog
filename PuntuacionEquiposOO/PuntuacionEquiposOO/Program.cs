@@ -45,7 +45,7 @@ namespace PuntuacionEquiposOO
             {
                 try
                 {
-                    Console.Write($"\nIngresa el nombre del jugador No. {contadorJugador+1}: ");
+                    Console.Write($"\nIngresa el nombre del jugador No. {contadorJugador + 1}: ");
                     equipo[contadorJugador].Nombre = Console.ReadLine();
 
                     Console.Write($"Cual fue el puntaje para {equipo[contadorJugador].Nombre}: ");
@@ -71,7 +71,7 @@ namespace PuntuacionEquiposOO
 
             foreach (Jugador unJugador in equipo)
             {
-                puntajeEquipo+=unJugador.Puntaje;
+                puntajeEquipo += unJugador.Puntaje;
                 if (unJugador.Puntaje < 60)
                     totalPuntajesInferiores++;
             }
