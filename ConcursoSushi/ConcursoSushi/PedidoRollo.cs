@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConcursoSushi
+﻿namespace ConcursoSushi
 {
     internal class PedidoRollo
     {
@@ -40,7 +34,7 @@ namespace ConcursoSushi
         public int Restaurante
         {
             get { return restaurante; }
-            set { restaurante = value; } 
+            set { restaurante = value; }
         }
 
         public string Salsa

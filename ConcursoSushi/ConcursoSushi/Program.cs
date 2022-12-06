@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConcursoSushi
 {
@@ -25,7 +21,7 @@ namespace ConcursoSushi
             while (contadorProteinas < lasProteinas.Length)
             {
                 Console.Write($"\nIngresa el valor para la proteina No. {contadorProteinas + 1}: ");
-                lasProteinas[contadorProteinas] = Console.ReadLine();
+                lasProteinas[contadorProteinas] = Console.ReadLine()!;
 
                 if (lasProteinas[contadorProteinas].Length == 0)
                     Console.WriteLine("No ingresaste una proteína válida. Intenta nuevamente!");
@@ -38,7 +34,7 @@ namespace ConcursoSushi
             do
             {
                 Console.Write($"\nIngresa el valor para el topping No. {contadorToppings + 1}: ");
-                losToppings[contadorToppings] = Console.ReadLine();
+                losToppings[contadorToppings] = Console.ReadLine()!;
 
                 if (losToppings[contadorToppings].Length == 0)
                     Console.WriteLine("No ingresaste un topping válido. Intenta nuevamente!");
@@ -75,7 +71,7 @@ namespace ConcursoSushi
             for (int i = 0; i < losPedidos.Length; i++)
             {
                 losPedidos[i] = new PedidoRollo();
-                losPedidos[i].Restaurante = aleatorio.Next(1, cantidadRestaurantes +1); //Código del restaurante
+                losPedidos[i].Restaurante = aleatorio.Next(1, cantidadRestaurantes + 1); //Código del restaurante
                 losPedidos[i].Proteina = lasProteinas[aleatorio.Next(lasProteinas.Length)];
                 losPedidos[i].Acabado = losAcabados[aleatorio.Next(losAcabados.Length)];
                 losPedidos[i].Salsa = lasSalsas[aleatorio.Next(lasSalsas.Length)];

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.3.32922.545
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcursoSushi", "ConcursoSushi\ConcursoSushi.csproj", "{07D5BB00-42F8-4B2E-937F-B6AB496A8E39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcursoSushi", "ConcursoSushi\ConcursoSushi.csproj", "{B942D96D-C62F-4E9B-ACB7-B57C562F7E78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{07D5BB00-42F8-4B2E-937F-B6AB496A8E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07D5BB00-42F8-4B2E-937F-B6AB496A8E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07D5BB00-42F8-4B2E-937F-B6AB496A8E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07D5BB00-42F8-4B2E-937F-B6AB496A8E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B942D96D-C62F-4E9B-ACB7-B57C562F7E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B942D96D-C62F-4E9B-ACB7-B57C562F7E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B942D96D-C62F-4E9B-ACB7-B57C562F7E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B942D96D-C62F-4E9B-ACB7-B57C562F7E78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2DF68D30-D831-454F-A420-4C980C834DCF}
+		SolutionGuid = {0922CBD3-219C-44C7-B317-57EC11E4F063}
 	EndGlobalSection
 EndGlobal
