@@ -1,4 +1,4 @@
-Ôªøusing System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -30,7 +30,7 @@ namespace OrdenaNumeros
         /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Se invoca la inicializaci√≥n de botones
+            //Se invoca la inicializaciÛn de botones
             InicializaEtiquetaBotones();
         }
 
@@ -75,8 +75,8 @@ namespace OrdenaNumeros
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    //El bot√≥n que tenga el valor 0, se ver√° como vac√≠o
-                    //para que el usuario pueda "desplazar" el valor all√≠
+                    //El botÛn que tenga el valor 0, se ver· como vacÌo
+                    //para que el usuario pueda "desplazar" el valor allÌ
                     if (miLogica.MatrizValores[i, j] == 0)
                         matrizBotones[i, j].Text = "";
                     else
@@ -90,7 +90,7 @@ namespace OrdenaNumeros
         /// </summary>
         private void menuItemReiniciaJuego_Click(object sender, EventArgs e)
         {
-            //Se invoca la inicializaci√≥n de botones
+            //Se invoca la inicializaciÛn de botones
             InicializaEtiquetaBotones();
 
             //Se activan los botones para que puedan ser usados 
@@ -99,7 +99,7 @@ namespace OrdenaNumeros
             //Se le coloca el color de fondo predeterminado
             InicializaFondoBotones();
 
-            //Se da la notificaci√≥n si el valor se encuentra en la posici√≥n correcta
+            //Se da la notificaciÛn si el valor se encuentra en la posiciÛn correcta
             NotificaPosicionCorrectaValor();
         }
 
@@ -184,7 +184,7 @@ namespace OrdenaNumeros
         }
 
         /// <summary>
-        /// Evento para item salir que cierra la aplicaci√≥n
+        /// Evento para item salir que cierra la aplicaciÛn
         /// </summary>
         private void menuItemSalir_Click(object sender, EventArgs e)
         {
@@ -192,31 +192,31 @@ namespace OrdenaNumeros
         }
 
         /// <summary>
-        /// Evalua informaci√≥n asociada al bot√≥n presionado
+        /// Evalua informaciÛn asociada al botÛn presionado
         /// </summary>
-        /// <param name="numeroBoton">Consecutivo del bot√≥n presionado</param>
-        /// <param name="datoFila">Fila en la matriz a la que pertenece el bot√≥n</param>
-        /// <param name="datoColumna">Columna en la matriz a la que pertenece el bot√≥n</param>
+        /// <param name="numeroBoton">Consecutivo del botÛn presionado</param>
+        /// <param name="datoFila">Fila en la matriz a la que pertenece el botÛn</param>
+        /// <param name="datoColumna">Columna en la matriz a la que pertenece el botÛn</param>
         private void EvaluaBotonPresionado(int numeroBoton, int datoFila, int datoColumna)
         {
             miLogica.PosicionFila = datoFila;
             miLogica.PosicionColumna = datoColumna;
 
-            //Aqui evaluamos en la matrizValores, la posici√≥n correspondiente al bot√≥n presionado
+            //Aqui evaluamos en la matrizValores, la posiciÛn correspondiente al botÛn presionado
             EvaluaPosicion();
 
-            //Finalmente, se da la notificaci√≥n si el valor se encuentra en la posici√≥n correcta
+            //Finalmente, se da la notificaciÛn si el valor se encuentra en la posiciÛn correcta
             NotificaPosicionCorrectaValor();
         }
 
         /// <summary>
-        /// Evalua si la posici√≥n presionada est√° adjacente al espacio disponible para usar
+        /// Evalua si la posiciÛn presionada est· adjacente al espacio disponible para usar
         /// </summary>
         private void EvaluaPosicion()
         {
             int valorTemporal = 0;
 
-            //Validamos el valor superior a donde presionamos si est√° el cero
+            //Validamos el valor superior a donde presionamos si est· el cero
             if (miLogica.PosicionFila > 0)
             {
                 if (miLogica.MatrizValores[miLogica.PosicionFila - 1, miLogica.PosicionColumna] == 0)
@@ -227,7 +227,7 @@ namespace OrdenaNumeros
                 }
             }
 
-            //Validamos el valor inferior a donde presionamos si est√° el cero
+            //Validamos el valor inferior a donde presionamos si est· el cero
             if (miLogica.PosicionFila < 3)
             {
                 if (miLogica.MatrizValores[miLogica.PosicionFila + 1, miLogica.PosicionColumna] == 0)
@@ -238,7 +238,7 @@ namespace OrdenaNumeros
                 }
             }
 
-            //Validamos el valor izquierdo a donde presionamos si est√° el cero
+            //Validamos el valor izquierdo a donde presionamos si est· el cero
             if (miLogica.PosicionColumna > 0)
             {
                 if (miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna - 1] == 0)
@@ -249,7 +249,7 @@ namespace OrdenaNumeros
                 }
             }
 
-            //Validamos el valor derecho a donde presionamos si est√° el cero
+            //Validamos el valor derecho a donde presionamos si est· el cero
             if (miLogica.PosicionColumna < 3)
             {
                 if (miLogica.MatrizValores[miLogica.PosicionFila, miLogica.PosicionColumna + 1] == 0)
@@ -272,21 +272,21 @@ namespace OrdenaNumeros
                 }
             }
 
-            //Y valoramos la condici√≥n de victoria
+            //Y valoramos la condiciÛn de victoria
             EvaluaCondicionVictoria();
         }
 
         /// <summary>
-        /// Esta funci√≥n valida si todos los n√∫meros est√°n organizados
+        /// Esta funciÛn valida si todos los n˙meros est·n organizados
         /// </summary>
         private void EvaluaCondicionVictoria()
         {
-            //Partimos del supuesto que ya logramos la condici√≥n de victoria
+            //Partimos del supuesto que ya logramos la condiciÛn de victoria
             bool condicionVictoria = true;
 
             int valorBuscado = 0;
 
-            //Aqui recorremos la matriz de valores buscando para cada posici√≥n si el valor est√° en orden
+            //Aqui recorremos la matriz de valores buscando para cada posiciÛn si el valor est· en orden
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -294,16 +294,16 @@ namespace OrdenaNumeros
                     //incrementamos el valor buscado
                     valorBuscado++;
 
-                    //Si los valores son diferentes, entonces todav√≠a necesitamos seguir jugando!!!
+                    //Si los valores son diferentes, entonces todavÌa necesitamos seguir jugando!!!
                     if (miLogica.MatrizValores[i, j] != valorBuscado)
                     {
-                        // Validamos si estamos en la √∫ltima casilla, el valor existente es 0,
-                        // el valor buscado ya lleg√≥ a 16 y la condici√≥n de victoria sigue siendo true
+                        // Validamos si estamos en la ˙ltima casilla, el valor existente es 0,
+                        // el valor buscado ya llegÛ a 16 y la condiciÛn de victoria sigue siendo true
                         if (miLogica.MatrizValores[i, j] == 0 && valorBuscado == 16 && condicionVictoria == true)
                             condicionVictoria = true;
 
                         // De lo contrario, es porque estamos en cualquier otra casilla y los valores
-                        // Todav√≠a no son iguales
+                        // TodavÌa no son iguales
                         else
                             condicionVictoria = false;
                     }
@@ -311,16 +311,16 @@ namespace OrdenaNumeros
             }
 
 
-            //Si la condici√≥n de victoria se logr√≥, mostramos el mensaje de Victoria y desactivamos los botones
+            //Si la condiciÛn de victoria se logrÛ, mostramos el mensaje de Victoria y desactivamos los botones
             if (condicionVictoria == true)
             {
-                MessageBox.Show("Todos los n√∫meros organizados, Felicitaciones!", "Victoria Alcanzada!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Todos los n˙meros organizados, Felicitaciones!", "Victoria Alcanzada!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 InactivaBotones();
             }
         }
 
         /// <summary>
-        /// Esta funci√≥n inactiva los botones para ser utilizados en el juego
+        /// Esta funciÛn inactiva los botones para ser utilizados en el juego
         /// </summary>
         private void InactivaBotones()
         {
@@ -330,7 +330,7 @@ namespace OrdenaNumeros
         }
 
         /// <summary>
-        /// Esta funci√≥n activa los botones para ser utilizados en el juego
+        /// Esta funciÛn activa los botones para ser utilizados en el juego
         /// </summary>
         private void ActivaBotones()
         {
@@ -340,7 +340,7 @@ namespace OrdenaNumeros
         }
 
         /// <summary>
-        /// Notifica que el n√∫mero se encuentra en la posici√≥n correcta, cambiando el color de fondo del bot√≥n
+        /// Notifica que el n˙mero se encuentra en la posiciÛn correcta, cambiando el color de fondo del botÛn
         /// </summary>
         private void NotificaPosicionCorrectaValor()
         {
@@ -359,10 +359,10 @@ namespace OrdenaNumeros
                     valor++;
                 }
 
-            //Al finalizar el juego, en la posici√≥n 4,4 se encuentra el 0
+            //Al finalizar el juego, en la posiciÛn 4,4 se encuentra el 0
             valoresEsperados[3, 3] = 0;
 
-            //Ahora comparamos con los valores actuales para saber si est√°n en la posici√≥n correcta
+            //Ahora comparamos con los valores actuales para saber si est·n en la posiciÛn correcta
             for (int i = 0; i < totalFilas; i++)
                 for (int j = 0; j < totalColumnas; j++)
                 {
@@ -371,14 +371,14 @@ namespace OrdenaNumeros
                     else
                         matrizBotones[i, j].BackColor = Color.LightGray;
 
-                    //El bot√≥n que tiene el 0 no deber√° cambiar de color
-                    if(miLogica.MatrizValores[i, j]==0)
+                    //El botÛn que tiene el 0 no deber· cambiar de color
+                    if (miLogica.MatrizValores[i, j] == 0)
                         matrizBotones[i, j].BackColor = Color.LightGray;
                 }
         }
 
         /// <summary>
-        /// M√©todo que inicializa el fondo de los botones con un color gris claro
+        /// MÈtodo que inicializa el fondo de los botones con un color gris claro
         /// </summary>
         private void InicializaFondoBotones()
         {

@@ -1,5 +1,4 @@
-﻿
-namespace OrdenaNumeros
+﻿namespace OrdenaNumeros
 {
     partial class Form1
     {
@@ -372,4 +371,3 @@ namespace OrdenaNumeros
         private System.Windows.Forms.Button boton16;
     }
 }
-
