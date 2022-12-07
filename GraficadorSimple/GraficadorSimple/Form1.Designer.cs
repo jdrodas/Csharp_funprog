@@ -153,7 +153,7 @@
             // itemMenuColorPrimario
             // 
             this.itemMenuColorPrimario.Name = "itemMenuColorPrimario";
-            this.itemMenuColorPrimario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.itemMenuColorPrimario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.P)));
             this.itemMenuColorPrimario.Size = new System.Drawing.Size(251, 22);
             this.itemMenuColorPrimario.Text = "Color Primario";
@@ -162,7 +162,7 @@
             // itemMenuColorSecundario
             // 
             this.itemMenuColorSecundario.Name = "itemMenuColorSecundario";
-            this.itemMenuColorSecundario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.itemMenuColorSecundario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.S)));
             this.itemMenuColorSecundario.Size = new System.Drawing.Size(251, 22);
             this.itemMenuColorSecundario.Text = "Color Secundario";

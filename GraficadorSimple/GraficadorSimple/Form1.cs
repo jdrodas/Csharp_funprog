@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,7 +41,7 @@ namespace GraficadorSimple
                 cuadroDibujo.Height);
 
             textoFrase.Text = "";
-            etiquetaEstado.Text = "AplicaciÃ³n inicializada.";
+            etiquetaEstado.Text = "Aplicación inicializada.";
             radioLinea.Checked = true;
             radioRellenoBorde.Checked = true;
 
@@ -49,7 +49,7 @@ namespace GraficadorSimple
             listaGradientes.Visible = false;
             listaGradientes.SelectedIndex = 0;
 
-            //ocultamos los parametros para el dibujo de polÃ­gono
+            //ocultamos los parametros para el dibujo de polígono
             selectorNumeroLados.Visible = false;
             etiquetaLados.Visible = false;
 
@@ -57,7 +57,7 @@ namespace GraficadorSimple
             cuadroColorSecundario.BackColor = Color.White;
             selectorGrosor.Value = logicaDibujo.GrosorLinea;
 
-            //Obtenemos el nÃºmero de lados del polÃ­gono que estÃ¡ predefinido
+            //Obtenemos el número de lados del polígono que está predefinido
             selectorNumeroLados.Value = logicaDibujo.LadosPoligono;
 
             cuadroDibujo.Image = logicaDibujo.ImagenDibujo;
@@ -66,7 +66,7 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Evento asociado al item de menÃº - Nuevo
+        /// Evento asociado al item de menú - Nuevo
         /// </summary>
         private void itemMenuNuevo_Click(object sender, EventArgs e)
         {
@@ -74,7 +74,7 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Evento asociado al item de menÃº - Salir
+        /// Evento asociado al item de menú - Salir
         /// </summary>
         private void itemMenuSalir_Click(object sender, EventArgs e)
         {
@@ -82,12 +82,12 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Evento asociado al item de menÃº - "Acerca de" 
+        /// Evento asociado al item de menú - "Acerca de" 
         /// </summary>
         private void itemMenuAcercaDe_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Herramienta diseÃ±ada en el curso de Fundamentos de programaciÃ³n. UPB, Mayo 201",
-                "Graficador simple v. 201");
+            MessageBox.Show("Herramienta diseñada en el curso de Fundamentos de programación. UPB, Mayo 2021",
+                "Graficador simple v. 2021");
         }
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Evento asociado al item de menu - SelecciÃ³n de color primario
+        /// Evento asociado al item de menu - Selección de color primario
         /// </summary>
         private void itemMenuColorPrimario_Click(object sender, EventArgs e)
         {
@@ -115,7 +115,7 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Evento asociado al item de menu - SelecciÃ³n de color primario
+        /// Evento asociado al item de menu - Selección de color primario
         /// </summary>
         private void itemMenuColorSecundario_Click(object sender, EventArgs e)
         {
@@ -151,7 +151,7 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Intercambia de posiciÃ³n los colores en los cuadros de selecciÃ³n
+        /// Intercambia de posición los colores en los cuadros de selección
         /// </summary>
         private void botonSwapColores_Click(object sender, EventArgs e)
         {
@@ -167,7 +167,7 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Evento asociado al item de menÃº - Tipo de Letra
+        /// Evento asociado al item de menú - Tipo de Letra
         /// </summary>
         private void itemMenuTipoLetra_Click(object sender, EventArgs e)
         {
@@ -175,7 +175,7 @@ namespace GraficadorSimple
         }
 
         /// <summary>
-        /// Evento asociado al BotÃ³n - Tipo de Letra
+        /// Evento asociado al Botón - Tipo de Letra
         /// </summary>
         private void BotonTipoLetra_Click(object sender, EventArgs e)
         {
@@ -192,8 +192,8 @@ namespace GraficadorSimple
             if (ventanaLetra.ShowDialog() == DialogResult.OK)
             {
                 logicaDibujo.TipoLetra = ventanaLetra.Font;
-                etiquetaEstado.Text = "Tipo de letra: " + 
-                    logicaDibujo.TipoLetra.Name + 
+                etiquetaEstado.Text = "Tipo de letra: " +
+                    logicaDibujo.TipoLetra.Name +
                     ", " + logicaDibujo.TipoLetra.Size;
             }
         }
@@ -205,7 +205,7 @@ namespace GraficadorSimple
         private void selectorGrosor_ValueChanged(object sender, EventArgs e)
         {
             logicaDibujo.GrosorLinea = (int)selectorGrosor.Value;
-            etiquetaEstado.Text = "Grosor de lÃ­nea asignado.";
+            etiquetaEstado.Text = "Grosor de línea asignado.";
         }
 
         private void textoFrase_Leave(object sender, EventArgs e)
@@ -218,7 +218,7 @@ namespace GraficadorSimple
         {
             if (radioLinea.Checked)
             {
-                etiquetaEstado.Text = "Herramienta seleccionada: lÃ­nea.";
+                etiquetaEstado.Text = "Herramienta seleccionada: línea.";
             }
         }
 
@@ -226,7 +226,7 @@ namespace GraficadorSimple
         {
             if (radioRectangulo.Checked)
             {
-                etiquetaEstado.Text = "Herramienta seleccionada: rectÃ¡ngulo.";
+                etiquetaEstado.Text = "Herramienta seleccionada: rectángulo.";
             }
         }
 
@@ -252,9 +252,9 @@ namespace GraficadorSimple
 
             logicaDibujo.PuntoInicial = new Point(e.X, e.Y);
 
-            etiquetaPuntoInicial.Text = "Punto inicial: ("+
+            etiquetaPuntoInicial.Text = "Punto inicial: (" +
                 logicaDibujo.PuntoInicial.X + "," +
-                logicaDibujo.PuntoInicial.Y +")";
+                logicaDibujo.PuntoInicial.Y + ")";
 
             etiquetaPuntoFinal.Text = "Punto Final:";
         }
@@ -287,10 +287,10 @@ namespace GraficadorSimple
                 tipoRelleno = "borde";
 
             if (radioRellenoSolido.Checked)
-                tipoRelleno = "sÃ³lido";
+                tipoRelleno = "sólido";
 
             if (radioRellenoGradiente.Checked)
-            { 
+            {
                 tipoRelleno = "gradiente";
 
                 switch (listaGradientes.SelectedIndex)
@@ -308,7 +308,7 @@ namespace GraficadorSimple
                         break;
 
                     case 3:
-                        tipoGradiente = "Diagonal AtrÃ¡s";
+                        tipoGradiente = "Diagonal Atrás";
                         break;
                 }
             }
@@ -317,9 +317,9 @@ namespace GraficadorSimple
             if (radioLinea.Checked)
                 logicaDibujo.DibujaLinea();
 
-            //aqui se dibuja un rectÃ¡ngulo
+            //aqui se dibuja un rectángulo
             if (radioRectangulo.Checked)
-                logicaDibujo.DibujaRectangulo(tipoRelleno,tipoGradiente);
+                logicaDibujo.DibujaRectangulo(tipoRelleno, tipoGradiente);
 
             //aqui se dibuja una elipse
             if (radioElipse.Checked)
@@ -378,7 +378,7 @@ namespace GraficadorSimple
         private void selectorNumeroLados_ValueChanged(object sender, EventArgs e)
         {
             logicaDibujo.LadosPoligono = (int)selectorNumeroLados.Value;
-            etiquetaEstado.Text = "Lados de polÃ­gono seleccionados: " + logicaDibujo.LadosPoligono;
+            etiquetaEstado.Text = "Lados de polígono seleccionados: " + logicaDibujo.LadosPoligono;
         }
     }
 }

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Media;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing.Drawing2D;
 
 namespace GraficadorSimple
 {
@@ -16,7 +9,7 @@ namespace GraficadorSimple
         private int grosorLinea;
         private int ladosPoligono;
         private Font tipoLetra;
-        private string frase;
+        private string? frase;
         private Point puntoInicial, puntoFinal;
         private Bitmap imagenDibujo;
         private Graphics areaDibujo;
@@ -26,7 +19,8 @@ namespace GraficadorSimple
         /// </summary>
         public Logica()
         {
-            InicializaLogica(10,10); // un valor cualquiera
+            tipoLetra = new Font("Arial", 12, FontStyle.Regular);
+            InicializaLogica(10, 10); // un valor cualquiera
         }
 
         public void InicializaLogica(int anchoImagen, int altoImagen)
@@ -37,7 +31,7 @@ namespace GraficadorSimple
             grosorLinea = 1;
             ladosPoligono = 3; // mínimo número de lados
 
-            tipoLetra = new Font("Arial", 12, FontStyle.Regular);
+
             frase = "";
 
             puntoInicial = new Point();
@@ -71,17 +65,17 @@ namespace GraficadorSimple
 
             Point puntoOrigen = new Point(
                 Math.Min(PuntoFinal.X, PuntoInicial.X),
-                Math.Min(PuntoFinal.Y,PuntoInicial.Y));
+                Math.Min(PuntoFinal.Y, PuntoInicial.Y));
 
-            Rectangle miRectangulo = 
+            Rectangle miRectangulo =
                 new Rectangle(puntoOrigen.X, puntoOrigen.Y, ancho, alto);
 
             //Dibujamos según la opción de relleno
             //Si el relleno es con borde - sin relleno
-            if(tipoRelleno=="borde")
+            if (tipoRelleno == "borde")
                 areaDibujo.DrawRectangle(lapiz, miRectangulo);
 
-            if(tipoRelleno=="sólido")
+            if (tipoRelleno == "sólido")
             {
                 Brush pincelSolido = new SolidBrush(colorSecundario);
                 areaDibujo.FillRectangle(pincelSolido, miRectangulo);
@@ -121,7 +115,7 @@ namespace GraficadorSimple
             {
                 Brush pincelSolido = new SolidBrush(colorSecundario);
                 areaDibujo.FillEllipse(pincelSolido, miRectangulo);
-                areaDibujo.DrawEllipse(lapiz, miRectangulo);                
+                areaDibujo.DrawEllipse(lapiz, miRectangulo);
             }
 
             if (tipoRelleno == "gradiente")
