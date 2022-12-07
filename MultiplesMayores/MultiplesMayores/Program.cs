@@ -21,7 +21,7 @@ namespace MultiplesMayores
             int[] losNumeros = new int[5];
 
             //Aqui leemos desde consola y los almacenamos en el arreglo
-            int contador = 0;            
+            int contador = 0;
             while (contador < losNumeros.Length)
             {
                 try
@@ -38,11 +38,11 @@ namespace MultiplesMayores
             }
 
             Console.WriteLine("\nLos números ingresados fueron:");
-            foreach(int numero in losNumeros)
+            foreach (int numero in losNumeros)
                 Console.WriteLine($"\t{numero}");
 
             //Aqui invocamos la función para identificar el número mayor y las veces que ocurre
-            int numeroMayor,cantidadMayores;
+            int numeroMayor, cantidadMayores;
 
             EncuentraMayores(losNumeros, out numeroMayor, out cantidadMayores);
 
