@@ -1,8 +1,4 @@
-﻿
-using System;
-using System.Windows.Forms;
-
-namespace EncuentraParejasNumeros
+﻿namespace EncuentraParejasNumeros
 {
     public class LogicaJuego
     {
@@ -17,6 +13,12 @@ namespace EncuentraParejasNumeros
 
         public LogicaJuego()
         {
+            //primero inicializamos el arreglo en ceros
+            arregloValores = new int[16];
+
+            //Aqui inicializamos el arreglo que contiene los valores encontrados
+            valoresEncontrados = new bool[8];
+
             InicializaLogica();
         }
 
@@ -32,7 +34,7 @@ namespace EncuentraParejasNumeros
 
         public int ParejaParteA
         {
-            get { return parejaParteA; } 
+            get { return parejaParteA; }
         }
 
         public int ParejaParteB
@@ -59,6 +61,9 @@ namespace EncuentraParejasNumeros
             parejaParteA = 0;
             parejaParteB = 0;
 
+            for (int i = 0; i < valoresEncontrados.Length; i++)
+                valoresEncontrados[i] = false;
+
             //Aqui invocamos las funciones de inicialización de arreglo
             InicializaArregloValores();
         }
@@ -80,7 +85,7 @@ namespace EncuentraParejasNumeros
                 parejaParteB = datoValor;
             }
 
-            string resultadoAnalisis="";
+            string resultadoAnalisis = "";
             // Si las partes son iguales, se encontró una pareja
             if (parejaParteA == parejaParteB)
             {
@@ -114,8 +119,8 @@ namespace EncuentraParejasNumeros
         //Aqui validamos la condición de victoria
         public bool EvaluarCondicionVictoria()
         {
-            bool resultadoEvaluacion=false;
-            
+            bool resultadoEvaluacion = false;
+
             //Reiniciamos el contador de parejas encontradas
             totalParejas = 0;
 
@@ -147,8 +152,6 @@ namespace EncuentraParejasNumeros
             //Esta es la variable aleatoria que utilizaremos
             Random aleatorio = new Random();
 
-            //primero inicializamos el arreglo en ceros
-            arregloValores = new int[16];
 
             for (int i = 0; i < arregloValores.Length; i++)
                 arregloValores[i] = 0;
@@ -173,13 +176,6 @@ namespace EncuentraParejasNumeros
                     contadorUbicacion = 0;
                 }
             }
-
-            //Aqui inicializamos el arreglo que contiene los valores encontrados
-            valoresEncontrados = new bool[8];
-
-            for (int i = 0; i < valoresEncontrados.Length; i++)
-                valoresEncontrados[i] = false;
-
         }
     }
 }

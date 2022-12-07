@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuentraParejasNumeros", "EncuentraParejasNumeros\EncuentraParejasNumeros.csproj", "{56D445A4-4250-4862-8AB8-7A4B866C2AFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuentraParejasNumeros", "EncuentraParejasNumeros\EncuentraParejasNumeros.csproj", "{DA6AB5BE-06C0-4A76-AB34-B2C398A551D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{56D445A4-4250-4862-8AB8-7A4B866C2AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56D445A4-4250-4862-8AB8-7A4B866C2AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56D445A4-4250-4862-8AB8-7A4B866C2AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56D445A4-4250-4862-8AB8-7A4B866C2AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA6AB5BE-06C0-4A76-AB34-B2C398A551D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6AB5BE-06C0-4A76-AB34-B2C398A551D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6AB5BE-06C0-4A76-AB34-B2C398A551D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6AB5BE-06C0-4A76-AB34-B2C398A551D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {186C86D9-67B2-40FE-8D20-6CD46D28A37C}
+		SolutionGuid = {1121723F-290A-49CF-A849-29BF112CDB1D}
 	EndGlobalSection
 EndGlobal

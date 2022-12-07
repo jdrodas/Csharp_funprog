@@ -1,26 +1,26 @@
-Ôªø/*
+/*
 Programa:       EncuentraParejasNumeros
 Contacto:       Juan Dario Rodas - jdrodas @hotmail.com
 
 Especificacionesde funcionamiento
 =================================
 
-Se ha implementado un juego de ‚ÄúEncuentre las parejas‚Äù que consiste en identificar 
-la ubicaci√≥n de 8 parejas de n√∫meros distribuidas en 16 botones que el usuario debe 
-presionar para revelar su ubicaci√≥n.
+Se ha implementado un juego de ìEncuentre las parejasî que consiste en identificar 
+la ubicaciÛn de 8 parejas de n˙meros distribuidas en 16 botones que el usuario debe 
+presionar para revelar su ubicaciÛn.
 
-Cada vez que el usuario presiona un bot√≥n, en el cuadro de texto ‚ÄúEstado‚Äù, se 
-visualiza cual fue el bot√≥n presionado y que valor est√° all√≠. Cada vez que se presione 
-dos botones de manera consecutivos, se visualiza una ventana emergente con informaci√≥n 
+Cada vez que el usuario presiona un botÛn, en el cuadro de texto ìEstadoî, se 
+visualiza cual fue el botÛn presionado y que valor est· allÌ. Cada vez que se presione 
+dos botones de manera consecutivos, se visualiza una ventana emergente con informaciÛn 
 de la pareja revelada. Si los valores son iguales, se ha encontrado una pareja y se 
-incrementar√° el contador respectivo. Sea que se encuentre o no, el contador de intentos 
-tambi√©n se incrementar√°.
+incrementar· el contador respectivo. Sea que se encuentre o no, el contador de intentos 
+tambiÈn se incrementar·.
 
-En caso de que el jugador desee reiniciar el juego, el bot√≥n ‚ÄúReiniciar el juego‚Äù 
-distribuir√° nuevamente los valores en ubicaciones diferentes y reiniciar√° los respectivos 
+En caso de que el jugador desee reiniciar el juego, el botÛn ìReiniciar el juegoî 
+distribuir· nuevamente los valores en ubicaciones diferentes y reiniciar· los respectivos 
 contadores.
 
-Cuando se encuentren las 8 parejas, el programa indicar√° que se alcanz√≥ la victoria.
+Cuando se encuentren las 8 parejas, el programa indicar· que se alcanzÛ la victoria.
 
 
 */
@@ -42,7 +42,9 @@ namespace EncuentraParejasNumeros
         public Form1()
         {
             InitializeComponent();
-            miLogica = new LogicaJuego();   
+            miLogica = new LogicaJuego();
+
+            arregloBotones = new Button[16];
 
             //Aqui inicializamos los atributos del juego
             InicializaAtributos();
@@ -55,18 +57,16 @@ namespace EncuentraParejasNumeros
 
         private void InicializaAtributos()
         {
-            //Aqui inicializamos la l√≥gica
+            //Aqui inicializamos la lÛgica
             miLogica.InicializaLogica();
 
-            //Aqui invocamos las funciones de inicializaci√≥n de arreglo
+            //Aqui invocamos las funciones de inicializaciÛn de arreglo
             InicializaArregloBotones();
         }
 
-        // Este m√©todo inicializa los Botones
+        // Este mÈtodo inicializa los Botones
         private void InicializaArregloBotones()
         {
-            arregloBotones = new Button[16];
-
             arregloBotones[0] = button1;
             arregloBotones[1] = button2;
             arregloBotones[2] = button3;
@@ -109,15 +109,15 @@ namespace EncuentraParejasNumeros
             //Aqui leemos el valor del dato correspondiente al boton presionado
             int datoValor = miLogica.ArregloValores[numeroBoton - 1];
 
-            //Luego visualizamos el valor en el bot√≥n presionado
+            //Luego visualizamos el valor en el botÛn presionado
             arregloBotones[numeroBoton - 1].Text = datoValor.ToString();
 
             //preparamos el texto para el texto de estado
-            textoEstado.Text = "Presionaste el bot√≥n " +
+            textoEstado.Text = "Presionaste el botÛn " +
                 numeroBoton.ToString() + ", el valor aqui es: " +
                  datoValor.ToString();
 
-            //Y tambi√©n desactivamos el bot√≥n para que no se vuelva a usar mientras se
+            //Y tambiÈn desactivamos el botÛn para que no se vuelva a usar mientras se
             //define la busqueda de la pareja
             arregloBotones[numeroBoton - 1].Enabled = false;
 
@@ -129,12 +129,12 @@ namespace EncuentraParejasNumeros
             if (miLogica.ParejaParteB != 0)
             {
                 //Se visualiza en un cuadro de dialogo que se ha encontrado una pareja
-                MessageBox.Show(resultadoAnalisis, "Resultado del An√°lisis", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(resultadoAnalisis, "Resultado del An·lisis", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 miLogica.ActualizaIntentos();
             }
 
-            //Aqui actualizamos la informaci√≥n de los usuarios
+            //Aqui actualizamos la informaciÛn de los usuarios
             textoTotalIntentos.Text = miLogica.TotalIntentos.ToString();
             textoParejasEncontradas.Text = miLogica.TotalParejas.ToString();
 
@@ -143,12 +143,17 @@ namespace EncuentraParejasNumeros
 
             if (victoriaAlcanzada)
             {
-                MessageBox.Show("Victoria Alcanzada!");
+                MessageBox.Show("Se ha identificado todas las parejas",
+                                "Victoria Alcanzada!",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+
+                textoEstado.Text = "Juego finalizado. Reinicia para jugar de nuevo.";
             }
         }
-        
-        //Este m√©todo se encarga de volver a esconder aquellos valores que no han sido
-        //relacionados en parejas, colocando en el bot√≥n una X
+
+        //Este mÈtodo se encarga de volver a esconder aquellos valores que no han sido
+        //relacionados en parejas, colocando en el botÛn una X
         private void ValidaEtiquetasBotones()
         {
             int datoValor;
@@ -158,12 +163,12 @@ namespace EncuentraParejasNumeros
             {
                 datoValor = miLogica.ArregloValores[i];
 
-                //Se identifica en el arreglo de valoresEncontrados si ya se identific√≥ la pareja
+                //Se identifica en el arreglo de valoresEncontrados si ya se identificÛ la pareja
                 if (miLogica.ValoresEncontrados[datoValor - 1] == false)
                 {
-                    //Si el valor no fue encontrado, el bot√≥n se coloca con X
+                    //Si el valor no fue encontrado, el botÛn se coloca con X
                     arregloBotones[i].Text = "X";
-                    arregloBotones[i].Enabled = true; //se habilita nuevamente el bot√≥n
+                    arregloBotones[i].Enabled = true; //se habilita nuevamente el botÛn
                 }
             }
 
