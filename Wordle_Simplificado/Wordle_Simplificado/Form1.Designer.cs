@@ -164,7 +164,7 @@
             // activarColoresAltoContrasteToolStripMenuItem
             // 
             this.activarColoresAltoContrasteToolStripMenuItem.Name = "activarColoresAltoContrasteToolStripMenuItem";
-            this.activarColoresAltoContrasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.activarColoresAltoContrasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.C)));
             this.activarColoresAltoContrasteToolStripMenuItem.Size = new System.Drawing.Size(301, 22);
             this.activarColoresAltoContrasteToolStripMenuItem.Text = "Activar colores alto contraste";
@@ -747,4 +747,3 @@
         private System.Windows.Forms.Label lblLetra_intento5_posicion1;
     }
 }
-

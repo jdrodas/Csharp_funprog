@@ -1,4 +1,4 @@
-Ôªøusing System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,15 +40,15 @@ namespace Wordle_Simplificado
         /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Inicializamos la l√≥gica del juego
+            //Inicializamos la lÛgica del juego
             InicializaLogicaJuego();
 
-            //Inicializamos la presentaci√≥n
+            //Inicializamos la presentaciÛn
             InicializaPresentacionJuego();
         }
 
         /// <summary>
-        /// Inicializa los atributos de la l√≥gica antes del juego
+        /// Inicializa los atributos de la lÛgica antes del juego
         /// </summary>
         private void InicializaLogicaJuego()
         {
@@ -63,12 +63,12 @@ namespace Wordle_Simplificado
             palabraBuscada =
                 diccionarioPalabras[aleatorio.Next(diccionarioPalabras.Length)];
 
-            //Inicializamos el resultado de la validaci√≥n de letras
+            //Inicializamos el resultado de la validaciÛn de letras
             evaluacionLetras = "-----".ToCharArray();
         }
 
         /// <summary>
-        /// Asigna las palabras que ser√°n utilizadas en el juego
+        /// Asigna las palabras que ser·n utilizadas en el juego
         /// </summary>
         private void InicializaDiccionario()
         {
@@ -120,7 +120,7 @@ namespace Wordle_Simplificado
             //Asignamos los colores para utilizar en el juego
             activadoAltoContraste = false;
             activarColoresAltoContrasteToolStripMenuItem.Checked = false;
-            InicializaColoresFondo();            
+            InicializaColoresFondo();
         }
 
         /// <summary>
@@ -136,7 +136,7 @@ namespace Wordle_Simplificado
         }
 
         /// <summary>
-        /// Cambia los colores de fondo de las casillas dependiendo de la opci√≥n de alto contraste
+        /// Cambia los colores de fondo de las casillas dependiendo de la opciÛn de alto contraste
         /// </summary>
         private void CambiaColorAltoContraste()
         {
@@ -200,7 +200,7 @@ namespace Wordle_Simplificado
         }
 
         /// <summary>
-        /// Evento asociado al bot√≥n EvaluaPalabra
+        /// Evento asociado al botÛn EvaluaPalabra
         /// </summary>
         private void BtnEvaluaPalabra_Click(object sender, EventArgs e)
         {
@@ -233,7 +233,7 @@ namespace Wordle_Simplificado
                     {
                         MessageBox.Show($"Fuiste derrotado! la palabra era {palabraBuscada}");
 
-                        //Bloqueamos el textbox de palabra ingresada y bot√≥n de evaluaci√≥n pues el juego termin√≥
+                        //Bloqueamos el textbox de palabra ingresada y botÛn de evaluaciÛn pues el juego terminÛ
                         txtPalabraIngresada.Enabled = false;
                         btnEvaluaPalabra.Enabled = false;
                     }
@@ -243,8 +243,8 @@ namespace Wordle_Simplificado
                         if (resultadoValidacion == "VVVVV")
                         {
                             MessageBox.Show($"Lograte la victoria! encontraste la palabra {palabraBuscada} en {intentoActual} intentos");
-                            
-                            //Bloqueamos el textbox de palabra ingresada y bot√≥n de evaluaci√≥n pues el juego termin√≥
+
+                            //Bloqueamos el textbox de palabra ingresada y botÛn de evaluaciÛn pues el juego terminÛ
                             txtPalabraIngresada.Enabled = false;
                             btnEvaluaPalabra.Enabled = false;
                         }
@@ -253,7 +253,7 @@ namespace Wordle_Simplificado
             }
             else
             {
-                MessageBox.Show("Palabra con longitud inv√°lida!");
+                MessageBox.Show("Palabra con longitud inv·lida!");
             }
 
             //Finalmente, reiniciamos el textbox de la palabra ingresada y le asignamos el foco
@@ -263,7 +263,7 @@ namespace Wordle_Simplificado
 
         /// <summary>
         /// Compara la palabra buscada con la ingresada y genera
-        /// un resultado de evaluaci√≥n
+        /// un resultado de evaluaciÛn
         /// </summary>
         /// <param name="palabraIngresada"></param>
         private void EvaluaPalabraIngresada(string palabraIngresada)
@@ -272,14 +272,14 @@ namespace Wordle_Simplificado
             char[] letrasPalabraBuscada = palabraBuscada.ToCharArray();
             char[] letrasPalabraIngresada = palabraIngresada.ToCharArray();
 
-            //Inicializamos el resultado de la validaci√≥n de letras
+            //Inicializamos el resultado de la validaciÛn de letras
             evaluacionLetras = "-----".ToCharArray();
 
             /*
-            Como se hace la validaci√≥n?
-            - Si no est√° en ninguna parte, se deja en "-"
-            - Si est√° en la posici√≥n correcta, se coloca "V"
-            - Si est√° pero en la posici√≥n equivocada, se coloca "A"
+            Como se hace la validaciÛn?
+            - Si no est· en ninguna parte, se deja en "-"
+            - Si est· en la posiciÛn correcta, se coloca "V"
+            - Si est· pero en la posiciÛn equivocada, se coloca "A"
              */
 
             for (int i = 0; i < letrasPalabraBuscada.Length; i++)
@@ -288,17 +288,17 @@ namespace Wordle_Simplificado
                 {
                     if (letrasPalabraBuscada[i] == letrasPalabraIngresada[j])
                     {
-                        //Posici√≥n coincide en la posici√≥n correcta y
-                        //no se hab√≠a identificado antes, V
+                        //PosiciÛn coincide en la posiciÛn correcta y
+                        //no se habÌa identificado antes, V
                         if (i == j && evaluacionLetras[j] == '-')
                             evaluacionLetras[j] = 'V';
 
-                        //Posici√≥n no coincide, pero est√° y
-                        //no se hab√≠a identificado antes, A
+                        //PosiciÛn no coincide, pero est· y
+                        //no se habÌa identificado antes, A
                         if (i != j && evaluacionLetras[j] == '-')
                             evaluacionLetras[j] = 'A';
 
-                        //Posici√≥n coincide y previamente se hab√≠a identificado como A, V
+                        //PosiciÛn coincide y previamente se habÌa identificado como A, V
                         if (i == j && evaluacionLetras[j] == 'A')
                             evaluacionLetras[j] = 'V';
                     }
@@ -318,7 +318,7 @@ namespace Wordle_Simplificado
         }
 
         /// <summary>
-        /// Evento asociado a la opci√≥n de men√∫ para el cambio de colores
+        /// Evento asociado a la opciÛn de men˙ para el cambio de colores
         /// </summary>
         private void ActivarColoresAltoContrasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -326,7 +326,7 @@ namespace Wordle_Simplificado
         }
 
         /// <summary>
-        /// Evento asociado a la opci√≥n de men√∫ para salir de la aplicaci√≥n
+        /// Evento asociado a la opciÛn de men˙ para salir de la aplicaciÛn
         /// </summary>
         private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -334,19 +334,19 @@ namespace Wordle_Simplificado
         }
 
         /// <summary>
-        /// Evento asociado a la opci√≥n de menu de nuevo juego
+        /// Evento asociado a la opciÛn de menu de nuevo juego
         /// </summary>
         private void NuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Inicializamos la l√≥gica del juego
+            //Inicializamos la lÛgica del juego
             InicializaLogicaJuego();
 
-            //Inicializamos la presentaci√≥n
+            //Inicializamos la presentaciÛn
             InicializaPresentacionJuego();
         }
 
         /// <summary>
-        /// Inicializa la matriz de casillas que se utilizar√° para acceder a los elementos
+        /// Inicializa la matriz de casillas que se utilizar· para acceder a los elementos
         /// </summary>
         private void InicializaMatrizCasillas()
         {
@@ -396,7 +396,7 @@ namespace Wordle_Simplificado
             matrizCasillas[5, 4] = lblLetra_intento6_posicion5;
 
             //Inicializamos todas las casillas, asignando para cada una de ellas
-            //un color neutro y un contenido vac√≠o
+            //un color neutro y un contenido vacÌo
             foreach (Label unaCasilla in matrizCasillas)
             {
                 unaCasilla.Text = "";
@@ -409,7 +409,7 @@ namespace Wordle_Simplificado
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             // Si se presiona la tecla "Enter":
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
                 ValidacionPalabraIngresada();
         }
 
@@ -457,7 +457,7 @@ namespace Wordle_Simplificado
         private bool VerificaLetrasValidas(string palabraIngresada)
         {
             bool resultado = true;
-            Regex patron = new Regex("[a-zA-Z√±√ë]");
+            Regex patron = new Regex("[a-zA-ZÒ—]");
             char[] lasLetras = palabraIngresada.ToCharArray();
 
             foreach (char unaLetra in lasLetras)
