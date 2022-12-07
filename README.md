@@ -327,37 +327,40 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 ### 6. Interfaces Graficas con Windows Forms
 
 
->### [SimRadio](https://github.com/jdrodas/Csharp_funprog/tree/master/SimRadio)
->>- Programa de introducción a las interfaces gráficas de usuario en Windows Forms
->>- Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
+### [SimRadio](https://github.com/jdrodas/Csharp_funprog/tree/master/SimRadio)
+- Programa de introducción a las interfaces gráficas de usuario en Windows Forms
+- Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
+- Actualizado a .NET 7
 
->### [AhorcaditoSimple](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoSimple)
->>- Implementación de una aplicación para adivinar una palabra de 10 letras.
->>- Cuenta los fallos y los aciertos 
->>- Implementación en Windows Forms.
+### [AhorcaditoSimple](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoSimple)
+- Implementación de una aplicación para adivinar una palabra de 10 letras.
+- Cuenta los fallos y los aciertos 
+- Implementación en Windows Forms.
+- Actualizado a .NET 7
 
->### [AhorcaditoGrafico](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoGrafico)
->>- Implementación de una aplicación para adivinar una palabra de 10 letras.
->>- Cuenta los fallos y los aciertos y dibuja el personaje a medida que se incrementa los fallos
->>- Implementación en Windows Forms con lógica del juego en clase independiente.
+### [AhorcaditoGrafico](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoGrafico)
+- Implementación de una aplicación para adivinar una palabra de 10 letras.
+- Cuenta los fallos y los aciertos y dibuja el personaje a medida que se incrementa los fallos
+- Implementación en Windows Forms con lógica del juego en clase independiente.
+- Actualizado a .NET 7
 
->### [EncuentraParejasNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/EncuentraParejasNumeros)
->>- Implementación en Windows Forms con lógica y visualización en una sola clase.
->>- Implementación de una aplicación para encontrar 8 parejas de números.
->>- Cuenta los intentos realizados así como las parejas encontradas.
+### [EncuentraParejasNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/EncuentraParejasNumeros)
+- Implementación en Windows Forms con lógica y visualización en una sola clase.
+- Implementación de una aplicación para encontrar 8 parejas de números.
+- Cuenta los intentos realizados así como las parejas encontradas.
+- Actualizado a .NET 7
+- 
+### [OrdenaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/OrdenaNumeros)
+- Implementación en Windows Forms con lógica y visualización en clases independientes.
+- Implementación de una aplicación para ordernar 15 numeros.
+- Actualizado a .NET 7
 
->### [OrdenaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/OrdenaNumeros)
->>- Implementación en Windows Forms con lógica y visualización en clases independientes.
->>- Implementación de una aplicación para ordernar 15 numeros.
+### [Wordle_Simplificado](https://github.com/jdrodas/Csharp_funprog/tree/master/Wordle_Simplificado)
+- Implementación en Windows Forms con lógica y visualización en una sola clase.
+- Implementación de una aplicación para encontrar una palabra de 5 letras antes de 6 intentos.
+- Implementa selector de colores normales y de alto contraste.
+- Actualizado a .NET 7
 
-
->### [Wordle_Simplificado](https://github.com/jdrodas/Csharp_funprog/tree/master/Wordle_Simplificado)
->>- Implementación en Windows Forms con lógica y visualización en una sola clase.
->>- Implementación de una aplicación para encontrar una palabra de 5 letras antes de 6 intentos.
->>- Implementa selector de colores normales y de alto contraste.
-
-
-# ---------------------------------------
 
 ## Soluciones a examenes anteriores
 
