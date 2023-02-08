@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01_ColonizacionSolar", "Ex01_ColonizacionSolar\Ex01_ColonizacionSolar.csproj", "{77578C4E-7FF2-41DB-AE65-732CCF1876FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77578C4E-7FF2-41DB-AE65-732CCF1876FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77578C4E-7FF2-41DB-AE65-732CCF1876FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77578C4E-7FF2-41DB-AE65-732CCF1876FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77578C4E-7FF2-41DB-AE65-732CCF1876FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9AC5608-2CF2-4042-B8FD-D0F8F6451EBB}
+	EndGlobalSection
+EndGlobal
