@@ -372,8 +372,9 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 >>### [ex01_DungeonCraft](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_DungeonCraft)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Analizador de Logros - DungeonCraft. Ejercicio resuelto.
 
->>### [ex01_GravityFalls](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_GravityFalls)
+>>### [Ex01_GravityFalls](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_GravityFalls)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Gravity Falls – Gestión de la cabaña. Ejercicio resuelto.
+>>- Actualizado a .NET 7
 
 >>### [ex01_MaltratoMorty](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_MaltratoMorty)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Rick & Morty – Evaluación de maltratos. Ejercicio resuelto.
