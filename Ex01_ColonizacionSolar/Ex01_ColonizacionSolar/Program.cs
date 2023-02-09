@@ -40,7 +40,7 @@ namespace Ex01_ColonizacionSolar
             //Aqui declaramos las variables que utilizaremos
             int totalMarte = 0, totalTitan = 0, totalCinturon = 0;
             int totalLanzamientos = 1;
-            string destino = "";
+            string destino;
 
             //Implementamos el ciclo de control para contar los 12 lanzamientos
             while (totalLanzamientos <= 12)
@@ -87,8 +87,6 @@ namespace Ex01_ColonizacionSolar
             //Si todos fueron iguales
             if (totalCinturon == totalTitan && totalTitan == totalMarte)
                 Console.WriteLine("Todos los destinos tuvieron la misma cantidad de lanzamientos!");
-
-
         }
     }
 }

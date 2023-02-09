@@ -390,6 +390,7 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 
 >>### [ex01_ColonizacionSolar](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_ColonizacionSolar)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Colonización Sistema Solar. Ejercicio resuelto.
+>>- Actualizado a .NET 7
 
 >>### [ex01_secuenciaADN](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_secuenciaADN)
 >>- Tema de examen 01: Condicionales y Ciclos de control. Procesamiento de secuencias de ADN. Ejercicio resuelto.
