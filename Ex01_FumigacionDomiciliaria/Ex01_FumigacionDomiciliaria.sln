@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01_FumigacionDomiciliaria", "Ex01_FumigacionDomiciliaria\Ex01_FumigacionDomiciliaria.csproj", "{346FABC4-3B45-4449-943B-1928B88376E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{346FABC4-3B45-4449-943B-1928B88376E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346FABC4-3B45-4449-943B-1928B88376E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346FABC4-3B45-4449-943B-1928B88376E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346FABC4-3B45-4449-943B-1928B88376E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA50868F-C07D-494D-9284-F17B293637D6}
+	EndGlobalSection
+EndGlobal
