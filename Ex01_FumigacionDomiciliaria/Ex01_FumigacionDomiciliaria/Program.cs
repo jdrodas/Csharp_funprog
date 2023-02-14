@@ -150,7 +150,7 @@ namespace Ex01_FumigacionDomiciliaria
                     Console.WriteLine($"{elError.Message}");
                 }
             }
-            while (datoIngresadoCorrecto == false);
+            while (!datoIngresadoCorrecto); // Negar el valor, antecediéndolo del símbolo "!"
 
 
             //Calculamos el total de casas fumigadas
