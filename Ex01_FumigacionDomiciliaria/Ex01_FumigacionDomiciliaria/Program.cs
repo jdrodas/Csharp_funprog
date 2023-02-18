@@ -56,138 +56,147 @@ namespace Ex01_FumigacionDomiciliaria
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static public void Main(string[] args)
         {
-            Console.WriteLine("Programa para registrar acciones de fumigación en conjuntos residenciales");
-            Console.WriteLine("Se fumigarán casas por roedores, insectos y hongos");
+            Console.WriteLine("Programa para llevar el control de hogares fumigados");
+            Console.WriteLine("Se fumigarán contra Hongos, Insectos y Roedores");
 
-            float casasSinFumigar = 0f, casasConRoedores = 0f, casasConInsectos = 0f, casasConHongos = 0f;
-            bool datoIngresadoCorrecto;
+            float hogaresHongos = 0, hogaresInsectos = 0, hogaresRoedores = 0, hogaresSinFumigar = 0;
+            bool esDatoCorrecto = false;
 
-            // Ingreso dato casas con roedores
-            datoIngresadoCorrecto = false;
-            do 
-            {
-                try
-                {
-                    Console.Write("\nCuántas casas se fumigaron contra roedores? ");
-                    casasConRoedores = float.Parse(Console.ReadLine()!);
-
-                    if (casasConRoedores < 0)
-                        Console.WriteLine("La cantidad de casas no puede ser negativa. Intenta nuevamente.");
-                    else
-                        datoIngresadoCorrecto = true;
-                }
-                catch (FormatException elError)
-                {
-                    Console.WriteLine("El dato ingresado no está en el formato válido. Intenta nuevamente.");
-                    Console.WriteLine($"{elError.Message}");
-                }
-            }
-            while(datoIngresadoCorrecto == false);
-
-            // Ingreso dato casas con insectos
-            datoIngresadoCorrecto = false;
+            //Aqui leemos los hogares fumigados contra hongos
             do
             {
                 try
                 {
-                    Console.Write("\nCuántas casas se fumigaron contra insectos? ");
-                    casasConInsectos = float.Parse(Console.ReadLine()!);
+                    Console.Write("\nIngresa la cantidad de hogares fumigados contra hongos: ");
+                    hogaresHongos = float.Parse(Console.ReadLine()!);
 
-                    if (casasConInsectos < 0)
-                        Console.WriteLine("La cantidad de casas no puede ser negativa. Intenta nuevamente.");
+                    if (hogaresHongos >= 0)
+                        esDatoCorrecto = true;
                     else
-                        datoIngresadoCorrecto = true;
+                        Console.WriteLine("La cantidad debe ser entera mayor que cero. Intenta nuevamente");
+
                 }
                 catch (FormatException elError)
                 {
-                    Console.WriteLine("El dato ingresado no está en el formato válido. Intenta nuevamente.");
+                    Console.WriteLine("El dato ingresado no tiene el formato esperado. Intenta nuevamente");
                     Console.WriteLine($"{elError.Message}");
                 }
             }
-            while (datoIngresadoCorrecto == false);
+            while (esDatoCorrecto == false);
 
-            // Ingreso dato casas con hongos
-            datoIngresadoCorrecto = false;
+            //Aqui leemos los hogares fumigados contra insectos
+            esDatoCorrecto = false;
             do
             {
                 try
                 {
-                    Console.Write("\nCuántas casas se fumigaron contra hongos? ");
-                    casasConHongos = float.Parse(Console.ReadLine()!);
+                    Console.Write("\nIngresa la cantidad de hogares fumigados contra insectos: ");
+                    hogaresInsectos = float.Parse(Console.ReadLine()!);
 
-                    if (casasConHongos < 0)
-                        Console.WriteLine("La cantidad de casas no puede ser negativa. Intenta nuevamente.");
+                    if (hogaresInsectos >= 0)
+                        esDatoCorrecto = true;
                     else
-                        datoIngresadoCorrecto = true;
+                        Console.WriteLine("La cantidad debe ser entero mayor o igual a cero. Intenta nuevamente");
+
                 }
                 catch (FormatException elError)
                 {
-                    Console.WriteLine("El dato ingresado no está en el formato válido. Intenta nuevamente.");
+                    Console.WriteLine("El dato ingresado no tiene el formato esperado. Intenta nuevamente");
                     Console.WriteLine($"{elError.Message}");
                 }
             }
-            while (datoIngresadoCorrecto == false);
+            while (esDatoCorrecto == false);
 
-            // Ingreso dato casas con hongos
-            datoIngresadoCorrecto = false;
+            //Aqui leemos los hogares fumigados contra roedores
+            esDatoCorrecto = false;
             do
             {
                 try
                 {
-                    Console.Write("\nCuántas casas NO se fumigaron? ");
-                    casasSinFumigar = float.Parse(Console.ReadLine()!);
+                    Console.Write("\nIngresa la cantidad de hogares fumigados contra roedores: ");
+                    hogaresRoedores = float.Parse(Console.ReadLine()!);
 
-                    if (casasSinFumigar < 0)
-                        Console.WriteLine("La cantidad de casas no puede ser negativa. Intenta nuevamente.");
+                    if (hogaresRoedores >= 0)
+                        esDatoCorrecto = true;
                     else
-                        datoIngresadoCorrecto = true;
+                        Console.WriteLine("La cantidad debe ser entero mayor o igual a cero. Intenta nuevamente");
+
                 }
                 catch (FormatException elError)
                 {
-                    Console.WriteLine("El dato ingresado no está en el formato válido. Intenta nuevamente.");
+                    Console.WriteLine("El dato ingresado no tiene el formato esperado. Intenta nuevamente");
                     Console.WriteLine($"{elError.Message}");
                 }
             }
-            while (!datoIngresadoCorrecto); // Negar el valor, antecediéndolo del símbolo "!"
+            while (esDatoCorrecto == false);
 
+            //Aqui leemos los hogares que no fueron fumigados
+            esDatoCorrecto = false;
+            do
+            {
+                try
+                {
+                    Console.Write("\nIngresa la cantidad de no fueron fumigados: ");
+                    hogaresSinFumigar = float.Parse(Console.ReadLine()!);
 
-            //Calculamos el total de casas fumigadas
-            float totalCasasVisitadas = casasConHongos +
-                                        casasConHongos +
-                                        casasConRoedores +
-                                        casasSinFumigar;
+                    if (hogaresSinFumigar >= 0)
+                        esDatoCorrecto = true;
+                    else
+                        Console.WriteLine("La cantidad debe ser entero mayor o igual a cero. Intenta nuevamente");
 
-            //Aqui calculamos porcentajes.
-            float porcFumHongos = (casasConHongos / totalCasasVisitadas) * 100;
-            float porcFumInsectos = (casasConInsectos / totalCasasVisitadas) * 100;
-            float porcFumRoedores = (casasConRoedores / totalCasasVisitadas) * 100;
-            float porcNoFumigadas = (casasSinFumigar / totalCasasVisitadas) * 100;
+                }
+                catch (FormatException elError)
+                {
+                    Console.WriteLine("El dato ingresado no tiene el formato esperado. Intenta nuevamente");
+                    Console.WriteLine($"{elError.Message}");
+                }
+            }
+            while (esDatoCorrecto == false);
 
-            //Aqui visualizamos resultados:
+            float totalHogares = hogaresHongos + hogaresInsectos + hogaresRoedores + hogaresSinFumigar;
+            float totalHogaresFumigados = hogaresHongos + hogaresInsectos + hogaresRoedores;
 
             Console.WriteLine("\n *** Resultados del proceso de fumigación ***");
 
-            Console.WriteLine($"\nSe fumigaron {casasConRoedores} casas contra roedores, " +
-                $"equivalente a {porcFumRoedores.ToString("00.00")}%");
-
-            Console.WriteLine($"\nSe fumigaron {casasConInsectos} casas contra insectos, " +
-                $"equivalente a {porcFumInsectos.ToString("00.00")}%");
-
-            Console.WriteLine($"\nSe fumigaron {casasConHongos} casas contra hongos, " +
-                $"equivalente a {porcFumHongos.ToString("00.00")}%");
-
-            Console.WriteLine($"\nNO se fumigaron {casasSinFumigar} casas, " +
-                $"equivalente a {porcNoFumigadas.ToString("00.00")}%");
-
-            //Escribimos el resultado de la evaluación de la actividad de fumigación:
-            if (casasSinFumigar == 0)
-                Console.WriteLine("\nFumigación exitosa! - la totalidad de los hogares fueron fumigados.");
+            if (totalHogares <= 0)
+            {
+                Console.WriteLine("No se fumigó ningún hogar para ninguna plaga.");
+            }
             else
-                Console.WriteLine("\nFumigación incompleta! - hay hogares que no se fumigaron.");
+            {
+                //Aqui se calculan los porcentajes
+                float porcHongos = (hogaresHongos / totalHogares) * 100;
+                float porcInsectos = (hogaresInsectos / totalHogares) * 100;
+                float porcRoedores = (hogaresRoedores / totalHogares) * 100;
+                float porcSinFumigar = (hogaresSinFumigar / totalHogares) * 100;
 
+                Console.WriteLine($"- Del total de hogares que fue {totalHogares}, " +
+                    $"se fumigaron {totalHogaresFumigados}.");
 
+                Console.WriteLine($"Para hongos se fumigaron {hogaresHongos} hogares " +
+                    $"que corresponde a {porcHongos.ToString("00.00")}%");
+
+                Console.WriteLine($"Para insectos se fumigaron {hogaresInsectos} hogares " +
+                    $"que corresponde a {porcInsectos.ToString("00.00")}%");
+
+                Console.WriteLine($"Para roedores se fumigaron {hogaresRoedores} hogares " +
+                    $"que corresponde a {porcRoedores.ToString("00.00")}%");
+
+                if (hogaresSinFumigar > 0)
+                {
+                    Console.WriteLine($"\nNo se fumigaron {hogaresSinFumigar} " +
+                    $"hogares que corresponde al {porcSinFumigar.ToString("00.00")}%");
+
+                    Console.WriteLine("FUMIGACIÓN INCOMPLETA: Hay hogares sin fumigar");
+                }
+                else
+                {
+                    Console.WriteLine("\nFUMIGACIÓN EXITOSA: Todos los hogares fueron fumigados");
+                }
+            }
         }
     }
+}
 }
