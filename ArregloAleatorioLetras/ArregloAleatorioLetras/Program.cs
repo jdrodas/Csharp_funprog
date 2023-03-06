@@ -22,32 +22,69 @@ namespace ArregloAleatorioLetras
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Programa para generar un arreglo de 500 letras de manera aleatoria");
+            Console.WriteLine("Programa para demostrar funciones y Arreglos");
+            Console.WriteLine("Se generará un arreglo de 500 letras de manera aleatoria");
+
+            string abecedario = "abcdefghijklmnñopqrstuvwxyz";
 
             //este arreglo será la base para generar los valores aleatorios
-            char[] abecedario = "abcdefghijklmnñopqrstuvwxyz".ToCharArray();
+            char[] arregloAbecedario = abecedario.ToCharArray();
 
-            char[] arreglo = new char[500];
+            Console.WriteLine($"El abecedario que usaremos es {abecedario} y tiene longitud de {abecedario.Length} caracteres.");
+            Console.WriteLine($"El arreglo de caracteres tiene una longitud de {arregloAbecedario.Length}");
+
+            //Aqui declaramos un arreglo de 500 posiciones de caracteres
+            //Y los llenamos de manera aleatoria con las letras del abecedario
+            char[] bolsaLetras = new char[500];
 
             Random aleatorio = new Random();
 
             //llenamos el arregloAleatorio con valores del arreglo base
-            for (int i = 0; i < arreglo.Length; i++)
-                arreglo[i] = abecedario[aleatorio.Next(abecedario.Length)];
+
+            for (int i = 0; i < bolsaLetras.Length; i++)
+                bolsaLetras[i] = arregloAbecedario[aleatorio.Next(arregloAbecedario.Length)];
 
             //Aqui visualizamos el contenido del arreglo
-            VisualizaArreglo(arreglo);
+            VisualizaArreglo(bolsaLetras);
 
             //Aqui generamos totales e información sobr el arreglo
-            TotalizaLetras(arreglo, abecedario);
+            TotalizaLetras(bolsaLetras, arregloAbecedario);
+
+            //Aqui ordenamos el arreglo de varias maneras
+            OrganizaArregloPrimerMetodo(bolsaLetras);
+
+            OrganizaArregloSegundoMetodo(bolsaLetras);
+
+            OrganizaArregloTercerMetodo(bolsaLetras);
         }
+
+        /// <summary>
+        /// Visualiza el arreglo de caracteres
+        /// </summary>
+        /// <param name="arreglo"></param>
+        static void VisualizaArreglo(char[] arregloDeLetras)
+        {
+            //aqui visualizamos las letras en el arreglo
+            Console.WriteLine("Las letras en el arreglo son: \n");
+
+            for (int i = 0; i < arregloDeLetras.Length; i++)
+            {
+                Console.Write(arregloDeLetras[i] + " ");
+
+                if ((i + 1) % 25 == 0) //Colocamos 25 elementos por línea
+                    Console.WriteLine();
+            }
+
+            Console.WriteLine();
+        }
+
 
         /// <summary>
         /// Función para totalizar y visualizar cuantas hay por cada letra del abecedario
         /// </summary>
         /// <param name="arreglo">El arreglo con las letras aleatorias</param>
         /// <param name="abecedario">el patrón de las letras con las que se genera el arreglo</param>
-        static void TotalizaLetras(char[] arreglo, char[] abecedario)
+        static void TotalizaLetras(char[] arregloDeLetras, char[] abecedario)
         {
             //aqui declaramos el arreglo de totales
             int[] totalesLetras = new int[abecedario.Length];
@@ -57,9 +94,9 @@ namespace ArregloAleatorioLetras
                 totalesLetras[i] = 0;
 
             //aqui contamos por cada letra
-            for (int i = 0; i < arreglo.Length; i++)
+            for (int i = 0; i < arregloDeLetras.Length; i++)
                 for (int j = 0; j < abecedario.Length; j++)
-                    if (arreglo[i] == abecedario[j])
+                    if (arregloDeLetras[i] == abecedario[j])
                         totalesLetras[j]++;
 
             //Finalmente visualizamos los totales
@@ -70,20 +107,67 @@ namespace ArregloAleatorioLetras
 
         }
 
-        static void VisualizaArreglo(char[] arreglo)
+        /// <summary>
+        /// Organiza un arreglo de letras utilizando un algoritmo básico
+        /// </summary>
+        /// <param name="arregloDeLetras"></param>
+        static void OrganizaArregloPrimerMetodo(char[] arregloDeLetras)
         {
-            //aqui visualizamos las letras en el arreglo
-            Console.WriteLine("Las letras en el arreglo son: \n");
+            //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
+            char[] bolsaResultado = arregloDeLetras;
 
-            for (int i = 0; i < arreglo.Length; i++)
+            bool seHizoCambioUbicacion = false;
+            char letraTemporal;
+
+            do
             {
-                Console.Write(arreglo[i] + " ");
-
-                if ((i + 1) % 25 == 0) //Colocamos 25 elementos por línea
-                    Console.WriteLine();
+                seHizoCambioUbicacion = false;
+                for (int i = 0; i < bolsaResultado.Length - 1; i++)
+                {
+                    if (bolsaResultado[i] > bolsaResultado[i + 1])
+                    {
+                        letraTemporal = bolsaResultado[i + 1];
+                        bolsaResultado[i + 1] = bolsaResultado[i];
+                        bolsaResultado[i] = letraTemporal;
+                        seHizoCambioUbicacion = true;
+                    }
+                }
             }
+            while (seHizoCambioUbicacion);
 
-            Console.WriteLine();
+            //Finalmente visualizamos el arreglo organizado
+            Console.WriteLine("\nEl arreglo organizado utilizando un algoritmo básico");
+            VisualizaArreglo(bolsaResultado);
+        }
+
+        /// <summary>
+        /// Organiza un arreglo de letras utilizando la función SORT
+        /// </summary>
+        /// <param name="arregloDeLetras"></param>
+        static void OrganizaArregloSegundoMetodo(char[] arregloDeLetras)
+        {
+            //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
+            char[] bolsaResultado = arregloDeLetras;
+
+            Array.Sort(bolsaResultado);
+
+            //Finalmente visualizamos el arreglo organizado
+            Console.WriteLine("\nEl arreglo organizado utilizando la funcion SORT");
+            VisualizaArreglo(bolsaResultado);
+        }
+
+        /// <summary>
+        /// Organiza un arreglo de letras utilizando la función OrderBy
+        /// </summary>
+        /// <param name="arregloDeLetras"></param>
+        static void OrganizaArregloTercerMetodo(char[] arregloDeLetras)
+        {
+            //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
+            char[] bolsaResultado = arregloDeLetras.OrderBy(c => c).ToArray();
+
+            //Finalmente visualizamos el arreglo organizado
+            Console.WriteLine("\nEl arreglo organizado utilizando la funcion OrderBy");
+            VisualizaArreglo(bolsaResultado);
         }
     }
 }
