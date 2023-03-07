@@ -56,12 +56,14 @@ namespace ArregloAleatorioLetras
             OrganizaArregloSegundoMetodo(bolsaLetras);
 
             OrganizaArregloTercerMetodo(bolsaLetras);
+
+            OrganizaArregloCuartoMetodo(bolsaLetras,arregloAbecedario);
         }
 
         /// <summary>
         /// Visualiza el arreglo de caracteres
         /// </summary>
-        /// <param name="arreglo"></param>
+        /// <param name="arregloDeLetras">El arreglo de letras</param>
         static void VisualizaArreglo(char[] arregloDeLetras)
         {
             //aqui visualizamos las letras en el arreglo
@@ -110,7 +112,7 @@ namespace ArregloAleatorioLetras
         /// <summary>
         /// Organiza un arreglo de letras utilizando un algoritmo básico
         /// </summary>
-        /// <param name="arregloDeLetras"></param>
+        /// <param name="arregloDeLetras">El arreglo de letras</param>
         static void OrganizaArregloPrimerMetodo(char[] arregloDeLetras)
         {
             //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
@@ -143,7 +145,7 @@ namespace ArregloAleatorioLetras
         /// <summary>
         /// Organiza un arreglo de letras utilizando la función SORT
         /// </summary>
-        /// <param name="arregloDeLetras"></param>
+        /// <param name="arregloDeLetras">El arreglo de letras</param>
         static void OrganizaArregloSegundoMetodo(char[] arregloDeLetras)
         {
             //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
@@ -159,7 +161,7 @@ namespace ArregloAleatorioLetras
         /// <summary>
         /// Organiza un arreglo de letras utilizando la función OrderBy
         /// </summary>
-        /// <param name="arregloDeLetras"></param>
+        /// <param name="arregloDeLetras">El arreglo de letras</param>
         static void OrganizaArregloTercerMetodo(char[] arregloDeLetras)
         {
             //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
@@ -168,6 +170,38 @@ namespace ArregloAleatorioLetras
             //Finalmente visualizamos el arreglo organizado
             Console.WriteLine("\nEl arreglo organizado utilizando la funcion OrderBy");
             VisualizaArreglo(bolsaResultado);
+        }
+
+        /// <summary>
+        /// Organiza un arreglo de letras utilizando como guía el orden del abecedario
+        /// </summary>
+        /// <param name="arregloDeLetras">El arreglo de letras</param>
+        /// <param name="arregloAbecedario">El abecedario representado como un arreglo</param>
+        static void OrganizaArregloCuartoMetodo(char[] arregloDeLetras, char[] arregloAbecedario)
+        {
+            //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
+            char[] bolsaResultado = new char[arregloDeLetras.Length];
+            int posicionActual = 0;
+
+            //Nos vamos recorriendo el arreglo del abecedario
+            for (int i = 0; i < arregloAbecedario.Length; i++)
+            {
+                //recorremos el arreglo de letras comparando cada una de ellas con la actual del abecedario
+                for (int j = 0; j < arregloDeLetras.Length; j++)
+                {
+                    //Si son iguales, las copiamos al arreglo y avanzamos a la siguiente posicion
+                    if (arregloAbecedario[i] == arregloDeLetras[j])
+                    {
+                        bolsaResultado[posicionActual] = arregloDeLetras[j];
+                        posicionActual++;
+                    }
+                }
+            }
+
+            //Finalmente visualizamos el arreglo organizado
+            Console.WriteLine("\nEl arreglo organizado utilizando como guía el orden del abecedario:");
+            VisualizaArreglo(bolsaResultado);
+
         }
     }
 }
