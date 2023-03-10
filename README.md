@@ -252,6 +252,14 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
     4 celebridades basado en sus ingresos y los rangos definidos para asignar dicha tasa
 - Actualizado a .NET 7
 
+### [VacunacionEscolar](https://github.com/jdrodas/Csharp_funprog/tree/master/VacunacionEscolar)
+- Crear una aplicación que utilizando funciones y arreglos, Vamos a identificar los totales
+- de vacunación escolar y calcular cual es el porcentaje para cada medicamento.
+- Actualizado a .NET 7
+
+
+
+
 ### 5. Principios de Programación Orientada a Objetos
 
 ### [EjemploObjetos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploObjetos)
