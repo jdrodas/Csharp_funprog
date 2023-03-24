@@ -67,7 +67,7 @@ namespace ArregloAleatorioLetras
         static void VisualizaArreglo(char[] arregloDeLetras)
         {
             //aqui visualizamos las letras en el arreglo
-            Console.WriteLine("Las letras en el arreglo son: \n");
+            Console.WriteLine("\nLas letras en el arreglo son: \n");
 
             for (int i = 0; i < arregloDeLetras.Length; i++)
             {
@@ -102,7 +102,7 @@ namespace ArregloAleatorioLetras
                         totalesLetras[j]++;
 
             //Finalmente visualizamos los totales
-            Console.WriteLine("\nLos totales por letra son los siguientes:");
+            Console.WriteLine("Los totales por letra son los siguientes:");
 
             for (int i = 0; i < abecedario.Length; i++)
                 Console.WriteLine($"Letra {abecedario[i]}, total de veces encontrada: {totalesLetras[i]}");
@@ -154,7 +154,7 @@ namespace ArregloAleatorioLetras
             Array.Sort(bolsaResultado);
 
             //Finalmente visualizamos el arreglo organizado
-            Console.WriteLine("\nEl arreglo organizado utilizando la funcion SORT");
+            Console.WriteLine("El arreglo organizado utilizando la funcion SORT");
             VisualizaArreglo(bolsaResultado);
         }
 
@@ -168,7 +168,7 @@ namespace ArregloAleatorioLetras
             char[] bolsaResultado = arregloDeLetras.OrderBy(c => c).ToArray();
 
             //Finalmente visualizamos el arreglo organizado
-            Console.WriteLine("\nEl arreglo organizado utilizando la funcion OrderBy");
+            Console.WriteLine("El arreglo organizado utilizando la funcion OrderBy");
             VisualizaArreglo(bolsaResultado);
         }
 
@@ -199,7 +199,7 @@ namespace ArregloAleatorioLetras
             }
 
             //Finalmente visualizamos el arreglo organizado
-            Console.WriteLine("\nEl arreglo organizado utilizando como guía el orden del abecedario:");
+            Console.WriteLine("El arreglo organizado utilizando como guía el orden del abecedario:");
             VisualizaArreglo(bolsaResultado);
 
         }
