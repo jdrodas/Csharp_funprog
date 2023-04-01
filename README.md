@@ -230,7 +230,7 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 - Demostrar el funcionamiento básico del arreglo bidimensional (matriz)
 - Actualizado a .NET 7
 
-### [EjemploMatricesNotasEstudiantes](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploMatricesNotasEstudiantes)
+### [MatricesNotasEstudiantes](https://github.com/jdrodas/Csharp_funprog/tree/master/MatricesNotasEstudiantes)
 - Demostrar la utilización de arreglos bidimensionales como parametros de funciones
 - Leer datos de consola e ingresarlos a una matriz verificando tipo de datos y rango
 - Actualizado a .NET 7
