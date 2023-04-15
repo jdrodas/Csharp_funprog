@@ -1,105 +1,89 @@
 ﻿
+using System.Drawing;
+
 namespace EjemploObjetos
 {
     public class Persona
-    { 
-        //zona de atributos
-        private int edad, telefono;
-        private string nombre;
+    {
+        //Atributos
+        private string? nombre;
+        private int edad;
+        private long telefono;
+        private float estatura;
 
-        //Constructor de la clase
+        //Constructor
         public Persona()
         {
+            nombre = string.Empty;
             edad = 0;
             telefono = 0;
-            nombre = "";
+            estatura = 0;
         }
 
-        //zona de los métodos
-
-        /// <summary>
-        /// Asigna el valor del atributo nombre
-        /// </summary>
-        /// <param name="datoNombre">dato para el atributo</param>
-        public void SetNombre(string datoNombre)
-        {
-            nombre = datoNombre;
-        }
-
-        /// <summary>
-        /// Obtiene el valor del atributo nombre
-        /// </summary>
-        /// <returns>el valor del atributo</returns>
+        //Metodos
         public string GetNombre()
         {
-            return nombre;
+            return nombre!;
         }
 
-        /// <summary>
-        /// Asigna el valor para el atributo edad
-        /// </summary>
-        /// <param name="datoEdad">valor a establecer para el atributo</param>
-        public void SetEdad(int datoEdad)
+        public void SetNombre(string valor)
         {
-            edad = datoEdad;
+            nombre = valor;
         }
 
-
-        /// <summary>
-        /// Obtiene el valor del atributo edad
-        /// </summary>
-        /// <returns>Valor del atributo</returns>
         public int GetEdad()
         {
             return edad;
         }
 
-        /// <summary>
-        /// Asigna el valor para el atributo telefono
-        /// </summary>
-        /// <param name="datoTelefono">valor a establecer para el atributo</param>
-        public void SetTelefono(int datoTelefono)
+        public void SetEdad(int valor) 
         {
-            telefono = datoTelefono;
+            edad = valor;   
         }
 
-        /// <summary>
-        /// Obtiene el valor del atributo telefono
-        /// </summary>
-        /// <returns>Valor del atributo</returns>
-        public int GetTelefono()
+        public long GetTelefono()
         {
             return telefono;
         }
 
-        //propiedades para los atributos
-
-        /// <summary>
-        /// Obtiene o establece el valor de la edad
-        /// </summary>
-        public int Edad
+        public void SetTelefono(long valor)
         {
-            set { edad = value; }
-            get { return edad; }
+            telefono = valor;
         }
 
-
-        /// <summary>
-        /// Obtiene o establece el valor del atributo telefono
-        /// </summary>
-        public int Telefono
+        public float GetEstatura()
         {
-            set { telefono = value; }
-            get { return telefono; }
+            return estatura;
         }
 
-        /// <summary>
-        /// Obtiene o establece el valor del atributo nombre
-        /// </summary>
+        public void SetEstatura(float valor)
+        { 
+            estatura = valor;
+        }
+
+        //Propiedades
         public string Nombre
         {
+            get { return nombre!; }
             set { nombre = value; }
-            get { return nombre; }
+        }
+
+        public int Edad
+        {
+            get { return edad; }
+            set { edad = value; }
+        }
+
+        public long Telefono
+        {
+            get { return telefono; }
+            set { telefono = value; }
+        }
+
+        public float Estatura
+        {
+            get { return estatura; }
+            set { estatura = value; }
         }
     }
 }

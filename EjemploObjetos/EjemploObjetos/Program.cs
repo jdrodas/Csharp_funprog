@@ -1,7 +1,6 @@
 ﻿/*
-Programa:       MatricesZoo
+Programa:       EjemploObjetos
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
-
 
 Propósito:
 ----------
@@ -10,107 +9,59 @@ Propósito:
  
  */
 
+using System;
+
 namespace EjemploObjetos
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Programa para demostrar la utilización de objetos");
-            Console.WriteLine("Usando un arreglo de 5 objetos tipo persona");
+            Console.WriteLine("Programa para leer la información de personas");
 
-            //el arreglo a utilizar
-            Persona[] gentio = new Persona[5];
+            int cantidadPersonas = 3;
+            Persona[] lasPersonas = new Persona[cantidadPersonas];
 
-            //Pilas: inicialice cada posición del arreglo con una instancia de la clase
-            //Aqui se evita el NullReferenceException al intentar usar una instancia no inicializada
-            for (int i = 0; i < gentio.Length; i++)
-                gentio[i] = new Persona();
-
-            int totalPersonas = 0; // variable de control para el ciclo
-
-            while (totalPersonas < gentio.Length)
+            int i = 0;
+            while (i < cantidadPersonas)
             {
                 try
                 {
-                    Console.WriteLine($"\nInformación de la persona No. { totalPersonas + 1}");
+                    //Inicializamos cada posición del arreglo utilizando el constructor
+                    lasPersonas[i] = new Persona();
+                    
+                    Console.Write($"\nCual es tu nombre, persona {(i + 1)}? ");
+                    lasPersonas[i].Nombre = Console.ReadLine()!;
+                    Console.Write("Cual es tu edad? ");
+                    lasPersonas[i].Edad = int.Parse(Console.ReadLine()!);
+                    Console.Write("Cual es tu telefono? ");
+                    lasPersonas[i].Telefono = long.Parse(Console.ReadLine()!);
+                    Console.Write("Cual es tu estatura? ");
+                    lasPersonas[i].Estatura = float.Parse(Console.ReadLine()!);
 
-                    Console.Write("Cual es el nombre? ");
-                    gentio[totalPersonas].Nombre = Console.ReadLine()!;
-
-                    Console.Write("Cual es la edad? ");
-                    gentio[totalPersonas].Edad = int.Parse(Console.ReadLine()!);
-
-                    Console.Write("Cual es el telefono? ");
-                    gentio[totalPersonas].Telefono = int.Parse(Console.ReadLine()!);
-
-                    //Si todo está ok, se pasa a la siguiente persona
-                    totalPersonas++;
+                    i++;  //Clausula de salida... la que hace que el condicional eventualemente termine
                 }
-                catch (FormatException error)
+                catch (FormatException unError)
                 {
-                    Console.WriteLine("Ingresaste un dato no numérico para el teléfono o la edad. Intenta nuevamente!");
-                    Console.WriteLine($"Error: {error.Message} \n\n");
+                    Console.WriteLine("El dato ingresado no es numérico. Intenta nuevamente");
+                    Console.WriteLine(unError.Message);
                 }
             }
 
-            //aqui visualizamos los resultados
-            Console.WriteLine("\n\nInformación de las personas");
+            //Aqui visualizamos la información ingresada
+            VisualizaInformacion(lasPersonas);
+        }
 
-            for (int i = 0; i < gentio.Length; i++)
+        static void VisualizaInformacion(Persona[] lasPersonas)
+        {
+            Console.WriteLine("\n Los datos de las personas son: ");
+
+            for (int i = 0; i < lasPersonas.Length; i++)
             {
-                Console.WriteLine($"Persona No {(i + 1)}, nombre: {gentio[i].Nombre}, edad: {gentio[i].Edad} telefono: {gentio[i].Telefono}");
+                Console.WriteLine($"\nLos datos ingresados para la persona {(i + 1)} fueron:");
+                Console.WriteLine($"Nombre: {lasPersonas[i].Nombre}, edad: {lasPersonas[i].Edad}, \n" +
+                    $"telefono: {lasPersonas[i].Telefono}, estatura: {lasPersonas[i].Estatura}");
             }
         }
     }
 }
-
-
-/*
--- codigo previo ya no requerido.
-
--- utilización tradicional de variables
-string nombre;
-int edad, telefono;
-
-Console.Write("Cual es tu nombre? ");
-nombre = Console.ReadLine();
-
-Console.Write("Cual es tu edad? ");
-edad = int.Parse(Console.ReadLine());
-
-Console.Write("Cual es tu telefono? ");
-telefono = int.Parse(Console.ReadLine());
-
-Console.WriteLine("Tu nombre es {0}, tu edad es {1} y tu telefono es {2}",
-    nombre, edad, telefono);
-
--- utilización utilizando un objeto tipo Persona
-    
-Persona fulanito = new Persona();
-
-Console.Write("Cual es tu nombre? ");
-//fulanito.SetNombre(Console.ReadLine());       // utilizando el método SetNombre
-fulanito.Nombre = Console.ReadLine();           // utilizando la propiedad Nombre
-
-Console.Write("Cual es tu edad? ");
-//fulanito.SetEdad(int.Parse(Console.ReadLine()));
-fulanito.Edad = int.Parse(Console.ReadLine());
-
-Console.Write("Cual es tu telefono? ");
-//fulanito.SetTelefono(int.Parse(Console.ReadLine()));
-fulanito.Telefono = int.Parse(Console.ReadLine());
-
--- Visualizando la información de los atributos, utilizando los metodos Get
-Console.WriteLine("Tu nombre es {0}, tu edad es {1} y tu telefono es {2}",
-fulanito.GetNombre(), 
-fulanito.GetEdad(), 
-fulanito.GetTelefono());
-
--- Visualizando la información de los atributos, utilizando las propiedades
-Console.WriteLine("Tu nombre es {0}, tu edad es {1} y tu telefono es {2}",
-fulanito.Nombre,
-fulanito.Edad,
-fulanito.Telefono);
-
-*/
