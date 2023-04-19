@@ -307,6 +307,14 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
     y se visualice los subtotales.
 - Actualizado a .NET 7
 
+### [ZooPOO](https://github.com/jdrodas/Csharp_funprog/tree/master/ZooPOO)
+- Demostrar conceptos de clase, objeto, encapsulación, propiedades
+- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
+  valores establecidos para los atributos.
+- Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
+    y se visualice los subtotales.
+- Actualizado a .NET 7
+
 ### [RegistroSimCards](https://github.com/jdrodas/Csharp_funprog/tree/master/RegistroSimCards)
 - Demostrar conceptos de clase, objeto, encapsulación, propiedades
 - Crear un arreglo de objetos e inicializarlo de manera secuencial según 
