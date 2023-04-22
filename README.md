@@ -484,6 +484,11 @@ la cantidad de galletas por barrio, cual fue el barrio con mejor promedio
 >>- Generar arreglo de Viajes de pasajeros para 5 rutas e identificar cantidad de pasajeros por ruta, 
 Porcentaje del total y  cual fue la ruta con menor cantidad de pasajeros transportados 
 
+### [EX03_PavimentacionCalles](https://github.com/jdrodas/Csharp_funprog/tree/master/EX03_PavimentacionCalles)
+- Generar arreglo de Calles con deterioros que afectan un porcentaje de su longitud. Se debe calcular la 
+  cantidad de afectaciones, la longitud total pavimentada y la longitud promedio por cada tipo de deterioros
+- Actualizado a .NET 7
+
 
 
 ### Examen No. 4
