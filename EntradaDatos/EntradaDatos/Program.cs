@@ -21,7 +21,7 @@ namespace EntradaDatos
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para leer y escribir en la consola\n\n");
 
@@ -74,7 +74,7 @@ namespace EntradaDatos
                 estatura = float.Parse(Console.ReadLine()!);
                 
                 //Podemos convertir el dato float a string, especificando el formato de salida
-                Console.WriteLine($"Dijiste que tu estatura es de {estatura.ToString("0.00")}");
+                Console.WriteLine($"Dijiste que tu estatura es de {estatura}");
             }
             catch (FormatException error)
             {

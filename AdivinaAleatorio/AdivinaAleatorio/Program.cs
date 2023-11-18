@@ -15,7 +15,7 @@ namespace AdivinaAleatorio
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para adivinar un número aleatorio entre 1 y 100");
 
@@ -26,12 +26,12 @@ namespace AdivinaAleatorio
              4. Si encontré el número, finaliza la ejecución indicando cuantos intentos utilicé.
             */
 
-            Random aleatorio = new Random();
+            Random aleatorio = new();
             int numeroBuscado = aleatorio.Next(1, 101); //limite superior abierto - no incluye
             //Console.WriteLine("\nEl número que buscamos es {0}", numeroBuscado);
 
             int contadorIntentos = 0, numeroIngresado = 0;
-            bool estaOK = false;
+            bool estaOK;
 
             //repetir el ciclo hasta que el número ingresado sea igual al numero buscado
             while (numeroBuscado != numeroIngresado)

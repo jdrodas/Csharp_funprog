@@ -14,7 +14,7 @@ namespace ClasificaNumeros
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para clasificar numeros enteros en positivos, negativos, pares e imapres\n");
 

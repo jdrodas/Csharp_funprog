@@ -14,7 +14,7 @@ namespace CiclosAsteriscos
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int cantidadLineas, totalAsteriscos, totalEspacios;
 

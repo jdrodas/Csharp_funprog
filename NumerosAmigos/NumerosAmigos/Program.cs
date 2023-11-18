@@ -21,7 +21,7 @@ namespace NumerosAmigos
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para identificar si dos numeros enteros son amigos\n");
 

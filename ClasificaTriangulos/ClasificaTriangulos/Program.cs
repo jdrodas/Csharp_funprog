@@ -16,7 +16,7 @@ namespace ClasificaTriangulos
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para clasificar un triángulo según la longitud de sus lados");
             Console.WriteLine("Los triangulos pueden ser equilateros, isoceles y escalenos\n\n");
@@ -45,7 +45,7 @@ namespace ClasificaTriangulos
                 try
                 {
                     Console.Write("\nIngresa el valor para el primer lado: ");
-                    lado1 = uint.Parse(Console.ReadLine());
+                    lado1 = uint.Parse(Console.ReadLine()!);
                     datoCorrecto = true;
                 }
                 catch (FormatException elError)
@@ -67,7 +67,7 @@ namespace ClasificaTriangulos
                 try
                 {
                     Console.Write("\nIngresa el valor para el segundo lado: ");
-                    lado2 = uint.Parse(Console.ReadLine());
+                    lado2 = uint.Parse(Console.ReadLine()!);
                     datoCorrecto = true;
                 }
                 catch (FormatException elError)
@@ -89,7 +89,7 @@ namespace ClasificaTriangulos
                 try
                 {
                     Console.Write("\nIngresa el valor para el tercer lado: ");
-                    lado3 = uint.Parse(Console.ReadLine());
+                    lado3 = uint.Parse(Console.ReadLine()!);
                     datoCorrecto = true;
                 }
                 catch (FormatException elError)

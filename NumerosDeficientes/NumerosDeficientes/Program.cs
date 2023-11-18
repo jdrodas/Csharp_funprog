@@ -21,7 +21,7 @@ namespace NumerosDeficientes
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para identificar los números positivos hasta 50 son deficientes o abundantes ");
 

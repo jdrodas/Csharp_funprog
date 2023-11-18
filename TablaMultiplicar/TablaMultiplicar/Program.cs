@@ -19,7 +19,7 @@ namespace TablaMultiplicar
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
             Console.WriteLine("Programa que visualiza la tabla de multiplicar de un número\n");

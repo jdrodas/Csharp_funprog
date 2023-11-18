@@ -14,7 +14,7 @@ namespace SumaMultiplosDe3y5
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para sumar los números que son múltiplos de 3 o 5 inferiores a un límite");
 

@@ -20,7 +20,7 @@ namespace CalificacionesPromedio
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para calcular el promedio de 5 calificaciones");
             Console.WriteLine("Si el promedio es mayor o igual de 3.00, se considera que aprobó.");

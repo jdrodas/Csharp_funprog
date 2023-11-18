@@ -4,7 +4,7 @@ Proyectos del curso de Fundamentos de Programación en C#
 La siguiente especificación de contenidos presenta los proyectos según el avance por temas de un curso general de Fundamentos de programación.
 
 ## Aviso
-Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto tendrá su notificación de estado.
+Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto tendrá su notificación de estado.
 
 ## Tabla de Contenidos - Proyectos por tema
 
@@ -14,91 +14,91 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
 - Visualizar información en la consola, en forma de cadena de caracteres.
 - Declarar variables tipo string y visualizar su contenido en la consola.
 - Demostrar el funcionamiento de los métodos WriteLine() y Write() de la clase Console.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [EntradaDatos](https://github.com/jdrodas/Csharp_funprog/tree/master/EntradaDatos)
 - Demostrar el funcionamiento básico de la captura de datos desde la consola, utilizando el método ReadLine().
 - Demostrar el cambio de tipo de datos desde string hasta int y float, utilizando los métodos float.Parse() y Convert.ToInt32()
 - Demostrar la prevención básica de errores por ingreso de datos equivocados utilizando el control de excepciones con las instrucciones try - catch
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### 2. Condicionales y ciclos de control
 
 ### [EjemploCondicionales](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCondicionales)
 - Demostrar el funcionamiento de los condicionales utilizando operadores relacionales, operadores de igualdad y operadores lógicos.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [EjemploCiclosControl](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploCiclosControl)
 - Demostrar el funcionamiento de los principales ciclos de control implementando una sumatoria. Se hace con los ciclos While, Do-while y For.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [ComparaReinos](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinos)
 - Demostrar la utilización de condicionales 
 - captura de datos desde consola
 - visualizar resultados 
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [MultiplosTres](https://github.com/jdrodas/Csharp_funprog/tree/master/MultiplosTres)
 - Demostrar el funcionamiento de los principales ciclos de control implementando una aplicación que visualice los múltiplos de tres hasta un número límite. Se hace con los ciclos While, Do-while y For.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [TablaMultiplicar](https://github.com/jdrodas/Csharp_funprog/tree/master/TablaMultiplicar)
 - Demostrar el funcionamiento de los principales ciclos de control implementando la visualización de la tabla de multiplicar de un número. Se hace con los ciclos While, Do-while y For.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [ClasificaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaNumeros)
 - Demostrar la característica específica del ciclo do-while al momento de evaluar la condición. Utilización del concepto de variable "bandera".
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [NumeroNarcisista](https://github.com/jdrodas/Csharp_funprog/tree/master/NumeroNarcisista)
 - Identificar si un número entero de tres cifras es narcisista
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [NumerosAmigos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosAmigos)
 - Identificar si dos números enteros positivos son amigos
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [NumerosDeficientes](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosDeficientes)
 - Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [NumerosPerfectos](https://github.com/jdrodas/Csharp_funprog/tree/master/NumerosPerfectos)
 - Identificar si los números enteros positivos hasta 50 son deficientes o abundantes
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [SumaMultiplosDe3y5](https://github.com/jdrodas/Csharp_funprog/tree/master/SumaMultiplosDe3y5)
 - Resolver el ejercicio No. del Proyecto Euler (https://projecteuler.net/problem=1)
 - Encontrar la suma de los múltiplos de 3 ó 5 que son inferiores a un límite indicado
 - Implementar el control de ingreso de datos con la función TryParse()
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [CiclosAsteriscos](https://github.com/jdrodas/Csharp_funprog/tree/master/CiclosAsteriscos)
 - Generar patrones piramidales con asteriscos en una aplicación de consola utilizando ciclos repetitivos. 
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [AdivinaAleatorio](https://github.com/jdrodas/Csharp_funprog/tree/master/AdivinaAleatorio)
 - Programa para adivinar un numero entero aleatorio en el rango entre 1 y 100. 
 - Se utiliza control de excepciones para evitar ingresar un dato no numérico.
 - Se coloca un condicional para validar que el número se encuentre en el rango.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [CalculadoraBasica](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculadoraBasica)
 - Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división
     utilizando el ciclo de control While, el selector múltiple "switch/case" y control de excepciones
     con try/catch
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [CalificacionesPromedio](https://github.com/jdrodas/Csharp_funprog/tree/master/CalificacionesPromedio)
 - Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
     5 calificaciones numéricas entre 0 y 5, calcule su promedio y finalmente que indique si aprobó o no.
     Se considera aprobación cuando el promedio sea mayor o igual a 3.00.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [PagoImpuestos](https://github.com/jdrodas/Csharp_funprog/tree/master/PagoImpuestos)
 - Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
 	el valor del salario de un empleado y diga si debe pagar impuestos o no.
     Se considera que si debe pagar impuestos si el empleado gana más de $900.000.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 
 ### [ClasificaTriangulos](https://github.com/jdrodas/Csharp_funprog/tree/master/ClasificaTriangulos)
@@ -107,7 +107,7 @@ Este repo se encuentra en proceso de actualización a **.NET 7**. Cada proyecto 
     Equilatero: Los tres lados son iguales
     Isóceles: Dos lados son iguales
     Escaleno: Los tres lados son diferentes 
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 
 ### 3. Funciones

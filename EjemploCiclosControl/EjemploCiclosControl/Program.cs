@@ -19,7 +19,7 @@ namespace EjemploCiclosControl
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             /*
              Elementos importantes de un ciclo de control:

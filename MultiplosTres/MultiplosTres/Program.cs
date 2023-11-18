@@ -19,7 +19,7 @@ namespace MultiplosTres
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa que visualiza los múltiplos de tres hasta un número límite\n");
 

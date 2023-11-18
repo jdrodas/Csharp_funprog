@@ -36,7 +36,7 @@ namespace EjemploCondicionales
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // \n lo utilizo para dar saltos de línea adicionales
 

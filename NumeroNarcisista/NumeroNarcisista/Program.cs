@@ -17,7 +17,7 @@ namespace NumeroNarcisista
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para identificar si un numero entero de tres cifras es narcisista\n");
 

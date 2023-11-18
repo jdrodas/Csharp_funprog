@@ -14,10 +14,10 @@ namespace CalculadoraBasica
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int opcion = -1; // Opcion inicial que no afecta la navegación de la app
-            float numero1 = 0, numero2 = 0, resultado = 0;
+            float numero1, numero2, resultado = 0;
 
             //El menu principal se repite mientras la opción ingresada no sea 0
             while (opcion != 0)

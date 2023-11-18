@@ -16,7 +16,7 @@ namespace PagoImpuestos
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para identificar si un empleado debe pagar impuestos");
             Console.WriteLine("Si el salario es superior a $900.000, debe pagar impuestos.\n\n");

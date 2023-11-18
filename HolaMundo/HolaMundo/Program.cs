@@ -20,7 +20,7 @@ namespace HolaMundo
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Comenzamos con la forma más básica de colocar información en consola.
             //Utilizamos el método WriteLine de la clase Console.
