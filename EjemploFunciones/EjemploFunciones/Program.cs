@@ -15,7 +15,7 @@ namespace EjemploFunciones
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para demostrar funciones");
 

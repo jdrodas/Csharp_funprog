@@ -19,13 +19,13 @@ namespace CalendarioMes
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para generar el calendario del mes");
             Console.WriteLine("Las semanas en Colombia comienzan los lunes");
 
-            int año = 0, mes = 0;
-            bool datoCorrecto = false;
+            int año, mes;
+            bool datoCorrecto ;
 
             //Validamos que el dato del año ingresado sea correcto
             do
@@ -72,7 +72,7 @@ namespace CalendarioMes
 
             //Aqui creamos un objeto tipo fecha para mejor manipulación,
             //empezando con el día 1 del mes
-            DateTime fechaInicial = new DateTime(año, mes, 1);
+            DateTime fechaInicial = new(año, mes, 1);
             int diaDeLaSemana = (int)fechaInicial.DayOfWeek;
 
             //Calculamos y escribimos el corrimiento del calendario para la

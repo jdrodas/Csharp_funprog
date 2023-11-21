@@ -12,7 +12,7 @@ namespace ValidaRango
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para validar si un numero entero está en un rango");
 

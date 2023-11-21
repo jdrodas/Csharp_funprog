@@ -13,13 +13,13 @@ namespace SumaImparesHastaLimite
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para sumar los números impares hasta un límite\n");
             Console.Write("Ingresa el límite para generar los números impares: ");
 
             bool datoCorrecto = false;
-            int limite = 0, suma = 0;
+            int limite = 0, suma;
 
             while (!datoCorrecto)
             {

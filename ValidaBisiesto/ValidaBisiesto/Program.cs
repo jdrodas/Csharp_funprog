@@ -15,7 +15,7 @@ namespace ValidaBisiesto
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para validar si un año es bisiesto");
             Console.WriteLine("Las condiciones para que sea, son:");

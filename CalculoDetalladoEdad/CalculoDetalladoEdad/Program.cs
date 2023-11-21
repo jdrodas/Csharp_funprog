@@ -21,7 +21,7 @@ namespace CalculoDetalladoEdad
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // Cambiamos la cultura usada en la aplicación para que se ajuste a Español - Colombia
             CultureInfo.CurrentCulture = new CultureInfo("es-CO", false);
@@ -70,8 +70,7 @@ namespace CalculoDetalladoEdad
 
                     //Como la fecha es correcta, podemos calcular la edad
                     //Usaremos una función con parámetros tipo out:
-                    int edadAños, edadMeses, edadDias;
-                    CalculaEdad(fechaNacimiento, out edadAños, out edadMeses, out edadDias);
+                    CalculaEdad(fechaNacimiento, out int edadAños, out int edadMeses, out int edadDias);
                     Console.WriteLine($"Tu edad en detallada es {edadAños} años, {edadMeses} meses y {edadDias} dias");
                 }
                 catch (ArgumentOutOfRangeException elError)

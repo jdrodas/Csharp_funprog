@@ -17,7 +17,7 @@ namespace CalculoTiempoSegundos
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             short valorOpcion;
             bool datoCorrecto;
@@ -72,16 +72,16 @@ namespace CalculoTiempoSegundos
         {
             Console.Clear();
             Console.WriteLine("Conversión de Horas y Minutos en segundos");
-            bool datoHoraCorrecto = false, datoMinutoCorrecto = false;
-            uint horas, minutos, segundos;
+            bool datoHoraCorrecto, datoMinutoCorrecto;
+            uint segundos;
 
             do
             {
                 Console.Write("\nIngresa la cantidad de horas: ");
-                datoHoraCorrecto = uint.TryParse(Console.ReadLine(), out horas);
+                datoHoraCorrecto = uint.TryParse(Console.ReadLine(), out uint horas);
 
                 Console.Write("Ingresa la cantidad de minutos: ");
-                datoMinutoCorrecto = uint.TryParse(Console.ReadLine(), out minutos);
+                datoMinutoCorrecto = uint.TryParse(Console.ReadLine(), out uint minutos);
 
                 //Aqui validamos que los minutos estén en el intervalo [0;59)
                 if (minutos >= 60)
@@ -118,19 +118,17 @@ namespace CalculoTiempoSegundos
             Console.WriteLine("Conversión de segundos en Horas y Minutos");
 
             bool datoCorrecto = false;
-            uint segundos = 0;
-            uint horas, minutos, residuoSegundos;
 
             while (datoCorrecto == false)
             {
                 Console.Write("\n\nIngresa la cantidad de segundos: ");
-                datoCorrecto = uint.TryParse(Console.ReadLine(), out segundos);
+                datoCorrecto = uint.TryParse(Console.ReadLine(), out uint segundos);
 
                 if (datoCorrecto == false)
                     Console.WriteLine("El valor ingresado no es válido. Intenta nuevamente!");
                 else
                 {
-                    ObtieneHorasMinutos(segundos, out horas, out minutos, out residuoSegundos);
+                    ObtieneHorasMinutos(segundos, out uint horas, out uint minutos, out uint residuoSegundos);
 
                     Console.WriteLine($"{segundos} segundos equivalen a {horas} horas, " +
                         $"{minutos} minutos y {residuoSegundos} segundos");

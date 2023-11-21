@@ -12,7 +12,7 @@ namespace ValidaNumeroPrimo
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para identificar si un número es primo o no");
             int numero = 0;

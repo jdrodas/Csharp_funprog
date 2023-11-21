@@ -21,7 +21,7 @@ namespace EjemploTipoParametrosFunciones
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para demostrar los tipos de parametros en funciones");
             Console.Write("Ingresa un numero entero: ");
@@ -46,9 +46,8 @@ namespace EjemploTipoParametrosFunciones
             //Continuamos con una función que recibe parámetros por referencia, sentido "out"
             Console.WriteLine("\n*** Demostración paso de parametros por referencia - Sentido \"out\" ***");
 
-            //Declaramos variables con cualquier valor
-            string mes1 = "uno", mes2 = "dos", mes3 = "tres";
-            AsignaNombreMes(out mes1, out mes2, out mes3);
+            //Aqui declaramos las variables al momento de invocar el método - Inline Variable Declaration
+            AsignaNombreMes(out string mes1, out string  mes2, out string  mes3);
             Console.WriteLine($"Los meses son {mes1}, {mes2}, {mes3}");
             Console.ReadKey();
 

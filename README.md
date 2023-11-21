@@ -118,51 +118,51 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 - Implementar función que no recibe parámetros y retorna valor
 - Implementar función que recibe parámetros y no retorna valor
 - Implementar función que no recibe parámetros y no retorna valor
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [EjemploTipoParametrosFunciones](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploTipoParametrosFunciones)
 - Demostrar los diferentes modificadores aplicables al paso de parametros de las funciones
 - Paso de parámetros por valor
 - Paso de parámetros por referencia
 - Paso de parámetros con modificadores in y out
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [ValidaNumeroPrimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaNumeroPrimo)
 - Demostrar el funcionamiento de una función que recibe parametros y devuelve valor
 - Identificar si un numero entero es primo
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [SumaImparesHastaLimite](https://github.com/jdrodas/Csharp_funprog/tree/master/SumaImparesHastaLimite)
 - Hallar la suma de los números impares hasta un límite usando una función
 - Implementar el control de ingreso de datos con la función TryParse()
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [ValidaRango](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaRango)
 - Valida si un número ingresado hace parte de un rango definido por otros dos números
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [ValidaBisiesto](https://github.com/jdrodas/Csharp_funprog/tree/master/ValidaBisiesto)
 - Implemementa una función que valida si un año es bisiesto
 - Implementa una función que indica si un numero es divisible por otro
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [CalculoTiempoSegundos](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculoTiempoSegundos)
 - Implementa un menú con opciones en consola utilizando ciclos do-while y condicionales
 - Implementa una función que devuelve sus resultados a través de parámetros "out"
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [CalculoDetalladoEdad](https://github.com/jdrodas/Csharp_funprog/tree/master/CalculoDetalladoEdad)
 - Calcular la edad en años, meses y días a partir de la información ingresada
     para la fecha de nacimiento
 - Explorar el cambio del CultureInfo de acuerdo al valor de un país (es-CO)
 - Utilizar las estructuras Datetime y TimeSpan para manipulación de datos tipo fecha
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [CalendarioMes](https://github.com/jdrodas/Csharp_funprog/tree/master/CalendarioMes)
 - Visualizar en consola el calendario de un mes a partir de los datos de año y mes
 - Modificar la visualización para que las semanas comiencen el día lunes
 - Utilización de la función AddDays() y la propiedad DayOfWeek de los objetos tipo DateTime
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### 4. Arreglos
 
