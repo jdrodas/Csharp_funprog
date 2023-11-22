@@ -265,13 +265,13 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 ### [EjemploObjetos](https://github.com/jdrodas/Csharp_funprog/tree/master/EjemploObjetos)
 - Demostrar los conceptos básicos de clase, objeto, encapsulación, métodos
 - Crear un arreglo de objetos, asignando y leyendo información para cada atributo
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [TiendaGomitas](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaGomitas)
 - Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 - Crear un arreglo de objetos y pasarlo como parámetro a una función.
 - Crear un arreglo multidimensional y generar mecanismos para recorrerlo
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [BarajaEspanola](https://github.com/jdrodas/Csharp_funprog/tree/master/BarajaEspanola)
 - Demostrar conceptos de clase, objeto, encapsulación, atributos, propiedades
@@ -279,7 +279,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
     valores establecidos para los atributos.
 - Visualizar la colección de cartas, una carta a la vez
 - Implementar un mecanismo para mezclar las cartas de manera aleatoria
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [ProduccionLana](https://github.com/jdrodas/Csharp_funprog/tree/master/ProduccionLana)
 - Demostrar conceptos de clase, objeto, encapsulación, atributos, propiedades
@@ -287,7 +287,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
     valores establecidos para los atributos.
 - Visualizar solo las ovejas aptas para la producción de lana
 - Implementar un mecanismo para mezclar las cartas de manera aleatoria
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [MaquinaExpendedoraComida](https://github.com/jdrodas/Csharp_funprog/tree/master/MaquinaExpendedoraComida)
 - Demostrar conceptos de clase, objeto, encapsulación, propiedades
@@ -297,7 +297,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 - Visualizar cuales de las posiciones tienen productos abastecidos
 - Implementar algoritmo para realizar venta de producto.
 - Visualizar cuanto vendió y cuantos productos se vendieron
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [VentaEmpanadas](https://github.com/jdrodas/Csharp_funprog/tree/master/VentaEmpanadas)
 - Demostrar conceptos de clase, objeto, encapsulación, propiedades
@@ -305,7 +305,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
   valores establecidos para los atributos.
 - Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [ZooPOO](https://github.com/jdrodas/Csharp_funprog/tree/master/ZooPOO)
 - Demostrar conceptos de clase, objeto, encapsulación, propiedades
@@ -313,7 +313,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
   valores establecidos para los atributos.
 - Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [RegistroSimCards](https://github.com/jdrodas/Csharp_funprog/tree/master/RegistroSimCards)
 - Demostrar conceptos de clase, objeto, encapsulación, propiedades
@@ -321,7 +321,15 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
   valores establecidos para los atributos.
 - Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales, indicando porcentaje del total.
-- Actualizado a .NET 7
+- Actualizado a .NET 8
+
+### [ConcursoSushi](https://github.com/jdrodas/Csharp_funprog/tree/master/ConcursoSushi)
+- Demostrar conceptos de clase, objeto, encapsulación, propiedades
+- Crear un arreglo de objetos e inicializarlo de manera secuencial según 
+  valores establecidos para los atributos.
+- Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
+    y se visualice los subtotales, indicando porcentaje del total.
+- Actualizado a .NET 8
 
 ### [ComparaReinosOO](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinosOO)
 - Mejorar la implementación del proyecto [ComparaReinos](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinos)
@@ -329,7 +337,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 - Demostrar la utilización de condicionales 
 - captura de datos desde consola
 - visualizar resultados
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### [PescaArtesanalOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PescaArtesanalOO)
 - Mejorar la implementación del proyecto [ex02_MatricesPescaArtesanal](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_MatricesPescaArtesanal)
@@ -338,7 +346,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 - captura de datos desde consola
 - visualizar resultados
 - Calcular totales y promedios recorriendo un arreglo de objetos y utilizando funciones
-- Actualizado a .NET 7
+- Actualizado a .NET 8
 
 ### 6. Interfaces Graficas con Windows Forms
 

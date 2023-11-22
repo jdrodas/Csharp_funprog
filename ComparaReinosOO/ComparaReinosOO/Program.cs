@@ -27,7 +27,7 @@ namespace ComparaReinosOO
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Comparando Reinos\n");
 
@@ -44,7 +44,7 @@ namespace ComparaReinosOO
 
             //Inicializamos cada posición del arreglo con una instancia de la clase
             for (int i = 0; i < losReinos.Length; i++)
-                losReinos[i] = new Reino();
+                losReinos[i] = new();
 
             //Asignamos nombre de los reyes del reino
             losReinos[0].Rey = "Nidas";

@@ -15,7 +15,7 @@ namespace EjemploObjetos
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para leer la información de personas");
 

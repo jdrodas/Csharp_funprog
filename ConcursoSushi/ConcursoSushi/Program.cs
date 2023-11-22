@@ -4,12 +4,12 @@ namespace ConcursoSushi
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para simular la producción de Rollos de Sushi");
 
-            string[] lasSalsas = { "Anguila", "Soya", "Mayo-sriracha" };
-            string[] losAcabados = { "Tempura", "Normal", "Acevichado" };
+            string[] lasSalsas = [ "Anguila", "Soya", "Mayo-sriracha" ];
+            string[] losAcabados = [ "Tempura", "Normal", "Acevichado" ];
 
             //Aqui ingresamos las proteinas y los toppings
             string[] lasProteinas = new string[4];
@@ -65,17 +65,19 @@ namespace ConcursoSushi
 
             //Siguiemte, declaramos e inicializamos el arreglo de pedidos de rollos
             PedidoRollo[] losPedidos = new PedidoRollo[100];
-            Random aleatorio = new Random();
+            Random aleatorio = new();
             int cantidadRestaurantes = 10;
 
             for (int i = 0; i < losPedidos.Length; i++)
             {
-                losPedidos[i] = new PedidoRollo();
-                losPedidos[i].Restaurante = aleatorio.Next(1, cantidadRestaurantes + 1); //Código del restaurante
-                losPedidos[i].Proteina = lasProteinas[aleatorio.Next(lasProteinas.Length)];
-                losPedidos[i].Acabado = losAcabados[aleatorio.Next(losAcabados.Length)];
-                losPedidos[i].Salsa = lasSalsas[aleatorio.Next(lasSalsas.Length)];
-                losPedidos[i].Topping = losToppings[aleatorio.Next(losToppings.Length)];
+                losPedidos[i] = new PedidoRollo
+                {
+                    Restaurante = aleatorio.Next(1, cantidadRestaurantes + 1), //Código del restaurante
+                    Proteina = lasProteinas[aleatorio.Next(lasProteinas.Length)],
+                    Acabado = losAcabados[aleatorio.Next(losAcabados.Length)],
+                    Salsa = lasSalsas[aleatorio.Next(lasSalsas.Length)],
+                    Topping = losToppings[aleatorio.Next(losToppings.Length)]
+                };
             }
 
             //Aqui visualizamos como quedaron los pedidos luego de la inicialización

@@ -4,22 +4,24 @@ namespace ProduccionLana
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para simular la producción de lana de un rebaño de 100 ovejas");
 
             //Declaramos el arreglo de ovejas
             Oveja[] lasOvejas = new Oveja[100];
 
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             //Aqui lo inicializamos
             for (int i = 0; i < lasOvejas.Length; i++)
             {
-                lasOvejas[i] = new Oveja();
-                lasOvejas[i].Edad = aleatorio.Next(1, 121);
-                lasOvejas[i].Peso = aleatorio.Next(1, 51);
-                lasOvejas[i].CantidadLana = aleatorio.Next(11);
+                lasOvejas[i] = new Oveja
+                {
+                    Edad = aleatorio.Next(1, 121),
+                    Peso = aleatorio.Next(1, 51),
+                    CantidadLana = aleatorio.Next(11)
+                };
                 lasOvejas[i].EvaluaAptitud();
             }
 

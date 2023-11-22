@@ -15,28 +15,30 @@ namespace TiendaGomitas
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para Simular una tienda de gomitas");
             Console.WriteLine("Con sabores, colores y formas diferentes. Se generarán 1000 gomitas");
 
-            string[] colores = { "Salmón", "Esmeralda", "Zafiro", "Mostaza", "Magenta" };
-            string[] sabores = { "Chontaduro", "Mamoncillo", "Arracacha" };
-            string[] formas = { "Piramide", "Dragón", "Cóndor" };
+            string[] colores = [ "Salmón", "Esmeralda", "Zafiro", "Mostaza", "Magenta"];
+            string[] sabores = ["Chontaduro", "Mamoncillo", "Arracacha"];
+            string[] formas =  ["Piramide", "Dragón", "Cóndor"];
 
             //Aqui declaramos un arreglo de 1000
             Gomita[] pedidoGomitas = new Gomita[1000];
 
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             //Aqui inicializamos el arreglo de gomitas y asignamos valores aleatorios de sabor y color
             for (int i = 0; i < pedidoGomitas.Length; i++)
             {
-                pedidoGomitas[i] = new Gomita(); // inicializamos cada elemento del arreglo
-
-                pedidoGomitas[i].Color = colores[aleatorio.Next(colores.Length)];
-                pedidoGomitas[i].Sabor = sabores[aleatorio.Next(sabores.Length)];
-                pedidoGomitas[i].Forma = formas[aleatorio.Next(formas.Length)];
+                // inicializamos cada elemento del arreglo
+                pedidoGomitas[i] = new()
+                {
+                    Color = colores[aleatorio.Next(colores.Length)],
+                    Sabor = sabores[aleatorio.Next(sabores.Length)],
+                    Forma = formas[aleatorio.Next(formas.Length)]
+                };
 
                 //Aqui visualizamos con cual combinación resultó la gomita
                 Console.WriteLine("La gomita No.{0} tiene el sabor {1}, el color {2} y la forma {3}",
@@ -123,10 +125,10 @@ namespace TiendaGomitas
                                 totalizador[i, j, k]++;
 
             //ahora vamos a identificar cual es la primera combinación que tiene la mayor cantidad de gomitas
-            int mayorValor = 0, mayori = 0, mayorj = 0, mayork = 0;
+            int mayorValor, mayor_i=0, mayor_j = 0, mayor_k = 0;
 
             // Asignamos el primer valor como el mayor de manera arbritaria
-            mayorValor = totalizador[mayori, mayorj, mayork];
+            mayorValor = totalizador[mayor_i, mayor_j, mayor_k];
 
             // Recorremos el arreglo del totalizador buscando el mayor valor y su posicion (i,j,k)
             for (int i = 0; i < totalizador.GetLength(0); i++)
@@ -135,22 +137,22 @@ namespace TiendaGomitas
                         if (totalizador[i, j, k] > mayorValor)
                         {
                             mayorValor = totalizador[i, j, k];
-                            mayori = i;
-                            mayorj = j;
-                            mayork = k;
+                            mayor_i = i;
+                            mayor_j = j;
+                            mayor_k = k;
                         }
 
             //ya sabemos el sabor, el color y la forma de la que tiene mayor cantidad
-            resultado = "Mayor Cantidad: de color " + arregloColores[mayori] +
-                                " con sabor a " + arregloSabores[mayorj] +
-                                " con forma de " + arregloFormas[mayork] +
+            resultado = "Mayor Cantidad: de color " + arregloColores[mayor_i] +
+                                " con sabor a " + arregloSabores[mayor_j] +
+                                " con forma de " + arregloFormas[mayor_k] +
                                 " y con una cantidad de " + mayorValor;
 
             //ahora vamos a identificar cual es la primera combinación que tiene la mayor cantidad de gomitas
-            int menorValor = 0, menori = 0, menorj = 0, menork = 0;
+            int menorValor, menor_i = 0, menor_j = 0, menor_k = 0;
 
             // Asignamos el primer valor como el mayor de manera arbritaria
-            menorValor = totalizador[menori, menorj, mayork];
+            menorValor = totalizador[menor_i, menor_j, mayor_k];
 
             // Recorremos el arreglo del totalizador buscando el mayor valor y su posicion (i,j,k)
             for (int i = 0; i < totalizador.GetLength(0); i++)
@@ -159,16 +161,16 @@ namespace TiendaGomitas
                         if (totalizador[i, j, k] < menorValor)
                         {
                             menorValor = totalizador[i, j, k];
-                            menori = i;
-                            menorj = j;
-                            menork = k;
+                            menor_i = i;
+                            menor_j = j;
+                            menor_k = k;
                         }
 
 
             //ya sabemos el sabor, el color y la forma de la que tiene menor cantidad
-            resultado += "\nMenor Cantidad: de color " + arregloColores[menori] +
-                                " con sabor a " + arregloSabores[menorj] +
-                                " con forma de " + arregloFormas[menork] +
+            resultado += "\nMenor Cantidad: de color " + arregloColores[menor_i] +
+                                " con sabor a " + arregloSabores[menor_j] +
+                                " con forma de " + arregloFormas[menor_k] +
                                 " y con una cantidad de " + menorValor;
 
             return resultado;

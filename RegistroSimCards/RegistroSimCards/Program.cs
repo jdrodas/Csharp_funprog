@@ -1,27 +1,27 @@
-﻿using System;
-
-namespace RegistroSimCards
+﻿namespace RegistroSimCards
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("programa para simular venta de simcards");
 
-            string[] losOperadores = { "Wom", "Claro", "Movil Exito", "Tigo", "Movistar", "Virgin" };
-            string[] losTiposServicios = { "prepago", "postpago", "empresarial" };
+            string[] losOperadores = [ "Wom", "Claro", "Movil Exito", "Tigo", "Movistar", "Virgin" ];
+            string[] losTiposServicios = ["prepago", "postpago", "empresarial"];
 
             //declaramos un arreglo de simcards
             SimCard[] lasTarjetas = new SimCard[400];
 
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             //Inicializamos el arreglo de tarjetas
             for (int i = 0; i < lasTarjetas.Length; i++)
             {
-                lasTarjetas[i] = new SimCard();
-                lasTarjetas[i].Operador = losOperadores[aleatorio.Next(losOperadores.Length)];
-                lasTarjetas[i].TipoServicio = losTiposServicios[aleatorio.Next(losTiposServicios.Length)];
+                lasTarjetas[i] = new()
+                {
+                    Operador = losOperadores[aleatorio.Next(losOperadores.Length)],
+                    TipoServicio = losTiposServicios[aleatorio.Next(losTiposServicios.Length)]
+                };
             }
 
             //Visualizamos el contenido del arreglo
@@ -36,7 +36,7 @@ namespace RegistroSimCards
             for (int i = 0; i < losOperadores.Length; i++)
             {
                 porcentaje = ((float)totalesOperadores[i] / lasTarjetas.Length) * 100;
-                Console.WriteLine($"Operador: {losOperadores[i]}, total Simcards: {totalesOperadores[i]}, {porcentaje.ToString("00.00")}%");
+                Console.WriteLine($"Operador: {losOperadores[i]}, total Simcards: {totalesOperadores[i]}, {Math.Round(porcentaje,2)}%");
 
             }
             Console.WriteLine("\nTotales por tipo de servicio:");
@@ -45,7 +45,7 @@ namespace RegistroSimCards
             for (int i = 0; i < losTiposServicios.Length; i++)
             {
                 porcentaje = ((float)totalesTiposServicio[i] / lasTarjetas.Length) * 100;
-                Console.WriteLine($"Se vendieron {totalesTiposServicio[i]} del servicio {losTiposServicios[i]}, {porcentaje.ToString("00.00")}%");
+                Console.WriteLine($"Se vendieron {totalesTiposServicio[i]} del servicio {losTiposServicios[i]}, {Math.Round(porcentaje, 2)}%");
 
             }
         }

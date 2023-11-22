@@ -10,12 +10,13 @@ namespace MaquinaExpendedoraComida
     {
         public int ValorVendido { get; set; }
         public int CantidadVentas { get; set; }
-
         public Ubicacion[] LasUbicaciones { get; set; }
         public MaquinaVenta()
         {
             ValorVendido = 0;
             CantidadVentas = 0;
+            LasUbicaciones = new Ubicacion[1]; // Inicializamos con una ubicación
+
             InicializaUbicaciones();
         }
 
@@ -25,9 +26,9 @@ namespace MaquinaExpendedoraComida
         private void InicializaUbicaciones()
         {
             LasUbicaciones = new Ubicacion[60];
-            string[] letrasIdentificacion = { "A", "B", "C", "D", "E", "F" };
+            string[] letrasIdentificacion = [ "A", "B", "C", "D", "E", "F" ];
 
-            string valorIdentificacion = "";
+            string valorIdentificacion;
             int ubicacionActual = 0;
 
             while (ubicacionActual < LasUbicaciones.Length)
@@ -40,11 +41,13 @@ namespace MaquinaExpendedoraComida
                         valorIdentificacion = letrasIdentificacion[j] + k;
 
                         //Inicializamos cada posición con los valores predeterminados
-                        LasUbicaciones[ubicacionActual] = new Ubicacion();
-                        LasUbicaciones[ubicacionActual].Identificacion = valorIdentificacion;
-                        LasUbicaciones[ubicacionActual].NombreProducto = "";
-                        LasUbicaciones[ubicacionActual].Cantidad = 0;
-                        LasUbicaciones[ubicacionActual].Valor = 0;
+                        LasUbicaciones[ubicacionActual] = new Ubicacion
+                        {
+                            Identificacion = valorIdentificacion,
+                            NombreProducto = "",
+                            Cantidad = 0,
+                            Valor = 0
+                        };
 
                         //Aqui cambiamos a la ubicación siguiente
                         ubicacionActual++;

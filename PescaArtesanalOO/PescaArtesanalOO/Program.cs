@@ -4,12 +4,12 @@ namespace PescaArtesanalOO
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("*** Programa para el control de la pesca artesanal - Orientado a Objetos ***");
 
-            string[] nombresEspecie = { "Sabaleta", "Tilapia", "Trucha", "Mojarra", "Cachama" };
-            string[] nombresMetodos = { "Atarraya", "Chinchorro", "Arpón", "Red de Arrastre", "Manual" };
+            string[] nombresEspecie = [ "Sabaleta", "Tilapia", "Trucha", "Mojarra", "Cachama" ];
+            string[] nombresMetodos = [ "Atarraya", "Chinchorro", "Arpón", "Red de Arrastre", "Manual" ];
 
             Console.WriteLine("\nLas especies permitidas son:");
             foreach (string especiePescado in nombresEspecie)
@@ -42,7 +42,7 @@ namespace PescaArtesanalOO
                     try
                     {
                         Console.Write($"\nPesca para {nombresEspecie[contadorEspecies]} con {nombresMetodos[contadorMetodos]}: ");
-                        LasPescas[contadorPescas].Cantidad = float.Parse(Console.ReadLine());
+                        LasPescas[contadorPescas].Cantidad = float.Parse(Console.ReadLine()!);
                         LasPescas[contadorPescas].Metodo = nombresMetodos[contadorMetodos];
                         LasPescas[contadorPescas].Especie = nombresEspecie[contadorEspecies];
 
@@ -81,7 +81,7 @@ namespace PescaArtesanalOO
                     Console.WriteLine("La cantidad estuvo en los limites permitidos");
             }
 
-            Console.WriteLine($"\nEL promedio de la jornada fue {promedioPesca.ToString("0.00")} kgs");
+            Console.WriteLine($"\nEL promedio de la jornada fue {Math.Round(promedioPesca,2)} kgs");
             if (promedioPesca > 200)
                 Console.WriteLine("Pesca excesiva, ¡se debe ejercer control más estricto!");
             else
@@ -98,7 +98,7 @@ namespace PescaArtesanalOO
             }
 
             //Aqui Obtenemos la pesca máxima
-            Pesca pescaMaxima = new Pesca();
+            Pesca pescaMaxima = new();
             ObtienePescaMaxima(LasPescas, out pescaMaxima);
 
             Console.WriteLine($"\n\nLa pesca máxima fue de la especie {pescaMaxima.Especie} " +

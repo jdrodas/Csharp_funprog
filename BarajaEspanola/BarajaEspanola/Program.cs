@@ -16,14 +16,14 @@ namespace BarajaEspanola
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para generar la baraja española");
             Console.WriteLine("Valores de 48 cartas:");
 
-            string[] losPalos = { "oros", "copas", "espadas", "bastos" };
+            string[] losPalos = ["oros", "copas", "espadas", "bastos"];
             string[] losValores =
-            {
+            [
                 "uno",
                 "dos",
                 "tres",
@@ -36,7 +36,7 @@ namespace BarajaEspanola
                 "sota",
                 "caballero",
                 "rey"
-            };
+            ];
 
             Console.WriteLine("Los palos de la baraja son:");
 
@@ -58,9 +58,11 @@ namespace BarajaEspanola
             {
                 for (int j = 0; j < losValores.Length; j++)
                 {
-                    baraja[contadorCarta] = new Carta();
-                    baraja[contadorCarta].Valor = losValores[j];
-                    baraja[contadorCarta].Palo = losPalos[i];
+                    baraja[contadorCarta] = new Carta
+                    {
+                        Valor = losValores[j],
+                        Palo = losPalos[i]
+                    };
                     contadorCarta++;
                 }
             }
@@ -155,7 +157,7 @@ namespace BarajaEspanola
 
         static void MezclarBaraja(Carta[] arregloCartas, int cantidadVeces)
         {
-            Random aleatorio = new Random();
+            Random aleatorio = new();
             Carta cartaTemporal;
             int posicionAleatoria;
 

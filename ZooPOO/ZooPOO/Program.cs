@@ -9,7 +9,6 @@ Propósito:
 - Utilizar ciclos while y for para llenar y visualizar contenidos del arreglo de objetos
 */
 
-using System;
 using ZooPOO;
 
 namespace ZooPoo
@@ -32,7 +31,7 @@ namespace ZooPoo
                 try
                 {
                     Console.Write("\nCuantos animales tiene el zoológico? ");
-                    cantidadAnimales=int.Parse(Console.ReadLine()!);
+                    cantidadAnimales = int.Parse(Console.ReadLine()!);
 
                     if (cantidadAnimales >= 0)
                         datoCorrecto = true;
@@ -47,10 +46,10 @@ namespace ZooPoo
             }
 
             //Definimos los medios válidos para los ambientes
-            string[] losMedios = { "Aereo", "Acuatico", "Terrestre" };
-            string[] losAlimentos = { "Carne", "Hierbas", "De todito" };
+            string[] losMedios = [ "Aereo", "Acuatico", "Terrestre" ];
+            string[] losAlimentos = [ "Carne", "Hierbas", "De todito" ];
 
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             Animal[] animalesZoo = new Animal[cantidadAnimales];
 
@@ -58,11 +57,12 @@ namespace ZooPoo
             {
                 //Inicializa cada posición del arreglo para que se entienda que es un
                 //Objeto tipo Animal
-                animalesZoo[i] = new Animal();
-
-                animalesZoo[i].CantidadAlimento = aleatorio.Next(10, 51);
-                animalesZoo[i].TipoAlimento = losAlimentos[aleatorio.Next(losAlimentos.Length)];
-                animalesZoo[i].TipoMedio = losMedios[aleatorio.Next(losMedios.Length)];
+                animalesZoo[i] = new()
+                {
+                    CantidadAlimento = aleatorio.Next(10, 51),
+                    TipoAlimento = losAlimentos[aleatorio.Next(losAlimentos.Length)],
+                    TipoMedio = losMedios[aleatorio.Next(losMedios.Length)]
+                };
             }
 
             //Aqui invocamos una función que recibe como parametro un arreglo de 
@@ -72,10 +72,10 @@ namespace ZooPoo
             Console.WriteLine("\n Los totales de animales por medio son:");
             float[] totalesAnimalesPorMedio = TotalizaAnimalesPorMedio(animalesZoo, losMedios);
 
-            for(int i=0;i<losMedios.Length;i++)
+            for (int i = 0; i < losMedios.Length; i++)
                 Console.WriteLine($"Medio: {losMedios[i]}, " +
                     $"Total Animales: {totalesAnimalesPorMedio[i]} que equivale al" +
-                    $" {((totalesAnimalesPorMedio[i]/cantidadAnimales)*100).ToString(".00")}%");
+                    $" {Math.Round(((totalesAnimalesPorMedio[i] / cantidadAnimales) * 100),2)}%");
 
             Console.WriteLine("\n El total de comida por tipo de alimento es:");
             int[] totalesComidaPorTipo = TotalizaComidaAnimales(animalesZoo, losAlimentos);
@@ -127,7 +127,7 @@ namespace ZooPoo
                 for (int j = 0; j < losAnimales.Length; j++)
                 {
                     if (losAnimales[j].TipoAlimento == losAlimentos[i])
-                        TotalesAlimento[i]+= losAnimales[j].CantidadAlimento;
+                        TotalesAlimento[i] += losAnimales[j].CantidadAlimento;
                 }
             }
 

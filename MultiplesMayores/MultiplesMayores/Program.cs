@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MultiplesMayores
+﻿namespace MultiplesMayores
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             /*
                 - Leer 5 numeros enteros y almacenarlos en un arreglo
@@ -27,7 +21,7 @@ namespace MultiplesMayores
                 try
                 {
                     Console.Write($"\nIngresa el dato No. {contador + 1}: ");
-                    losNumeros[contador] = int.Parse(Console.ReadLine());
+                    losNumeros[contador] = int.Parse(Console.ReadLine()!);
                     contador++;
                 }
                 catch (FormatException elError)
@@ -42,9 +36,7 @@ namespace MultiplesMayores
                 Console.WriteLine($"\t{numero}");
 
             //Aqui invocamos la función para identificar el número mayor y las veces que ocurre
-            int numeroMayor, cantidadMayores;
-
-            EncuentraMayores(losNumeros, out numeroMayor, out cantidadMayores);
+            EncuentraMayores(losNumeros, out int numeroMayor, out int cantidadMayores);
 
             //Visualice resultados
             Console.WriteLine($"\n\nEl número mayor fue {numeroMayor} que apareció {cantidadMayores} veces");

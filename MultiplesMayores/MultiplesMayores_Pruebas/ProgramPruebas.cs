@@ -1,7 +1,3 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MultiplesMayores;
-
 namespace MultiplesMayores.Pruebas
 {
     [TestClass()]
@@ -12,10 +8,9 @@ namespace MultiplesMayores.Pruebas
         {
             //Arrange - Arreglar/Organizar/Preparar
             int[] numerosPrueba = { 13, 19, 0, -1, -45 };
-            int numeroMayor, cantidadVeces;
 
             //Act - Actuar/Ejecutar
-            Program.EncuentraMayores(numerosPrueba, out numeroMayor, out cantidadVeces);
+            Program.EncuentraMayores(numerosPrueba, out int _, out int cantidadVeces);
 
             //Assert - Validar/Comprobar/Verificar
             int cantidadEsperada = 1;
@@ -27,10 +22,9 @@ namespace MultiplesMayores.Pruebas
         {
             //Arrange - Arreglar/Organizar/Preparar
             int[] numerosPrueba = { 10, 20, 30, -80, 80 };
-            int numeroMayor, cantidadVeces;
 
             //Act - Actuar/Ejecutar
-            Program.EncuentraMayores(numerosPrueba, out numeroMayor, out cantidadVeces);
+            Program.EncuentraMayores(numerosPrueba, out int numeroMayor, out int _);
 
             //Assert - Validar/Comprobar/Verificar
             int valorEsperado = 80;

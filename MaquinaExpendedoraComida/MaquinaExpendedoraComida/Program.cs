@@ -36,26 +36,26 @@ namespace MaquinaExpendedoraComida
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para simular la utilización de una máquina expendedora de comida\n\n");
             Console.WriteLine("La máquina expendedora tiene 6 filas y 10 columnas");
 
             //Paso: Inicializar la maquinita
-            MaquinaVenta miMaquinita = new MaquinaVenta();
+            MaquinaVenta miMaquinita = new();
 
             Console.WriteLine($"El valor actual de venta de mi maquina es {miMaquinita.ValorVendido}");
 
             Console.WriteLine("Comenzando ciclo de abastecimiento: \n\n");
             bool finalizadoAbastecimiento = false;
             string datoIdUbicacion;
-            string seguirAbasteciendo = "";
-            int indiceUbicacion = 0;
+            string seguirAbasteciendo;
+            int indiceUbicacion;
 
             while (!finalizadoAbastecimiento)
             {
                 Console.Write("Ingresa la identificación de la ubicación (A-F y 0-9, ej: F3): ");
-                datoIdUbicacion = Console.ReadLine().ToUpper();
+                datoIdUbicacion = Console.ReadLine()!.ToUpper();
 
                 //Si la ubicación es válida
                 if (miMaquinita.ValidaUbicacion(datoIdUbicacion))
@@ -63,19 +63,19 @@ namespace MaquinaExpendedoraComida
                     indiceUbicacion = miMaquinita.ObtieneIndiceUbicacion(datoIdUbicacion);
 
                     Console.Write($"Nombre para el producto ubicado en {datoIdUbicacion}: ");
-                    miMaquinita.LasUbicaciones[indiceUbicacion].NombreProducto = Console.ReadLine();
+                    miMaquinita.LasUbicaciones[indiceUbicacion].NombreProducto = Console.ReadLine()!;
 
                     Console.Write($"Cantidad disponible para el producto ubicado en {datoIdUbicacion}: ");
-                    miMaquinita.LasUbicaciones[indiceUbicacion].Cantidad = int.Parse(Console.ReadLine());
+                    miMaquinita.LasUbicaciones[indiceUbicacion].Cantidad = int.Parse(Console.ReadLine()!);
 
                     Console.Write($"Precio para el producto ubicado en {datoIdUbicacion}: ");
-                    miMaquinita.LasUbicaciones[indiceUbicacion].Valor = int.Parse(Console.ReadLine());
+                    miMaquinita.LasUbicaciones[indiceUbicacion].Valor = int.Parse(Console.ReadLine()!);
                 }
                 else
                     Console.WriteLine("\nLa ubicación no es válida. Intenta nuevamente. \n\n");
 
                 Console.Write("\n¿Desea abastecer otra ubicación (S/N)? ");
-                seguirAbasteciendo = Console.ReadLine().ToUpper();
+                seguirAbasteciendo = Console.ReadLine()!.ToUpper();
 
                 if (seguirAbasteciendo == "N")
                     finalizadoAbastecimiento = true;
@@ -88,12 +88,12 @@ namespace MaquinaExpendedoraComida
             Console.WriteLine("Comenzando ciclo de venta: \n\n");
 
             bool finalizadaVenta = false;
-            string seguirComprando = "";
+            string seguirComprando;
 
             while (!finalizadaVenta)
             {
                 Console.Write("Ingresa la identificación de la ubicación para la compra: (A-F y 0-9): ");
-                datoIdUbicacion = Console.ReadLine().ToUpper();
+                datoIdUbicacion = Console.ReadLine()!.ToUpper();
 
                 if (miMaquinita.ValidaUbicacion(datoIdUbicacion))
                 {
@@ -114,7 +114,7 @@ namespace MaquinaExpendedoraComida
 
 
                 Console.Write("\n¿Desea seguir comprando en otra ubicación (S/N)? ");
-                seguirComprando = Console.ReadLine().ToUpper();
+                seguirComprando = Console.ReadLine()!.ToUpper();
 
                 if (seguirComprando == "N")
                     finalizadaVenta = true;
