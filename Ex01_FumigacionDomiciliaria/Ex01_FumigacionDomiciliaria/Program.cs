@@ -56,7 +56,7 @@ namespace Ex01_FumigacionDomiciliaria
 {
     public class Program
     {
-        static public void Main(string[] args)
+        static public void Main()
         {
             Console.WriteLine("Programa para llevar el control de hogares fumigados");
             Console.WriteLine("Se fumigarán contra Hongos, Insectos y Roedores");
@@ -167,27 +167,27 @@ namespace Ex01_FumigacionDomiciliaria
             else
             {
                 //Aqui se calculan los porcentajes
-                float porcHongos = (hogaresHongos / totalHogares) * 100;
-                float porcInsectos = (hogaresInsectos / totalHogares) * 100;
-                float porcRoedores = (hogaresRoedores / totalHogares) * 100;
-                float porcSinFumigar = (hogaresSinFumigar / totalHogares) * 100;
+                float porcentajeHongos = (hogaresHongos / totalHogares) * 100;
+                float porcentajeInsectos = (hogaresInsectos / totalHogares) * 100;
+                float porcentajeRoedores = (hogaresRoedores / totalHogares) * 100;
+                float porcentajeSinFumigar = (hogaresSinFumigar / totalHogares) * 100;
 
                 Console.WriteLine($"- Del total de hogares que fue {totalHogares}, " +
                     $"se fumigaron {totalHogaresFumigados}.");
 
                 Console.WriteLine($"Para hongos se fumigaron {hogaresHongos} hogares " +
-                    $"que corresponde a {porcHongos.ToString("00.00")}%");
+                    $"que corresponde a {Math.Round(porcentajeHongos,2)}%");
 
                 Console.WriteLine($"Para insectos se fumigaron {hogaresInsectos} hogares " +
-                    $"que corresponde a {porcInsectos.ToString("00.00")}%");
+                    $"que corresponde a {Math.Round(porcentajeInsectos,2)}%");
 
                 Console.WriteLine($"Para roedores se fumigaron {hogaresRoedores} hogares " +
-                    $"que corresponde a {porcRoedores.ToString("00.00")}%");
+                    $"que corresponde a {Math.Round(porcentajeRoedores,2)}%");
 
                 if (hogaresSinFumigar > 0)
                 {
                     Console.WriteLine($"\nNo se fumigaron {hogaresSinFumigar} " +
-                    $"hogares que corresponde al {porcSinFumigar.ToString("00.00")}%");
+                    $"hogares que corresponde al {Math.Round(porcentajeSinFumigar,2)}%");
 
                     Console.WriteLine("FUMIGACIÓN INCOMPLETA: Hay hogares sin fumigar");
                 }

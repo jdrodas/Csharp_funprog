@@ -30,7 +30,7 @@ namespace Ex01_ColonizacionSolar
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Console.WriteLine("Colonización del Sistema Solar");
             Console.WriteLine("\nSe registrarán 12 lanzamientos de naves espaciales a los destinos");
