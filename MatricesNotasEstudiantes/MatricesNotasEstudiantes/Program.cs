@@ -141,7 +141,7 @@ namespace MatricesNotasEstudiantes
 
                 //Aqui colocamos el promedio del estudiante
                 Console.WriteLine($"\t\tEl promedio de {nombreEstudiantes[estudiante]} " +
-                    $"fue de: {promediosEstudiante[estudiante].ToString(".00")}");
+                    $"fue de: {promediosEstudiante[estudiante]}");
             }
 
             //Visualizar por nombre de materias
@@ -157,7 +157,7 @@ namespace MatricesNotasEstudiantes
 
                 //Aqui colocamos el promedio de la materia
                 Console.WriteLine($"\t\tEl promedio de {nombreMaterias[materia]} " +
-                    $"fue de {promediosMateria[materia].ToString(".00")}");
+                    $"fue de {promediosMateria[materia]}");
             }
 
         }

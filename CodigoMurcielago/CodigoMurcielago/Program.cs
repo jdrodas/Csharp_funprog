@@ -15,7 +15,7 @@ namespace CodigoMurcielago
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para cifrar una frase en código murcielago");
             Console.WriteLine("se remplazan las letras de las frases que están en la palabra");
@@ -83,7 +83,7 @@ namespace CodigoMurcielago
 
             //finalmente visualizamos la frase ya cifrada
             //Creamos un string a partir del arreglo de caracteres 
-            string fraseCifrada = new string(arregloFrase);
+            string fraseCifrada = new(arregloFrase);
 
             Console.WriteLine($"La frase cifrada es {fraseCifrada}");
         }

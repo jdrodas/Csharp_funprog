@@ -15,7 +15,7 @@ namespace MatricesZoo
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para totalizar la cantidad de comida que se necesita en un Zoológico");
             Console.WriteLine("Se tienen animales herbívoros y carnívoros en entornos");
@@ -23,14 +23,13 @@ namespace MatricesZoo
             Console.WriteLine("La cantidad de alimento está entre [10;50] kg.");
             Console.WriteLine("Se visualizan totales por entorno y por tipo de alimentación\n\n");
 
-            string[] tipos = { "Herbívoros", "Carnívoros" };
-            string[] entornos = { "Acuático", "Terrestre", "Aéreo" };
+            string[] tipos = ["Herbívoros", "Carnívoros"];
+            string[] entornos = ["Acuático", "Terrestre", "Aéreo" ];
 
             float[,] alimentos = new float[tipos.Length, entornos.Length];
 
             int tipo = 0, entorno;          //Son las variables de control de los ciclos while
-            float cantidad;                 //La variable que controlará el dato ingresado por el usuario
-            bool datoCorrecto = false;
+            bool datoCorrecto;
 
             //Empezamos recorriendo cada tipo
             while (tipo < tipos.Length)
@@ -41,7 +40,7 @@ namespace MatricesZoo
                 {
                     Console.Write($"Ingresa la cantidad de alimentos para {tipos[tipo]} " +
                         $"en el entorno {entornos[entorno]}: ");
-                    datoCorrecto = float.TryParse(Console.ReadLine(), out cantidad);
+                    datoCorrecto = float.TryParse(Console.ReadLine(), out float cantidad);
 
                     //Si el dato se convirtió correctamente a numero float
                     if (datoCorrecto == true)

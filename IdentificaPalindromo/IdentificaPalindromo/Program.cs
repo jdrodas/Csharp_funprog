@@ -18,7 +18,7 @@ namespace IdentificaPalindromo
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para indetificar si una frase es palíndromo");
             Console.WriteLine("Palíndromo es que se lee igual en cualquier sentido\n");
@@ -52,8 +52,8 @@ namespace IdentificaPalindromo
                 posicion++;
             }
 
-            string fraseOriginal = new string(arregloFrase);
-            string frasePalindromo = new string(arregloFraseInvertida);
+            string fraseOriginal = new(arregloFrase);
+            string frasePalindromo = new(arregloFraseInvertida);
 
             //Si la frase invertida es igual a la frase original, es un palíndromo
             if (frasePalindromo == fraseOriginal)

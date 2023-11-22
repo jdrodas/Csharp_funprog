@@ -46,7 +46,9 @@ namespace EjemploArgsConsola
                     Console.WriteLine($"Argumento No. {(i + 1)}, valor: {args[i]}");
 
                 //Aqui validamos que el primer argumento sea un string "ascendente" o "descendente"
-                if (args[0].ToLower() != "ascendente" && args[0].ToLower() != "descendente")
+                //Utilizamos la función Equals para validar si son iguales,
+                //pero lo negamos con "!" para validar si son diferentes
+                if (!args[0].ToLower().Equals("ascendente") && !args[0].ToLower().Equals("descendente"))
                     Console.WriteLine("El primer argumento no corresponde a un criterio de ordenamiento");
                 else
                 {
@@ -100,7 +102,7 @@ namespace EjemploArgsConsola
                                 uint cantidad = datosConvertidos[2];
 
                                 int[] losNumeros = new int[cantidad];
-                                Random aleatorio = new Random();
+                                Random aleatorio = new();
 
                                 //Aqui generamos los numeros de manera aleatoria
                                 for (int i = 0; i < losNumeros.Length; i++)

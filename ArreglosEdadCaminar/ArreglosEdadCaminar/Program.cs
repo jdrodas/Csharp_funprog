@@ -22,13 +22,13 @@ namespace ArreglosEdadCaminar
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para buscar moda, mediana y media de valores numéricos");
             Console.WriteLine("son 100 valores correspondientes a la edad de caminar entre 9 y 18 meses");
 
             //La variable con la que generaremos los valores aleatorios
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             int[] arregloEdades = new int[100];
 
@@ -52,8 +52,8 @@ namespace ArreglosEdadCaminar
             float mediana = CalculaMediana(arregloEdades);
             int[] moda = CalculaModa(arregloEdades);
 
-            Console.WriteLine($"\nLa media de las edades para caminar es {media.ToString("00.00")}");
-            Console.WriteLine($"La mediana de las edades para caminar es {mediana.ToString("00.00")}");
+            Console.WriteLine($"\nLa media de las edades para caminar es {media}");
+            Console.WriteLine($"La mediana de las edades para caminar es {mediana}");
             Console.WriteLine($"Se encontraron {moda.Length} valor(es) como la moda del conjunto de datos");
             for (int i = 0; i < moda.Length; i++)
                 Console.WriteLine(moda[i]);

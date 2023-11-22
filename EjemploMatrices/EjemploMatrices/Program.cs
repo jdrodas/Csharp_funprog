@@ -12,7 +12,7 @@ namespace EjemploMatrices
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para llenar una matriz de 4x3 \ncon numeros aleatorios entre 1 y 100\n");
 
@@ -23,7 +23,7 @@ namespace EjemploMatrices
             Console.WriteLine($"La matriz tiene {matriz.Rank} dimensiones");
             Console.WriteLine($"Tiene {matriz.GetLength(0)} filas y {matriz.GetLength(1)} columnas");
 
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             //aqui llenamos la matriz utilizando los tamaños de cada dimensión
             for (filas = 0; filas < matriz.GetLength(0); filas++)

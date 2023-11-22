@@ -14,13 +14,13 @@ namespace EjemploFuncionesArreglos
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para demostrar funciones y arreglos");
             Console.WriteLine("Arreglo de 50 números enteros con valores aleatorios entre 1 y 100");
 
             int[] conjunto = new int[50];
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             //aqui inicializamos el arreglo con valores aleatorios
             for (int i = 0; i < conjunto.Length; i++)

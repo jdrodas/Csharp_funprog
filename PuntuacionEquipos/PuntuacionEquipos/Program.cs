@@ -27,7 +27,7 @@ namespace PuntuacionEquipos
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para evaluar puntuación por equipos en partida de eSport");
             Console.WriteLine("Equipo clasifica a siguiente ronda si tiene 300 puntos mínimo");

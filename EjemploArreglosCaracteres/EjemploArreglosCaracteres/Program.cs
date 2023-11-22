@@ -12,7 +12,7 @@ namespace EjemploArreglosCaracteres
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Cadenas de caracteres como arreglos");
 

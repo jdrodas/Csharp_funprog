@@ -27,14 +27,13 @@ namespace GananciasCelebridades
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para calcular ganancias de celebridades\n");
             Console.WriteLine("Estos son los ingresos mensuales de las celebridades:");
 
-            string[] nombreCelebridades = { "Gabriel", "Ana", "Catalina", "Francisco" };
-            float[] salariosCelebridades = { 4000, 3000, 4500, 5800 };
-
+            string[] nombreCelebridades = ["Gabriel", "Ana", "Catalina", "Francisco" ];
+            float[] salariosCelebridades = [ 4000, 3000, 4500, 5800 ];
 
             for (int i = 0; i < nombreCelebridades.Length; i++)
                 Console.WriteLine($"{nombreCelebridades[i]}, Sueldo: {salariosCelebridades[i]}");

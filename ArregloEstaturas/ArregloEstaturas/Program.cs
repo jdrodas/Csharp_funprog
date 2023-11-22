@@ -25,7 +25,7 @@ namespace ArregloEstaturas
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para leer desde consola 10 valores con decimales correspondientes a estatura de persona expresada en metros");
 

@@ -20,7 +20,7 @@ namespace ArregloAleatorioLetras
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para demostrar funciones y Arreglos");
             Console.WriteLine("Se generará un arreglo de 500 letras de manera aleatoria");
@@ -37,7 +37,7 @@ namespace ArregloAleatorioLetras
             //Y los llenamos de manera aleatoria con las letras del abecedario
             char[] bolsaLetras = new char[500];
 
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             //llenamos el arregloAleatorio con valores del arreglo base
 
@@ -118,7 +118,7 @@ namespace ArregloAleatorioLetras
             //La bolsa de resultado tiene el mismo tamaño que el arreglo de letras
             char[] bolsaResultado = arregloDeLetras;
 
-            bool seHizoCambioUbicacion = false;
+            bool seHizoCambioUbicacion;
             char letraTemporal;
 
             do

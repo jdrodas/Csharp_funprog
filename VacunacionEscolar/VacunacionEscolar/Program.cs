@@ -14,7 +14,7 @@ namespace VacunacionEscolar
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para el registro de la vacunación escolar - Versión Funciones y Arreglos");
             Console.WriteLine("Se registrarán las vacunas de los estudiantes según sean ");
@@ -47,10 +47,10 @@ namespace VacunacionEscolar
 
             Console.WriteLine($"Generando simulación de vacunación para {cantidadEstudiantes} estudiantes...");
 
-            string[] lasVacunas = { "Astra Zeneca","Sinovac","Pfizer","Jenssen","Moderna" };
+            string[] lasVacunas = ["Astra Zeneca","Sinovac","Pfizer","Jenssen","Moderna"];
 
             string[] vacunasAplicadas = new string[cantidadEstudiantes];
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             for (int i = 0; i < vacunasAplicadas.Length; i++)
                 vacunasAplicadas[i] = lasVacunas[aleatorio.Next(lasVacunas.Length)];
@@ -67,7 +67,7 @@ namespace VacunacionEscolar
             for (int i = 0; i < lasVacunas.Length; i++)
             {
                 Console.WriteLine($"Medicamento {lasVacunas[i]}: {totalVacunadosPorMedicamento[i]} estudiantes, " +
-                    $"que representa el {porcentajesVacunadosPorMedicamento[i].ToString(".00")}%");
+                    $"que representa el {porcentajesVacunadosPorMedicamento[i]}%");
             }
 
 
