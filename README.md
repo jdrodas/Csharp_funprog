@@ -254,10 +254,13 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 
 ### [VacunacionEscolar](https://github.com/jdrodas/Csharp_funprog/tree/master/VacunacionEscolar)
 - Crear una aplicación que utilizando funciones y arreglos, Vamos a identificar los totales
-- de vacunación escolar y calcular cual es el porcentaje para cada medicamento.
+  de vacunación escolar y calcular cual es el porcentaje para cada medicamento.
 - Actualizado a .NET 8
 
-
+### [PromedioPonderadoNotas](https://github.com/jdrodas/Csharp_funprog/tree/master/PromedioPonderadoNotas)
+- Crear una aplicación que utilizando funciones y arreglos, Calcular el promedio
+  ponderado de las calificaciones de varias materias, cada una con un valor crédito distinto
+- Actualizado a .NET 8
 
 
 ### 5. Principios de Programación Orientada a Objetos
@@ -342,6 +345,15 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 ### [PescaArtesanalOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PescaArtesanalOO)
 - Mejorar la implementación del proyecto [ex02_MatricesPescaArtesanal](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_MatricesPescaArtesanal)
     creando la clase "Pesca" y ajustando la funcionalidad para utilizar el recurso.
+- Demostrar la utilización de condicionales 
+- captura de datos desde consola
+- visualizar resultados
+- Calcular totales y promedios recorriendo un arreglo de objetos y utilizando funciones
+- Actualizado a .NET 8
+
+### [PuntuacionEquiposOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PuntuacionEquiposOO)
+- Mejorar la implementación del proyecto [PuntuacionEquiposOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PuntuacionEquiposOO)
+    creando la clase "Jugador" y ajustando la funcionalidad para utilizar el recurso.
 - Demostrar la utilización de condicionales 
 - captura de datos desde consola
 - visualizar resultados

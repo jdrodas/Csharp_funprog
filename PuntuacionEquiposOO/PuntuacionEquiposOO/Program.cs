@@ -23,13 +23,11 @@ sea mínimo de 300 y que máximo 2 jugadores tengan puntajes inferiores a 60.
 
 */
 
-using System;
-
 namespace PuntuacionEquiposOO
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Evaluación de puntaje de equipo para E-Sport");
 
@@ -46,10 +44,10 @@ namespace PuntuacionEquiposOO
                 try
                 {
                     Console.Write($"\nIngresa el nombre del jugador No. {contadorJugador + 1}: ");
-                    equipo[contadorJugador].Nombre = Console.ReadLine();
+                    equipo[contadorJugador].Nombre = Console.ReadLine()!;
 
                     Console.Write($"Cual fue el puntaje para {equipo[contadorJugador].Nombre}: ");
-                    equipo[contadorJugador].Puntaje = int.Parse(Console.ReadLine());
+                    equipo[contadorJugador].Puntaje = int.Parse(Console.ReadLine()!);
 
                     //Verificamos si el puntaje está en el rango válido
                     if (equipo[contadorJugador].Puntaje >= 1 && equipo[contadorJugador].Puntaje <= 100)

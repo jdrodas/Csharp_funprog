@@ -34,7 +34,7 @@ namespace PromedioPonderadoNotas
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para calcular el promedio ponderado de las notas de un semestre");
             Console.WriteLine("Las notas y el promedio se representan en el rango de 0.00 a 5.00");
@@ -47,7 +47,7 @@ namespace PromedioPonderadoNotas
                 try
                 {
                     Console.Write("Cuantas materias estás cursando en este semestre? ");
-                    totalMaterias = int.Parse(Console.ReadLine());
+                    totalMaterias = int.Parse(Console.ReadLine()!);
 
                     if (totalMaterias > 0)
                         esCorrecto = true;
@@ -72,12 +72,12 @@ namespace PromedioPonderadoNotas
                 try
                 {
                     Console.Write("\nMateria No. {0}, Cuántos créditos tiene? ", notasIngresadas + 1);
-                    creditosMaterias[notasIngresadas] = int.Parse(Console.ReadLine());
+                    creditosMaterias[notasIngresadas] = int.Parse(Console.ReadLine()!);
 
                     if (creditosMaterias[notasIngresadas] > 0)
                     {
                         Console.Write("Materia No. {0}, Cuál fue la nota final? ", notasIngresadas + 1);
-                        notasMaterias[notasIngresadas] = float.Parse(Console.ReadLine());
+                        notasMaterias[notasIngresadas] = float.Parse(Console.ReadLine()!);
 
                         //Si la nota está en el rango requerido, avanzamos a la siguiente nota
                         if (notasMaterias[notasIngresadas] >= 0f && notasMaterias[notasIngresadas] <= 5f)
@@ -129,7 +129,7 @@ namespace PromedioPonderadoNotas
         /// <returns>la valoración de aprobación</returns>
         static string ValoraNota(float datoNota)
         {
-            string resultado = "";
+            string resultado;
             if (datoNota >= 3)
                 resultado = "Aprobado";
             else

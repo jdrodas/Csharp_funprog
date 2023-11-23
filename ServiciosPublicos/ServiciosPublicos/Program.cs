@@ -4,23 +4,25 @@ namespace ServiciosPublicos
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Programa para simular el consumo de servicios publicos");
             Console.WriteLine("Se Generarán 1000 servicios de manera aleatoria");
 
-            string[] nombresServicios = new string[] { "Energía", "Acueducto", "Gas", "Telefonía local", "Internet" };
+            string[] nombresServicios = ["Energía", "Acueducto", "Gas", "Telefonía local", "Internet"];
             Servicio[] losServicios = new Servicio[1000];
             int i;
 
             //Inicializamos el arreglo con valores aleatorios para el nombre y el consumo
-            Random aleatorio = new Random();
+            Random aleatorio = new();
 
             for (i = 0; i < losServicios.Length; i++)
             {
-                losServicios[i] = new Servicio();
-                losServicios[i].Nombre = nombresServicios[aleatorio.Next(nombresServicios.Length)];
-                losServicios[i].Consumo = aleatorio.Next(10000, 100001); //Se le suma 1 al limite superior para incluir el valor máximo
+                losServicios[i] = new()
+                {
+                    Nombre = nombresServicios[aleatorio.Next(nombresServicios.Length)],
+                    Consumo = aleatorio.Next(10000, 100001) //Se le suma 1 al limite superior para incluir el valor máximo
+                };
 
                 Console.WriteLine($"Posicion {i + 1}, Servicio {losServicios[i].Nombre}, consumo: {losServicios[i].Consumo} ");
             }
