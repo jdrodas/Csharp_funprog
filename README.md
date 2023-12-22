@@ -385,7 +385,7 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 - Implementación de una aplicación para encontrar 8 parejas de números.
 - Cuenta los intentos realizados así como las parejas encontradas.
 - Actualizado a .NET 7
-- 
+ 
 ### [OrdenaNumeros](https://github.com/jdrodas/Csharp_funprog/tree/master/OrdenaNumeros)
 - Implementación en Windows Forms con lógica y visualización en clases independientes.
 - Implementación de una aplicación para ordernar 15 numeros.
@@ -396,6 +396,12 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 - Implementación de una aplicación para encontrar una palabra de 5 letras antes de 6 intentos.
 - Implementa selector de colores normales y de alto contraste.
 - Actualizado a .NET 7
+
+### 7. Misceláneos
+
+>>### [GeneradorPasswords](https://github.com/jdrodas/Csharp_funprog/tree/master/GeneradorPasswords)
+- Implementar un generador de contraseñas a partir de los caracteres [a-z][A-Z][0-9] utilizando listas y Linq
+- Actualizado a .NET 8
 
 
 ## Soluciones a examenes anteriores
