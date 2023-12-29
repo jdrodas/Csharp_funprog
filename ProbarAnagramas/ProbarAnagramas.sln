@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProbarAnagramas", "ProbarAnagramas\ProbarAnagramas.csproj", "{A62B5F25-CE0C-45A3-8132-85F1B8DF7AD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A62B5F25-CE0C-45A3-8132-85F1B8DF7AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62B5F25-CE0C-45A3-8132-85F1B8DF7AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62B5F25-CE0C-45A3-8132-85F1B8DF7AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62B5F25-CE0C-45A3-8132-85F1B8DF7AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62F2ADD6-713B-4AD7-B859-ADC2CF52102D}
+	EndGlobalSection
+EndGlobal
