@@ -399,8 +399,12 @@ Este repo se encuentra en proceso de actualización a **.NET 8**. Cada proyecto 
 
 ### 7. Misceláneos
 
->>### [GeneradorPasswords](https://github.com/jdrodas/Csharp_funprog/tree/master/GeneradorPasswords)
+### [GeneradorPasswords](https://github.com/jdrodas/Csharp_funprog/tree/master/GeneradorPasswords)
 - Implementar un generador de contraseñas a partir de los caracteres [a-z][A-Z][0-9] utilizando listas y Linq
+- Actualizado a .NET 8
+
+### [ComponentesColores](https://github.com/jdrodas/Csharp_funprog/tree/master/ComponentesColores)
+- Realizar extracciones de los componentes ARGB de un color utilizando operaciones "Bitwise"
 - Actualizado a .NET 8
 
 
