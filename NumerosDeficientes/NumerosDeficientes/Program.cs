@@ -15,7 +15,7 @@ divisores propios es mayor, entonces se considera al número como abundante.
 
 https://es.wikipedia.org/wiki/N%C3%BAmero_defectivo
 
- */
+*/
 
 namespace NumerosDeficientes
 {

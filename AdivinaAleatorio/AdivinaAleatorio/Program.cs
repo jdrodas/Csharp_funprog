@@ -8,7 +8,7 @@ Propósito:
 - Se utiliza control de excepciones para evitar ingresar un dato no numérico.
 - Se coloca un condicional para validar que el número se encuentre en el rango.
 
- */
+*/
 
 
 namespace AdivinaAleatorio

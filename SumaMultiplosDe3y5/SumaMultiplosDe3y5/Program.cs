@@ -8,7 +8,7 @@ Propósito:
 - Encontrar la suma de los múltiplos de 3 ó 5 que son inferiores a un límite indicado
 - Implementar el control de ingreso de datos con la función TryParse()
 
- */
+*/
 
 namespace SumaMultiplosDe3y5
 {

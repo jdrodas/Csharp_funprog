@@ -12,9 +12,9 @@ positivos. Dicho de otra forma, un número perfecto es aquel que es amigo de sí
 https://es.wikipedia.org/wiki/N%C3%BAmero_perfecto
 
 Ejemplos:
- 6 28 496 8128
+6 28 496 8128
 
- */
+*/
 
 namespace NumerosPerfectos
 {

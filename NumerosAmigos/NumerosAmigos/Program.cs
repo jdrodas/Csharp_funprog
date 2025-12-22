@@ -12,10 +12,10 @@ divisores propios de uno es igual al otro número y viceversa
 https://es.wikipedia.org/wiki/N%C3%BAmeros_amigos
 
 Ejemplos : 220 y 284
-           17296 y 18416
-           9363584 y 9437056
+          17296 y 18416
+          9363584 y 9437056
 
- */
+*/
 
 namespace NumerosAmigos
 {

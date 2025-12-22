@@ -11,9 +11,9 @@ Ciclos de control:
 - while
 - do while
 - for
- */
+*/
 
-using  System;
+using System;
 
 namespace EjemploCiclosControl
 {

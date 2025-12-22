@@ -3,11 +3,11 @@ Programa:       ClasificaTriangulos
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
-    Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
-    los valores de los tres lados de un triangulo y determine su clasificación:
-    - Equilatero: Los tres lados son iguales
-    - Isóceles: Dos lados son iguales
-    - Escaleno: Los tres lados son diferentes   
+   Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+   los valores de los tres lados de un triangulo y determine su clasificación:
+   - Equilatero: Los tres lados son iguales
+   - Isóceles: Dos lados son iguales
+   - Escaleno: Los tres lados son diferentes   
 */
 
 using System;

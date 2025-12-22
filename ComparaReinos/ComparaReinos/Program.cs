@@ -19,7 +19,7 @@ Se busca:
 - calcular la puntuación del reino.
 - Indicar si hay un reino mayor o se presenta algún empate en la puntuación
 
- */
+*/
 
 
 using System;

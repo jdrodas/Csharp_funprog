@@ -11,7 +11,7 @@ https://es.wikipedia.org/wiki/N%C3%BAmero_narcisista
 
 Ejemplos : 153 370 371 407
 
- */
+*/
 
 namespace NumeroNarcisista
 {

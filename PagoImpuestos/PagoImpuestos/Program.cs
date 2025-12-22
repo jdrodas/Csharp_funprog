@@ -4,11 +4,11 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
 ----------
-    Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
-	el valor del salario de un empleado y diga si debe pagar impuestos o no.
-    Se considera que si debe pagar impuestos si el empleado gana más de $900.000.
+   Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+   el valor del salario de un empleado y diga si debe pagar impuestos o no.
+   Se considera que si debe pagar impuestos si el empleado gana más de $900.000.
 
- */
+*/
 
 using System;
 

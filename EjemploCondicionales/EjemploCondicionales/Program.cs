@@ -23,12 +23,12 @@ Operadores lógicos:
 
 Operadores de nulidad:
 ?       Permite indicar al compilador que el valor puede ser nulo
-        Se coloca después del tipo de datos al momento de la declaración de la variable
+       Se coloca después del tipo de datos al momento de la declaración de la variable
 
 !       Permite indicar al compilador que sabemos que el valor NO SERÁ nulo
-        Se coloca despues de la variable y antes de cualquier otra operación
+       Se coloca despues de la variable y antes de cualquier otra operación
 
- */
+*/
 
 using System;
 

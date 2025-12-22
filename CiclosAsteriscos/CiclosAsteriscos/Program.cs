@@ -5,9 +5,9 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 - Generar patrones piramidales con asteriscos en una aplicación de consola
-  utilizando ciclos repetitivos. 
+ utilizando ciclos repetitivos. 
 
- */
+*/
 using System;
 
 namespace CiclosAsteriscos

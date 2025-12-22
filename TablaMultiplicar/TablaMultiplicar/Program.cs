@@ -13,7 +13,7 @@ Ciclos de control:
 - do while
 - for
 
- */
+*/
 
 namespace TablaMultiplicar
 {

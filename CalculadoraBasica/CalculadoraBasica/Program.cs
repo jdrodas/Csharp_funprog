@@ -5,10 +5,10 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 - Implementar una calculadora básica con las operaciones suma, resta, multiplicación y división
-  utilizando el ciclo de control While, el selector múltiple "switch/case" y control de excepciones
-  con try/catch
+ utilizando el ciclo de control While, el selector múltiple "switch/case" y control de excepciones
+ con try/catch
 
- */
+*/
 
 namespace CalculadoraBasica
 {

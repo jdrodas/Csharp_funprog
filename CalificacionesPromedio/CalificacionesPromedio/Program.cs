@@ -4,14 +4,14 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
 ----------
-    Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
-    5 calificaciones numéricas entre 0 y 5, calcule su promedio y finalmente que indique si aprobó o no.
-    Se considera aprobación del semestre cuando el promedio sea mayor o igual a 3.00.
+   Utilizando condicionales, ciclos de control y control de excepciones, realice un programa que lea
+   5 calificaciones numéricas entre 0 y 5, calcule su promedio y finalmente que indique si aprobó o no.
+   Se considera aprobación del semestre cuando el promedio sea mayor o igual a 3.00.
 
 Adicionalmente:
-    Identificar la cultura utilizada así como el separador decimal.
+   Identificar la cultura utilizada así como el separador decimal.
 
- */
+*/
 
 using System;
 using System.Globalization;
