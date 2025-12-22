@@ -5,14 +5,14 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 - Demostrar el funcionamiento básico del Entorno Integrado de Desarrollo (IDE), realizando
- las actividades de edición de código, compilación, depuración y ejecución de la aplicación.
+  las actividades de edición de código, compilación, depuración y ejecución de la aplicación.
 
 - Visualizar información en la consola, en forma de cadena de caracteres.
 
 - Declarar variables tipo string y visualizar su contenido en la consola.
 
 - Demostrar el funcionamiento de los métodos WriteLine y Write de la clase Console.
-*/
+ */
 
 using System;
 

@@ -12,8 +12,8 @@ float.Parse() y Convert.ToInt32()
 
 Demostrar la prevención básica de errores por ingreso de datos equivocados utilizando
 el control de excepciones con las instrucciones try - catch
-
-*/
+ 
+ */
 
 using System;
 
@@ -72,9 +72,9 @@ namespace EntradaDatos
                 //estatura = Convert.ToSingle(Console.ReadLine());
                 //O hacemos un Parse
                 estatura = float.Parse(Console.ReadLine()!);
-
+                
                 //Podemos convertir el dato float a string, especificando el formato de salida
-                Console.WriteLine($"Dijiste que tu estatura es de {estatura} m");
+                Console.WriteLine($"Dijiste que tu estatura es de {estatura}");
             }
             catch (FormatException error)
             {
