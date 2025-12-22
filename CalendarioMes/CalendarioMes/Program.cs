@@ -25,7 +25,7 @@ namespace CalendarioMes
             Console.WriteLine("Las semanas en Colombia comienzan los lunes");
 
             int año, mes;
-            bool datoCorrecto ;
+            bool datoCorrecto;
 
             //Validamos que el dato del año ingresado sea correcto
             do

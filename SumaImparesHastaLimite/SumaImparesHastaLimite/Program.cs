@@ -7,7 +7,7 @@ Propósito:
 - Hallar la suma de los números impares hasta un límite usando una función
 - Implementar el control de ingreso de datos con la función TryParse()
 
- */
+*/
 
 namespace SumaImparesHastaLimite
 {

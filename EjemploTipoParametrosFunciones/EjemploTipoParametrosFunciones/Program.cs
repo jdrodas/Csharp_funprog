@@ -47,7 +47,7 @@ namespace EjemploTipoParametrosFunciones
             Console.WriteLine("\n*** Demostración paso de parametros por referencia - Sentido \"out\" ***");
 
             //Aqui declaramos las variables al momento de invocar el método - Inline Variable Declaration
-            AsignaNombreMes(out string mes1, out string  mes2, out string  mes3);
+            AsignaNombreMes(out string mes1, out string mes2, out string mes3);
             Console.WriteLine($"Los meses son {mes1}, {mes2}, {mes3}");
             Console.ReadKey();
 

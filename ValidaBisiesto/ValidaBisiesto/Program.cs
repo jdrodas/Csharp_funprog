@@ -7,7 +7,7 @@ Propósito:
 - Implemementa una función que valida si un año es bisiesto
 - Implementa una función que indica si un numero es divisible por otro
 
- */
+*/
 
 using System;
 

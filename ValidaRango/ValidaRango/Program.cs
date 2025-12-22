@@ -6,7 +6,7 @@ Propósito:
 ----------
 - Valida si un número ingresado hace parte de un rango definido por otros dos números
 
- */
+*/
 
 namespace ValidaRango
 {
