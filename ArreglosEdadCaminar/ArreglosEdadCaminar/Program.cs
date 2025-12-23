@@ -15,7 +15,7 @@ como parámetro el arreglo y devuelva el valor requerido.
 
 El programa al final visualizará el contenido del arreglo 20 valores por línea, así como los valores 
 de las variables solicitadas
- */
+*/
 
 
 namespace ArreglosEdadCaminar

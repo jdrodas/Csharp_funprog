@@ -8,7 +8,7 @@ Realice un programa en C# que genere los números primos menores que 100 y
 los almacene en un arreglo. El programa debe implementar una función que 
 reciba el arreglo como parámetro y lo visualice en consola 5 elementos por 
 línea, separados entre sí por un tabulador.
- */
+*/
 
 namespace ArregloPrimos
 {

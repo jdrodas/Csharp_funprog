@@ -4,10 +4,10 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
 ----------
- - Demostrar el funcionamiento básico de los arreglos
- - Convertir cadena de caracteres a un arreglo de caracteres
- - utilizar la sentencia switch como opción a los condicionales múltiples
- - Crear una cadena de caracteres a partir de un arreglo de caracteres
+- Demostrar el funcionamiento básico de los arreglos
+- Convertir cadena de caracteres a un arreglo de caracteres
+- utilizar la sentencia switch como opción a los condicionales múltiples
+- Crear una cadena de caracteres a partir de un arreglo de caracteres
 
 */
 

@@ -21,11 +21,11 @@ con los valores correspondientes a los respectivos promedios
 
 Observaciones:
 --------------
-    -   Cuando utilizo Console.ReadLine() le coloco al final un "!" el "null-forgiving operator"
-        que me permite eliminar la advertencia asociada al código CS8601 - Posible asignación
-        de referencia nula.
+   -   Cuando utilizo Console.ReadLine() le coloco al final un "!" el "null-forgiving operator"
+       que me permite eliminar la advertencia asociada al código CS8601 - Posible asignación
+       de referencia nula.
 
-        https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/operators/null-forgiving
+       https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/operators/null-forgiving
 */
 
 using System;
@@ -38,7 +38,7 @@ namespace MatricesNotasEstudiantes
         {
             int cantidadEstudiantes = 5;
             int cantidadMaterias = 5;
-            
+
             Console.WriteLine("Programa para calcular el promedio de las notas");
             Console.WriteLine($"Se ingresará {cantidadEstudiantes} estudiantes para {cantidadMaterias} materias");
             Console.WriteLine("Las notas van entre 0 y 5\n\n");
@@ -60,7 +60,7 @@ namespace MatricesNotasEstudiantes
 
             do
             {
-                Console.Write($"\nIngresa el nombre del estudiante No. {totalEstudiantes+1}: ");
+                Console.Write($"\nIngresa el nombre del estudiante No. {totalEstudiantes + 1}: ");
                 nombreEstudiantes[totalEstudiantes] = Console.ReadLine()!;
 
                 if (nombreEstudiantes[totalEstudiantes].Length > 0)
@@ -105,7 +105,7 @@ namespace MatricesNotasEstudiantes
                         $"la materia {nombreMaterias[materia]}: ");
                         lasNotas[estudiante, materia] = float.Parse(Console.ReadLine()!);
 
-                        if(lasNotas[estudiante, materia]>=0 && lasNotas[estudiante, materia]<=5)
+                        if (lasNotas[estudiante, materia] >= 0 && lasNotas[estudiante, materia] <= 5)
                             materia++;
                         else
                             Console.WriteLine("El valor ingresado no está en el rango [0;5]. Intenta nuevamente!");
@@ -153,7 +153,7 @@ namespace MatricesNotasEstudiantes
                 //Aqui recorremos los estudiantes con su calificación
                 for (estudiante = 0; estudiante < nombreEstudiantes.Length; estudiante++)
                     Console.WriteLine($"\tEstudiante: {nombreEstudiantes[estudiante]}, " +
-                        $"Calificación: {lasNotas[estudiante,materia]}");
+                        $"Calificación: {lasNotas[estudiante, materia]}");
 
                 //Aqui colocamos el promedio de la materia
                 Console.WriteLine($"\t\tEl promedio de {nombreMaterias[materia]} " +
@@ -210,7 +210,7 @@ namespace MatricesNotasEstudiantes
                 //Dividimos la suma de las notas por la cantidad de materias
                 losPromedios[materia] /= lasNotas.GetLength(0);
             }
-                
+
             return losPromedios;
         }
     }

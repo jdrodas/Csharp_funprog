@@ -24,7 +24,7 @@ namespace MatricesZoo
             Console.WriteLine("Se visualizan totales por entorno y por tipo de alimentación\n\n");
 
             string[] tipos = ["Herbívoros", "Carnívoros"];
-            string[] entornos = ["Acuático", "Terrestre", "Aéreo" ];
+            string[] entornos = ["Acuático", "Terrestre", "Aéreo"];
 
             float[,] alimentos = new float[tipos.Length, entornos.Length];
 

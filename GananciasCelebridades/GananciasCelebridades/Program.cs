@@ -17,9 +17,9 @@ En el país en el que viven, hay una ley de impuestos que estipula que:
 - A partir de 3,500$, se les descuenta un 5% adicional.
 - A partir de 4,500$, se les descuenta un 10% adicional.
 - Si la cifra es superior a 5,500$, se les descuenta un 35% único. 
-  Esto quiere decir, que no se adicionan los impuestos anteriores.
+ Esto quiere decir, que no se adicionan los impuestos anteriores.
 
- */
+*/
 
 using System;
 
@@ -32,8 +32,8 @@ namespace GananciasCelebridades
             Console.WriteLine("Programa para calcular ganancias de celebridades\n");
             Console.WriteLine("Estos son los ingresos mensuales de las celebridades:");
 
-            string[] nombreCelebridades = ["Gabriel", "Ana", "Catalina", "Francisco" ];
-            float[] salariosCelebridades = [ 4000, 3000, 4500, 5800 ];
+            string[] nombreCelebridades = ["Gabriel", "Ana", "Catalina", "Francisco"];
+            float[] salariosCelebridades = [4000, 3000, 4500, 5800];
 
             for (int i = 0; i < nombreCelebridades.Length; i++)
                 Console.WriteLine($"{nombreCelebridades[i]}, Sueldo: {salariosCelebridades[i]}");

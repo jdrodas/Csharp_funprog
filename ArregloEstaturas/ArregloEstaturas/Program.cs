@@ -17,7 +17,7 @@ Adicionalmente:
 •	Debe implementar un ciclo de control que garantice que se tengan 10 datos válidos.
 •	Visualizar todos los resultados esperados (contenido del arreglo, estatura mayor, estatura menor y estatura promedio).
 
- */
+*/
 
 using System.Globalization;
 

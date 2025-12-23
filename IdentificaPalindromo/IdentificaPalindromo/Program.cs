@@ -10,7 +10,7 @@ Propósito:
 - Convertir un arreglo de caracteres a una cadena de caracteres
 - Implementar una función que remueva los espacios de una cadena de caracteres 
 
- */
+*/
 
 using System;
 

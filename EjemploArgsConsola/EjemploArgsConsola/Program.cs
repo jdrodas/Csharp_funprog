@@ -6,7 +6,7 @@ Propósito:
 ----------
 - Demostrar el funcionamiento de los argumentos que recibe la función Main()
 - El programa generará una cantidad de numeros aleatorios de un rango especificado
-  y los ordenará según el criterio que indique el usuario
+ y los ordenará según el criterio que indique el usuario
 
 El programa recibe 4 argumentos:
 0: criterio de ordernamiento: ascendente/descendente
@@ -22,7 +22,7 @@ Validaciones:
 - El 4to argumento debe ser una cantidad > 0
 
 Este programa debe ejecutarse desde una ventana de comandos para poder especificar los 4 argumentos
-             
+
 */
 
 namespace EjemploArgsConsola

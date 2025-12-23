@@ -57,7 +57,7 @@ namespace ArregloAleatorioLetras
 
             OrganizaArregloTercerMetodo(bolsaLetras);
 
-            OrganizaArregloCuartoMetodo(bolsaLetras,arregloAbecedario);
+            OrganizaArregloCuartoMetodo(bolsaLetras, arregloAbecedario);
         }
 
         /// <summary>

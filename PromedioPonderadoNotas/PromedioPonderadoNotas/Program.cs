@@ -25,7 +25,7 @@ el semestre.
 Implementar la solución utilizando control de excepciones, condicionales, ciclos de control,
 funciones y arreglos.
 
- */
+*/
 
 
 using System;

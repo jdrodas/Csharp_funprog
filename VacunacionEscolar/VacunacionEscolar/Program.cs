@@ -20,7 +20,7 @@ namespace VacunacionEscolar
             Console.WriteLine("Se registrarán las vacunas de los estudiantes según sean ");
             Console.WriteLine("(A)stra Zeneca, (S)inovac, (P)fizer, (J)enssen y (M)oderna");
 
-            int cantidadEstudiantes=0;
+            int cantidadEstudiantes = 0;
             bool datoCorrecto = false;
 
             do
@@ -47,7 +47,7 @@ namespace VacunacionEscolar
 
             Console.WriteLine($"Generando simulación de vacunación para {cantidadEstudiantes} estudiantes...");
 
-            string[] lasVacunas = ["Astra Zeneca","Sinovac","Pfizer","Jenssen","Moderna"];
+            string[] lasVacunas = ["Astra Zeneca", "Sinovac", "Pfizer", "Jenssen", "Moderna"];
 
             string[] vacunasAplicadas = new string[cantidadEstudiantes];
             Random aleatorio = new();
@@ -106,7 +106,7 @@ namespace VacunacionEscolar
 
         static void VisualizaVacunasAplicadas(string[] arregloVacunas)
         {
-            for(int i=0; i<arregloVacunas.Length; i++)
+            for (int i = 0; i < arregloVacunas.Length; i++)
                 Console.WriteLine($"Estudiante No. {(i + 1)}, vacunado con {arregloVacunas[i]}");
         }
     }
