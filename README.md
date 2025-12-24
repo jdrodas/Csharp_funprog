@@ -412,52 +412,77 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 
 ### Examen No. 1
 
->>### [Ex01_ColonizacionSolar](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_ColonizacionSolar)
->>- Tema de examen 01: Condicionales y Ciclos de control. Colonización Sistema Solar. Ejercicio resuelto.
->>- Actualizado a .NET 7
+### [Ex01_BuenLugar](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_BuenLugar)
+- Tema de examen 01: Condicionales y Ciclos de control. El Buen Lugar - Evaluación de Acciones. Ejercicio resuelto.
+- Actualizado a .NET 10
 
->>### [Ex01_GravityFalls](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_GravityFalls)
->>- Tema de examen 01: Condicionales y Ciclos de control. Gravity Falls – Gestión de la cabaña. Ejercicio resuelto.
->>- Actualizado a .NET 7
+### [Ex01_ColonizacionSolar](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_ColonizacionSolar)
+- Tema de examen 01: Condicionales y Ciclos de control. Colonización Sistema Solar. Ejercicio resuelto.
+- Actualizado a .NET 10
 
->>### [Ex01_FumigacionDomiciliaria](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_FumigacionDomiciliaria)
->>- Tema de examen 01: Condicionales y Ciclos de control. Fumigación contra plagas – Conjuntos Residenciales. Ejercicio resuelto.
->>- Actualizado a .NET 7
+### [Ex01_ConcursoOrquideas](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_ConcursoOrquideas)
+- Tema de examen 01: Condicionales y Ciclos de control. Concurso Orquideas. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_DesfileSilleteros](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_DesfileSilleteros)
+- Tema de examen 01: Condicionales y Ciclos de control. Desfile de Silleteros. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_Divergente](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_Divergente)
+- Tema de examen 01: Condicionales y Ciclos de control. Divergente - Asignación de facciones. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_DungeonCraft](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_DungeonCraft)
+- Tema de examen 01: Condicionales y Ciclos de control. Analizador de Logros - DungeonCraft. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_FinalSpaceRescate](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_FinalSpaceRescate)
+- Tema de examen 01: Condicionales y Ciclos de control. Final Space – Rescate de Mooncake. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_FumigacionDomiciliaria](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_FumigacionDomiciliaria)
+- Tema de examen 01: Condicionales y Ciclos de control. Fumigación contra plagas – Conjuntos Residenciales. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_GravityFalls](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_GravityFalls)
+- Tema de examen 01: Condicionales y Ciclos de control. Gravity Falls – Gestión de la cabaña. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_MaltratoMorty](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_MaltratoMorty)
+- Tema de examen 01: Condicionales y Ciclos de control. Rick & Morty – Evaluación de maltratos. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_ProduccionLechera](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_ProduccionLechera)
+- Tema de examen 01: Condicionales y Ciclos de control. Producción Lechera. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_secuenciaADN](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_secuenciaADN)
+- Tema de examen 01: Condicionales y Ciclos de control. Procesamiento de secuencias de ADN. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_SombreroSeleccionador](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_SombreroSeleccionador)
+- Tema de examen 01: Condicionales y Ciclos de control. Análisis de resultados del sombrero seleccionador. Ejercicio resuelto.
+- Actualizado a .NET 10
+
+### [Ex01_VacunacionEscolar](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex01_VacunacionEscolar)
+- Tema de examen 01: Condicionales y Ciclos de control. Vacunación Escolar. Ejercicio resuelto.
+- Actualizado a .NET 10
 
 
->>### [ex01_MaltratoMorty](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_MaltratoMorty)
->>- Tema de examen 01: Condicionales y Ciclos de control. Rick & Morty – Evaluación de maltratos. Ejercicio resuelto.
-
->>### [ex01_FinalSpaceRescate](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_FinalSpaceRescate)
->>- Tema de examen 01: Condicionales y Ciclos de control. Final Space – Rescate de Mooncake. Ejercicio resuelto.
-
->>### [ex01_SombreroSeleccionador](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_SombreroSeleccionador)
->>- Tema de examen 01: Condicionales y Ciclos de control. Análisis de resultados del sombrero seleccionador. Ejercicio resuelto.
-
->>### [ex01_Divergente](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_Divergente)
->>- Tema de examen 01: Condicionales y Ciclos de control. Divergente - Asignación de facciones. Ejercicio resuelto.
-
->>### [ex01_DungeonCraft](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_DungeonCraft)
->>- Tema de examen 01: Condicionales y Ciclos de control. Analizador de Logros - DungeonCraft. Ejercicio resuelto.
-
->>### [ex01_BuenLugar](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_BuenLugar)
->>- Tema de examen 01: Condicionales y Ciclos de control. El Buen Lugar - Evaluación de Acciones. Ejercicio resuelto.
 
 
->>### [ex01_secuenciaADN](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_secuenciaADN)
->>- Tema de examen 01: Condicionales y Ciclos de control. Procesamiento de secuencias de ADN. Ejercicio resuelto.
 
->>### [ex01_VacunacionEscolar](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_VacunacionEscolar)
->>- Tema de examen 01: Condicionales y Ciclos de control. Vacunación Escolar. Ejercicio resuelto.
 
->>### [ex01_ProduccionLechera](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_ProduccionLechera)
->>- Tema de examen 01: Condicionales y Ciclos de control. Producción Lechera. Ejercicio resuelto.
 
->>### [ex01_ConcursoOrquideas](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_ConcursoOrquideas)
->>- Tema de examen 01: Condicionales y Ciclos de control. Concurso Orquideas. Ejercicio resuelto.
 
->>### [ex01_DesfileSilleteros](https://github.com/jdrodas/Csharp_funprog/tree/master/ex01_DesfileSilleteros)
->>- Tema de examen 01: Condicionales y Ciclos de control. Concurso Orquideas. Ejercicio resuelto.
+
+
+
+
+
+
+
+
 
 
 ### Examen No. 2
