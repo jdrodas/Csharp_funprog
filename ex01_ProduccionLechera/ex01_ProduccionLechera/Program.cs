@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ex01_ProduccionLechera
+﻿namespace Ex01_ProduccionLechera
 {
     class Program
     {
@@ -21,13 +15,13 @@ namespace ex01_ProduccionLechera
                 try
                 {
                     Console.Write("Ingresa la producción de leche de vaca: ");
-                    litrosVaca = float.Parse(Console.ReadLine());
+                    litrosVaca = float.Parse(Console.ReadLine()!);
 
                     Console.Write("Ingresa la producción de leche de cabra: ");
-                    litrosCabra = float.Parse(Console.ReadLine());
+                    litrosCabra = float.Parse(Console.ReadLine()!);
 
                     Console.Write("Ingresa la producción de leche de bufala: ");
-                    litrosBufala = float.Parse(Console.ReadLine());
+                    litrosBufala = float.Parse(Console.ReadLine()!);
 
                     //Validamos que TODOS los datos sean positivos
                     if (litrosVaca >= 0 && litrosCabra >= 0 && litrosBufala >= 0)

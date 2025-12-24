@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_secuenciaADN
+Programa:       Ex01_secuenciaADN
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -21,13 +21,9 @@ representa este valor del total.
 
 Si hay datos erróneos, deberá indicar solamente cuantos datos erróneos se presentaron.
 
- */
+*/
 
-
-
-using System;
-
-namespace ex01_secuenciaADN
+namespace Ex01_secuenciaADN
 {
     class Program
     {
@@ -43,12 +39,12 @@ namespace ex01_secuenciaADN
             string datoProteina;
             int totalElementos = 1, totalErrores = 0;
             float totalA = 0, totalC = 0, totalG = 0, totalT = 0;
-            
+
             //El ciclo de control
             while (totalElementos <= 20)
             {
                 Console.Write("\nElemento No. {0}, Ingrese la proteina (A/C/G/T): ", totalElementos);
-                datoProteina = Console.ReadLine().ToUpper();
+                datoProteina = Console.ReadLine()!.ToUpper();
 
                 //Aqui validamos si el dato ingresado corresponde a los valores válidos
                 if (datoProteina == "A" || datoProteina == "C" || datoProteina == "G" || datoProteina == "T")
@@ -64,7 +60,7 @@ namespace ex01_secuenciaADN
                         totalG++;
 
                     if (datoProteina == "T")
-                        totalT++;                    
+                        totalT++;
                 }
 
                 //En caso de que sea erroneo, se visualiza el error y se aumenta el conteo
@@ -84,7 +80,7 @@ namespace ex01_secuenciaADN
 
             //Primero identificamos si el procesamiento fue correcto
             if (totalErrores == 0)
-            { 
+            {
                 Console.WriteLine("\nEl procesamiento fue correcto, no se presentaron errores.");
 
                 // declaramos las variables de los porcentajes

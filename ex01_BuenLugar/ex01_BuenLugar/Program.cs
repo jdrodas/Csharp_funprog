@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_BuenLugar
+Programa:       Ex01_BuenLugar
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -32,11 +32,11 @@ clasificación hasta que se completen las 12 evaluaciones.
 Luego de estas evaluaciones, se estable las siguientes condiciones para realizar el juicio 
 final y definir el lugar definitivo del alma:
 •	Si las acciones Redentoras (R) superan la mitad de las evaluaciones, el alma se irá al 
-    Buen Lugar.
+   Buen Lugar.
 •	Si las acciones Interesadas (I) más las acciones Maléficas (M) superan la mitad de las 
-    evaluaciones, el alma se irá al Mal Lugar.
+   evaluaciones, el alma se irá al Mal Lugar.
 •	En cualquier otro resultado, el alma se irá al Lugar Medio, una especie de purgatorio para 
-    aquellas almas que no lograron tener un impacto significativo durante su existencia.
+   aquellas almas que no lograron tener un impacto significativo durante su existencia.
 
 Requerimiento:
 Realice un programa en C# - Aplicación de Consola, en la que se pida la evaluación de 12 acciones 
@@ -52,9 +52,7 @@ final del alma: El Buen Lugar, El Mal Lugar o El Lugar Medio.
 
 */
 
-using System;
-
-namespace ex01_BuenLugar
+namespace Ex01_BuenLugar
 {
     class Program
     {
@@ -71,7 +69,7 @@ namespace ex01_BuenLugar
             while (totalAcciones <= 12)
             {
                 Console.Write("Ingresa la evaluación para la acción No. {0}: ", totalAcciones);
-                evaluacion = Console.ReadLine().ToUpper();
+                evaluacion = Console.ReadLine()!.ToUpper();
 
                 //aqui se valida si la evaluación está con las opciones disponibles
                 if (evaluacion == "R" || evaluacion == "G" || evaluacion == "I" || evaluacion == "M")
@@ -112,9 +110,9 @@ namespace ex01_BuenLugar
                 Console.WriteLine("La mayoría de las acciones son Redentoras, el alma va al Buen Lugar!");
             else
                 if ((totalI + totalM) > 6)
-                    Console.WriteLine("La mayoría de las acciones son Maléficas e interesadas, el alma va al Mal Lugar!");
-                else
-                    Console.WriteLine("Las acciones no tienen el impacto suficiente, el alma va al Lugar Medio");
+                Console.WriteLine("La mayoría de las acciones son Maléficas e interesadas, el alma va al Mal Lugar!");
+            else
+                Console.WriteLine("Las acciones no tienen el impacto suficiente, el alma va al Lugar Medio");
         }
     }
 }

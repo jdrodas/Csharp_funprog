@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_DungeonCraft
+Programa:       Ex01_DungeonCraft
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -26,16 +26,13 @@ jugador todavía no ha alcanzado la cantidad de cubos necesarios para pasar de n
 
 */
 
-
-using System;
-
-namespace ex01_DungeonCraft
+namespace Ex01_DungeonCraft
 {
     class Program
     {
         static void Main(string[] args)
         {
-            float cubosBarro=0, cubosMadera=0, cubosPiedra=0;
+            float cubosBarro = 0, cubosMadera = 0, cubosPiedra = 0;
 
             Console.WriteLine("DugeonCraft - Analizador de Logros para cambio de nivel.");
             Console.WriteLine("Debe recoger como mínimo 100 cubos, entre barro, madera y piedra.");
@@ -49,17 +46,17 @@ namespace ex01_DungeonCraft
             bool datosCorrectos = false;
 
             //Este ciclo nos controla que los datos ingresados sean de formato numérico
-            while(datosCorrectos==false)
-            { 
+            while (datosCorrectos == false)
+            {
                 try
                 {
                     //Aqui leemos la cantidad de cubos por material
                     Console.Write("Ingresa la cantidad de cubos de barro: ");
-                    cubosBarro = float.Parse(Console.ReadLine());
+                    cubosBarro = float.Parse(Console.ReadLine()!);
                     Console.Write("Ingresa la cantidad de cubos de madera: ");
-                    cubosMadera = float.Parse(Console.ReadLine());
+                    cubosMadera = float.Parse(Console.ReadLine()!);
                     Console.Write("Ingresa la cantidad de cubos de piedra: ");
-                    cubosPiedra = float.Parse(Console.ReadLine());
+                    cubosPiedra = float.Parse(Console.ReadLine()!);
 
                     //Si los datos fueron correctos, salimos del ciclo de control
                     datosCorrectos = true;
@@ -75,7 +72,7 @@ namespace ex01_DungeonCraft
             //Despues de ingresados los datos de los cubos, calculamos porcentajes
             float totalCubos = cubosBarro + cubosMadera + cubosPiedra;
 
-            float porcBarro =  (cubosBarro / totalCubos) * 100;
+            float porcBarro = (cubosBarro / totalCubos) * 100;
             float porcMadera = (cubosMadera / totalCubos) * 100;
             float porcPiedra = (cubosPiedra / totalCubos) * 100;
 
@@ -103,7 +100,7 @@ namespace ex01_DungeonCraft
             if (cumpleBarro == "SI" && cumpleMadera == "SI" && cumplePiedra == "SI")
                 Console.WriteLine("Los materiales cumplen con los rangos requeridos.");
             else
-            { 
+            {
                 Console.WriteLine("Los materiales no cumplen con los rangos requeridos.");
                 cumplimientoRangos = "NO";
             }

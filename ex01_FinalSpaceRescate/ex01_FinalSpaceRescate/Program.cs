@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_FinalSpaceRescate
+Programa:       Ex01_FinalSpaceRescate
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -38,9 +38,7 @@ S.A.M.E.S. se requieren para liberar a Mooncake, teniendo presente que cada andr
 
 */
 
-using System;
-
-namespace ex01_FinalSpaceRescate
+namespace Ex01_FinalSpaceRescate
 {
     class Program
     {
@@ -58,7 +56,7 @@ namespace ex01_FinalSpaceRescate
                 Console.Write("\nIngresa el número entero maestro entre 3 y 30: ");
                 try
                 {
-                    numeroMaestro = int.Parse(Console.ReadLine());
+                    numeroMaestro = int.Parse(Console.ReadLine()!);
                     if (numeroMaestro >= 3 && numeroMaestro <= 30)
                         datoCorrecto = true;
                     else

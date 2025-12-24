@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_MaltratoMorty
+Programa:       Ex01_MaltratoMorty
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
@@ -43,11 +43,9 @@ Cuantas situaciones por cada tipo de maltrato, el promedio de calificación de c
 tipo y la recomendación de castigo en caso de que supere el valor de 7.0 para las 
 situaciones tipo (T) Trauma mental o (F) Daño físico. 
 
- */
+*/
 
-using System;
-
-namespace ex01_MaltratoMorty
+namespace Ex01_MaltratoMorty
 {
     class Program
     {
@@ -70,7 +68,7 @@ namespace ex01_MaltratoMorty
             while (totalSituaciones <= 20)
             {
                 Console.Write("\nIngresa el tipo  (T,F,P) para la situación # {0}: ", totalSituaciones);
-                laSituacion = Console.ReadLine().ToUpper();
+                laSituacion = Console.ReadLine()!.ToUpper();
 
                 //aqui identificamos el tipo de situación
                 if (laSituacion == "T" || laSituacion == "F" || laSituacion == "P")
@@ -78,7 +76,7 @@ namespace ex01_MaltratoMorty
                     try
                     {
                         Console.Write("Ingresa un valor numérico entre 1 y 10 para la calificación: ");
-                        laCalificacion = float.Parse(Console.ReadLine());
+                        laCalificacion = float.Parse(Console.ReadLine()!);
 
                         if (laCalificacion >= 1 && laCalificacion <= 10)
                         {
@@ -146,8 +144,6 @@ namespace ex01_MaltratoMorty
             {
                 Console.WriteLine("\nCalificaciones insuficientes para máximo castigo. Se recomienda vigilar a Rick!");
             }
-
-
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_DesfileSilleteros
+Programa:       Ex01_DesfileSilleteros
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -37,19 +37,16 @@ cantidades de participantes negativas.
 • El programa visualizará el resumen del desfile, escribiendo en consola para cada 
 tipo de silleta, la cantidad de participantes y el porcentaje del total.
 • Al final se debe decir:
-    o El desfile fue preocupante si la categoría comercial es la de mayor número de
-      participantes.
-    o El desfile fue tradicional si la categoría tradicional es la de mayor número 
-      de participantes.
-    o El desfile fue balanceado si todas las categorías tuvieron igual número de 
-      participantes.
+   o El desfile fue preocupante si la categoría comercial es la de mayor número de
+     participantes.
+   o El desfile fue tradicional si la categoría tradicional es la de mayor número 
+     de participantes.
+   o El desfile fue balanceado si todas las categorías tuvieron igual número de 
+     participantes.
 
 */
 
-
-using System;
-
-namespace ex01_DesfileSilleteros
+namespace Ex01_DesfileSilleteros
 {
     public class Program
     {
@@ -68,7 +65,7 @@ namespace ex01_DesfileSilleteros
             do
             {
                 Console.Write($"\nIngresa categoría para el silletero No. {silleteroActual} (E/T/M/C): ");
-                categoriaSilletero = Console.ReadLine().ToUpper();
+                categoriaSilletero = Console.ReadLine()!.ToUpper();
 
                 if (categoriaSilletero == "E" || categoriaSilletero == "T" || categoriaSilletero == "M" || categoriaSilletero == "C")
                 {

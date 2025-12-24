@@ -24,16 +24,14 @@ porcentaje del total recolectado fue conseguido por cada responsable.
 La aplicación entonces:
 •	Recolectará el valor numérico de la meta establecida por Mabel.
 •	Recolectará cuatro valores numéricos correspondientes a lo recogido por cada 
-    responsable.
+   responsable.
 
 La aplicación al final visualizará como resultados, el total recolectado por todos, 
 el valor individual de cada responsable y su correspondiente porcentaje del total. 
 Si el total recolectado es igual o superior a la meta establecida por Mabel, debe 
 escribir la frase “Meta Cumplida, ¡eres buena jefe Mabel!”.
 
- */
-
-using System;
+*/
 
 namespace Ex01_GravityFalls
 {
@@ -186,8 +184,6 @@ namespace Ex01_GravityFalls
             Console.WriteLine($"Dipper: Total recogido {cuotaDipper}, que equivale al {porcDipper.ToString("00.00")}%");
             Console.WriteLine($"Soos: Total recogido {cuotaSoos}, que equivale al {porcSoos.ToString("00.00")}%");
             Console.WriteLine($"Mabel: Total recogido {cuotaMabel}, que equivale al {porcMabel.ToString("00.00")}%");
-
-
         }
     }
 }

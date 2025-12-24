@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_SombreroSeleccionador
+Programa:       Ex01_SombreroSeleccionador
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -32,10 +32,7 @@ debe indicar que fue una clasificación normal.
 
 */
 
-
-using System;
-
-namespace ex01_SombreroSeleccionador
+namespace Ex01_SombreroSeleccionador
 {
     class Program
     {
@@ -56,7 +53,7 @@ namespace ex01_SombreroSeleccionador
             while (totalEstudiantes <= 16)
             {
                 Console.Write("Ingresa la clasificación (G,H,R,S) para el estudiante # {0}: ", totalEstudiantes);
-                laCasa = Console.ReadLine().ToUpper();
+                laCasa = Console.ReadLine()!.ToUpper();
 
                 //aqui identificamos a cual casa pertenece
                 if (laCasa == "G" || laCasa == "H" || laCasa == "R" || laCasa == "S")

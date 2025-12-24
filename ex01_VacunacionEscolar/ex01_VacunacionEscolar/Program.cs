@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ex01_VacunacionEscolar
+﻿namespace Ex01_VacunacionEscolar
 {
     class Program
     {
@@ -28,7 +22,7 @@ namespace ex01_VacunacionEscolar
                 try
                 {
                     Console.Write("\nIngresa la cantidad de personas que se registrarán hoy: ");
-                    totalVacunados = float.Parse(Console.ReadLine());
+                    totalVacunados = float.Parse(Console.ReadLine()!);
 
                     if (totalVacunados <= 0)
                         Console.WriteLine("La cantidad de personas debe ser un numero mayor que cero. Intenta nuevamente!");
@@ -45,22 +39,22 @@ namespace ex01_VacunacionEscolar
                                 Console.WriteLine($"\n\nIngresa los valores individuales por cada vacuna, los cuales en total deben sumar {totalVacunados}: ");
 
                                 Console.Write("Ingresa los vacunados con Astra-Zeneca: ");
-                                vacunadosA = float.Parse(Console.ReadLine());
+                                vacunadosA = float.Parse(Console.ReadLine()!);
 
                                 Console.Write("Ingresa los vacunados con Pfizer: ");
-                                vacunadosP = float.Parse(Console.ReadLine());
+                                vacunadosP = float.Parse(Console.ReadLine()!);
 
                                 Console.Write("Ingresa los vacunados con Moderna: ");
-                                vacunadosM = float.Parse(Console.ReadLine());
+                                vacunadosM = float.Parse(Console.ReadLine()!);
 
                                 Console.Write("Ingresa los vacunados con Sinovac: ");
-                                vacunadosS = float.Parse(Console.ReadLine());
+                                vacunadosS = float.Parse(Console.ReadLine()!);
 
                                 Console.Write("Ingresa los vacunados con Jenssen: ");
-                                vacunadosJ = float.Parse(Console.ReadLine());
+                                vacunadosJ = float.Parse(Console.ReadLine()!);
 
                                 Console.Write("Ingresa los no vacunados: ");
-                                vacunadosN = float.Parse(Console.ReadLine());
+                                vacunadosN = float.Parse(Console.ReadLine()!);
 
                                 //Se hacen dos preguntas:
                                 //Si los valores de de cada vacuna individual son mayores o igual que cero

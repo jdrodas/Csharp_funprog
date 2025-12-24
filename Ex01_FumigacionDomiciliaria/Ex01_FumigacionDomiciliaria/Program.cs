@@ -21,36 +21,34 @@ Dependiendo del control que se pretenda hacer, la empresa se prepara con el prod
 nuestro caso, se limitarán las opciones a fumigación contra Roedores, Insectos y Hongos.
 
 Cada hogar del conjunto residencial puede escoger que tratamiento aplicar, teniendo presente que
- - En este caso particular, cada hogar solo realizará un proceso de fumigación.
- - En este caso particular, puede presentarse que un hogar no realice fumigación
+- En este caso particular, cada hogar solo realizará un proceso de fumigación.
+- En este caso particular, puede presentarse que un hogar no realice fumigación
 
 Se requiere realizar un programa que permita llevar el registro de las fumigaciones de los hogares de un
 conjunto residencial, indicando para cada tipo de plaga, la cantidad de hogares que se fumigarán.
 
 El programa visualizará los resultados indicando :
- - Cuantos hogares se fumigaron
- - Para cada plaga, cuantos hogares se fumigaron y que porcentaje del total representa.
- - Cuantos hogares no se fumigaron y qué porcentaje del total representa.
+- Cuantos hogares se fumigaron
+- Para cada plaga, cuantos hogares se fumigaron y que porcentaje del total representa.
+- Cuantos hogares no se fumigaron y qué porcentaje del total representa.
 
 Para evaluar el proceso de fumigación, el programa visualizará los siguientes mensajes en caso de que se
 presenten estos escenarios:
- -  “Fumigación exitosa”, si la totalidad de los hogares fueron fumigados.
- -  “Fumigación incompleta”, Si hay hogares que no se fumigaron.
+-  “Fumigación exitosa”, si la totalidad de los hogares fueron fumigados.
+-  “Fumigación incompleta”, Si hay hogares que no se fumigaron.
 
 Requerimientos:
 -   Realice un programa en C#.NET, aplicación de consola que implemente la captura de datos,
-    cálculo de porcentajes y visualización de resultados.
+   cálculo de porcentajes y visualización de resultados.
 -   Aunque las cantidades de hogares son números enteros, utilice el tipo de dato “float” para
-    almacenar los datos numéricos.
+   almacenar los datos numéricos.
 -   Se debe implementar el control de excepciones y las validaciones para que los valores numéricos
-    ingresados por el usuario cumplan con lo esperado. Ojo: No hay cantidades de hogares negativas.
-    Si se ingresa un dato erróneo, se debe controlar el error y volver a solicitar el dato.
+   ingresados por el usuario cumplan con lo esperado. Ojo: No hay cantidades de hogares negativas.
+   Si se ingresa un dato erróneo, se debe controlar el error y volver a solicitar el dato.
 -   El programa visualizará el resumen del proceso de fumigación, de acuerdo con la especificación
-    presentada previamente.
- 
- */
+   presentada previamente.
 
-using System;
+*/
 
 namespace Ex01_FumigacionDomiciliaria
 {
@@ -176,18 +174,18 @@ namespace Ex01_FumigacionDomiciliaria
                     $"se fumigaron {totalHogaresFumigados}.");
 
                 Console.WriteLine($"Para hongos se fumigaron {hogaresHongos} hogares " +
-                    $"que corresponde a {Math.Round(porcentajeHongos,2)}%");
+                    $"que corresponde a {Math.Round(porcentajeHongos, 2)}%");
 
                 Console.WriteLine($"Para insectos se fumigaron {hogaresInsectos} hogares " +
-                    $"que corresponde a {Math.Round(porcentajeInsectos,2)}%");
+                    $"que corresponde a {Math.Round(porcentajeInsectos, 2)}%");
 
                 Console.WriteLine($"Para roedores se fumigaron {hogaresRoedores} hogares " +
-                    $"que corresponde a {Math.Round(porcentajeRoedores,2)}%");
+                    $"que corresponde a {Math.Round(porcentajeRoedores, 2)}%");
 
                 if (hogaresSinFumigar > 0)
                 {
                     Console.WriteLine($"\nNo se fumigaron {hogaresSinFumigar} " +
-                    $"hogares que corresponde al {Math.Round(porcentajeSinFumigar,2)}%");
+                    $"hogares que corresponde al {Math.Round(porcentajeSinFumigar, 2)}%");
 
                     Console.WriteLine("FUMIGACIÓN INCOMPLETA: Hay hogares sin fumigar");
                 }

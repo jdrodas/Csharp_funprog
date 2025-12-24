@@ -1,5 +1,5 @@
 ﻿/*
-Programa:       ex01_Divergente
+Programa:       Ex01_Divergente
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
@@ -28,17 +28,15 @@ incluyendo el porcentaje de Divergentes. Para cada facción o divergentes, debe 
 el total de miembros y el porcentaje obtenido.
 
 - Si el porcentaje de miembros de Osadía más el porcentaje de Divergentes supera el 
-  40% del total, la aplicación debe decir “Jeanine, puedes proceder con la dominación 
-  total!”.
+ 40% del total, la aplicación debe decir “Jeanine, puedes proceder con la dominación 
+ total!”.
 
 - Si el porcentaje de miembros de Erudición es el menor de todos y no hay Divergentes, la
-  aplicación debe decir “Janine, ¡te tocó aplazar tu maléfico plan!”
+ aplicación debe decir “Janine, ¡te tocó aplazar tu maléfico plan!”
 
 */
 
-using System;
-
-namespace ex01_Divergente
+namespace Ex01_Divergente
 {
     class Program
     {
@@ -50,7 +48,7 @@ namespace ex01_Divergente
             Console.WriteLine("Cualquier otra letra será entendida como Divergente.");
 
             //Aqui declaramos las variables que utilizaremos
-            float totalA = 0, totalC = 0, totalE = 0, totalO = 0, totalV = 0, totalD =0;
+            float totalA = 0, totalC = 0, totalE = 0, totalO = 0, totalV = 0, totalD = 0;
             int totalAsignaciones = 1;
             string asignacion = "";
 
@@ -58,7 +56,7 @@ namespace ex01_Divergente
             while (totalAsignaciones <= 20)
             {
                 Console.Write("\nPor favor indique la asignación para la persona No. {0} (A/C/E/O/V): ", totalAsignaciones);
-                asignacion = Console.ReadLine().ToUpper();
+                asignacion = Console.ReadLine()!.ToUpper();
 
                 if (asignacion == "A" || asignacion == "C" || asignacion == "E" || asignacion == "O" || asignacion == "V")
                 {
@@ -106,14 +104,14 @@ namespace ex01_Divergente
             //Identificación de las condiciones para la frase final
 
             //Si porcentaje de Osadía más Divergentes suoera el 40%
-            if((porcO + porcD) > 40)
+            if ((porcO + porcD) > 40)
                 Console.WriteLine("\n\nJeanine, ¡Puedes proceder con la dominación total!");
 
             //Si el porcentaje de Erudicción es el menor de todass y no hay divergentes...
-            if(totalD==0 && 
-               porcE < porcA && 
-               porcE < porcC && 
-               porcE < porcO && 
+            if (totalD == 0 &&
+               porcE < porcA &&
+               porcE < porcC &&
+               porcE < porcO &&
                porcE < porcV)
                 Console.WriteLine("\n\nJeanine, ¡Te tocó aplazar tu maléfico plan!");
         }

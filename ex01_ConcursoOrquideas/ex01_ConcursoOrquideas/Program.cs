@@ -1,12 +1,12 @@
 ﻿/*
 
-Programa:       ex01_ConcursoOrquideas
+Programa:       Ex01_ConcursoOrquideas
 Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 
 Propósito:
 ----------
 Examen 01: Condicionales y Ciclos de control
- 
+
 Feria de Flores – Concurso de Orquídeas
 
 Medellín se encuentra nuevamente en Feria de las Flores y uno de los eventos principales
@@ -35,15 +35,13 @@ negativas.
 
 • El programa visualizará el resumen del concurso, escribiendo en consola para cada orquídea, la
 cantidad de visitantes que votaron por ese tipo y el porcentaje del total.
- 
+
 • Se debe identificar la favorita, la cual es la que tenga el mayor porcentaje de votos. Si no hay una
 favorita, se debe indicar simplemente que no hubo una única favorita.
 
 */
 
-using System;
-
-namespace ex01_ConcursoOrquideas
+namespace Ex01_ConcursoOrquideas
 {
     public class Program
     {
@@ -53,7 +51,7 @@ namespace ex01_ConcursoOrquideas
             Console.WriteLine("Se escogerán entre Cattleya, Houlletias, Josefinas, Stelis y Zapatico");
 
             bool datosCorrectos = false;
-            float totalCattleya=0, totalHoulettias=0, totalJosefinas=0, totalStelis=0, totalZapatico=0;
+            float totalCattleya = 0, totalHoulettias = 0, totalJosefinas = 0, totalStelis = 0, totalZapatico = 0;
 
             //Este ciclo se repetirá hasta que TODOS los valores sean válidos
             while (datosCorrectos == false)
@@ -61,24 +59,24 @@ namespace ex01_ConcursoOrquideas
                 try
                 {
                     Console.Write("\nIngresa el número de visitantes que votaron por Cattleya: ");
-                    totalCattleya = float.Parse(Console.ReadLine());
+                    totalCattleya = float.Parse(Console.ReadLine()!);
 
                     Console.Write("\nIngresa el número de visitantes que votaron por Houlletias: ");
-                    totalHoulettias = float.Parse(Console.ReadLine());
+                    totalHoulettias = float.Parse(Console.ReadLine()!);
 
                     Console.Write("\nIngresa el número de visitantes que votaron por Josefinas: ");
-                    totalJosefinas = float.Parse(Console.ReadLine());
+                    totalJosefinas = float.Parse(Console.ReadLine()!);
 
                     Console.Write("\nIngresa el número de visitantes que votaron por Stelis: ");
-                    totalStelis = float.Parse(Console.ReadLine());
+                    totalStelis = float.Parse(Console.ReadLine()!);
 
                     Console.Write("\nIngresa el número de visitantes que votaron por Zapatico: ");
-                    totalZapatico = float.Parse(Console.ReadLine());
+                    totalZapatico = float.Parse(Console.ReadLine()!);
 
                     //Aqui validamos que los numeros sean positivos
                     if (totalCattleya >= 0 && totalHoulettias >= 0 && totalJosefinas >= 0 && totalStelis >= 0 && totalZapatico >= 0)
                         datosCorrectos = true;
-                   else
+                    else
                         Console.WriteLine("Los datos ingresados no son validos como cantidad de visitantes.Intenta nuevamente");
                 }
                 catch (FormatException elError)

@@ -22,9 +22,7 @@ Posteriormente se generarán los siguientes resultados por cada destino:
 - Cuántos lanzamientos fueron para cada destino.
 - Indicar cuál destino fue el que más lanzamientos recibió, o si todos los destinos tuvieron la misma cantidad.
 
- */
-
-using System;
+*/
 
 namespace Ex01_ColonizacionSolar
 {
