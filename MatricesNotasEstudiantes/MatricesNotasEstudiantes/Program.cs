@@ -28,8 +28,6 @@ Observaciones:
        https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/operators/null-forgiving
 */
 
-using System;
-
 namespace MatricesNotasEstudiantes
 {
     public class Program

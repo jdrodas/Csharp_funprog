@@ -10,8 +10,6 @@ Propósito:
    - Escaleno: Los tres lados son diferentes   
 */
 
-using System;
-
 namespace ClasificaTriangulos
 {
     internal class Program

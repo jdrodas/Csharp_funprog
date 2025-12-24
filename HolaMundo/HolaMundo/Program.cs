@@ -14,8 +14,6 @@ Propósito:
 - Demostrar el funcionamiento de los métodos WriteLine y Write de la clase Console.
 */
 
-using System;
-
 namespace HolaMundo
 {
     class Program

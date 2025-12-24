@@ -27,9 +27,6 @@ funciones y arreglos.
 
 */
 
-
-using System;
-
 namespace PromedioPonderadoNotas
 {
     class Program

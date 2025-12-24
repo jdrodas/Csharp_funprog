@@ -13,8 +13,6 @@ Ciclos de control:
 - for
 */
 
-using System;
-
 namespace EjemploCiclosControl
 {
     class Program

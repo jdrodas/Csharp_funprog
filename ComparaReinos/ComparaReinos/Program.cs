@@ -21,9 +21,6 @@ Se busca:
 
 */
 
-
-using System;
-
 namespace ComparaReinos
 {
     public class Program

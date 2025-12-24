@@ -14,7 +14,6 @@ Propósito:
 
 */
 
-using System;
 using System.Globalization;
 
 namespace CalculoDetalladoEdad

@@ -30,8 +30,6 @@ Operadores de nulidad:
 
 */
 
-using System;
-
 namespace EjemploCondicionales
 {
     class Program

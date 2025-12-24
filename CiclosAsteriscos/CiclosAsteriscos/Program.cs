@@ -8,8 +8,6 @@ Propósito:
  utilizando ciclos repetitivos. 
 
 */
-using System;
-
 namespace CiclosAsteriscos
 {
     class Program

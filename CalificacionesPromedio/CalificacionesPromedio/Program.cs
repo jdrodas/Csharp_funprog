@@ -13,7 +13,6 @@ Adicionalmente:
 
 */
 
-using System;
 using System.Globalization;
 
 namespace CalificacionesPromedio

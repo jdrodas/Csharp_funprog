@@ -10,9 +10,6 @@ Propósito:
 
 */
 
-
-using System;
-
 namespace CalculoTiempoSegundos
 {
     public class Program

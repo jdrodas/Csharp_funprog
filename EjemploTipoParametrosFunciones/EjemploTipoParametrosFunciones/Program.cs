@@ -15,8 +15,6 @@ https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-str
 
 */
 
-using System;
-
 namespace EjemploTipoParametrosFunciones
 {
     public class Program

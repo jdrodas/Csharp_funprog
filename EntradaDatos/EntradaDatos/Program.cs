@@ -15,8 +15,6 @@ el control de excepciones con las instrucciones try - catch
 
 */
 
-using System;
-
 namespace EntradaDatos
 {
     class Program

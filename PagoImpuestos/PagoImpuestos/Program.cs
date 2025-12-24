@@ -10,8 +10,6 @@ Propósito:
 
 */
 
-using System;
-
 namespace PagoImpuestos
 {
     public class Program

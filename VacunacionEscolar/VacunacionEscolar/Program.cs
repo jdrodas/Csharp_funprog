@@ -8,8 +8,6 @@ pero utilizaremos arreglos y funciones para facilitar la manipulación
 
 */
 
-using System;
-
 namespace VacunacionEscolar
 {
     class Program

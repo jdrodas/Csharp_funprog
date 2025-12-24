@@ -21,8 +21,6 @@ En el país en el que viven, hay una ley de impuestos que estipula que:
 
 */
 
-using System;
-
 namespace GananciasCelebridades
 {
     public class Program

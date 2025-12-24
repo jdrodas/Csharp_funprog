@@ -12,8 +12,6 @@ Propósito:
 
 */
 
-using System;
-
 namespace IdentificaPalindromo
 {
     public class Program
