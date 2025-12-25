@@ -13,24 +13,21 @@ Propósito:
 - Visualizar cuanto vendió y cuantos productos se vendieron
 
 Tarea: Implementar el control de excepciones requerido para cuando se ingresan valores numéricos
-       desde consola.
+      desde consola.
 
 Características de la máquina:
 
- - La maquina tiene 6 filas, 10 columnas para un total de 60 ubicaciones posibles de venta
- - La máquina sabe cuanto ha vendido
- - La máquina sabe cuantos productos ha vendido.
+- La maquina tiene 6 filas, 10 columnas para un total de 60 ubicaciones posibles de venta
+- La máquina sabe cuanto ha vendido
+- La máquina sabe cuantos productos ha vendido.
 
 Caracteristicas de la ubicación:
- - Identificacion
- - Nombre de producto
- - Valor
- - Cantidad
- 
- */
+- Identificacion
+- Nombre de producto
+- Valor
+- Cantidad
 
-using System;
-
+*/
 
 namespace MaquinaExpendedoraComida
 {

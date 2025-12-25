@@ -6,11 +6,11 @@ Propósito:
 ----------
 - Demostrar conceptos de clase objeto, encapsulación, atibutos, propiedades
 - Crear un arreglo de objetos e inicializarlo de manera secuencial según 
-  valores establecidos para los atributos.
+ valores establecidos para los atributos.
 - Visualizar la colección de cartas, una carta a la vez
 - Implementar un función para mezclar las cartas de manera aleatoria
 - Implementar una función para validar si un valor de una carta es correcto
- */
+*/
 
 namespace BarajaEspanola
 {
@@ -68,7 +68,7 @@ namespace BarajaEspanola
             }
 
             Console.WriteLine("Baraja inicializada!\n\n");
-            int numeroCarta=1; //Visualización de la primera carta
+            int numeroCarta = 1; //Visualización de la primera carta
 
             //Aqui podemos consultar que carta hay en una posición
             do
@@ -98,7 +98,7 @@ namespace BarajaEspanola
             VisualizaBaraja(baraja);
 
             //Aqui mezclamos la baraja tantas veces como el usuario pida
-            int cantidadVeces=0;
+            int cantidadVeces = 0;
             bool datoCorrecto = false;
 
             while (datoCorrecto == false)
@@ -110,7 +110,7 @@ namespace BarajaEspanola
                 {
                     Console.WriteLine("El dato ingresado no es válido. Intenta nuevamente!");
                     datoCorrecto = false;
-                }                
+                }
                 else
                 {
                     if (cantidadVeces == 0)
@@ -121,7 +121,7 @@ namespace BarajaEspanola
                         MezclarBaraja(baraja, cantidadVeces);
                         Console.WriteLine("Terminado!");
                     }
-                }                    
+                }
             }
 
             //Aqui buscamos donde quedaron las cartas de un valor específico

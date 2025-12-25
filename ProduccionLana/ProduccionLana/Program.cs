@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ProduccionLana
+﻿namespace ProduccionLana
 {
     internal class Program
     {

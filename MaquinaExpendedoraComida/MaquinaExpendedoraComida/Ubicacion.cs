@@ -1,5 +1,4 @@
-﻿
-namespace MaquinaExpendedoraComida
+﻿namespace MaquinaExpendedoraComida
 {
     class Ubicacion
     {

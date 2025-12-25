@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MaquinaExpendedoraComida
+﻿namespace MaquinaExpendedoraComida
 {
     class MaquinaVenta
     {
@@ -26,7 +20,7 @@ namespace MaquinaExpendedoraComida
         private void InicializaUbicaciones()
         {
             LasUbicaciones = new Ubicacion[60];
-            string[] letrasIdentificacion = [ "A", "B", "C", "D", "E", "F" ];
+            string[] letrasIdentificacion = ["A", "B", "C", "D", "E", "F"];
 
             string valorIdentificacion;
             int ubicacionActual = 0;

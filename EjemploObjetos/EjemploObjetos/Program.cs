@@ -6,10 +6,8 @@ Propósito:
 ----------
 - Demostrar los conceptos básicos de clase, objeto, encapsulación, métodos
 - Crear un arreglo de objetos, asignando y leyendo información para cada atributo
- 
- */
 
-using System;
+*/
 
 namespace EjemploObjetos
 {
@@ -29,7 +27,7 @@ namespace EjemploObjetos
                 {
                     //Inicializamos cada posición del arreglo utilizando el constructor
                     lasPersonas[i] = new Persona();
-                    
+
                     Console.Write($"\nCual es tu nombre, persona {(i + 1)}? ");
                     lasPersonas[i].Nombre = Console.ReadLine()!;
                     Console.Write("Cual es tu edad? ");

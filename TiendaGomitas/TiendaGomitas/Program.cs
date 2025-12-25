@@ -7,9 +7,7 @@ Propósito:
 - Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 - Crear un arreglo de objetos y pasarlo como parámetro a una función.
 - Crear un arreglo multidimensional y generar mecanismos para recorrerlo
- */
-
-using System;
+*/
 
 namespace TiendaGomitas
 {
@@ -20,9 +18,9 @@ namespace TiendaGomitas
             Console.WriteLine("Programa para Simular una tienda de gomitas");
             Console.WriteLine("Con sabores, colores y formas diferentes. Se generarán 1000 gomitas");
 
-            string[] colores = [ "Salmón", "Esmeralda", "Zafiro", "Mostaza", "Magenta"];
+            string[] colores = ["Salmón", "Esmeralda", "Zafiro", "Mostaza", "Magenta"];
             string[] sabores = ["Chontaduro", "Mamoncillo", "Arracacha"];
-            string[] formas =  ["Piramide", "Dragón", "Cóndor"];
+            string[] formas = ["Piramide", "Dragón", "Cóndor"];
 
             //Aqui declaramos un arreglo de 1000
             Gomita[] pedidoGomitas = new Gomita[1000];
@@ -125,7 +123,7 @@ namespace TiendaGomitas
                                 totalizador[i, j, k]++;
 
             //ahora vamos a identificar cual es la primera combinación que tiene la mayor cantidad de gomitas
-            int mayorValor, mayor_i=0, mayor_j = 0, mayor_k = 0;
+            int mayorValor, mayor_i = 0, mayor_j = 0, mayor_k = 0;
 
             // Asignamos el primer valor como el mayor de manera arbritaria
             mayorValor = totalizador[mayor_i, mayor_j, mayor_k];

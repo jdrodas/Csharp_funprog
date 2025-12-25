@@ -1,7 +1,4 @@
-﻿
-using System.Drawing;
-
-namespace EjemploObjetos
+﻿namespace EjemploObjetos
 {
     public class Persona
     {
@@ -36,9 +33,9 @@ namespace EjemploObjetos
             return edad;
         }
 
-        public void SetEdad(int valor) 
+        public void SetEdad(int valor)
         {
-            edad = valor;   
+            edad = valor;
         }
 
         public long GetTelefono()
@@ -57,7 +54,7 @@ namespace EjemploObjetos
         }
 
         public void SetEstatura(float valor)
-        { 
+        {
             estatura = valor;
         }
 
