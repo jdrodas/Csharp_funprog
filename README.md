@@ -340,7 +340,7 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 - Demostrar la utilización de condicionales 
 - captura de datos desde consola
 - visualizar resultados
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 ### [PescaArtesanalOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PescaArtesanalOO)
 - Mejorar la implementación del proyecto [ex02_MatricesPescaArtesanal](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_MatricesPescaArtesanal)

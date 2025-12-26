@@ -18,10 +18,8 @@ Se busca:
 
 Mejora de la versión anterior:
 - Implemente el objeto "Reino" y modifique la implementación para tomar provecho de esta aproximación
- 
- */
 
-using System;
+*/
 
 namespace ComparaReinosOO
 {
