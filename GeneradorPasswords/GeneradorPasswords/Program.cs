@@ -5,8 +5,6 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 - Implementar un generador de contraseñas a partir de los caracteres [a-z][A-Z][0-9] utilizando listas y Linq
-- Actualizado a .NET 8
-
 */
 
 

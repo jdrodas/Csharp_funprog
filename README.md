@@ -316,7 +316,7 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
   valores establecidos para los atributos.
 - Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales.
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 ### [RegistroSimCards](https://github.com/jdrodas/Csharp_funprog/tree/master/RegistroSimCards)
 - Demostrar conceptos de clase, objeto, encapsulación, propiedades
@@ -332,7 +332,7 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
   valores establecidos para los atributos.
 - Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales, indicando porcentaje del total.
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 ### [ComparaReinosOO](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinosOO)
 - Mejorar la implementación del proyecto [ComparaReinos](https://github.com/jdrodas/Csharp_funprog/tree/master/ComparaReinos)
@@ -401,11 +401,11 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 
 ### [GeneradorPasswords](https://github.com/jdrodas/Csharp_funprog/tree/master/GeneradorPasswords)
 - Implementar un generador de contraseñas a partir de los caracteres [a-z][A-Z][0-9] utilizando listas y Linq
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 ### [ComponentesColores](https://github.com/jdrodas/Csharp_funprog/tree/master/ComponentesColores)
 - Realizar extracciones de los componentes ARGB de un color utilizando operaciones "Bitwise"
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 
 ## Soluciones a examenes anteriores

@@ -11,7 +11,6 @@ Propósito:
 
 */
 
-using System;
 using System.Drawing;
 
 namespace ComponentesColores
@@ -22,12 +21,12 @@ namespace ComponentesColores
         {
             Console.WriteLine("Programa para extraer los componentes ARGB de un Color usando operaciones Bitwise\n");
 
-            Color unColor = Color.Turquoise;
+            Color unColor = Color.Lavender;
             uint valorEnteroColor = (uint)unColor.ToArgb();
             Console.WriteLine($"El color seleccionado para esta prueba es: {unColor.Name}");
             Console.WriteLine($"El valor entero es {valorEnteroColor} mientras " +
                 $"que en binario es {Convert.ToString(valorEnteroColor, toBase: 2).PadLeft(32, '0')}\n");
-            
+
             Console.WriteLine("Utilizando máscaras, extraemos cada uno de los componentes, asi:");
             //Aqui definimos una máscara de 8 bits equivalente a 255 (11111111)
             uint mascara = 0xff;
@@ -35,7 +34,7 @@ namespace ComponentesColores
             //Aqui utilizamos el operador desplazamiento de bits a la derecha y rotamos 24 bits
             //luego utilizamos el operador lógico AND con la máscara
             uint componenteAlpha = (valorEnteroColor >> 24) & mascara;
-            Console.WriteLine($"Alpha: \t{componenteAlpha} \t {Convert.ToString(componenteAlpha, toBase: 2).PadLeft(8,'0')}");
+            Console.WriteLine($"Alpha: \t{componenteAlpha} \t {Convert.ToString(componenteAlpha, toBase: 2).PadLeft(8, '0')}");
 
             //Aqui utilizamos el operador desplazamiento de bits a la derecha y rotamos 16 bits
             //luego utilizamos el operador lógico AND
@@ -53,4 +52,3 @@ namespace ComponentesColores
         }
     }
 }
-

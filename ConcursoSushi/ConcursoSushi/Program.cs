@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ConcursoSushi
+﻿namespace ConcursoSushi
 {
     internal class Program
     {
@@ -8,8 +6,8 @@ namespace ConcursoSushi
         {
             Console.WriteLine("Programa para simular la producción de Rollos de Sushi");
 
-            string[] lasSalsas = [ "Anguila", "Soya", "Mayo-sriracha" ];
-            string[] losAcabados = [ "Tempura", "Normal", "Acevichado" ];
+            string[] lasSalsas = ["Anguila", "Soya", "Mayo-sriracha"];
+            string[] losAcabados = ["Tempura", "Normal", "Acevichado"];
 
             //Aqui ingresamos las proteinas y los toppings
             string[] lasProteinas = new string[4];

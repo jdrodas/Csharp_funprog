@@ -46,8 +46,8 @@ namespace ZooPoo
             }
 
             //Definimos los medios válidos para los ambientes
-            string[] losMedios = [ "Aereo", "Acuatico", "Terrestre" ];
-            string[] losAlimentos = [ "Carne", "Hierbas", "De todito" ];
+            string[] losMedios = ["Aereo", "Acuatico", "Terrestre"];
+            string[] losAlimentos = ["Carne", "Hierbas", "De todito"];
 
             Random aleatorio = new();
 
@@ -75,7 +75,7 @@ namespace ZooPoo
             for (int i = 0; i < losMedios.Length; i++)
                 Console.WriteLine($"Medio: {losMedios[i]}, " +
                     $"Total Animales: {totalesAnimalesPorMedio[i]} que equivale al" +
-                    $" {Math.Round(((totalesAnimalesPorMedio[i] / cantidadAnimales) * 100),2)}%");
+                    $" {Math.Round(((totalesAnimalesPorMedio[i] / cantidadAnimales) * 100), 2)}%");
 
             Console.WriteLine("\n El total de comida por tipo de alimento es:");
             int[] totalesComidaPorTipo = TotalizaComidaAnimales(animalesZoo, losAlimentos);
