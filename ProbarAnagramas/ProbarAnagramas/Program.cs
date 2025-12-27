@@ -5,7 +5,6 @@ Contacto:       Juan Dario Rodas - jdrodas@hotmail.com
 Propósito:
 ----------
 - Implementar una validación básica de anagramas utilizando arreglos
-- Actualizado a .NET 8
 
 */
 
@@ -28,7 +27,7 @@ namespace ProbarAnagramas
             //Procesamos las cadenas
             char[] primerArreglo = primeraFrase
                 .ToLower()
-                .Where(caracter =>  !char.IsWhiteSpace(caracter))
+                .Where(caracter => !char.IsWhiteSpace(caracter))
                 .ToArray();
 
             char[] segundoArreglo = segundaFrase
