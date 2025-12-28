@@ -473,23 +473,11 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 - Actualizado a .NET 10
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Examen No. 2
+
+### [ex02_AterrizajeOptimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_AterrizajeOptimo)
+- Identificar de un arreglo de 10 numeros reales, cuales son los menores mayores que cero
+- Actualizado a .NET 10
 
 >>### [ex02_ColonizacionMarte](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ColonizacionMarte)
 >>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
@@ -499,8 +487,6 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 >>- Calcular el porcentaje del total correspondiente a un valor. Utilización de Cast
 >>- Implementación de funciones que reciben y devuelven arreglos
 
->>### [ex02_AterrizajeOptimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_AterrizajeOptimo)
->>- Identificar de un arreglo de 10 numeros reales, cuales son los menores mayores que cero
 
 >>### [ex02_CerrosTutelares](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_CerrosTutelares)
 >>- Leer 7 valores numéricos reales mayores que cero, buscar su promedio para identificar si cumplen una meta
