@@ -475,42 +475,55 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 
 ### Examen No. 2
 
-### [ex02_AterrizajeOptimo](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_AterrizajeOptimo)
+### [Ex02_AterrizajeOptimo](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_AterrizajeOptimo)
 - Identificar de un arreglo de 10 numeros reales, cuales son los menores mayores que cero
 - Actualizado a .NET 10
 
->>### [ex02_ColonizacionMarte](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ColonizacionMarte)
->>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+### [Ex02_CerrosTutelares](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_CerrosTutelares)
+- Leer 7 valores numéricos reales mayores que cero, buscar su promedio para identificar si cumplen una meta
+- Actualizado a .NET 10
 
->>### [ex02_LiberandoWill](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_LiberandoWill)
->>- Leer valores enteros desde consola y almacenarlos en un arreglo si pertenecen a un rango
->>- Calcular el porcentaje del total correspondiente a un valor. Utilización de Cast
->>- Implementación de funciones que reciben y devuelven arreglos
+### [Ex02_ColonizacionMarte](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_ColonizacionMarte)
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+- Actualizado a .NET 10
 
+### [Ex02_ContaminacionAire](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_ContaminacionAire)
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+- Actualizado a .NET 10
 
->>### [ex02_CerrosTutelares](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_CerrosTutelares)
->>- Leer 7 valores numéricos reales mayores que cero, buscar su promedio para identificar si cumplen una meta
+### [Ex02_ConversionRGBaCMYK](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_ConversionRGBaCMYK)
+- Convertir colores desde RGB hacia CMYK y viceversa.
+- Actualizado a .NET 10
 
->>### [ex02_CoordenadasGeograficas](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_CoordenadasGeograficas)
->>- Convertir Coordenadas Geográficas desde notación Grados-Minutos-Segundos a notación decimal y viceversa.
+### [Ex02_CoordenadasGeograficas](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_CoordenadasGeograficas)
+- Convertir Coordenadas Geográficas desde notación Grados-Minutos-Segundos a notación decimal y viceversa.
+- Actualizado a .NET 10
 
->>### [ex02_ConversionRGBaCMYK](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ConversionRGBaCMYK)
->>- Convertir colores desde RGB hacia CMYK y viceversa.
+### [Ex02_EleccionRepresentantes](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_EleccionRepresentantes)
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+- Actualizado a .NET 10
 
->>### [ex02_ContaminacionAire](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ContaminacionAire)
->>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+### [Ex02_LiberandoWill](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_LiberandoWill)
+- Leer valores enteros desde consola y almacenarlos en un arreglo si pertenecen a un rango
+- Calcular el porcentaje del total correspondiente a un valor. Utilización de Cast
+- Implementación de funciones que reciben y devuelven arreglos
+- Actualizado a .NET 10
 
->>### [ex02_EleccionRepresentantes](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_EleccionRepresentantes)
->>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+### [Ex02_MatricesPescaArtesanal](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_MatricesPescaArtesanal)
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos, Matrices
+- Actualizado a .NET 10
 
->>### [ex02_PescaRecreativa](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_PescaRecreativa)
->>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+### [Ex02_PescaRecreativa](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_PescaRecreativa)
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+- Actualizado a .NET 10
 
->>### [ex02_MatricesPescaArtesanal](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_MatricesPescaArtesanal)
->>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos, Matrices
+### [Ex02_ReforestacionCorregimientos](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex02_ReforestacionCorregimientos)
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+- Actualizado a .NET 10
 
->>### [ex02_ReforestacionCorregimientos](https://github.com/jdrodas/Csharp_funprog/tree/master/ex02_ReforestacionCorregimientos)
->>- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+### [EX02_RiesgosInundaciones](https://github.com/jdrodas/Csharp_funprog/tree/master/EX02_RiesgosInundaciones)
+- Ejercicio utilizando condicionales, ciclos de control, funciones, arreglos
+- Actualizado a .NET 10
 
 
 
