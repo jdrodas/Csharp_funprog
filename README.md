@@ -366,13 +366,13 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 ### [SimRadio](https://github.com/jdrodas/Csharp_funprog/tree/master/SimRadio)
 - Programa de introducción a las interfaces gráficas de usuario en Windows Forms
 - Simulación del comportamiento de un radio, con atributos de estado, volumen y frecuencia
-- Actualizado a .NET 7
+- Actualizado a .NET 10
 
 ### [AhorcaditoSimple](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoSimple)
 - Implementación de una aplicación para adivinar una palabra de 10 letras.
 - Cuenta los fallos y los aciertos 
 - Implementación en Windows Forms.
-- Actualizado a .NET 7
+- Actualizado a .NET 10
 
 ### [AhorcaditoGrafico](https://github.com/jdrodas/Csharp_funprog/tree/master/AhorcaditoGrafico)
 - Implementación de una aplicación para adivinar una palabra de 10 letras.

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AhorcaditoSimple
+﻿namespace AhorcaditoSimple
 {
     public class Logica
     {
