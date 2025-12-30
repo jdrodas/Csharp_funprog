@@ -17,13 +17,7 @@ Enunciado al problema:
 - No tendrá en cuenta las tildes
 - Visualizará las letras ingresadas.
 - Dibujará el personaje a medida que se incrementen los fallos
-
-
 */
-
-using System;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 namespace AhorcaditoGrafico
 {
@@ -40,7 +34,7 @@ namespace AhorcaditoGrafico
         //El constructor de la clase
         public Logica()
         {
-            diccionarioPalabras = new string?[] {
+            diccionarioPalabras = [
             "EVALUACION",
             "PROLETARIO",
             "ICOSAEDROS",
@@ -58,7 +52,11 @@ namespace AhorcaditoGrafico
             "GIGANTESCO",
             "ARREPENTIR",
             "HABICHUELA",
-            "ECLIPSABLE"};
+            "ECLIPSABLE"];
+
+            //aqui inicializamos la imagen
+            //Las dimensiones deben corresponder al PictureBox de la interfaz
+            imagenAhorcado = new Bitmap(230, 240);
 
             ReiniciaJuego();
         }
@@ -103,19 +101,18 @@ namespace AhorcaditoGrafico
 
         public string PalabraBuscada
         {
-            get { return palabraBuscada; }
+            get { return palabraBuscada!; }
         }
 
         public string LetrasColocadas
         {
-            get { return letrasColocadas; }
+            get { return letrasColocadas!; }
         }
 
         public Bitmap ImagenAhorcado
         {
             get { return imagenAhorcado; }
         }
-
 
         //Metodos públicos de la clase
         public bool EvaluaLetra(string laLetra)
@@ -140,7 +137,7 @@ namespace AhorcaditoGrafico
             //palabra buscada
             if (fueIngresada == false)
             {
-                char[] arregloLetrasPalabraBuscada = palabraBuscada.ToCharArray();
+                char[] arregloLetrasPalabraBuscada = palabraBuscada!.ToCharArray();
 
                 for (int i = 0; i < arregloLetrasPalabraBuscada.Length; i++)
                 {
@@ -239,6 +236,10 @@ namespace AhorcaditoGrafico
                 areaGraficacion.DrawLine(lapiz, 140, 115, 160, 95);
         }
 
+        /// <summary>
+        /// Función que evalua si se ha alcanzado el umbral de fallos
+        /// </summary>
+        /// <returns>verdadero si fuimos derrotados</returns>
         public bool FuimosDerrotados()
         {
             bool derrota = false;
@@ -249,6 +250,10 @@ namespace AhorcaditoGrafico
             return derrota;
         }
 
+        /// <summary>
+        /// Función que evalua si el contador de aciertos llegó a su límite
+        /// </summary>
+        /// <returns>verdadero si fuimos victoriosos</returns>
         public bool FuimosVictoriosos()
         {
             bool victoria = false;
@@ -258,7 +263,5 @@ namespace AhorcaditoGrafico
 
             return victoria;
         }
-
-
     }
 }

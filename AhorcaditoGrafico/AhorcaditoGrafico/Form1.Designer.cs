@@ -1,16 +1,20 @@
-﻿namespace AhorcaditoGrafico
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+
+namespace AhorcaditoGrafico
 {
     partial class Form1
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,381 +24,377 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TextoLetraIngresada = new System.Windows.Forms.TextBox();
-            this.BotonEvaluaLetra = new System.Windows.Forms.Button();
-            this.TextoLetra1 = new System.Windows.Forms.TextBox();
-            this.TextoLetra2 = new System.Windows.Forms.TextBox();
-            this.TextoLetra4 = new System.Windows.Forms.TextBox();
-            this.TextoLetra3 = new System.Windows.Forms.TextBox();
-            this.TextoLetra8 = new System.Windows.Forms.TextBox();
-            this.TextoLetra7 = new System.Windows.Forms.TextBox();
-            this.TextoLetra6 = new System.Windows.Forms.TextBox();
-            this.TextoLetra5 = new System.Windows.Forms.TextBox();
-            this.TextoLetra10 = new System.Windows.Forms.TextBox();
-            this.TextoLetra9 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TextoLetrasColocadas = new System.Windows.Forms.TextBox();
-            this.TextoPalabraBuscada = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.TextoTotalFallos = new System.Windows.Forms.TextBox();
-            this.BotonReiniciaJuego = new System.Windows.Forms.Button();
-            this.TextoTotalAciertos = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.CuadroImagen = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.CuadroImagen)).BeginInit();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            TextoLetraIngresada = new TextBox();
+            BotonEvaluaLetra = new Button();
+            TextoLetra1 = new TextBox();
+            TextoLetra2 = new TextBox();
+            TextoLetra3 = new TextBox();
+            TextoLetra4 = new TextBox();
+            TextoLetra5 = new TextBox();
+            TextoLetra6 = new TextBox();
+            TextoLetra7 = new TextBox();
+            TextoLetra8 = new TextBox();
+            TextoLetra9 = new TextBox();
+            TextoLetra10 = new TextBox();
+            label3 = new Label();
+            TextoLetrasColocadas = new TextBox();
+            TextoPalabraBuscada = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            TextoTotalFallos = new TextBox();
+            BotonReiniciaJuego = new Button();
+            TextoTotalAciertos = new TextBox();
+            label6 = new Label();
+            CuadroImagen = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)CuadroImagen).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(117, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ahorcadito Gráfico";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 25.8F, FontStyle.Bold);
+            label1.ForeColor = Color.Navy;
+            label1.Location = new Point(128, 36);
+            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(622, 79);
+            label1.TabIndex = 0;
+            label1.Text = "Ahorcadito Gráfico";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(11, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ingresa una letra:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 9.75F);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(141, 169);
+            label2.Name = "label2";
+            label2.Size = new Size(210, 30);
+            label2.TabIndex = 1;
+            label2.Text = "Ingresa una letra:";
             // 
             // TextoLetraIngresada
             // 
-            this.TextoLetraIngresada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetraIngresada.Location = new System.Drawing.Point(189, 100);
-            this.TextoLetraIngresada.MaxLength = 1;
-            this.TextoLetraIngresada.Name = "TextoLetraIngresada";
-            this.TextoLetraIngresada.Size = new System.Drawing.Size(37, 22);
-            this.TextoLetraIngresada.TabIndex = 2;
-            this.TextoLetraIngresada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetraIngresada.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetraIngresada.Location = new Point(357, 166);
+            TextoLetraIngresada.MaxLength = 1;
+            TextoLetraIngresada.Name = "TextoLetraIngresada";
+            TextoLetraIngresada.Size = new Size(37, 37);
+            TextoLetraIngresada.TabIndex = 2;
+            TextoLetraIngresada.TextAlign = HorizontalAlignment.Center;
             // 
             // BotonEvaluaLetra
             // 
-            this.BotonEvaluaLetra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BotonEvaluaLetra.ForeColor = System.Drawing.Color.Black;
-            this.BotonEvaluaLetra.Location = new System.Drawing.Point(230, 97);
-            this.BotonEvaluaLetra.Name = "BotonEvaluaLetra";
-            this.BotonEvaluaLetra.Size = new System.Drawing.Size(139, 29);
-            this.BotonEvaluaLetra.TabIndex = 3;
-            this.BotonEvaluaLetra.Text = "Evalua Letra";
-            this.BotonEvaluaLetra.UseVisualStyleBackColor = true;
-            this.BotonEvaluaLetra.Click += new System.EventHandler(this.BotonEvaluaLetra_Click);
+            BotonEvaluaLetra.Font = new Font("Microsoft Sans Serif", 9.75F);
+            BotonEvaluaLetra.ForeColor = Color.Black;
+            BotonEvaluaLetra.Location = new Point(410, 160);
+            BotonEvaluaLetra.Name = "BotonEvaluaLetra";
+            BotonEvaluaLetra.Size = new Size(249, 48);
+            BotonEvaluaLetra.TabIndex = 3;
+            BotonEvaluaLetra.Text = "Evalua Letra";
+            BotonEvaluaLetra.UseVisualStyleBackColor = true;
+            BotonEvaluaLetra.Click += BotonEvaluaLetra_Click;
             // 
             // TextoLetra1
             // 
-            this.TextoLetra1.BackColor = System.Drawing.Color.White;
-            this.TextoLetra1.Enabled = false;
-            this.TextoLetra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra1.Location = new System.Drawing.Point(50, 150);
-            this.TextoLetra1.MaxLength = 1;
-            this.TextoLetra1.Name = "TextoLetra1";
-            this.TextoLetra1.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra1.TabIndex = 4;
-            this.TextoLetra1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetra1.BackColor = Color.White;
+            TextoLetra1.Enabled = false;
+            TextoLetra1.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra1.Location = new Point(144, 251);
+            TextoLetra1.MaxLength = 1;
+            TextoLetra1.Name = "TextoLetra1";
+            TextoLetra1.Size = new Size(26, 37);
+            TextoLetra1.TabIndex = 4;
+            TextoLetra1.TextAlign = HorizontalAlignment.Center;
             // 
             // TextoLetra2
             // 
-            this.TextoLetra2.BackColor = System.Drawing.Color.White;
-            this.TextoLetra2.Enabled = false;
-            this.TextoLetra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra2.Location = new System.Drawing.Point(80, 150);
-            this.TextoLetra2.MaxLength = 1;
-            this.TextoLetra2.Name = "TextoLetra2";
-            this.TextoLetra2.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra2.TabIndex = 5;
-            this.TextoLetra2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextoLetra4
-            // 
-            this.TextoLetra4.BackColor = System.Drawing.Color.White;
-            this.TextoLetra4.Enabled = false;
-            this.TextoLetra4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra4.Location = new System.Drawing.Point(139, 150);
-            this.TextoLetra4.MaxLength = 1;
-            this.TextoLetra4.Name = "TextoLetra4";
-            this.TextoLetra4.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra4.TabIndex = 7;
-            this.TextoLetra4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetra2.BackColor = Color.White;
+            TextoLetra2.Enabled = false;
+            TextoLetra2.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra2.Location = new Point(174, 251);
+            TextoLetra2.MaxLength = 1;
+            TextoLetra2.Name = "TextoLetra2";
+            TextoLetra2.Size = new Size(26, 37);
+            TextoLetra2.TabIndex = 5;
+            TextoLetra2.TextAlign = HorizontalAlignment.Center;
             // 
             // TextoLetra3
             // 
-            this.TextoLetra3.BackColor = System.Drawing.Color.White;
-            this.TextoLetra3.Enabled = false;
-            this.TextoLetra3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra3.Location = new System.Drawing.Point(109, 150);
-            this.TextoLetra3.MaxLength = 1;
-            this.TextoLetra3.Name = "TextoLetra3";
-            this.TextoLetra3.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra3.TabIndex = 6;
-            this.TextoLetra3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetra3.BackColor = Color.White;
+            TextoLetra3.Enabled = false;
+            TextoLetra3.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra3.Location = new Point(203, 251);
+            TextoLetra3.MaxLength = 1;
+            TextoLetra3.Name = "TextoLetra3";
+            TextoLetra3.Size = new Size(26, 37);
+            TextoLetra3.TabIndex = 6;
+            TextoLetra3.TextAlign = HorizontalAlignment.Center;
             // 
-            // TextoLetra8
+            // TextoLetra4
             // 
-            this.TextoLetra8.BackColor = System.Drawing.Color.White;
-            this.TextoLetra8.Enabled = false;
-            this.TextoLetra8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra8.Location = new System.Drawing.Point(257, 150);
-            this.TextoLetra8.MaxLength = 1;
-            this.TextoLetra8.Name = "TextoLetra8";
-            this.TextoLetra8.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra8.TabIndex = 11;
-            this.TextoLetra8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextoLetra7
-            // 
-            this.TextoLetra7.BackColor = System.Drawing.Color.White;
-            this.TextoLetra7.Enabled = false;
-            this.TextoLetra7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra7.Location = new System.Drawing.Point(227, 150);
-            this.TextoLetra7.MaxLength = 1;
-            this.TextoLetra7.Name = "TextoLetra7";
-            this.TextoLetra7.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra7.TabIndex = 10;
-            this.TextoLetra7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextoLetra6
-            // 
-            this.TextoLetra6.BackColor = System.Drawing.Color.White;
-            this.TextoLetra6.Enabled = false;
-            this.TextoLetra6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra6.Location = new System.Drawing.Point(198, 150);
-            this.TextoLetra6.MaxLength = 1;
-            this.TextoLetra6.Name = "TextoLetra6";
-            this.TextoLetra6.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra6.TabIndex = 9;
-            this.TextoLetra6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetra4.BackColor = Color.White;
+            TextoLetra4.Enabled = false;
+            TextoLetra4.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra4.Location = new Point(233, 251);
+            TextoLetra4.MaxLength = 1;
+            TextoLetra4.Name = "TextoLetra4";
+            TextoLetra4.Size = new Size(26, 37);
+            TextoLetra4.TabIndex = 7;
+            TextoLetra4.TextAlign = HorizontalAlignment.Center;
             // 
             // TextoLetra5
             // 
-            this.TextoLetra5.BackColor = System.Drawing.Color.White;
-            this.TextoLetra5.Enabled = false;
-            this.TextoLetra5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra5.Location = new System.Drawing.Point(168, 150);
-            this.TextoLetra5.MaxLength = 1;
-            this.TextoLetra5.Name = "TextoLetra5";
-            this.TextoLetra5.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra5.TabIndex = 8;
-            this.TextoLetra5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetra5.BackColor = Color.White;
+            TextoLetra5.Enabled = false;
+            TextoLetra5.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra5.Location = new Point(262, 251);
+            TextoLetra5.MaxLength = 1;
+            TextoLetra5.Name = "TextoLetra5";
+            TextoLetra5.Size = new Size(26, 37);
+            TextoLetra5.TabIndex = 8;
+            TextoLetra5.TextAlign = HorizontalAlignment.Center;
             // 
-            // TextoLetra10
+            // TextoLetra6
             // 
-            this.TextoLetra10.BackColor = System.Drawing.Color.White;
-            this.TextoLetra10.Enabled = false;
-            this.TextoLetra10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra10.Location = new System.Drawing.Point(316, 150);
-            this.TextoLetra10.MaxLength = 1;
-            this.TextoLetra10.Name = "TextoLetra10";
-            this.TextoLetra10.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra10.TabIndex = 13;
-            this.TextoLetra10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetra6.BackColor = Color.White;
+            TextoLetra6.Enabled = false;
+            TextoLetra6.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra6.Location = new Point(292, 251);
+            TextoLetra6.MaxLength = 1;
+            TextoLetra6.Name = "TextoLetra6";
+            TextoLetra6.Size = new Size(26, 37);
+            TextoLetra6.TabIndex = 9;
+            TextoLetra6.TextAlign = HorizontalAlignment.Center;
+            // 
+            // TextoLetra7
+            // 
+            TextoLetra7.BackColor = Color.White;
+            TextoLetra7.Enabled = false;
+            TextoLetra7.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra7.Location = new Point(321, 251);
+            TextoLetra7.MaxLength = 1;
+            TextoLetra7.Name = "TextoLetra7";
+            TextoLetra7.Size = new Size(26, 37);
+            TextoLetra7.TabIndex = 10;
+            TextoLetra7.TextAlign = HorizontalAlignment.Center;
+            // 
+            // TextoLetra8
+            // 
+            TextoLetra8.BackColor = Color.White;
+            TextoLetra8.Enabled = false;
+            TextoLetra8.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra8.Location = new Point(351, 251);
+            TextoLetra8.MaxLength = 1;
+            TextoLetra8.Name = "TextoLetra8";
+            TextoLetra8.Size = new Size(26, 37);
+            TextoLetra8.TabIndex = 11;
+            TextoLetra8.TextAlign = HorizontalAlignment.Center;
             // 
             // TextoLetra9
             // 
-            this.TextoLetra9.BackColor = System.Drawing.Color.White;
-            this.TextoLetra9.Enabled = false;
-            this.TextoLetra9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetra9.Location = new System.Drawing.Point(286, 150);
-            this.TextoLetra9.MaxLength = 1;
-            this.TextoLetra9.Name = "TextoLetra9";
-            this.TextoLetra9.Size = new System.Drawing.Size(26, 22);
-            this.TextoLetra9.TabIndex = 12;
-            this.TextoLetra9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            TextoLetra9.BackColor = Color.White;
+            TextoLetra9.Enabled = false;
+            TextoLetra9.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra9.Location = new Point(380, 251);
+            TextoLetra9.MaxLength = 1;
+            TextoLetra9.Name = "TextoLetra9";
+            TextoLetra9.Size = new Size(26, 37);
+            TextoLetra9.TabIndex = 12;
+            TextoLetra9.TextAlign = HorizontalAlignment.Center;
+            // 
+            // TextoLetra10
+            // 
+            TextoLetra10.BackColor = Color.White;
+            TextoLetra10.Enabled = false;
+            TextoLetra10.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetra10.Location = new Point(410, 251);
+            TextoLetra10.MaxLength = 1;
+            TextoLetra10.Name = "TextoLetra10";
+            TextoLetra10.Size = new Size(26, 37);
+            TextoLetra10.TabIndex = 13;
+            TextoLetra10.TextAlign = HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(8, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 16);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Letras colocadas:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 9.75F);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(52, 346);
+            label3.Name = "label3";
+            label3.Size = new Size(213, 30);
+            label3.TabIndex = 14;
+            label3.Text = "Letras colocadas:";
             // 
             // TextoLetrasColocadas
             // 
-            this.TextoLetrasColocadas.BackColor = System.Drawing.Color.White;
-            this.TextoLetrasColocadas.Enabled = false;
-            this.TextoLetrasColocadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoLetrasColocadas.Location = new System.Drawing.Point(179, 188);
-            this.TextoLetrasColocadas.Name = "TextoLetrasColocadas";
-            this.TextoLetrasColocadas.Size = new System.Drawing.Size(163, 22);
-            this.TextoLetrasColocadas.TabIndex = 15;
+            TextoLetrasColocadas.BackColor = Color.White;
+            TextoLetrasColocadas.Enabled = false;
+            TextoLetrasColocadas.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoLetrasColocadas.Location = new Point(268, 343);
+            TextoLetrasColocadas.Name = "TextoLetrasColocadas";
+            TextoLetrasColocadas.Size = new Size(317, 37);
+            TextoLetrasColocadas.TabIndex = 15;
             // 
             // TextoPalabraBuscada
             // 
-            this.TextoPalabraBuscada.BackColor = System.Drawing.Color.White;
-            this.TextoPalabraBuscada.Enabled = false;
-            this.TextoPalabraBuscada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoPalabraBuscada.Location = new System.Drawing.Point(179, 225);
-            this.TextoPalabraBuscada.Name = "TextoPalabraBuscada";
-            this.TextoPalabraBuscada.Size = new System.Drawing.Size(163, 22);
-            this.TextoPalabraBuscada.TabIndex = 17;
+            TextoPalabraBuscada.BackColor = Color.White;
+            TextoPalabraBuscada.Enabled = false;
+            TextoPalabraBuscada.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoPalabraBuscada.Location = new Point(268, 423);
+            TextoPalabraBuscada.Name = "TextoPalabraBuscada";
+            TextoPalabraBuscada.Size = new Size(317, 37);
+            TextoPalabraBuscada.TabIndex = 16;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(8, 230);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 16);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Palabra buscada:";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 9.75F);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(51, 423);
+            label4.Name = "label4";
+            label4.Size = new Size(211, 30);
+            label4.TabIndex = 17;
+            label4.Text = "Palabra buscada:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(87, 266);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 16);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Fallos:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 9.75F);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(52, 501);
+            label5.Name = "label5";
+            label5.Size = new Size(89, 30);
+            label5.TabIndex = 18;
+            label5.Text = "Fallos:";
+            label5.TextAlign = ContentAlignment.MiddleRight;
             // 
             // TextoTotalFallos
             // 
-            this.TextoTotalFallos.BackColor = System.Drawing.Color.White;
-            this.TextoTotalFallos.Enabled = false;
-            this.TextoTotalFallos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoTotalFallos.Location = new System.Drawing.Point(150, 259);
-            this.TextoTotalFallos.Name = "TextoTotalFallos";
-            this.TextoTotalFallos.Size = new System.Drawing.Size(45, 22);
-            this.TextoTotalFallos.TabIndex = 19;
-            this.TextoTotalFallos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            TextoTotalFallos.BackColor = Color.White;
+            TextoTotalFallos.Enabled = false;
+            TextoTotalFallos.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoTotalFallos.Location = new Point(144, 498);
+            TextoTotalFallos.Name = "TextoTotalFallos";
+            TextoTotalFallos.Size = new Size(45, 37);
+            TextoTotalFallos.TabIndex = 19;
+            TextoTotalFallos.TextAlign = HorizontalAlignment.Right;
             // 
             // BotonReiniciaJuego
             // 
-            this.BotonReiniciaJuego.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BotonReiniciaJuego.Location = new System.Drawing.Point(52, 308);
-            this.BotonReiniciaJuego.Name = "BotonReiniciaJuego";
-            this.BotonReiniciaJuego.Size = new System.Drawing.Size(300, 29);
-            this.BotonReiniciaJuego.TabIndex = 20;
-            this.BotonReiniciaJuego.Text = "Reinicia Juego";
-            this.BotonReiniciaJuego.UseVisualStyleBackColor = true;
-            this.BotonReiniciaJuego.Click += new System.EventHandler(this.BotonReiniciaJuego_Click);
+            BotonReiniciaJuego.Font = new Font("Microsoft Sans Serif", 9.75F);
+            BotonReiniciaJuego.Location = new Point(233, 607);
+            BotonReiniciaJuego.Name = "BotonReiniciaJuego";
+            BotonReiniciaJuego.Size = new Size(332, 48);
+            BotonReiniciaJuego.TabIndex = 20;
+            BotonReiniciaJuego.Text = "Reinicia Juego";
+            BotonReiniciaJuego.UseVisualStyleBackColor = true;
+            BotonReiniciaJuego.Click += BotonReiniciaJuego_Click;
             // 
             // TextoTotalAciertos
             // 
-            this.TextoTotalAciertos.BackColor = System.Drawing.Color.White;
-            this.TextoTotalAciertos.Enabled = false;
-            this.TextoTotalAciertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextoTotalAciertos.Location = new System.Drawing.Point(296, 259);
-            this.TextoTotalAciertos.Name = "TextoTotalAciertos";
-            this.TextoTotalAciertos.Size = new System.Drawing.Size(45, 22);
-            this.TextoTotalAciertos.TabIndex = 22;
-            this.TextoTotalAciertos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            TextoTotalAciertos.BackColor = Color.White;
+            TextoTotalAciertos.Enabled = false;
+            TextoTotalAciertos.Font = new Font("Microsoft Sans Serif", 9.75F);
+            TextoTotalAciertos.Location = new Point(367, 494);
+            TextoTotalAciertos.Name = "TextoTotalAciertos";
+            TextoTotalAciertos.Size = new Size(45, 37);
+            TextoTotalAciertos.TabIndex = 22;
+            TextoTotalAciertos.TextAlign = HorizontalAlignment.Right;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(211, 265);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 16);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Aciertos:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 9.75F);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(248, 501);
+            label6.Name = "label6";
+            label6.Size = new Size(113, 30);
+            label6.TabIndex = 21;
+            label6.Text = "Aciertos:";
+            label6.TextAlign = ContentAlignment.MiddleRight;
             // 
             // CuadroImagen
             // 
-            this.CuadroImagen.BackColor = System.Drawing.Color.White;
-            this.CuadroImagen.Location = new System.Drawing.Point(394, 102);
-            this.CuadroImagen.Name = "CuadroImagen";
-            this.CuadroImagen.Size = new System.Drawing.Size(230, 240);
-            this.CuadroImagen.TabIndex = 23;
-            this.CuadroImagen.TabStop = false;
+            CuadroImagen.BackColor = Color.White;
+            CuadroImagen.Location = new Point(612, 281);
+            CuadroImagen.Name = "CuadroImagen";
+            CuadroImagen.Size = new Size(230, 240);
+            CuadroImagen.TabIndex = 23;
+            CuadroImagen.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 42F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 377);
-            this.Controls.Add(this.CuadroImagen);
-            this.Controls.Add(this.TextoTotalAciertos);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.BotonReiniciaJuego);
-            this.Controls.Add(this.TextoTotalFallos);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.TextoPalabraBuscada);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.TextoLetrasColocadas);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.TextoLetra10);
-            this.Controls.Add(this.TextoLetra9);
-            this.Controls.Add(this.TextoLetra8);
-            this.Controls.Add(this.TextoLetra7);
-            this.Controls.Add(this.TextoLetra6);
-            this.Controls.Add(this.TextoLetra5);
-            this.Controls.Add(this.TextoLetra4);
-            this.Controls.Add(this.TextoLetra3);
-            this.Controls.Add(this.TextoLetra2);
-            this.Controls.Add(this.TextoLetra1);
-            this.Controls.Add(this.BotonEvaluaLetra);
-            this.Controls.Add(this.TextoLetraIngresada);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ahorcadito Gráfico";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CuadroImagen)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(956, 794);
+            Controls.Add(CuadroImagen);
+            Controls.Add(label6);
+            Controls.Add(TextoTotalAciertos);
+            Controls.Add(BotonReiniciaJuego);
+            Controls.Add(TextoTotalFallos);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(TextoPalabraBuscada);
+            Controls.Add(TextoLetrasColocadas);
+            Controls.Add(label3);
+            Controls.Add(TextoLetra10);
+            Controls.Add(TextoLetra9);
+            Controls.Add(TextoLetra8);
+            Controls.Add(TextoLetra7);
+            Controls.Add(TextoLetra6);
+            Controls.Add(TextoLetra5);
+            Controls.Add(TextoLetra4);
+            Controls.Add(TextoLetra3);
+            Controls.Add(TextoLetra2);
+            Controls.Add(TextoLetra1);
+            Controls.Add(BotonEvaluaLetra);
+            Controls.Add(TextoLetraIngresada);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Margin = new Padding(2);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Ahorcadito Gráfico";
+            ((System.ComponentModel.ISupportInitialize)CuadroImagen).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TextoLetraIngresada;
-        private System.Windows.Forms.Button BotonEvaluaLetra;
-        private System.Windows.Forms.TextBox TextoLetra1;
-        private System.Windows.Forms.TextBox TextoLetra2;
-        private System.Windows.Forms.TextBox TextoLetra4;
-        private System.Windows.Forms.TextBox TextoLetra3;
-        private System.Windows.Forms.TextBox TextoLetra8;
-        private System.Windows.Forms.TextBox TextoLetra7;
-        private System.Windows.Forms.TextBox TextoLetra6;
-        private System.Windows.Forms.TextBox TextoLetra5;
-        private System.Windows.Forms.TextBox TextoLetra10;
-        private System.Windows.Forms.TextBox TextoLetra9;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TextoLetrasColocadas;
-        private System.Windows.Forms.TextBox TextoPalabraBuscada;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TextoTotalFallos;
-        private System.Windows.Forms.Button BotonReiniciaJuego;
-        private System.Windows.Forms.TextBox TextoTotalAciertos;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox CuadroImagen;
+        private Label label1;
+        private Label label2;
+        private TextBox TextoLetraIngresada;
+        private Button BotonEvaluaLetra;
+        private TextBox TextoLetra1;
+        private TextBox TextoLetra2;
+        private TextBox TextoLetra3;
+        private TextBox TextoLetra4;
+        private TextBox TextoLetra5;
+        private TextBox TextoLetra6;
+        private TextBox TextoLetra7;
+        private TextBox TextoLetra8;
+        private TextBox TextoLetra9;
+        private TextBox TextoLetra10;
+        private Label label3;
+        private TextBox TextoLetrasColocadas;
+        private TextBox TextoPalabraBuscada;
+        private Label label4;
+        private Label label5;
+        private TextBox TextoTotalFallos;
+        private Button BotonReiniciaJuego;
+        private TextBox TextoTotalAciertos;
+        private Label label6;
+        private PictureBox CuadroImagen;
     }
 }
