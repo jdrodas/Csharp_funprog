@@ -25,11 +25,6 @@ Cuando se encuentren las 8 parejas, el programa indicará que se alcanzó la victo
 
 */
 
-
-
-using System;
-using System.Windows.Forms;
-
 namespace EncuentraParejasNumeros
 {
     public partial class Form1 : Form

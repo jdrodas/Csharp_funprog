@@ -20,6 +20,8 @@ namespace GraficadorSimple
         public Logica()
         {
             tipoLetra = new Font("Arial", 12, FontStyle.Regular);
+            imagenDibujo = new Bitmap(10, 10);
+            areaDibujo = Graphics.FromImage(imagenDibujo);
             InicializaLogica(10, 10); // un valor cualquiera
         }
 

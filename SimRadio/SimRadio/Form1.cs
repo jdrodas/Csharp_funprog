@@ -35,11 +35,6 @@ comportamiento del radio y la forma solo quede con los elementos de visualizació
 
 */
 
-
-using System;
-using System.Drawing;
-using System.Windows.Forms;
-
 namespace SimRadio
 {
     public partial class Form1 : Form

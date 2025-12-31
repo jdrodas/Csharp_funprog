@@ -28,570 +28,570 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemMenuNuevo = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemMenuGuardar = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemMenuSalir = new System.Windows.Forms.ToolStripMenuItem();
-            this.ediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seleccionarColoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemMenuColorPrimario = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemMenuColorSecundario = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemMenuTipoLetra = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemMenuAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.etiquetaEstado = new System.Windows.Forms.ToolStripStatusLabel();
-            this.etiquetaPuntoInicial = new System.Windows.Forms.ToolStripStatusLabel();
-            this.etiquetaPuntoFinal = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.etiquetaLados = new System.Windows.Forms.Label();
-            this.selectorNumeroLados = new System.Windows.Forms.NumericUpDown();
-            this.radioPoligono = new System.Windows.Forms.RadioButton();
-            this.radioTexto = new System.Windows.Forms.RadioButton();
-            this.radioLinea = new System.Windows.Forms.RadioButton();
-            this.radioElipse = new System.Windows.Forms.RadioButton();
-            this.radioRectangulo = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.botonSwapColores = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cuadroColorSecundario = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cuadroColorPrimario = new System.Windows.Forms.PictureBox();
-            this.cuadroDibujo = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.selectorGrosor = new System.Windows.Forms.NumericUpDown();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.BotonTipoLetra = new System.Windows.Forms.Button();
-            this.textoFrase = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.listaGradientes = new System.Windows.Forms.ListBox();
-            this.radioRellenoGradiente = new System.Windows.Forms.RadioButton();
-            this.radioRellenoSolido = new System.Windows.Forms.RadioButton();
-            this.radioRellenoBorde = new System.Windows.Forms.RadioButton();
-            this.menuStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cuadroColorSecundario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cuadroColorPrimario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cuadroDibujo)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectorGrosor)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip1 = new MenuStrip();
+            archivoToolStripMenuItem = new ToolStripMenuItem();
+            itemMenuNuevo = new ToolStripMenuItem();
+            itemMenuGuardar = new ToolStripMenuItem();
+            itemMenuSalir = new ToolStripMenuItem();
+            ediciónToolStripMenuItem = new ToolStripMenuItem();
+            seleccionarColoresToolStripMenuItem = new ToolStripMenuItem();
+            itemMenuColorPrimario = new ToolStripMenuItem();
+            itemMenuColorSecundario = new ToolStripMenuItem();
+            itemMenuTipoLetra = new ToolStripMenuItem();
+            ayudaToolStripMenuItem = new ToolStripMenuItem();
+            itemMenuAcercaDe = new ToolStripMenuItem();
+            statusStrip1 = new StatusStrip();
+            etiquetaEstado = new ToolStripStatusLabel();
+            etiquetaPuntoInicial = new ToolStripStatusLabel();
+            etiquetaPuntoFinal = new ToolStripStatusLabel();
+            groupBox1 = new GroupBox();
+            etiquetaLados = new Label();
+            selectorNumeroLados = new NumericUpDown();
+            radioPoligono = new RadioButton();
+            radioTexto = new RadioButton();
+            radioLinea = new RadioButton();
+            radioElipse = new RadioButton();
+            radioRectangulo = new RadioButton();
+            groupBox2 = new GroupBox();
+            botonSwapColores = new Button();
+            label2 = new Label();
+            cuadroColorSecundario = new PictureBox();
+            label1 = new Label();
+            cuadroColorPrimario = new PictureBox();
+            cuadroDibujo = new PictureBox();
+            groupBox3 = new GroupBox();
+            label3 = new Label();
+            selectorGrosor = new NumericUpDown();
+            groupBox4 = new GroupBox();
+            BotonTipoLetra = new Button();
+            textoFrase = new TextBox();
+            label4 = new Label();
+            groupBox5 = new GroupBox();
+            listaGradientes = new ListBox();
+            radioRellenoGradiente = new RadioButton();
+            radioRellenoSolido = new RadioButton();
+            radioRellenoBorde = new RadioButton();
+            menuStrip1.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(selectorNumeroLados)).BeginInit();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(cuadroColorSecundario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(cuadroColorPrimario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(cuadroDibujo)).BeginInit();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(selectorGrosor)).BeginInit();
+            groupBox4.SuspendLayout();
+            groupBox5.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem,
-            this.ediciónToolStripMenuItem,
-            this.ayudaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(996, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] {
+            archivoToolStripMenuItem,
+            ediciónToolStripMenuItem,
+            ayudaToolStripMenuItem});
+            menuStrip1.Location = new System.Drawing.Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new System.Drawing.Size(996, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // archivoToolStripMenuItem
             // 
-            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.itemMenuNuevo,
-            this.itemMenuGuardar,
-            this.itemMenuSalir});
-            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.archivoToolStripMenuItem.Text = "Archivo";
+            archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            itemMenuNuevo,
+            itemMenuGuardar,
+            itemMenuSalir});
+            archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            archivoToolStripMenuItem.Text = "Archivo";
             // 
             // itemMenuNuevo
             // 
-            this.itemMenuNuevo.Name = "itemMenuNuevo";
-            this.itemMenuNuevo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.itemMenuNuevo.Size = new System.Drawing.Size(180, 22);
-            this.itemMenuNuevo.Text = "Nuevo";
-            this.itemMenuNuevo.Click += new System.EventHandler(this.itemMenuNuevo_Click);
+            itemMenuNuevo.Name = "itemMenuNuevo";
+            itemMenuNuevo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            itemMenuNuevo.Size = new System.Drawing.Size(180, 22);
+            itemMenuNuevo.Text = "Nuevo";
+            itemMenuNuevo.Click += new System.EventHandler(itemMenuNuevo_Click);
             // 
             // itemMenuGuardar
             // 
-            this.itemMenuGuardar.Name = "itemMenuGuardar";
-            this.itemMenuGuardar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.itemMenuGuardar.Size = new System.Drawing.Size(180, 22);
-            this.itemMenuGuardar.Text = "Guardar";
-            this.itemMenuGuardar.Click += new System.EventHandler(this.itemMenuGuardar_Click);
+            itemMenuGuardar.Name = "itemMenuGuardar";
+            itemMenuGuardar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
+            itemMenuGuardar.Size = new System.Drawing.Size(180, 22);
+            itemMenuGuardar.Text = "Guardar";
+            itemMenuGuardar.Click += new System.EventHandler(itemMenuGuardar_Click);
             // 
             // itemMenuSalir
             // 
-            this.itemMenuSalir.Name = "itemMenuSalir";
-            this.itemMenuSalir.ShortcutKeyDisplayString = "";
-            this.itemMenuSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.itemMenuSalir.Size = new System.Drawing.Size(180, 22);
-            this.itemMenuSalir.Text = "Salir";
-            this.itemMenuSalir.Click += new System.EventHandler(this.itemMenuSalir_Click);
+            itemMenuSalir.Name = "itemMenuSalir";
+            itemMenuSalir.ShortcutKeyDisplayString = "";
+            itemMenuSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            itemMenuSalir.Size = new System.Drawing.Size(180, 22);
+            itemMenuSalir.Text = "Salir";
+            itemMenuSalir.Click += new System.EventHandler(itemMenuSalir_Click);
             // 
             // ediciónToolStripMenuItem
             // 
-            this.ediciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.seleccionarColoresToolStripMenuItem,
-            this.itemMenuTipoLetra});
-            this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
-            this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.ediciónToolStripMenuItem.Text = "Edición";
+            ediciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            seleccionarColoresToolStripMenuItem,
+            itemMenuTipoLetra});
+            ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
+            ediciónToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            ediciónToolStripMenuItem.Text = "Edición";
             // 
             // seleccionarColoresToolStripMenuItem
             // 
-            this.seleccionarColoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.itemMenuColorPrimario,
-            this.itemMenuColorSecundario});
-            this.seleccionarColoresToolStripMenuItem.Name = "seleccionarColoresToolStripMenuItem";
-            this.seleccionarColoresToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.seleccionarColoresToolStripMenuItem.Text = "Seleccionar Colores";
+            seleccionarColoresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            itemMenuColorPrimario,
+            itemMenuColorSecundario});
+            seleccionarColoresToolStripMenuItem.Name = "seleccionarColoresToolStripMenuItem";
+            seleccionarColoresToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            seleccionarColoresToolStripMenuItem.Text = "Seleccionar Colores";
             // 
             // itemMenuColorPrimario
             // 
-            this.itemMenuColorPrimario.Name = "itemMenuColorPrimario";
-            this.itemMenuColorPrimario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
+            itemMenuColorPrimario.Name = "itemMenuColorPrimario";
+            itemMenuColorPrimario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.P)));
-            this.itemMenuColorPrimario.Size = new System.Drawing.Size(251, 22);
-            this.itemMenuColorPrimario.Text = "Color Primario";
-            this.itemMenuColorPrimario.Click += new System.EventHandler(this.itemMenuColorPrimario_Click);
+            itemMenuColorPrimario.Size = new System.Drawing.Size(251, 22);
+            itemMenuColorPrimario.Text = "Color Primario";
+            itemMenuColorPrimario.Click += new System.EventHandler(itemMenuColorPrimario_Click);
             // 
             // itemMenuColorSecundario
             // 
-            this.itemMenuColorSecundario.Name = "itemMenuColorSecundario";
-            this.itemMenuColorSecundario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
+            itemMenuColorSecundario.Name = "itemMenuColorSecundario";
+            itemMenuColorSecundario.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.S)));
-            this.itemMenuColorSecundario.Size = new System.Drawing.Size(251, 22);
-            this.itemMenuColorSecundario.Text = "Color Secundario";
-            this.itemMenuColorSecundario.Click += new System.EventHandler(this.itemMenuColorSecundario_Click);
+            itemMenuColorSecundario.Size = new System.Drawing.Size(251, 22);
+            itemMenuColorSecundario.Text = "Color Secundario";
+            itemMenuColorSecundario.Click += new System.EventHandler(itemMenuColorSecundario_Click);
             // 
             // itemMenuTipoLetra
             // 
-            this.itemMenuTipoLetra.Name = "itemMenuTipoLetra";
-            this.itemMenuTipoLetra.Size = new System.Drawing.Size(189, 22);
-            this.itemMenuTipoLetra.Text = "Seleccionar Tipo Letra";
-            this.itemMenuTipoLetra.Click += new System.EventHandler(this.itemMenuTipoLetra_Click);
+            itemMenuTipoLetra.Name = "itemMenuTipoLetra";
+            itemMenuTipoLetra.Size = new System.Drawing.Size(189, 22);
+            itemMenuTipoLetra.Text = "Seleccionar Tipo Letra";
+            itemMenuTipoLetra.Click += new System.EventHandler(itemMenuTipoLetra_Click);
             // 
             // ayudaToolStripMenuItem
             // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.itemMenuAcercaDe});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            itemMenuAcercaDe});
+            ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // itemMenuAcercaDe
             // 
-            this.itemMenuAcercaDe.Name = "itemMenuAcercaDe";
-            this.itemMenuAcercaDe.Size = new System.Drawing.Size(180, 22);
-            this.itemMenuAcercaDe.Text = "Acerca de";
-            this.itemMenuAcercaDe.Click += new System.EventHandler(this.itemMenuAcercaDe_Click);
+            itemMenuAcercaDe.Name = "itemMenuAcercaDe";
+            itemMenuAcercaDe.Size = new System.Drawing.Size(180, 22);
+            itemMenuAcercaDe.Text = "Acerca de";
+            itemMenuAcercaDe.Click += new System.EventHandler(itemMenuAcercaDe_Click);
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.etiquetaEstado,
-            this.etiquetaPuntoInicial,
-            this.etiquetaPuntoFinal});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 639);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(996, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            statusStrip1.Items.AddRange(new ToolStripItem[] {
+            etiquetaEstado,
+            etiquetaPuntoInicial,
+            etiquetaPuntoFinal});
+            statusStrip1.Location = new System.Drawing.Point(0, 639);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new System.Drawing.Size(996, 22);
+            statusStrip1.TabIndex = 1;
+            statusStrip1.Text = "statusStrip1";
             // 
             // etiquetaEstado
             // 
-            this.etiquetaEstado.AutoSize = false;
-            this.etiquetaEstado.Name = "etiquetaEstado";
-            this.etiquetaEstado.Size = new System.Drawing.Size(450, 17);
-            this.etiquetaEstado.Text = "Estado:";
-            this.etiquetaEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            etiquetaEstado.AutoSize = false;
+            etiquetaEstado.Name = "etiquetaEstado";
+            etiquetaEstado.Size = new System.Drawing.Size(450, 17);
+            etiquetaEstado.Text = "Estado:";
+            etiquetaEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // etiquetaPuntoInicial
             // 
-            this.etiquetaPuntoInicial.AutoSize = false;
-            this.etiquetaPuntoInicial.Name = "etiquetaPuntoInicial";
-            this.etiquetaPuntoInicial.Size = new System.Drawing.Size(150, 17);
-            this.etiquetaPuntoInicial.Text = "Punto Inicial: (0,0)";
+            etiquetaPuntoInicial.AutoSize = false;
+            etiquetaPuntoInicial.Name = "etiquetaPuntoInicial";
+            etiquetaPuntoInicial.Size = new System.Drawing.Size(150, 17);
+            etiquetaPuntoInicial.Text = "Punto Inicial: (0,0)";
             // 
             // etiquetaPuntoFinal
             // 
-            this.etiquetaPuntoFinal.AutoSize = false;
-            this.etiquetaPuntoFinal.Name = "etiquetaPuntoFinal";
-            this.etiquetaPuntoFinal.Size = new System.Drawing.Size(150, 17);
-            this.etiquetaPuntoFinal.Text = "Punto Final: (0,0)";
+            etiquetaPuntoFinal.AutoSize = false;
+            etiquetaPuntoFinal.Name = "etiquetaPuntoFinal";
+            etiquetaPuntoFinal.Size = new System.Drawing.Size(150, 17);
+            etiquetaPuntoFinal.Text = "Punto Final: (0,0)";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.etiquetaLados);
-            this.groupBox1.Controls.Add(this.selectorNumeroLados);
-            this.groupBox1.Controls.Add(this.radioPoligono);
-            this.groupBox1.Controls.Add(this.radioTexto);
-            this.groupBox1.Controls.Add(this.radioLinea);
-            this.groupBox1.Controls.Add(this.radioElipse);
-            this.groupBox1.Controls.Add(this.radioRectangulo);
-            this.groupBox1.Location = new System.Drawing.Point(12, 36);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(159, 154);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Herramientas";
+            groupBox1.Controls.Add(etiquetaLados);
+            groupBox1.Controls.Add(selectorNumeroLados);
+            groupBox1.Controls.Add(radioPoligono);
+            groupBox1.Controls.Add(radioTexto);
+            groupBox1.Controls.Add(radioLinea);
+            groupBox1.Controls.Add(radioElipse);
+            groupBox1.Controls.Add(radioRectangulo);
+            groupBox1.Location = new System.Drawing.Point(12, 36);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(159, 154);
+            groupBox1.TabIndex = 2;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Herramientas";
             // 
             // etiquetaLados
             // 
-            this.etiquetaLados.AutoSize = true;
-            this.etiquetaLados.Location = new System.Drawing.Point(52, 121);
-            this.etiquetaLados.Name = "etiquetaLados";
-            this.etiquetaLados.Size = new System.Drawing.Size(39, 13);
-            this.etiquetaLados.TabIndex = 2;
-            this.etiquetaLados.Text = "Lados:";
+            etiquetaLados.AutoSize = true;
+            etiquetaLados.Location = new System.Drawing.Point(52, 121);
+            etiquetaLados.Name = "etiquetaLados";
+            etiquetaLados.Size = new System.Drawing.Size(39, 13);
+            etiquetaLados.TabIndex = 2;
+            etiquetaLados.Text = "Lados:";
             // 
             // selectorNumeroLados
             // 
-            this.selectorNumeroLados.Location = new System.Drawing.Point(93, 119);
-            this.selectorNumeroLados.Maximum = new decimal(new int[] {
+            selectorNumeroLados.Location = new System.Drawing.Point(93, 119);
+            selectorNumeroLados.Maximum = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.selectorNumeroLados.Minimum = new decimal(new int[] {
+            selectorNumeroLados.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.selectorNumeroLados.Name = "selectorNumeroLados";
-            this.selectorNumeroLados.Size = new System.Drawing.Size(44, 20);
-            this.selectorNumeroLados.TabIndex = 2;
-            this.selectorNumeroLados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.selectorNumeroLados.Value = new decimal(new int[] {
+            selectorNumeroLados.Name = "selectorNumeroLados";
+            selectorNumeroLados.Size = new System.Drawing.Size(44, 20);
+            selectorNumeroLados.TabIndex = 2;
+            selectorNumeroLados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            selectorNumeroLados.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.selectorNumeroLados.ValueChanged += new System.EventHandler(this.selectorNumeroLados_ValueChanged);
+            selectorNumeroLados.ValueChanged += new System.EventHandler(selectorNumeroLados_ValueChanged);
             // 
             // radioPoligono
             // 
-            this.radioPoligono.AutoSize = true;
-            this.radioPoligono.Location = new System.Drawing.Point(6, 100);
-            this.radioPoligono.Name = "radioPoligono";
-            this.radioPoligono.Size = new System.Drawing.Size(66, 17);
-            this.radioPoligono.TabIndex = 6;
-            this.radioPoligono.TabStop = true;
-            this.radioPoligono.Text = "Poligono";
-            this.radioPoligono.UseVisualStyleBackColor = true;
-            this.radioPoligono.CheckedChanged += new System.EventHandler(this.radioPoligono_CheckedChanged);
+            radioPoligono.AutoSize = true;
+            radioPoligono.Location = new System.Drawing.Point(6, 100);
+            radioPoligono.Name = "radioPoligono";
+            radioPoligono.Size = new System.Drawing.Size(66, 17);
+            radioPoligono.TabIndex = 6;
+            radioPoligono.TabStop = true;
+            radioPoligono.Text = "Poligono";
+            radioPoligono.UseVisualStyleBackColor = true;
+            radioPoligono.CheckedChanged += new System.EventHandler(radioPoligono_CheckedChanged);
             // 
             // radioTexto
             // 
-            this.radioTexto.AutoSize = true;
-            this.radioTexto.Location = new System.Drawing.Point(6, 40);
-            this.radioTexto.Name = "radioTexto";
-            this.radioTexto.Size = new System.Drawing.Size(52, 17);
-            this.radioTexto.TabIndex = 5;
-            this.radioTexto.TabStop = true;
-            this.radioTexto.Text = "Texto";
-            this.radioTexto.UseVisualStyleBackColor = true;
-            this.radioTexto.CheckedChanged += new System.EventHandler(this.radioTexto_CheckedChanged);
+            radioTexto.AutoSize = true;
+            radioTexto.Location = new System.Drawing.Point(6, 40);
+            radioTexto.Name = "radioTexto";
+            radioTexto.Size = new System.Drawing.Size(52, 17);
+            radioTexto.TabIndex = 5;
+            radioTexto.TabStop = true;
+            radioTexto.Text = "Texto";
+            radioTexto.UseVisualStyleBackColor = true;
+            radioTexto.CheckedChanged += new System.EventHandler(radioTexto_CheckedChanged);
             // 
             // radioLinea
             // 
-            this.radioLinea.AutoSize = true;
-            this.radioLinea.Checked = true;
-            this.radioLinea.Location = new System.Drawing.Point(6, 20);
-            this.radioLinea.Name = "radioLinea";
-            this.radioLinea.Size = new System.Drawing.Size(51, 17);
-            this.radioLinea.TabIndex = 3;
-            this.radioLinea.TabStop = true;
-            this.radioLinea.Text = "Linea";
-            this.radioLinea.UseVisualStyleBackColor = true;
-            this.radioLinea.CheckedChanged += new System.EventHandler(this.radioLinea_CheckedChanged);
+            radioLinea.AutoSize = true;
+            radioLinea.Checked = true;
+            radioLinea.Location = new System.Drawing.Point(6, 20);
+            radioLinea.Name = "radioLinea";
+            radioLinea.Size = new System.Drawing.Size(51, 17);
+            radioLinea.TabIndex = 3;
+            radioLinea.TabStop = true;
+            radioLinea.Text = "Linea";
+            radioLinea.UseVisualStyleBackColor = true;
+            radioLinea.CheckedChanged += new System.EventHandler(radioLinea_CheckedChanged);
             // 
             // radioElipse
             // 
-            this.radioElipse.AutoSize = true;
-            this.radioElipse.Location = new System.Drawing.Point(6, 80);
-            this.radioElipse.Name = "radioElipse";
-            this.radioElipse.Size = new System.Drawing.Size(53, 17);
-            this.radioElipse.TabIndex = 4;
-            this.radioElipse.TabStop = true;
-            this.radioElipse.Text = "Elipse";
-            this.radioElipse.UseVisualStyleBackColor = true;
-            this.radioElipse.CheckedChanged += new System.EventHandler(this.radioElipse_CheckedChanged);
+            radioElipse.AutoSize = true;
+            radioElipse.Location = new System.Drawing.Point(6, 80);
+            radioElipse.Name = "radioElipse";
+            radioElipse.Size = new System.Drawing.Size(53, 17);
+            radioElipse.TabIndex = 4;
+            radioElipse.TabStop = true;
+            radioElipse.Text = "Elipse";
+            radioElipse.UseVisualStyleBackColor = true;
+            radioElipse.CheckedChanged += new System.EventHandler(radioElipse_CheckedChanged);
             // 
             // radioRectangulo
             // 
-            this.radioRectangulo.AutoSize = true;
-            this.radioRectangulo.Location = new System.Drawing.Point(6, 60);
-            this.radioRectangulo.Name = "radioRectangulo";
-            this.radioRectangulo.Size = new System.Drawing.Size(80, 17);
-            this.radioRectangulo.TabIndex = 3;
-            this.radioRectangulo.TabStop = true;
-            this.radioRectangulo.Text = "Rectángulo";
-            this.radioRectangulo.UseVisualStyleBackColor = true;
-            this.radioRectangulo.CheckedChanged += new System.EventHandler(this.radioRectangulo_CheckedChanged);
+            radioRectangulo.AutoSize = true;
+            radioRectangulo.Location = new System.Drawing.Point(6, 60);
+            radioRectangulo.Name = "radioRectangulo";
+            radioRectangulo.Size = new System.Drawing.Size(80, 17);
+            radioRectangulo.TabIndex = 3;
+            radioRectangulo.TabStop = true;
+            radioRectangulo.Text = "Rectángulo";
+            radioRectangulo.UseVisualStyleBackColor = true;
+            radioRectangulo.CheckedChanged += new System.EventHandler(radioRectangulo_CheckedChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.botonSwapColores);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.cuadroColorSecundario);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.cuadroColorPrimario);
-            this.groupBox2.Location = new System.Drawing.Point(12, 194);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(159, 106);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Colores";
+            groupBox2.Controls.Add(botonSwapColores);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(cuadroColorSecundario);
+            groupBox2.Controls.Add(label1);
+            groupBox2.Controls.Add(cuadroColorPrimario);
+            groupBox2.Location = new System.Drawing.Point(12, 194);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(159, 106);
+            groupBox2.TabIndex = 3;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Colores";
             // 
             // botonSwapColores
             // 
-            this.botonSwapColores.Location = new System.Drawing.Point(32, 74);
-            this.botonSwapColores.Name = "botonSwapColores";
-            this.botonSwapColores.Size = new System.Drawing.Size(75, 23);
-            this.botonSwapColores.TabIndex = 4;
-            this.botonSwapColores.Text = "Intercambiar";
-            this.botonSwapColores.UseVisualStyleBackColor = true;
-            this.botonSwapColores.Click += new System.EventHandler(this.botonSwapColores_Click);
+            botonSwapColores.Location = new System.Drawing.Point(32, 74);
+            botonSwapColores.Name = "botonSwapColores";
+            botonSwapColores.Size = new System.Drawing.Size(75, 23);
+            botonSwapColores.TabIndex = 4;
+            botonSwapColores.Text = "Intercambiar";
+            botonSwapColores.UseVisualStyleBackColor = true;
+            botonSwapColores.Click += new System.EventHandler(botonSwapColores_Click);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Secundario";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(73, 23);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(61, 13);
+            label2.TabIndex = 5;
+            label2.Text = "Secundario";
             // 
             // cuadroColorSecundario
             // 
-            this.cuadroColorSecundario.BackColor = System.Drawing.Color.White;
-            this.cuadroColorSecundario.Location = new System.Drawing.Point(85, 39);
-            this.cuadroColorSecundario.Name = "cuadroColorSecundario";
-            this.cuadroColorSecundario.Size = new System.Drawing.Size(33, 29);
-            this.cuadroColorSecundario.TabIndex = 5;
-            this.cuadroColorSecundario.TabStop = false;
-            this.cuadroColorSecundario.Click += new System.EventHandler(this.cuadroColorSecundario_Click);
+            cuadroColorSecundario.BackColor = System.Drawing.Color.White;
+            cuadroColorSecundario.Location = new System.Drawing.Point(85, 39);
+            cuadroColorSecundario.Name = "cuadroColorSecundario";
+            cuadroColorSecundario.Size = new System.Drawing.Size(33, 29);
+            cuadroColorSecundario.TabIndex = 5;
+            cuadroColorSecundario.TabStop = false;
+            cuadroColorSecundario.Click += new System.EventHandler(cuadroColorSecundario_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Primario";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(15, 23);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(44, 13);
+            label1.TabIndex = 4;
+            label1.Text = "Primario";
             // 
             // cuadroColorPrimario
             // 
-            this.cuadroColorPrimario.BackColor = System.Drawing.Color.Black;
-            this.cuadroColorPrimario.Location = new System.Drawing.Point(18, 39);
-            this.cuadroColorPrimario.Name = "cuadroColorPrimario";
-            this.cuadroColorPrimario.Size = new System.Drawing.Size(33, 29);
-            this.cuadroColorPrimario.TabIndex = 4;
-            this.cuadroColorPrimario.TabStop = false;
-            this.cuadroColorPrimario.Click += new System.EventHandler(this.cuadroColorPrimario_Click);
+            cuadroColorPrimario.BackColor = System.Drawing.Color.Black;
+            cuadroColorPrimario.Location = new System.Drawing.Point(18, 39);
+            cuadroColorPrimario.Name = "cuadroColorPrimario";
+            cuadroColorPrimario.Size = new System.Drawing.Size(33, 29);
+            cuadroColorPrimario.TabIndex = 4;
+            cuadroColorPrimario.TabStop = false;
+            cuadroColorPrimario.Click += new System.EventHandler(cuadroColorPrimario_Click);
             // 
             // cuadroDibujo
             // 
-            this.cuadroDibujo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.cuadroDibujo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.cuadroDibujo.Location = new System.Drawing.Point(186, 45);
-            this.cuadroDibujo.Name = "cuadroDibujo";
-            this.cuadroDibujo.Size = new System.Drawing.Size(800, 580);
-            this.cuadroDibujo.TabIndex = 4;
-            this.cuadroDibujo.TabStop = false;
-            this.cuadroDibujo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseDown);
-            this.cuadroDibujo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseMove);
-            this.cuadroDibujo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.cuadroDibujo_MouseUp);
+            cuadroDibujo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            cuadroDibujo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            cuadroDibujo.Location = new System.Drawing.Point(186, 45);
+            cuadroDibujo.Name = "cuadroDibujo";
+            cuadroDibujo.Size = new System.Drawing.Size(800, 580);
+            cuadroDibujo.TabIndex = 4;
+            cuadroDibujo.TabStop = false;
+            cuadroDibujo.MouseDown += new MouseEventHandler(cuadroDibujo_MouseDown);
+            cuadroDibujo.MouseMove += new MouseEventHandler(cuadroDibujo_MouseMove);
+            cuadroDibujo.MouseUp += new MouseEventHandler(cuadroDibujo_MouseUp);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.selectorGrosor);
-            this.groupBox3.Location = new System.Drawing.Point(12, 306);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(159, 60);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Grosor de Línea";
+            groupBox3.Controls.Add(label3);
+            groupBox3.Controls.Add(selectorGrosor);
+            groupBox3.Location = new System.Drawing.Point(12, 306);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new System.Drawing.Size(159, 60);
+            groupBox3.TabIndex = 5;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Grosor de Línea";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Valor:";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(12, 35);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(34, 13);
+            label3.TabIndex = 1;
+            label3.Text = "Valor:";
             // 
             // selectorGrosor
             // 
-            this.selectorGrosor.Location = new System.Drawing.Point(93, 29);
-            this.selectorGrosor.Maximum = new decimal(new int[] {
+            selectorGrosor.Location = new System.Drawing.Point(93, 29);
+            selectorGrosor.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.selectorGrosor.Minimum = new decimal(new int[] {
+            selectorGrosor.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.selectorGrosor.Name = "selectorGrosor";
-            this.selectorGrosor.Size = new System.Drawing.Size(44, 20);
-            this.selectorGrosor.TabIndex = 0;
-            this.selectorGrosor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.selectorGrosor.Value = new decimal(new int[] {
+            selectorGrosor.Name = "selectorGrosor";
+            selectorGrosor.Size = new System.Drawing.Size(44, 20);
+            selectorGrosor.TabIndex = 0;
+            selectorGrosor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            selectorGrosor.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.selectorGrosor.ValueChanged += new System.EventHandler(this.selectorGrosor_ValueChanged);
+            selectorGrosor.ValueChanged += new System.EventHandler(selectorGrosor_ValueChanged);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.BotonTipoLetra);
-            this.groupBox4.Controls.Add(this.textoFrase);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(12, 517);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(159, 110);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Opciones de texto:";
+            groupBox4.Controls.Add(BotonTipoLetra);
+            groupBox4.Controls.Add(textoFrase);
+            groupBox4.Controls.Add(label4);
+            groupBox4.Location = new System.Drawing.Point(12, 517);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new System.Drawing.Size(159, 110);
+            groupBox4.TabIndex = 6;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Opciones de texto:";
             // 
             // BotonTipoLetra
             // 
-            this.BotonTipoLetra.Location = new System.Drawing.Point(25, 67);
-            this.BotonTipoLetra.Name = "BotonTipoLetra";
-            this.BotonTipoLetra.Size = new System.Drawing.Size(75, 23);
-            this.BotonTipoLetra.TabIndex = 2;
-            this.BotonTipoLetra.Text = "Tipo de letra";
-            this.BotonTipoLetra.UseVisualStyleBackColor = true;
-            this.BotonTipoLetra.Click += new System.EventHandler(this.BotonTipoLetra_Click);
+            BotonTipoLetra.Location = new System.Drawing.Point(25, 67);
+            BotonTipoLetra.Name = "BotonTipoLetra";
+            BotonTipoLetra.Size = new System.Drawing.Size(75, 23);
+            BotonTipoLetra.TabIndex = 2;
+            BotonTipoLetra.Text = "Tipo de letra";
+            BotonTipoLetra.UseVisualStyleBackColor = true;
+            BotonTipoLetra.Click += new System.EventHandler(BotonTipoLetra_Click);
             // 
             // textoFrase
             // 
-            this.textoFrase.Location = new System.Drawing.Point(15, 40);
-            this.textoFrase.Name = "textoFrase";
-            this.textoFrase.Size = new System.Drawing.Size(100, 20);
-            this.textoFrase.TabIndex = 1;
-            this.textoFrase.Leave += new System.EventHandler(this.textoFrase_Leave);
+            textoFrase.Location = new System.Drawing.Point(15, 40);
+            textoFrase.Name = "textoFrase";
+            textoFrase.Size = new System.Drawing.Size(100, 20);
+            textoFrase.TabIndex = 1;
+            textoFrase.Leave += new System.EventHandler(textoFrase_Leave);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Frase:";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(15, 23);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(36, 13);
+            label4.TabIndex = 0;
+            label4.Text = "Frase:";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.listaGradientes);
-            this.groupBox5.Controls.Add(this.radioRellenoGradiente);
-            this.groupBox5.Controls.Add(this.radioRellenoSolido);
-            this.groupBox5.Controls.Add(this.radioRellenoBorde);
-            this.groupBox5.Location = new System.Drawing.Point(12, 372);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(159, 140);
-            this.groupBox5.TabIndex = 7;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Estilo de relleno";
+            groupBox5.Controls.Add(listaGradientes);
+            groupBox5.Controls.Add(radioRellenoGradiente);
+            groupBox5.Controls.Add(radioRellenoSolido);
+            groupBox5.Controls.Add(radioRellenoBorde);
+            groupBox5.Location = new System.Drawing.Point(12, 372);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new System.Drawing.Size(159, 140);
+            groupBox5.TabIndex = 7;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Estilo de relleno";
             // 
             // listaGradientes
             // 
-            this.listaGradientes.FormattingEnabled = true;
-            this.listaGradientes.Items.AddRange(new object[] {
+            listaGradientes.FormattingEnabled = true;
+            listaGradientes.Items.AddRange(new object[] {
             "Horizontal",
             "Vertical",
             "Diagonal Adelante",
             "Diagonal Atrás"});
-            this.listaGradientes.Location = new System.Drawing.Point(48, 103);
-            this.listaGradientes.Name = "listaGradientes";
-            this.listaGradientes.Size = new System.Drawing.Size(105, 30);
-            this.listaGradientes.TabIndex = 3;
+            listaGradientes.Location = new System.Drawing.Point(48, 103);
+            listaGradientes.Name = "listaGradientes";
+            listaGradientes.Size = new System.Drawing.Size(105, 30);
+            listaGradientes.TabIndex = 3;
             // 
             // radioRellenoGradiente
             // 
-            this.radioRellenoGradiente.AutoSize = true;
-            this.radioRellenoGradiente.Location = new System.Drawing.Point(15, 80);
-            this.radioRellenoGradiente.Name = "radioRellenoGradiente";
-            this.radioRellenoGradiente.Size = new System.Drawing.Size(110, 17);
-            this.radioRellenoGradiente.TabIndex = 2;
-            this.radioRellenoGradiente.TabStop = true;
-            this.radioRellenoGradiente.Text = "Relleno Gradiente";
-            this.radioRellenoGradiente.UseVisualStyleBackColor = true;
-            this.radioRellenoGradiente.CheckedChanged += new System.EventHandler(this.radioRellenoGradiente_CheckedChanged);
+            radioRellenoGradiente.AutoSize = true;
+            radioRellenoGradiente.Location = new System.Drawing.Point(15, 80);
+            radioRellenoGradiente.Name = "radioRellenoGradiente";
+            radioRellenoGradiente.Size = new System.Drawing.Size(110, 17);
+            radioRellenoGradiente.TabIndex = 2;
+            radioRellenoGradiente.TabStop = true;
+            radioRellenoGradiente.Text = "Relleno Gradiente";
+            radioRellenoGradiente.UseVisualStyleBackColor = true;
+            radioRellenoGradiente.CheckedChanged += new System.EventHandler(radioRellenoGradiente_CheckedChanged);
             // 
             // radioRellenoSolido
             // 
-            this.radioRellenoSolido.AutoSize = true;
-            this.radioRellenoSolido.Location = new System.Drawing.Point(15, 56);
-            this.radioRellenoSolido.Name = "radioRellenoSolido";
-            this.radioRellenoSolido.Size = new System.Drawing.Size(93, 17);
-            this.radioRellenoSolido.TabIndex = 1;
-            this.radioRellenoSolido.TabStop = true;
-            this.radioRellenoSolido.Text = "Relleno Sólido";
-            this.radioRellenoSolido.UseVisualStyleBackColor = true;
+            radioRellenoSolido.AutoSize = true;
+            radioRellenoSolido.Location = new System.Drawing.Point(15, 56);
+            radioRellenoSolido.Name = "radioRellenoSolido";
+            radioRellenoSolido.Size = new System.Drawing.Size(93, 17);
+            radioRellenoSolido.TabIndex = 1;
+            radioRellenoSolido.TabStop = true;
+            radioRellenoSolido.Text = "Relleno Sólido";
+            radioRellenoSolido.UseVisualStyleBackColor = true;
             // 
             // radioRellenoBorde
             // 
-            this.radioRellenoBorde.AutoSize = true;
-            this.radioRellenoBorde.Location = new System.Drawing.Point(15, 32);
-            this.radioRellenoBorde.Name = "radioRellenoBorde";
-            this.radioRellenoBorde.Size = new System.Drawing.Size(74, 17);
-            this.radioRellenoBorde.TabIndex = 0;
-            this.radioRellenoBorde.TabStop = true;
-            this.radioRellenoBorde.Text = "Sin relleno";
-            this.radioRellenoBorde.UseVisualStyleBackColor = true;
+            radioRellenoBorde.AutoSize = true;
+            radioRellenoBorde.Location = new System.Drawing.Point(15, 32);
+            radioRellenoBorde.Name = "radioRellenoBorde";
+            radioRellenoBorde.Size = new System.Drawing.Size(74, 17);
+            radioRellenoBorde.TabIndex = 0;
+            radioRellenoBorde.TabStop = true;
+            radioRellenoBorde.Text = "Sin relleno";
+            radioRellenoBorde.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 661);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.cuadroDibujo);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Graficador Simple v. 2021";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectorNumeroLados)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cuadroColorSecundario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cuadroColorPrimario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cuadroDibujo)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectorGrosor)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(996, 661);
+            Controls.Add(groupBox5);
+            Controls.Add(groupBox4);
+            Controls.Add(groupBox3);
+            Controls.Add(cuadroDibujo);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Controls.Add(statusStrip1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
+            Name = "Form1";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Graficador Simple v. 2025";
+            Load += new System.EventHandler(Form1_Load);
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(selectorNumeroLados)).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(cuadroColorSecundario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(cuadroColorPrimario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(cuadroDibujo)).EndInit();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(selectorGrosor)).EndInit();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -642,4 +642,3 @@
         private System.Windows.Forms.RadioButton radioPoligono;
     }
 }
-
