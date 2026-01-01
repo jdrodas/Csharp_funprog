@@ -6,7 +6,7 @@
         {
             Console.WriteLine("programa para simular venta de simcards");
 
-            string[] losOperadores = [ "Wom", "Claro", "Movil Exito", "Tigo", "Movistar", "Virgin" ];
+            string[] losOperadores = ["Wom", "Claro", "Movil Exito", "Tigo", "Movistar", "Virgin"];
             string[] losTiposServicios = ["prepago", "postpago", "empresarial"];
 
             //declaramos un arreglo de simcards
@@ -36,7 +36,7 @@
             for (int i = 0; i < losOperadores.Length; i++)
             {
                 porcentaje = ((float)totalesOperadores[i] / lasTarjetas.Length) * 100;
-                Console.WriteLine($"Operador: {losOperadores[i]}, total Simcards: {totalesOperadores[i]}, {Math.Round(porcentaje,2)}%");
+                Console.WriteLine($"Operador: {losOperadores[i]}, total Simcards: {totalesOperadores[i]}, {Math.Round(porcentaje, 2)}%");
 
             }
             Console.WriteLine("\nTotales por tipo de servicio:");

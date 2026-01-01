@@ -270,7 +270,19 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 - Crear un arreglo de objetos, asignando y leyendo información para cada atributo
 - Actualizado a .NET 10
 
+### [TiendaGalletas](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaGalletas)
+- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
+- Crear un arreglo de objetos y pasarlo como parámetro a una función.
+- Crear un arreglo multidimensional y generar mecanismos para recorrerlo
+- Actualizado a .NET 10
+
 ### [TiendaGomitas](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaGomitas)
+- Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
+- Crear un arreglo de objetos y pasarlo como parámetro a una función.
+- Crear un arreglo multidimensional y generar mecanismos para recorrerlo
+- Actualizado a .NET 10
+
+### [ServiciosPublicos](https://github.com/jdrodas/Csharp_funprog/tree/master/ServiciosPublicos)
 - Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 - Crear un arreglo de objetos y pasarlo como parámetro a una función.
 - Crear un arreglo multidimensional y generar mecanismos para recorrerlo

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ServiciosPublicos
+﻿namespace ServiciosPublicos
 {
     class Program
     {

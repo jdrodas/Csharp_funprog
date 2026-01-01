@@ -7,9 +7,7 @@ Propósito:
 - Demostrar conceptos de clase objeto, encapsulación, atributos, propiedades
 - Crear un arreglo de objetos y pasarlo como parámetro a una función.
 - Crear un arreglo multidimensional y generar mecanismos para recorrerlo
- */
-
-using System;
+*/
 
 namespace TiendaGalletas
 {
