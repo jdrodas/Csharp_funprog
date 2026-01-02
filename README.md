@@ -336,7 +336,7 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
   valores establecidos para los atributos.
 - Crear una función que totalice por cada tipo de atributo, cada uno de sus valores
     y se visualice los subtotales, indicando porcentaje del total.
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 ### [ConcursoSushi](https://github.com/jdrodas/Csharp_funprog/tree/master/ConcursoSushi)
 - Demostrar conceptos de clase, objeto, encapsulación, propiedades
@@ -361,7 +361,7 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 - captura de datos desde consola
 - visualizar resultados
 - Calcular totales y promedios recorriendo un arreglo de objetos y utilizando funciones
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 ### [PuntuacionEquiposOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PuntuacionEquiposOO)
 - Mejorar la implementación del proyecto [PuntuacionEquiposOO](https://github.com/jdrodas/Csharp_funprog/tree/master/PuntuacionEquiposOO)
@@ -370,7 +370,7 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 - captura de datos desde consola
 - visualizar resultados
 - Calcular totales y promedios recorriendo un arreglo de objetos y utilizando funciones
-- Actualizado a .NET 8
+- Actualizado a .NET 10
 
 ### 6. Interfaces Graficas con Windows Forms
 
@@ -428,6 +428,11 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 ### [ProbarAnagramas](https://github.com/jdrodas/Csharp_funprog/tree/master/GeneradorPasswords)
 - Implementar una validación básica de anagramas utilizando arreglos
 - Actualizado a .NET 10
+
+### [MultiplesMayores](https://github.com/jdrodas/Csharp_funprog/tree/master/MultiplesMayores)
+- Demostración de pruebas unitarias utilizando el framework MSTest
+- Actualizado a .NET 10
+
 
 
 ## Soluciones a examenes anteriores

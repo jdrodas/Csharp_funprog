@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PescaArtesanalOO
+﻿namespace PescaArtesanalOO
 {
     internal class Program
     {
@@ -8,8 +6,8 @@ namespace PescaArtesanalOO
         {
             Console.WriteLine("*** Programa para el control de la pesca artesanal - Orientado a Objetos ***");
 
-            string[] nombresEspecie = [ "Sabaleta", "Tilapia", "Trucha", "Mojarra", "Cachama" ];
-            string[] nombresMetodos = [ "Atarraya", "Chinchorro", "Arpón", "Red de Arrastre", "Manual" ];
+            string[] nombresEspecie = ["Sabaleta", "Tilapia", "Trucha", "Mojarra", "Cachama"];
+            string[] nombresMetodos = ["Atarraya", "Chinchorro", "Arpón", "Red de Arrastre", "Manual"];
 
             Console.WriteLine("\nLas especies permitidas son:");
             foreach (string especiePescado in nombresEspecie)
@@ -81,7 +79,7 @@ namespace PescaArtesanalOO
                     Console.WriteLine("La cantidad estuvo en los limites permitidos");
             }
 
-            Console.WriteLine($"\nEL promedio de la jornada fue {Math.Round(promedioPesca,2)} kgs");
+            Console.WriteLine($"\nEL promedio de la jornada fue {Math.Round(promedioPesca, 2)} kgs");
             if (promedioPesca > 200)
                 Console.WriteLine("Pesca excesiva, ¡se debe ejercer control más estricto!");
             else

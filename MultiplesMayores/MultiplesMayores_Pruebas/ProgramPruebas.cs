@@ -1,3 +1,5 @@
+﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
+
 namespace MultiplesMayores.Pruebas
 {
     [TestClass()]

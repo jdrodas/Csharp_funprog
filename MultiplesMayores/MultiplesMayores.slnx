@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MultiplesMayores/MultiplesMayores.csproj" />
+  <Project Path="MultiplesMayores_Pruebas/MultiplesMayores_Pruebas.csproj" />
+</Solution>
