@@ -552,23 +552,26 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 
 ### Examen No. 3
 
->>### [ex03_SimulacroVacunacion](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_SimulacroVacunacion)
->>- Leer valores string desde consola y almacenarlos en un arreglo.
->>- Calcular el total de vacunados por ciuidad y biológico utilizado.
->>- Calcular la edad promedio por ciudad y por biológico
+### [Ex03_SimulacroVacunacion](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_SimulacroVacunacion)
+- Leer valores string desde consola y almacenarlos en un arreglo.
+- Calcular el total de vacunados por ciuidad y biológico utilizado.
+- Calcular la edad promedio por ciudad y por biológico
+- Actualizado a .NET 10
 
->>### [ex03_VentasBarrio](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_VentasBarrio)
->>- Generar arreglo de Pedidos de Galletas para 5 barrios e identificar cantidad de pedidos por barrio, 
+### [Ex03_VentasBarrio](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_VentasBarrio)
+- Generar arreglo de Pedidos de Galletas para 5 barrios e identificar cantidad de pedidos por barrio, 
 la cantidad de galletas por barrio, cual fue el barrio con mejor promedio 
-
->>### [ex03_ViajesMetroplus](https://github.com/jdrodas/Csharp_funprog/tree/master/ex03_ViajesMetroplus)
->>- Generar arreglo de Viajes de pasajeros para 5 rutas e identificar cantidad de pasajeros por ruta, 
+- Actualizado a .NET 10
+- 
+### [Ex03_ViajesMetroplus](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_ViajesMetroplus)
+- Generar arreglo de Viajes de pasajeros para 5 rutas e identificar cantidad de pasajeros por ruta, 
 Porcentaje del total y  cual fue la ruta con menor cantidad de pasajeros transportados 
+- Actualizado a .NET 10
 
 ### [Ex03_PavimentacionCalles](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_PavimentacionCalles)
 - Generar arreglo de Calles con deterioros que afectan un porcentaje de su longitud. Se debe calcular la 
   cantidad de afectaciones, la longitud total pavimentada y la longitud promedio por cada tipo de deterioros
-- Actualizado a .NET 7
+- Actualizado a .NET 10
 
 
 
