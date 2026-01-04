@@ -573,7 +573,14 @@ Porcentaje del total y  cual fue la ruta con menor cantidad de pasajeros transpo
   cantidad de afectaciones, la longitud total pavimentada y la longitud promedio por cada tipo de deterioros
 - Actualizado a .NET 10
 
+### [Ex03_BurgerMaster](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_BurgerMaster)
+- Actualizado a .NET 10
 
+### [Ex03_CampeonDeBarrio](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_CampeonDeBarrio)
+- Actualizado a .NET 10
+
+### [Ex03_MedicionContaminacion](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_MedicionContaminacion)
+- Actualizado a .NET 10
 
 ### Examen No. 4
 
