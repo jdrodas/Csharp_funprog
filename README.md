@@ -415,7 +415,13 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 - Implementa selector de colores normales y de alto contraste.
 - Actualizado a .NET 10
 
-### 7. Misceláneos
+### 7. Manipulación de Archivos
+
+### [TiendaBicicletasCSV](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaBicicletasCSV)
+- Aplicación que almacena un diccionario de inventario de bicicletas en un archivo de texto plano en formato CSV (Comma Separated Values)
+- Actualizado a .NET 10
+
+### 8. Misceláneos
 
 ### [ComponentesColores](https://github.com/jdrodas/Csharp_funprog/tree/master/ComponentesColores)
 - Realizar extracciones de los componentes ARGB de un color utilizando operaciones "Bitwise"
@@ -582,9 +588,3 @@ Porcentaje del total y  cual fue la ruta con menor cantidad de pasajeros transpo
 ### [Ex03_MedicionContaminacion](https://github.com/jdrodas/Csharp_funprog/tree/master/Ex03_MedicionContaminacion)
 - Actualizado a .NET 10
 
-### Examen No. 4
-
->>### ex04_EncuentraParejasNumeros
->>- Implementación en Windows Forms con lógica y visualización en clases independientes.
->>- Implementación de una aplicación para encontrar 8 parejas de números.
->>- Cuenta los intentos realizados así como las parejas encontradas.
