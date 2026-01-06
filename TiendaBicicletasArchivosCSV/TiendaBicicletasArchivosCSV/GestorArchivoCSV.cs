@@ -2,7 +2,7 @@
 using CsvHelper.Configuration;
 using System.Globalization;
 
-namespace TiendaBicicletasCSV
+namespace TiendaBicicletasArchivosCSV
 {
     /// <summary>
     /// Servicio para manejar operaciones de lectura y escritura de archivos CSV

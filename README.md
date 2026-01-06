@@ -417,14 +417,14 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 
 ### 7. Manipulación de Archivos
 
-### [TiendaBicicletasCSV](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaBicicletasCSV)
+### [TiendaBicicletasArchivosCSV](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaBicicletasArchivosCSV)
 - Aplicación que almacena una lista de inventario de bicicletas en un archivo de texto plano en formato CSV (Comma Separated Values)
 - Se utiliza paquete CsvHelper para la escritura y lectura del archivo
 - Actualizado a .NET 10
 
 ### [TiendaBicicletasArchivosXML](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaBicicletasArchivosXML)
 - Aplicación que almacena una lista de inventario de bicicletas en un archivo de texto plano en formato XML (Extensible Markup Language)
-- Se utiliza paquete CsvHelper para la escritura y lectura del archivo
+- Se utiliza paquete System.Xml.Serialization para la escritura y lectura del archivo
 - Actualizado a .NET 10
 
 ### 8. Misceláneos

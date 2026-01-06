@@ -1,4 +1,4 @@
-﻿namespace TiendaBicicletasCSV
+﻿namespace TiendaBicicletasArchivosCSV
 {
     /// <summary>
     /// Representa una bicicleta en el inventario de la tienda
