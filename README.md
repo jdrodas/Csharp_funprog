@@ -427,6 +427,16 @@ Este repo se encuentra en proceso de actualización a **.NET 10**. Cada proyecto
 - Se utiliza paquete System.Xml.Serialization para la escritura y lectura del archivo
 - Actualizado a .NET 10
 
+### [TiendaBicicletasArchivosJSON](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaBicicletasArchivosJSON)
+- Aplicación que almacena una lista de inventario de bicicletas en un archivo de texto plano en formato JSON (JavaScript Object Notation)
+- Se utiliza paquete System.Text.Json para la escritura y lectura del archivo
+- Actualizado a .NET 10
+
+### [TiendaBicicletasArchivosYAML](https://github.com/jdrodas/Csharp_funprog/tree/master/TiendaBicicletasArchivosYAML)
+- Aplicación que almacena una lista de inventario de bicicletas en un archivo de texto plano en formato YAML (YAML Ain't Markup Language)
+- Se utiliza paquete YamlDotNet para la escritura y lectura del archivo
+- Actualizado a .NET 10
+
 ### 8. Misceláneos
 
 ### [ComponentesColores](https://github.com/jdrodas/Csharp_funprog/tree/master/ComponentesColores)
