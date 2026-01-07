@@ -27,6 +27,9 @@
                 Console.WriteLine("\n--- Contenido cargado desde JSON ---");
                 MostrarInventario(bicicletasCargadas);
 
+                Console.WriteLine("\nComparando las bicicletas iniciales y leídas del archivo...");
+                ComparaListaBicicletas(bicicletas, bicicletasCargadas);
+
                 Console.WriteLine("\nProceso completado exitosamente.");
             }
             catch (Exception ex)
@@ -37,6 +40,33 @@
 
             Console.WriteLine("\nPresione cualquier tecla para salir...");
             Console.ReadKey();
+        }
+
+        /// <summary>
+        /// Compara dos colecciones de bicicletas para identificar si son iguales
+        /// </summary>
+        /// <param name="bicicletas"></param>
+        /// <param name="bicicletasCargadas"></param>
+        static void ComparaListaBicicletas(List<Bicicleta> bicicletas, List<Bicicleta> bicicletasCargadas)
+        {
+            if (bicicletas.Count != bicicletasCargadas.Count)
+            {
+                Console.WriteLine($"Las listas tienen diferente cantidad de elementos. Original: {bicicletas.Count}, Cargada: {bicicletasCargadas.Count}");
+                return;
+            }
+
+            int totalDiferencias = 0;
+            for (int i = 0; i < bicicletas.Count; i++)
+                if (bicicletas[i] != bicicletasCargadas[i])
+                    totalDiferencias++;
+
+            if (totalDiferencias != 0)
+            {
+                Console.WriteLine($"Las listas tienen {totalDiferencias} elementos diferentes");
+                return;
+            }
+
+            Console.WriteLine($"Las listas tienen la misma cantidad de elementos en el mismo orden.");
         }
 
         /// <summary>
