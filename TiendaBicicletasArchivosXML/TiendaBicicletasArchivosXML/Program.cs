@@ -1,6 +1,4 @@
-﻿using TiendaBicicletasArchivosXML;
-
-namespace TiendaBicicletasXML
+﻿namespace TiendaBicicletasArchivosXML
 {
     public class Program
     {
@@ -18,7 +16,7 @@ namespace TiendaBicicletasXML
 
                 MostrarInventario(bicicletas);
 
-                var servicioGestionXML= new GestorArchivoXML();
+                var servicioGestionXML = new GestorArchivoXML();
                 servicioGestionXML.GuardarBicicletas(bicicletas, nombreArchivo);
 
                 Console.WriteLine("\n--- Verificando que el archivo se puede leer inmediatamente ---");
@@ -28,11 +26,11 @@ namespace TiendaBicicletasXML
                 Console.WriteLine("\n--- Contenido cargado desde XML ---");
                 MostrarInventario(bicicletasCargadas);
 
-                Console.WriteLine("\n✓ Proceso completado exitosamente.");
+                Console.WriteLine("\nProceso completado exitosamente.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"\n✗ Error crítico en la aplicación: {ex.Message}");
+                Console.WriteLine($"\nError crítico en la aplicación: {ex.Message}");
                 Console.WriteLine($"Detalles: {ex.StackTrace}");
             }
 

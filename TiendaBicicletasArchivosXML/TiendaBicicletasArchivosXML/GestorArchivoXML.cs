@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 namespace TiendaBicicletasArchivosXML
 {
@@ -10,8 +7,8 @@ namespace TiendaBicicletasArchivosXML
         private readonly XmlSerializer _serializador;
 
         public GestorArchivoXML()
-        {            
-            _serializador = new XmlSerializer(typeof(List<Bicicleta>));
+        {
+            _serializador = new XmlSerializer(typeof(InventarioBicicletas));
         }
 
         /// <summary>
@@ -34,7 +31,9 @@ namespace TiendaBicicletasArchivosXML
                 using var fileStream = new FileStream(rutaArchivo, FileMode.Create);
                 using var xmlWriter = System.Xml.XmlWriter.Create(fileStream, configuracionFormatoXML);
 
-                _serializador.Serialize(xmlWriter, bicicletas);
+                var inventario = new InventarioBicicletas(bicicletas);
+
+                _serializador.Serialize(xmlWriter, inventario);
             }
             catch (IOException ex)
             {
@@ -75,16 +74,16 @@ namespace TiendaBicicletasArchivosXML
 
                 using var reader = new StreamReader(rutaArchivo);
 
-                List<Bicicleta>? bicicletas = _serializador.Deserialize(reader) as List<Bicicleta>;
+                var inventario = _serializador.Deserialize(reader) as InventarioBicicletas;
 
-                if (bicicletas == null)
+                if (inventario == null)
                 {
                     Console.WriteLine($"Error: No se pudo deserializar el archivo XML");
                     return new List<Bicicleta>();
                 }
 
-                Console.WriteLine($"Archivo XML cargado exitosamente: {bicicletas.Count} registros");
-                return bicicletas;
+                Console.WriteLine($"Archivo XML cargado exitosamente: {inventario.Lista.Count} registros");
+                return inventario.Lista;
             }
             catch (IOException ex)
             {
